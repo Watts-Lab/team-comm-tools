@@ -1,0 +1,9 @@
+﻿batch_num,round_num,speaker_hash,speaker_nickname,timestamp,message,majority_pct,num_flipped,flipped_pct,num_votes
+0,1,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:27:20.125Z,hey what's up,1,1,0.333333333,3
+0,1,5e31d6e4e31c5304c46f1413,culturedCow,2020-04-20T18:27:23.764Z,excuse me what do you mean,1,1,0.333333333,3
+0,2,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:27:27.724Z,who are you,1,1,0.333333333,3
+0,2,5d482ea421c9be351f762255,youngLion,2020-04-20T18:27:30.410Z,say that again,1,1,0.333333333,3
+0,2,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:27:35.506Z,what is that,1,1,0.333333333,3
+0,3,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:28:09.451Z,pardon me are you aaron burr sir,1,1,0.333333333,3
+0,3,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:28:20.136Z,huh,1,1,0.333333333,3
+0,3,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:28:20.136Z,what's that,1,1,0.333333333,3

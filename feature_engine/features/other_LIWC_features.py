@@ -6,21 +6,15 @@ import re
 
 from features.basic_features import *
 
-
 ## Get the number of question marks in one message (TODO)
 def num_question_naive(text):
   return len([x for x in text if x in ["?"]])
 
-
 ## Classify whether the message contains clarification questions
 NTRI_regex = "what\?+|sorry|excuse me|huh\??|who\?+|pardon\?+|say.*again\??|what'?s that|what is that"
 def classify_NTRI(text):
-  if re.match(NTRI_regex, text):
-    return 1
-  else:
-    return 0
+  return 1 if re.match(NTRI_regex, text) else 0
   
-
 ## Calculate the word type-to-token ratio
 def get_word_TTR(text):
   # remove punctuations
@@ -33,12 +27,9 @@ def get_word_TTR(text):
   else:
     return num_unique_words/count_words(new_text)   
 
-
 ## Proportion of first person pronouns
-first_pronouns = ["i",'me','mine','myself','my','we','our','ours','ourselves','lets']
-def get_proportion_first_pronouns(text):
-  num_first_prononouns = len([x for x in text.split() if x in first_pronouns])
-  if count_words(text) == 0:
-    return 0
-  else:
-    return num_first_prononouns/count_words(text)
+def get_proportion_first_pronouns(df):
+  num_first_pronouns = df["first_person"]
+  num_words = df["num_words"]
+
+  return num_first_pronouns / num_words if (num_words > 0).all() else 0

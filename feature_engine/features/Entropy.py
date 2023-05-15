@@ -34,11 +34,3 @@ def ngram_dialog_act_entropy(df,on_column,n):
             counter = counter+1
 
     return entropy/counter
-
-#Test for entropy
-data = {
-    "name": ["I am sort of","I guess I am crazy"]
-}   
-
-df = pd.DataFrame(data)
-ngram_dialog_act_entropy(df,"name",2)

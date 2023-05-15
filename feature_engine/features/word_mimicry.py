@@ -5,31 +5,17 @@ import re
 
 '''
     To compute word mimicry, we use the dataset that removed all the punctuations
+    This is a *chat-level* feature in which order matters.
 '''
-
-
-
-## Create function words reference
-
-auxiliary_copular = "able am are aren’t be been being can can’t cannot could couldn’t did didn’t do don’t get got gotta had hadn’t hasn’t have haven’t is isn’t may should should’ve shouldn’t was were will won’t would would’ve wouldn’t"
-conjunctions = "although and as because ’cause but if or so then unless whereas while"
-determiners_qualifiers = "a an each every all lot lots the this those"
-pronouns_wh = "anybody anything anywhere everybody’s everyone everything everything’s everywhere he he’d he’s her him himself herself his I I’d I’ll I’m I’ve it it’d it’ll it’s its itself me my mine myself nobody nothing nowhere one one’s ones our ours she she’ll she’s she’d somebody someone someplace that that’d that’ll that’s them themselves these they they’d they’ll they’re they’ve us we we’d we’ll we’re we’ve what what’d what’s whatever when where where’d where’s wherever which who who’s whom whose why you you’d you’ll you’re you’ve your yours yourself"
-prepositions = "about after against at before by down for from in into near of off on out over than to until up with without"
-discourse_particles = "ah hi huh like mm-hmm oh okay right uh uh-huh um well yeah yup"
-adverbs_neg = "just no not really too very"
-
-function_word_reference = auxiliary_copular + " " + conjunctions + " " + determiners_qualifiers + " " + pronouns_wh + " " + prepositions + " " + discourse_particles + " " + adverbs_neg
-function_word_reference = re.sub(r"[^a-zA-Z0-9 ]+", '', function_word_reference).lower().split()
 
 ####### Extract the function words & non-functions words from a message
 ## Get the function words in a given message
-def function_word(text):
+def get_function_words_in_message(text, function_word_reference):
    return [x for x in text.split() if x in function_word_reference]
 # OUTPUT column: function_words
 
 ## Get the non-function words in a given message
-def content_word(text):
+def get_content_words_in_message(text, function_word_reference):
   return [x for x in text.split() if x not in function_word_reference]
 # OUTPUT column: content_words
 
@@ -44,12 +30,12 @@ def content_word(text):
 def mimic_words(df, on_column):
   word_mimic = [[]]
   for i in range(1, len(df)):
-    word_mimic.append([x for x in df.loc[i, on_column] if x in df.loc[(i-1),on_column]])
+    if df.loc[i, "conversation_num"] == df.loc[i-1, "conversation_num"]: # only do this if they're in the same conversation
+      word_mimic.append([x for x in df.loc[i, on_column] if x in df.loc[(i-1),on_column]])
+    else:
+      word_mimic.append([])
   return word_mimic
 # OUTPUT: function_word_mimicry, content_word_mimicry
-
-
-
 
 ####### Compute the number of mimic words
 
@@ -57,7 +43,7 @@ def mimic_words(df, on_column):
 '''
 @param function_mimic_words: input is each entry under `function_word_mimicry` column.
 '''
-def Function_mimicry_score(function_mimic_words):
+def function_mimicry_score(function_mimic_words):
   return len(function_mimic_words)
 # OUTPUT column: function_word_accommodation 
 

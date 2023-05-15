@@ -85,8 +85,3 @@ def get_sum(chat_level_data, column_to_summarize, new_column_name):
 	grouped_conversation_data = get_count_dataframe(chat_level_data, column_to_summarize)
 	grouped_conversation_data[new_column_name] = grouped_conversation_data.groupby(["conversation_num"], sort=False)[column_to_summarize].transform(lambda x: np.sum(x))
 	return(grouped_conversation_data[["conversation_num", new_column_name]].drop_duplicates())
-
-
-# z-score ## TODO
-# need to do this 2 ways --- within 1 conversation and across all chats
-
