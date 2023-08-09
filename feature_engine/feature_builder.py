@@ -54,7 +54,7 @@ class FeatureBuilder:
         self.first_pct = analyze_first_pct
 
         # Set word embedding path
-        self.word_embedding_path = re.sub('../feature_engine/data/raw_data', './embeddings/', self.input_file_path)
+        self.word_embedding_path = re.sub('../feature_engine/data/raw_data', './embeddings', self.input_file_path)
         self.vect_data = pd.read_csv(self.word_embedding_path, encoding='mac_roman')
 
         # Set bert sentiment path

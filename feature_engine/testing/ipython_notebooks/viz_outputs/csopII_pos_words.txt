@@ -1,0 +1,318 @@
+
+CONVERSATION 7x4FC4q7bp4qxPaXK_easy 
+                                  a gets more points if in 102 or 103
+                                                                right
+                                                                shoot
+                                            a and g cant be neighbors
+                                                           thats good
+                                                           looks good
+                                                       yea thats good
+                            do we know max points possible looks good
+                                                   everyone satisfied
+                                                             not sure
+                                       we had many more points before
+                            i thought it was 500 im guessing like 600
+                                                        yeah probably
+                                          ir was up to 566 that i saw
+                                                           it was lol
+                                            c and g cant be neighbors
+                                                                right
+                                                  me too  lets relook
+                                           a doesnt want to be in 101
+                                                            good call
+                                                         520 is solid
+                                           a doesnt want to be in 101
+                                                             yeah hmm
+                                                             sadly no
+                                                       this is better
+                                                   looking decent now
+                                                          544 is good
+                                                               agreed
+                                                                   ok
+                                               yeah im good with this
+                                                            544 is ok
+                                                     should we move a
+                                                               hit it
+                                                      why is a in 101
+                                someone said a doesnt wanna be in 101
+                                                           good point
+yeah i just am not sure how to change it to work without being in 101
+                                     why what was wrong with a in 101
+                                          lets put it back and submit
+                                          a ang g cannot be neighbors
+                                          ah ok it better now i think
+                                                     this might be ok
+                                                   yeah we can submit
+                                                            satisfied
+                                                    can we hit submit
+                                                                   ok
+                                                                  yea
+                                                               yellow
+                                              you ok with this yellow
+                                             maybe gone for a sec lol
+                                                              we good
+CONVERSATION EG9qqhcqyuPepPDFp_easy 
+                              im starting with a quick read then ill probably start with the ones that go together
+                                                                                                              okay
+                                                                                         feel free to do whatever 
+                                                                                                              okay
+do you think it would work better to have one of us start with a b etc and the other start with i and go backwards
+                                                                    or just do our own stuff im fine with whatever
+                                                                                                whatever you think
+                                                   alright ill start with i and go backwards and see how that goes
+                                                                i am not sure about c and d seems we can do better
+                                                                                    hm we could try c and d in 103
+                                                                                                     with f in 104
+                                                                                              a would clash in 102
+                                                                                    and a must be neighbors with b
+                                                                                     maybe we should just leave it
+                                                                               alright i see i think tthis is good
+                                                                                                         okay yeah
+                                                                                      i am going to hit the button
+                                                                                                              good
+                                                                                      yeah i put satisfied already
+CONVERSATION EqHkx5k7CghEW8McC_easy 
+were gonna have to figure out which option to lose out on sometimes im sure you guys see that too basically trying to lose as less as possible
+                                                                                                                            is this looks good
+                                                                                                                        that looks pretty good
+                                                                                                                             im fine with that
+                                                                                                                                            ok
+                                                                                                                                          sure
+                                                                    i mean student f isnt great but its fine with me if its fine with you guys
+                                                                                                  should we take a few minutes to look it over
+                                                                                                                        ok then lets go for it
+                                                                                                                         we got 5 minutes left
+                                                                                                                                            ok
+                                                                                                                                            ok
+                                                                                                                                          sure
+                                               c f and g are at the lower ends of their ranges so i guess that would be good spots to optimize
+                                                                                                                                  thats better
+                                                                                                                                       i agree
+                                                                                                                             im good with this
+                                          c  f has to be neighbors so to me it seems like we have to figure out if g is at a its best location
+                                                                                                                         im fine with this too
+CONVERSATION KRBxELippfQyYaYN8_easy 
+maybe we should come up with a strategy to start  like you work on placement and i optimize or i work from the bottom of the rule list or
+                                                  sounds good  ive been going from the top of the rule list  want me to do something else
+                                                                                             no lets try that and ill start at the bottom
+                                                                   next time  now ill try optimizing from the bottom and you from the top
+                                                                                                                                     okay
+                                                                                                                                 good one
+                                                     with optimizing maybe a good idea is to scan for students without restrictions first
+                                                                                                                                good idea
+                                                                                                                                   thanks
+                                                                                           but ill still start everything from the bottom
+                                                                                     too bad they dont tell us the maximum possible score
+                                                                                                                          think were good
+                                                                                                                                      yes
+CONVERSATION Lex42kgPKKtzFLxxA_hard 
+                                                  holy moly
+                                          oh boy here we go
+                          k i think we keep the strat going
+                                           it seems to work
+                                                    i agree
+                   okay not quite as bad as it couldve been
+                              ill work from bottom up again
+                                    sounds like a good plan
+                                actually not bad pointswise
+                                             g is kinda low
+                                           yeah same with o
+                             lets see if we can wiggle them
+                                 im actually kinda confused
+        yeah theres so much going on its hard to keep track
+        it seems like im supposed to get more points in 108
+                                          if i move m and o
+                                     but the points go down
+                                   wait what thats so weird
+                            that actually shouldnt be right
+                                                        lol
+             is it because we also need to move p with them
+                                i guess im okay with it tbh
+                                                        hmm
+                         ends up being pretty much the same
+                                           still its better
+true we might just have to settle with some unhappy campers
+                                                         oh
+                                                        ooh
+                                    its actually not better
+                                                        lol
+                                                       welp
+                                                        lol
+                                       this seems good then
+                yeah i think its the best were going to get
+CONVERSATION fB27i4rRyzrByr3b5_easy 
+                                                                      lets start with a
+                                                                    good so far i think
+                                                               g would be better in 104
+should we assign one person to make changes and rest of us all make suggestions in chat
+                                                                            more points
+                                                            so that it is not confusing
+                                                   b in 101 and a in 102 is more points
+                                                                              good call
+                                              okay now lets see how we can up the score
+                                                  i wont make changes just suggest them
+                                                             a and b should be switched
+                                                             so that it is less chaotic
+                                                                    would e in 104 work
+                                                                                   nice
+                                                                                   nice
+                                                             is this the best we can do
+i am looking to see which ones have 90 points and seeing if we can satisfy all of those
+                                                                      whats the max 500
+                                                       what happened we had it all good
+                                                go back to what we had like 3 times ago
+                                                             the other score was better
+                                                          who is the one making changes
+                                                                 green rewind that back
+                                                                                  green
+                            alright then green lets go back to our previous arrangement
+                                                               put c back i n103 with d
+                                                                          it was better
+                                                                                     ok
+                                                                            right there
+                          may be we cant hit 500 this round it is ok if we hit mid 400s
+                                                                   which we did earlier
+                                                                                  right
+                                              yeah 486 is what we had itt at thats fine
+                                                        i cant figure out how to fix it
+                                                                           swap a and b
+                                                                             let me try
+                                        itll decrease the score but its better than 100
+                                                                                 ho red
+                                                                     can cd move to 106
+                                                                                  fixed
+                                                                            there we go
+                                                                             good score
+                                                                                    yes
+                                                                        that looks good
+                                                               shall we click satisfied
+                                                                     good work everyone
+                                                                                    yes
+                                                                                  i did
+                                                                                perfect
+CONVERSATION h8cmezK4NroR7qiqF_easy 
+                                                       so every rule is broken lol
+                                                      wow were breaking every rule
+                                                                                 d
+                                        we managed to violate every constraint lol
+                                i think we should try to keep f in 101 if possible
+                                                        should get points for that
+                                                       f has two very high options
+                                                                       101 and 104
+                                                               c and d both in 103
+                                                thats a pretty decent score at 552
+                                                                    552 looks good
+                                            i feel like any score over 500 is good
+                                          these sure are some contentious students
+                                   i never got this much choice of room assignment
+                                                                              nice
+                                                                              stop
+                                                                  think thats good
+                                                              big money no whammys
+                                                               agreed this is good
+                         i saw us hit 660 with no violations but this isnt too bad
+                                                           well over 500 were good
+                                                    i thought 660 was rulebreaking
+                                                        you could totally be right
+                            750 is the total possible with highest ranked rooms   
+                                                             581 seems pretty good
+                                             can we get a somewhere theyre happier
+                                                                     can we submit
+                                                                              nice
+                                                                           oh nice
+                                                              heeey theres 50 more
+                                                                        that works
+                                                                    oh even better
+                                                         good job whoever did that
+                                                good call for whoever noticed that
+                                                                  oh wow nice work
+this is information overload so great job to whoever is finding these extra points
+                                         yeah i think this is too big a group size
+                                               haha i just tried to make g happier
+                                                           this is overwhelming eh
+                                                                  how do we submit
+                                                                        kinda yeah
+                                               we submit when we all hit satisfied
+                                                     everyone has to click satisfy
+                                                                   waiting on blue
+              im gonna try a couple more moves but ill reset if i violate anything
+                                                                              okay
+                                                                  how do you reset
+                                                                   can b go in 104
+                 im just going to move them right back if i see a condition go red
+                                                                    yes apparently
+                                                                   hey nice purple
+                                                  what about a to 105 and b to 106
+                                                                 since a is in 103
+                                                              no do doesnt like it
+                                                                                 d
+                                                               649 is a good score
+                                                                              yeah
+                                                                         ok im set
+CONVERSATION kMbPxZA66CAik5L2y_hard 
+                                    oh jeez lots of conditions
+                                             oh it gets harder
+lets start with the highest possible and start shifting people
+                                                so far so good
+                           oh are there more people than rooms
+                  i think we can have up to 4 people to a room
+                                     can 3 people be in a room
+                                                oh interesting
+                                                          or 5
+                                           does 800 sound good
+                                                           800
+                     sure let me just look for one more minute
+                                         i want to move p or f
+                                                        better
+                                                    theres 848
+                                                     i like it
+                                                    theres 881
+                                                   even better
+                                                  im satisfied
+                                               sure lets do it
+CONVERSATION vXQRgxmx4wJfTMed4_easy 
+b should go to 101 that has the highest value right
+                      but a and b must be neighbors
+                     but has to be neighbors with a
+                 right so a would have to go to 102
+                             102 makes a less happy
+        are you all satisfied with this arrangement
+                 our score is now lower than it was
+                           lets go back to original
+                  because a and d cant be neihgbors
+                                 now its even lower
+             now were back in the 500s im satisfied
+                      c and d have to live together
+                       we are missing a requirement
+                            so well lose 100 points
+                                              there
+CONVERSATION wbvzHu7BzNGQN7NLG_easy 
+                             why do we want a in 101 and b in 102
+                                        a and d cant be neighbors
+                             thats fine lets put d in 104 for now
+                                        a and b must be neighbors
+                                      c and d have to be together
+                                           okay so c and d in 105
+                      do we all have the same list of constraints
+                                                        yea we do
+                                                       i think so
+                                            104 is a popular room
+if we put b in 101 then a must b 102 to satisfy all b constraints
+                                              so we are at 539 rn
+                                    can we swap rooms 101 and 103
+                                        a and d cant be neighbors
+                                                            right
+                                              539 was best so far
+                                                   with cd in 103
+                                             and ab in 101 an 102
+                                  is that the highest so far  586
+                                                           so far
+                                                       yep so far
+                                               can g b 104 or 101
+                                                               no
+                                                             okay
+                         what was the arrangement when it was 586
+                                              i guess it was this
+                                                 are we satisfied
+                                                          im good
+                                         okay clicking the button

@@ -1,0 +1,296 @@
+
+CONVERSATION 5oCcHrXHzKuq2wthM_hard 
+                                                         oh dear lod
+                                                               yikes
+                                                                 lol
+                                                              hahaha
+                                                         wheres pink
+                                                                 lol
+                                                               uh oh
+                              lets get all on the board to see score
+                                               1134 total on perfect
+                                          now try to solve conflicts
+                                            enough time to try again
+                                                     i dont think so
+                                                     i like this one
+                                                         its not bad
+                                                           same here
+                                                        i noted them
+                                                               happy
+                                                     if we wanna try
+                                                          we can try
+                                                            we got 5
+maybe the next one will have fewer people so more time to experiment
+                      i think if we should just to improve from here
+                                          actually im good with this
+                   see if any switches will result in a better score
+                                              too many moving pieces
+                                                     not enough time
+                                    too much room to mess up lets go
+                                                             oh snap
+                                                      l move is good
+                                                             oh cool
+                                                                 lol
+                              look for ones wilth the least conflict
+                                                   then check points
+                                                     then check rule
+                     one change at a time is good strategy this late
+                                                                haha
+                                                                nice
+                                                                 NaN
+                                           yes thats what i am doing
+                                                     1134 is perfect
+                                                   i think were good
+                                            can we get more out of n
+                                                    gotta move r too
+                                                     and r next to k
+                                                              ah nvm
+                                                                  oh
+                                                  try n and r to 103
+                                                             i agree
+                                                                 NaN
+CONVERSATION 7x4FC4q7bp4qxPaXK_easy 
+                                  a gets more points if in 102 or 103
+                                                                right
+                                                                shoot
+                                            a and g cant be neighbors
+                                                           thats good
+                                                           looks good
+                                                       yea thats good
+                            do we know max points possible looks good
+                                                   everyone satisfied
+                                                             not sure
+                                       we had many more points before
+                            i thought it was 500 im guessing like 600
+                                                        yeah probably
+                                          ir was up to 566 that i saw
+                                                           it was lol
+                                            c and g cant be neighbors
+                                                                right
+                                                  me too  lets relook
+                                           a doesnt want to be in 101
+                                                            good call
+                                                         520 is solid
+                                           a doesnt want to be in 101
+                                                             yeah hmm
+                                                             sadly no
+                                                       this is better
+                                                   looking decent now
+                                                          544 is good
+                                                               agreed
+                                                                   ok
+                                               yeah im good with this
+                                                            544 is ok
+                                                     should we move a
+                                                               hit it
+                                                      why is a in 101
+                                someone said a doesnt wanna be in 101
+                                                           good point
+yeah i just am not sure how to change it to work without being in 101
+                                     why what was wrong with a in 101
+                                          lets put it back and submit
+                                          a ang g cannot be neighbors
+                                          ah ok it better now i think
+                                                     this might be ok
+                                                   yeah we can submit
+                                                            satisfied
+                                                    can we hit submit
+                                                                   ok
+                                                                  yea
+                                                               yellow
+                                              you ok with this yellow
+                                             maybe gone for a sec lol
+                                                              we good
+CONVERSATION 95dKhFkLxgzSZuLAP_hard 
+                                                                                                                       jesus
+what if we started by putting each student in their highest preference room and then switching to try to fix the constraints
+                                                                                             id be interested in trying that
+                                                                                                     yeah thats  my strategy
+                                                                                                     ye i think we have been
+                                                                                                             oh i hadnt been
+                                                                                             good idea to make it consistent
+                                                                                                           ok 777 high score
+                                                                                                              saved this one
+                                                                                                                         794
+                                                                                                      yeah im good with this
+                                                                                                                         794
+                                                                                        just one sec id like to get c higher
+                                                                                                                         830
+                                                                                                                         880
+                                         i think this is goodits hard to not have at least one or two be in a low point room
+                                                                                                                         922
+                                                                                                                         922
+                                                                                                                    nice job
+                                                                                                                         NaN
+                                                                                                                    awesome 
+                                                                                                                         976
+                                                                                            let me look just one more minute
+                                                                                                                           k
+                                                                                                             might be capped
+                                                                                                                yeah im good
+                                                                              yeah only m is in a not great room pretty nice
+                                                                                                                     im good
+CONVERSATION Lex42kgPKKtzFLxxA_easy 
+                                                                 k ill start at bottom
+are we doing the same strat as before just placing them where their points are highest
+                                                                     yea to start with
+                                                                        okay thank you
+                                                             so many in the same rooms
+                                                     this is gonna be a bit more messy
+                                                                                   yup
+                                                                                   oof
+                                                                         this is rough
+                                                              this is so confusing lol
+                                                                                  okay
+                                   now is there something we can do to get more points
+                                                                        f is kinda low
+                                                            can we swap c and d with f
+                                                                    nvm no we cant lol
+                                                                   there is good for f
+                                                                               i agree
+                                                              this seems pretty decent
+                                                                            can c move
+                                                                                  nope
+                                                                   607 is good i think
+                                                                    im happy with that
+CONVERSATION Lex42kgPKKtzFLxxA_hard 
+                                                  holy moly
+                                          oh boy here we go
+                          k i think we keep the strat going
+                                           it seems to work
+                                                    i agree
+                   okay not quite as bad as it couldve been
+                              ill work from bottom up again
+                                    sounds like a good plan
+                                actually not bad pointswise
+                                             g is kinda low
+                                           yeah same with o
+                             lets see if we can wiggle them
+                                 im actually kinda confused
+        yeah theres so much going on its hard to keep track
+        it seems like im supposed to get more points in 108
+                                          if i move m and o
+                                     but the points go down
+                                   wait what thats so weird
+                            that actually shouldnt be right
+                                                        lol
+             is it because we also need to move p with them
+                                i guess im okay with it tbh
+                                                        hmm
+                         ends up being pretty much the same
+                                           still its better
+true we might just have to settle with some unhappy campers
+                                                         oh
+                                                        ooh
+                                    its actually not better
+                                                        lol
+                                                       welp
+                                                        lol
+                                       this seems good then
+                yeah i think its the best were going to get
+CONVERSATION aq4nE4iuigg52uhTh_easy 
+                                            anyone want to start or have a plan
+should we put everyone in the highest scoring rooms this time and go from there
+                                       i just started moving to the most points
+                                                 sounds good lets do that again
+                                                           my idea exactly pink
+                                                                        awesome
+                             that definitely seems like the way to tackle these
+                                                                            hey
+                                                                           whoa
+                                                                           nice
+                                                              i think we got it
+                                                                      very nice
+                                                         i think i am satisfied
+                                                               yall are awesome
+                                                                         me too
+                                                                        perfect
+CONVERSATION aq4nE4iuigg52uhTh_hard 
+                                                         oh boy
+                                                     same start
+                                                            lol
+                                                            yes
+                                                         oh wow
+                                                            yep
+                                                          yikes
+                                                         oh boy
+                                         this is very difficult
+                                                      seriously
+                                     i like the last one better
+                                                   score is 776
+                                  second highest i have seen it
+                                                             ok
+                                                            896
+                                                           nice
+                      maybe a and j just have to suck it up lol
+                                                           haha
+alright so we lose but thats still slightly higher than 776 lol
+           and yes they need to learn to get along for our sake
+                                 do all rooms have to be filled
+                                    or just all students placed
+                     no just all the people need to be in rooms
+                                                             ok
+                    should we accept this one im fine with this
+                                                im good with it
+                                                im good with it
+CONVERSATION d87wMawHEP9uzWMwt_easy 
+                                                                 cool
+that was fast were not too bad at this lets see if we can maximize it
+                                yeah i need to unviolate the c  f rue
+                                                                 rule
+                                                      thanks for that
+                                                        youre welcome
+                          i was just about to move it there good work
+                                              im satisfied if you are
+                  yeap cant see anything else without rule violations
+                                                hitting satisfied now
+CONVERSATION kBGEZDGLgKDCPa3JJ_hard 
+                                     oh lord
+                                         lol
+                      this is alot of people
+                                         lol
+                             lets get jumpin
+                       you guys are fast lol
+                    were just playing around
+and then we can go back and fix the mistakes
+                       yeah that makes sense
+                                       sweet
+                          ok got everyone in
+                               nice job guys
+                             good effort all
+       is there anyway to get p higher score
+                     then you have to move o
+                                       and m
+                                       and m
+                                         yes
+                                not worth it
+                        108 is too low for p
+         yeah i think o and m are at the max
+               should we try to move those 3
+                           lol i added 4 pts
+                                        nice
+            i trying to single out lone ones
+                          i think this is it
+                     yeah i think this works
+                                        okay
+CONVERSATION kMbPxZA66CAik5L2y_hard 
+                                    oh jeez lots of conditions
+                                             oh it gets harder
+lets start with the highest possible and start shifting people
+                                                so far so good
+                           oh are there more people than rooms
+                  i think we can have up to 4 people to a room
+                                     can 3 people be in a room
+                                                oh interesting
+                                                          or 5
+                                           does 800 sound good
+                                                           800
+                     sure let me just look for one more minute
+                                         i want to move p or f
+                                                        better
+                                                    theres 848
+                                                     i like it
+                                                    theres 881
+                                                   even better
+                                                  im satisfied
+                                               sure lets do it
