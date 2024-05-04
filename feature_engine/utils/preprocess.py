@@ -1,39 +1,43 @@
 import re
 import pandas as pd
 
-def preprocess_conversation_columns(df, conversation_id = None, cumulative_grouping = False, within_task = False):
+def preprocess_conversation_columns(df, conversation_id, cumulative_grouping = False, within_task = False):
 	# remove all special characters from df
 	df.columns = df.columns.str.replace('[^A-Za-z0-9_]', '', regex=True)
-	
+
 	# If data is grouped by batch/round, add a conversation num
 	if {'batch_num', 'round_num'}.issubset(df.columns):
-		df['conversation_num'] = df.groupby(['batch_num', 'round_num']).ngroup()
+		df[conversation_id] = df.groupby(['batch_num', 'round_num']).ngroup()
 		df = df[df.columns.tolist()[-1:] + df.columns.tolist()[0:-1]] # make the new column first
 	if ({'gameId', 'roundId', 'stageId'}.issubset(df.columns) and conversation_id in {'gameId', 'roundId', 'stageId'}):
 		if(cumulative_grouping):
 			df = create_cumulative_rows(df, conversation_id, within_task)
-			df['conversation_num'] = df['cumulative_Id'] # set it to be the cumulative grouping
+			df[conversation_id] = df['cumulative_Id'] # set it to be the cumulative grouping
 		else:
-			df['conversation_num'] = df[conversation_id] # set it to the desired grouping
+			df[conversation_id] = df[conversation_id] # set it to the desired grouping
 
 	return(df)
 
-def assert_key_columns_present(df):
+def assert_key_columns_present(df, column_names):
 	# remove all special characters from df
 	df.columns = df.columns.str.replace('[^A-Za-z0-9_]', '', regex=True)
+	conversation_id = column_names['conversation_id_col']
+	speaker_id = column_names['speaker_id_col']
+	message = column_names['message_col']
 
 	# Assert that key columns are present
-	if {'conversation_num', 'message', 'speaker_nickname'}.issubset(df.columns):
-		print("Confirmed that data has `conversation_num`, `message`, and `speaker_nickname` columns!")
+	if {conversation_id, message, speaker_id}.issubset(df.columns):
+		print(f"Confirmed that data has columns: {conversation_id}, {message}, {speaker_id}")
 		# ensure no NA's in essential columns
-		df['message'] = df['message'].fillna('')
-		df['conversation_num'] = df['conversation_num'].fillna(0)
-		df['speaker_nickname'] = df['speaker_nickname'].fillna(0)
+		df[message] = df[message].fillna('')
+		df[conversation_id] = df[conversation_id].fillna(0)
+		df[speaker_id] = df[speaker_id].fillna(0)
 	else:
-		print("One of `conversation_num`, `message`, or `speaker_nickname` is missing! Raising error...")
+		missing_columns = {conversation_id, message, speaker_id} - set(df.columns)
+		print(f"Missing required columns: {missing_columns}")
 		print("Columns available: ")
 		print(df.columns)
-		raise KeyError
+		raise KeyError(f"Missing required columns: {missing_columns}")
 
 def preprocess_text_lowercase_but_retain_punctuation(text):
 	# Only turns the text lowercase
@@ -43,27 +47,30 @@ def preprocess_text(text):
 	# For each individual message: preprocess to remove anything that is not an alphabet or number from the string
 	return(re.sub(r"[^a-zA-Z0-9 ]+", '',text).lower())
 
-def preprocess_naive_turns(chat_data):
+def preprocess_naive_turns(chat_data, column_names):
+	conversation_id = column_names['conversation_id_col']
+	speaker_id = column_names['speaker_id_col']
+	message = column_names['message_col']
 	# Combine adjacent rows of the same speaker in the same conversation
 	
 	# Generate 'turn_id' per chat per conversation, dependent on the active speaker
-	turn_id_per_conv = chat_data.groupby(['conversation_num'], sort=False).apply(lambda df : get_turn_id(df))
+	turn_id_per_conv = chat_data.groupby([conversation_id], sort=False).apply(lambda df : get_turn_id(df, speaker_id))
 	turn_id_per_conv = turn_id_per_conv.to_frame().reset_index().rename(columns={0:'turn_id'})
 	chat_data = pd.concat([chat_data, turn_id_per_conv["turn_id"]], axis=1)
 	
 	# Use turn_id to compress messages with the same turn id per conversation
-	chat_data = chat_data.groupby('conversation_num', sort=False).apply(lambda df : df.groupby('turn_id', as_index=False).apply(compress)).reset_index(drop=True)
+	chat_data = chat_data.groupby(conversation_id, sort=False).apply(lambda df : df.groupby('turn_id', as_index=False).apply(lambda x: compress(x, message))).reset_index(drop=True)
 	
 	return chat_data
 
-def get_turn_id(df) :
-	df["speaker_nickname_x"] = df["speaker_nickname"].shift()
-	return (df["speaker_nickname"] != df["speaker_nickname_x"]).cumsum()
+def get_turn_id(df, speaker_id) :
+	df["speaker_nickname_x"] = df[speaker_id].shift()
+	return (df[speaker_id] != df["speaker_nickname_x"]).cumsum()
 	
-def compress(turn_df):
+def compress(turn_df, message):
 	result = turn_df.iloc[0]
 	if (len(turn_df) > 1):
-		result['message'] = turn_df['message'].str.cat(sep=' ')
+		result[message] = turn_df[message].str.cat(sep=' ')
 		result['message_lower_with_punc'] = turn_df['message_lower_with_punc'].str.cat(sep=' ')
 	return result
 

@@ -33,7 +33,7 @@ from utils.preload_word_lists import *
 from utils.zscore_chats_and_conversation import get_zscore_across_all_chats, get_zscore_across_all_conversations
 
 class ChatLevelFeaturesCalculator:
-    def __init__(self, chat_data: pd.DataFrame, vect_data: pd.DataFrame, bert_sentiment_data: pd.DataFrame) -> None:
+    def __init__(self, chat_data: pd.DataFrame, vect_data: pd.DataFrame, bert_sentiment_data: pd.DataFrame, message: str) -> None:
         """
             This function is used to initialize variables and objects that can be used by all functions of this class.
 
@@ -45,6 +45,7 @@ class ChatLevelFeaturesCalculator:
         self.chat_data = chat_data
         self.vect_data = vect_data
         self.bert_sentiment_data = bert_sentiment_data # Load BERT 
+        self.message = message
         self.easy_dale_chall_words = get_dale_chall_easy_words() # load easy Dale-Chall words exactly once.
         self.function_words = get_function_words() # load function words exactly once
         self.question_words = get_question_words() # load question words exactly once
@@ -117,13 +118,13 @@ class ChatLevelFeaturesCalculator:
             This function is used to implement the common text based featuers.
         """
         # Count Words
-        self.chat_data["num_words"] = self.chat_data["message"].apply(count_words)
+        self.chat_data["num_words"] = self.chat_data[self.message].apply(count_words)
         
         # Count Characters
-        self.chat_data["num_chars"] = self.chat_data["message"].apply(count_characters)
+        self.chat_data["num_chars"] = self.chat_data[self.message].apply(count_characters)
         
         # Count Messages        
-        self.chat_data["num_messages"] = self.chat_data["message"].apply(count_messages)
+        self.chat_data["num_messages"] = self.chat_data[self.message].apply(count_messages)
         
     def info_exchange(self) -> None:
         """
@@ -170,15 +171,15 @@ class ChatLevelFeaturesCalculator:
         """
         This function helps to calculate features related to using TextBlob to return subjectivity and polarity.
         """
-        self.chat_data["textblob_subjectivity"] = self.chat_data["message"].apply(get_subjectivity_score)
-        self.chat_data["textblob_polarity"] = self.chat_data["message"].apply(get_polarity_score)
+        self.chat_data["textblob_subjectivity"] = self.chat_data[self.message].apply(get_subjectivity_score)
+        self.chat_data["textblob_polarity"] = self.chat_data[self.message].apply(get_polarity_score)
 
 
     def get_dale_chall_score_and_classfication(self) -> None:
         """
         This function helps to calculate the readability of a text according to its Dale-Chall score.
         """
-        self.chat_data['dale_chall_score'] = self.chat_data['message'].apply(lambda x: dale_chall_helper(x, easy_words = self.easy_dale_chall_words))
+        self.chat_data['dale_chall_score'] = self.chat_data[self.message].apply(lambda x: dale_chall_helper(x, easy_words = self.easy_dale_chall_words))
         self.chat_data['dale_chall_classification'] = self.chat_data['dale_chall_score'].apply(classify_text_dalechall)
 
     def other_lexical_features(self) -> None:
@@ -197,7 +198,7 @@ class ChatLevelFeaturesCalculator:
         self.chat_data["NTRI"] = self.chat_data["message_lower_with_punc"].apply(classify_NTRI)
         
         # Calculate the word type-to-token ratio
-        self.chat_data["word_TTR"] = self.chat_data["message"].apply(get_word_TTR)
+        self.chat_data["word_TTR"] = self.chat_data[self.message].apply(get_word_TTR)
         
         # Calculate the proportion of first person pronouns from the chats
         self.chat_data["first_pronouns_proportion"] = get_proportion_first_pronouns(self.chat_data)
@@ -216,8 +217,8 @@ class ChatLevelFeaturesCalculator:
         """
 
         # Extract function words / content words from a message
-        self.chat_data["function_words"] = self.chat_data["message"].apply(lambda x: get_function_words_in_message(x, function_word_reference = self.function_words))
-        self.chat_data["content_words"] = self.chat_data["message"].apply(lambda x: get_content_words_in_message(x, function_word_reference = self.function_words))
+        self.chat_data["function_words"] = self.chat_data[self.message].apply(lambda x: get_function_words_in_message(x, function_word_reference = self.function_words))
+        self.chat_data["content_words"] = self.chat_data[self.message].apply(lambda x: get_content_words_in_message(x, function_word_reference = self.function_words))
         
         # Extract the function words / content words that also appears in the immediate previous turn
         self.chat_data["function_word_mimicry"] = mimic_words(self.chat_data, "function_words")
