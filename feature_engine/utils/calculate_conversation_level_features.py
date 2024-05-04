@@ -21,6 +21,7 @@ class ConversationLevelFeaturesCalculator:
                         conv_data: pd.DataFrame, 
                         vect_data: pd.DataFrame, 
                         vector_directory: str, 
+                        conversation_id_col: str,
                         input_columns:list) -> None:
         """
             This function is used to initialize variables and objects that can be used by all functions of this class.
@@ -43,6 +44,7 @@ class ConversationLevelFeaturesCalculator:
         self.conv_data = conv_data
         self.vect_data = vect_data
         self.vector_directory = vector_directory
+        self.conversation_id_col = conversation_id_col
         # Denotes the columns that can be summarized from the chat level, onto the conversation level.
         self.input_columns = list(input_columns)
         self.input_columns.append('conversation_num')
@@ -89,7 +91,7 @@ class ConversationLevelFeaturesCalculator:
         self.conv_data = pd.merge(
             left=self.conv_data,
             right=get_turn(self.chat_data.copy()),
-            on=["conversation_num"],
+            on=[self.conversation_id_col],
             how="inner"
         )
 

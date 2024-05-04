@@ -33,7 +33,7 @@ from utils.preload_word_lists import *
 from utils.zscore_chats_and_conversation import get_zscore_across_all_chats, get_zscore_across_all_conversations
 
 class ChatLevelFeaturesCalculator:
-    def __init__(self, chat_data: pd.DataFrame, vect_data: pd.DataFrame, bert_sentiment_data: pd.DataFrame, message: str) -> None:
+    def __init__(self, chat_data: pd.DataFrame, vect_data: pd.DataFrame, bert_sentiment_data: pd.DataFrame, message: str, conversation_id: str) -> None:
         """
             This function is used to initialize variables and objects that can be used by all functions of this class.
 
@@ -46,6 +46,7 @@ class ChatLevelFeaturesCalculator:
         self.vect_data = vect_data
         self.bert_sentiment_data = bert_sentiment_data # Load BERT 
         self.message = message
+        self.conversation_id = conversation_id
         self.easy_dale_chall_words = get_dale_chall_easy_words() # load easy Dale-Chall words exactly once.
         self.function_words = get_function_words() # load function words exactly once
         self.question_words = get_question_words() # load question words exactly once
@@ -221,8 +222,8 @@ class ChatLevelFeaturesCalculator:
         self.chat_data["content_words"] = self.chat_data[self.message].apply(lambda x: get_content_words_in_message(x, function_word_reference = self.function_words))
         
         # Extract the function words / content words that also appears in the immediate previous turn
-        self.chat_data["function_word_mimicry"] = mimic_words(self.chat_data, "function_words")
-        self.chat_data["content_word_mimicry"] = mimic_words(self.chat_data, "content_words")
+        self.chat_data["function_word_mimicry"] = mimic_words(self.chat_data, "function_words", self.conversation_id)
+        self.chat_data["content_word_mimicry"] = mimic_words(self.chat_data, "content_words", self.conversation_id)
 
         # Compute the number of function words that also appears in the immediate previous turn
         self.chat_data["function_word_accommodation"] = self.chat_data["function_word_mimicry"].apply(function_mimicry_score)
@@ -234,8 +235,8 @@ class ChatLevelFeaturesCalculator:
         self.chat_data = self.chat_data.drop(columns=['function_words', 'content_words', 'function_word_mimicry', 'content_word_mimicry'])
 
         # Compute the mimicry relative to the previous chat(s) using SBERT vectors
-        self.chat_data["mimicry_bert"] = get_mimicry_bert(self.chat_data, self.vect_data)
-        self.chat_data["moving_mimicry"] = get_moving_mimicry(self.chat_data, self.vect_data)
+        self.chat_data["mimicry_bert"] = get_mimicry_bert(self.chat_data, self.vect_data, self.conversation_id)
+        self.chat_data["moving_mimicry"] = get_moving_mimicry(self.chat_data, self.vect_data, self.conversation_id)
         
     def get_temporal_features(self) -> None:
         """

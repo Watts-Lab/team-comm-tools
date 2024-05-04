@@ -265,7 +265,8 @@ class FeatureBuilder:
             chat_data = self.chat_data,
             vect_data = self.vect_data,
             bert_sentiment_data = self.bert_sentiment_data,
-            message = self.message_col
+            message = self.message_col,
+            conversation_id = self.conversation_id_col
         )
         # Calling the driver inside this class to create the features.
         self.chat_data = chat_feature_builder.calculate_chat_level_features()
@@ -316,6 +317,7 @@ class FeatureBuilder:
             conv_data = self.conv_data,
             vect_data = self.vect_data,
             vector_directory = self.vector_directory,
+            conversation_id_col = self.conversation_id_col,
             input_columns = self.input_columns
         )
         # Calling the driver inside this class to create the features.

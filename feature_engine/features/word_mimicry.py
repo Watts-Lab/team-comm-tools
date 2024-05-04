@@ -29,10 +29,10 @@ def get_content_words_in_message(text, function_word_reference):
                   For function words: input == `function_words`
                   For content words: input == `content_words`
 '''
-def mimic_words(df, on_column):
+def mimic_words(df, on_column, conversation_id):
   word_mimic = [[]]
   for i in range(1, len(df)):
-    if df.loc[i, "conversation_num"] == df.loc[i-1, "conversation_num"]: # only do this if they're in the same conversation
+    if df.loc[i, conversation_id] == df.loc[i-1, conversation_id]: # only do this if they're in the same conversation
       word_mimic.append([x for x in df.loc[i, on_column] if x in df.loc[(i-1),on_column]])
     else:
       word_mimic.append([])
@@ -90,14 +90,14 @@ function: get_mimicry_bert
 
 Uses SBERT vectors to get the cosine similarity between each message and the previous message.
 """
-def get_mimicry_bert(chat_data, vect_data):
+def get_mimicry_bert(chat_data, vect_data, conversation_id):
   
   chat_df = chat_data.copy()
   chat_df['message_embedding'] = conv_to_float_arr(vect_data['message_embedding'].to_frame())
 
   mimicry = []
 
-  for num, conv in chat_df.groupby('conversation_num',  sort=False):
+  for num, conv in chat_df.groupby(conversation_id,  sort=False):
 
       # first chat has no zero mimicry score, nothing previous to compare it to 
       mimicry.append(0)
@@ -124,14 +124,14 @@ function: get_moving_mimicry
 as calculated by cosine similarity.
 - The first mimicry value (0) is ignored in this calculation.
 """
-def get_moving_mimicry(chat_data, vect_data):
+def get_moving_mimicry(chat_data, vect_data, conversation_id):
 
   chat_df = chat_data.copy()
   chat_df['message_embedding'] = conv_to_float_arr(vect_data['message_embedding'].to_frame())
 
   moving_mimicry = []
 
-  for num, conv in chat_df.groupby('conversation_num', sort = False):
+  for num, conv in chat_df.groupby(conversation_id, sort = False):
 
       prev_embedding = conv.iloc[0]["message_embedding"]
       prev_mimicry = []
