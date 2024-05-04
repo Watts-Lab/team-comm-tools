@@ -22,6 +22,7 @@ class ConversationLevelFeaturesCalculator:
                         vect_data: pd.DataFrame, 
                         vector_directory: str, 
                         conversation_id_col: str,
+                        speaker_id_col: str,
                         input_columns:list) -> None:
         """
             This function is used to initialize variables and objects that can be used by all functions of this class.
@@ -45,9 +46,10 @@ class ConversationLevelFeaturesCalculator:
         self.vect_data = vect_data
         self.vector_directory = vector_directory
         self.conversation_id_col = conversation_id_col
+        self.speaker_id_col = speaker_id_col
         # Denotes the columns that can be summarized from the chat level, onto the conversation level.
         self.input_columns = list(input_columns)
-        self.input_columns.append('conversation_num')
+        self.input_columns.append(self.conversation_id_col)
         self.columns_to_summarize = [column for column in self.chat_data.columns \
                                      if (column not in self.input_columns) and pd.api.types.is_numeric_dtype(self.chat_data[column])]
         self.summable_columns = ["num_words", "num_chars", "num_messages"]
@@ -90,7 +92,7 @@ class ConversationLevelFeaturesCalculator:
 
         self.conv_data = pd.merge(
             left=self.conv_data,
-            right=get_turn(self.chat_data.copy()),
+            right=get_turn(self.chat_data.copy(), self.conversation_id_col, self.speaker_id_col),
             on=[self.conversation_id_col],
             how="inner"
         )
@@ -113,7 +115,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_gini(self.user_data.copy(), "sum_"+column), # this applies to the summed columns in user_data, which matches the above
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -132,7 +134,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_average(self.chat_data.copy(), column, 'average_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -140,7 +142,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_stdev(self.chat_data.copy(), column, 'stdev_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -148,7 +150,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_min(self.chat_data.copy(), column, 'min_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -156,7 +158,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_max(self.chat_data.copy(), column, 'max_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -166,7 +168,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_sum(self.chat_data.copy(), column, 'sum_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
     
@@ -184,7 +186,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_average(self.user_data.copy(), "sum_"+column, 'average_user_sum_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -192,7 +194,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_stdev(self.user_data.copy(), "sum_"+column, 'stdev_user_sum_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -200,7 +202,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_min(self.user_data.copy(), "sum_"+column, 'min_user_sum_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -208,7 +210,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_max(self.user_data.copy(), "sum_"+column, 'max_user_sum_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -219,7 +221,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_average(self.user_data.copy(), "average_"+column, 'average_user_avg_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -227,7 +229,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_stdev(self.user_data.copy(), "average_"+column, 'stdev_user_avg_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -235,7 +237,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_min(self.user_data.copy(), "average_"+column, 'min_user_avg_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -243,7 +245,7 @@ class ConversationLevelFeaturesCalculator:
             self.conv_data = pd.merge(
                 left=self.conv_data,
                 right=get_max(self.user_data.copy(), "average_"+column, 'max_user_avg_'+column),
-                on=['conversation_num'],
+                on=[self.conversation_id_col],
                 how="inner"
             )
 
@@ -256,6 +258,6 @@ class ConversationLevelFeaturesCalculator:
         self.conv_data = pd.merge(
             left=self.conv_data,
             right=get_DD_features(self.chat_data, self.vect_data, self.vector_directory),
-            on=['conversation_num'],
+            on=[self.conversation_id_col],
             how="inner"
         )
