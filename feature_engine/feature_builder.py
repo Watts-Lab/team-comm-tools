@@ -40,13 +40,16 @@ class FeatureBuilder:
             turns: bool=True,
             conversation_id = None,
             cumulative_grouping = False, 
-            within_task = False
+            within_task = False,
+            ner_cutoff: int = 0.9,
+            ner_training_df: pd.DataFrame = None
         ) -> None:
         """
             This function is used to define variables used throughout the class.
 
         PARAMETERS:
             @param input_file_path (str): File path of the input csv dataset (assumes that the '.csv' suffix is added)
+            @param ner_training_df (str): File path of the training csv dataset for named entity recognition feature
             @param vector_directory (str): Directory path where the vectors are to be cached.
             @param output_file_path_chat_level (str): Path where the output csv file is to be generated 
                                                       (assumes that the '.csv' suffix is added)
@@ -63,9 +66,11 @@ class FeatureBuilder:
                 but also at what happened before.) This defaults to False.
             @param within_task: If true, groups cumulatively in such a way that we only look at prior chats that are of the same task. 
                 This defaults to False.
+            @param ner_cutoff (int): Cutoff value for confidence in prediction for named entity recognition feature. This defaults to 0.9
         """
         #  Defining input and output paths.
         self.chat_data = input_df
+        self.ner_training = ner_training_df
         self.orig_data = self.chat_data
         self.vector_directory = vector_directory
         print("Initializing Featurization...")
@@ -81,6 +86,7 @@ class FeatureBuilder:
         self.conversation_id = conversation_id
         self.cumulative_grouping = cumulative_grouping # for grouping the chat data
         self.within_task = within_task
+        self.ner_cutoff = ner_cutoff
 
         self.preprocess_chat_data(col="message", turns=self.turns, conversation_id = self.conversation_id, cumulative_grouping = self.cumulative_grouping, within_task = self.within_task)
 
@@ -244,7 +250,9 @@ class FeatureBuilder:
         chat_feature_builder = ChatLevelFeaturesCalculator(
             chat_data = self.chat_data,
             vect_data = self.vect_data,
-            bert_sentiment_data = self.bert_sentiment_data
+            bert_sentiment_data = self.bert_sentiment_data,
+            ner_training = self.ner_training,
+            ner_cutoff = self.ner_cutoff
         )
         # Calling the driver inside this class to create the features.
         self.chat_data = chat_feature_builder.calculate_chat_level_features()
@@ -306,6 +314,8 @@ class FeatureBuilder:
         """
         # TODO: For now this function is very trivial. We will finalize the output formats (with date-time info etc) 
         # and control the output mechanism through this function.
+        # print(self.chat_data)
+        # self.chat_data.to_csv("C:/Users/amyta/Documents/GitHub/team-process-map/feature_engine/output/chat/jury_output_chat_level.csv", index=False)
         self.chat_data.to_csv(self.output_file_path_chat_level, index=False)
         self.user_data.to_csv(self.output_file_path_user_level, index=False)
         self.conv_data.to_csv(self.output_file_path_conv_level, index=False)
