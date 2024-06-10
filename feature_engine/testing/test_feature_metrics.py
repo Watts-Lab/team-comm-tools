@@ -41,11 +41,16 @@ def test_named_entity_recognition(row):
     if pd.isnull(row[1]['expected_value']):
         assert row[1]['named_entities'] == "()"
     else:
-        expected = row[1]['expected_value'].split(',')
+        expected = row[1]['expected_value'].split(',')       
         parsed_actual = row[1]['named_entities'].replace(" ","").replace("(","").replace(")", "").split(',')
-        actual = parsed_actual[0::2]    
-        
+        actual = parsed_actual[0::2]
+
+        if actual and actual[-1] == '':
+            # Remove the last element
+            actual.pop()    
+
         try:   
+            assert len(expected) == len(actual)
             for named_entity in expected:
                 assert named_entity.lower().strip() in actual
         except AssertionError:
