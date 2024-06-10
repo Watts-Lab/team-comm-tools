@@ -3,7 +3,7 @@ import pandas as pd
 
 test_chat_df =  pd.read_csv("../output/chat/test_chat_level_chat.csv")
 test_conv_df =  pd.read_csv("../output/conv/test_conv_level_conv.csv")
-num_features_chat = test_chat_df.columns.size - 6
+num_features_chat = test_chat_df.columns.size - 7
 num_tested_chat = test_chat_df['expected_column'].nunique()
 num_features_conv = test_conv_df.columns.size - 7
 num_tested_conv = test_conv_df['expected_column'].nunique()
