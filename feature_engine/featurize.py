@@ -101,7 +101,7 @@ if __name__ == "__main__":
 		output_file_path_conv_level = "../feature_engine/output/conv/test_chat_level_conv_complex.csv",
 		turns = False,
 	)
-	testing_chat.featurize(col="message")
+	testing_chat_complex.featurize(col="message")
 
 	# testing conv features
 	testing_conv = FeatureBuilder(
