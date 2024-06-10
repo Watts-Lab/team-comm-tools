@@ -1,0 +1,111 @@
+conversation_num,speaker_nickname,message,expected_value
+1,test_A,"Hey Joanna, have you finished the assignment?",joanna
+1,test_B,"Yes, I completed it yesterday, Jaidyn.",jaidyn
+1,test_A,"Louis, do you have any plans for the weekend?",louis
+1,test_B,"Not really, Kate, just hanging out at home.",kate
+1,test_A,"Michael, have you heard the latest news?",michael 
+1,test_B,"Yeah, Jasper, it's pretty exciting.",jasper
+1,test_A,"Amity, did you enjoy the movie last night?",amity
+1,test_B,"Absolutely, Robert, it was fantastic.",robert
+1,test_A,"Elodie, what are you up to this evening?",elodie
+1,test_B,"Just relaxing at home, Ray, nothing special.",ray
+1,test_A,"Luke, have you tried the new restaurant downtown?",luke
+1,test_B,"Yes, Blaise, it was amazing.",blaise
+1,test_A,"Evelyn, how's your day going so far?",evelyn
+1,test_B,"Pretty good, Zane, thanks for asking.",zane
+1,test_A,"Sue, have you seen the new exhibit at the museum?",sue
+1,test_B,"Yes, Mirabel, it's really interesting.",mirabel
+1,test_A,"Kalan, are you joining us for lunch?",kalan
+1,test_B,"I can't, Selene, I have a meeting.",selene
+1,test_A,"Orlando, did you finish reading the book?",orlando
+1,test_B,"Almost done, Kathryn, it's really good.",kathryn
+1,test_A,"Verena, have you made any plans for the holidays?",verena
+1,test_B,"Not yet, Sean, still figuring it out.",sean
+1,test_A,"Devon, what time is the meeting tomorrow?",devon
+1,test_B,"It's at 10 am, Grey, don't forget.",grey
+1,test_A,"Silvia, have you tried the new coffee shop?",silvia
+1,test_B,"Yes, Amy, the coffee is delicious.",amy
+1,test_A,"Jane, are you going to the party tonight?",jane
+1,test_B,"Yes, Julina, I'll see you there.",julina
+1,test_A,"Irene, have you seen the latest episode?",irene
+1,test_B,"No, Paul, I missed it. Was it good?",paul
+1,test_A,"Noah, have you finished your homework?",noah
+1,test_B,"Not yet, Kaitlin, I'm working on it.",kaitlin
+1,test_A,"Wade, are you coming to the game on Saturday?",wade
+1,test_B,"Yes, Raven, I'll be there.",raven
+1,test_A,"Emily, have you made any plans for the weekend?",emily
+1,test_B,"Yes, Erin, I'm going hiking with friends.",erin
+1,test_A,"Julian, have you decided on a movie to watch?",julian
+1,test_B,"Not yet, Helena, any suggestions?",helena
+1,test_A,"Lynn, did you enjoy the concert last night?",lynn
+1,test_B,"It was amazing, Kae, you should've come.",kae
+1,test_A,"Brett, have you finished your project?",brett
+1,test_B,"Yes, Damien, I submitted it yesterday.",damien
+1,test_A,"Rose, are you busy this weekend?",rose
+1,test_B,"Not really, Seth, just some errands to run.",seth
+1,test_A,"Rayleen, have you heard from Sarah lately?",rayleen
+1,test_A,"No, Ashten, I haven't heard from her in a while.",ashten
+1,test_B,"Oren, are you free for dinner tonight?",oren
+1,test_A,"Sorry, Sharon, I already have plans.",sharon
+1,test_B,"Doran, did you see the game last night?",doran
+1,test_A,"Yes, Elias, it was a close match.",elias
+1,test_B,"Hey Joanna, did you enjoy the concert last night?",joanna
+1,test_A,"Yes, Jaidyn, it was amazing!",jaidyn
+1,test_B,"Louis, have you finished reading the article?",louis
+1,test_A,"Not yet, Kate, I'll do it tonight.",kate
+1,test_B,"Michael, are you going to the party tomorrow?",michael 
+1,test_A,"Yes, Jasper, I'll be there.",jasper
+1,test_B,"Amity, what did you think of the new movie?",amity
+1,test_A,"It was okay, Robert, nothing special.",robert
+1,test_B,"Elodie, have you visited the new art gallery?",elodie
+1,test_A,"No, Ray, I haven't had the chance yet.",ray
+1,test_B,"Luke, do you want to grab lunch together?",luke
+1,test_A,"Sure thing, Blaise, where do you want to go?",blaise
+1,test_B,"Evelyn, have you heard back from the recruiter?",evelyn
+1,test_A,"Not yet, Zane, but I'm hopeful.",zane
+1,test_B,"Sue, did you see the latest episode of your favorite show?",sue
+1,test_A,"Yes, Mirabel, it was so intense!",mirabel
+1,test_B,"Kalan, are you ready for the presentation?",kalan
+1,test_A,"Almost, Selene, just a few more slides to go.",selene
+1,test_B,"Orlando, do you need help with the project?",orlando
+1,test_A,"No, Kathryn, I think I've got it under control.",kathryn
+1,test_B,"Verena, have you tried the new restaurant in town?",verena
+1,test_A,"Yes, Sean, the food was delicious.",sean
+1,test_B,"Devon, are you attending the conference next week?",devon
+1,test_A,"Yes, Grey, I already booked my ticket.",grey
+1,test_B,"Silvia, did you enjoy the play last night?",silvia
+1,test_A,"Yes, Amy, it was very entertaining.",amy
+1,test_B,"Jane, have you seen the latest fashion trends?",jane
+1,test_A,"Yes, Julina, I'm loving the new styles.",julina
+1,test_B,"Irene, are you going to the gym after work?",irene
+1,test_A,"No, Paul, I'm going for a run in the park instead.",paul
+1,test_B,"Noah, did you finish your project ahead of schedule?",noah
+1,test_A,"Yes, Kaitlin, I wanted to get it done early.",kaitlin
+1,test_B,"Wade, have you started planning your vacation?",wade
+1,test_A,"Yes, Raven, I'm thinking of going to the beach.",raven
+1,test_B,"Emily, did you hear about the new job opening?",emily
+1,test_A,"Yes, Erin, I'm thinking of applying for it.",erin
+1,test_B,"Julian, have you tried the new dessert at the bakery?",julian
+1,test_A,"Not yet, Helena, but I heard it's delicious.",helena
+1,test_B,"Lynn, are you attending the charity event next week?",lynn
+1,test_A,"Yes, Kae, I already bought my ticket.",kae
+1,test_B,"Brett, have you finished painting your room?",brett
+1,test_A,"Yes, Damien, it looks great now.",damien
+1,test_B,"Rose, did you go shopping for groceries?",rose
+1,test_A,"Not yet, Seth, I'll do it later today.",seth
+1,test_B,"Rayleen, have you decided on a movie for tonight?",rayleen
+1,test_A,"Yes, Ashten, I'm thinking of watching a comedy.",ashten
+1,test_B,"Oren, did you hear about the new restaurant opening?",oren
+1,test_A,"Yes, Sharon, I can't wait to try it.",sharon
+1,test_B,"Doran, are you going to the football game on Saturday?",doran
+1,test_A,"Yes, Elias, I already got tickets for it.",elias
+1,test_A,The chair and the table are nice.,
+1,test_B,Did you watch the movie yesterday?,
+1,test_A,No that doesn't make sense. ,
+1,test_B,That makes a lot of sense!,
+1,test_A,"Wow, that's fast",
+1,test_B,"Nikki, did you see Thomas the other day?","Nikki, Thomas"
+1,test_A,"No, I didn't Nick, but Tom did you?","Nick, Tom"
+1,test_A,I think Alex and Adam and Eve went canoeing.,"Alex, Adam, Eve"
+1,test_B,Roger and Ashley and Sasha and Kayla are all lifeguarding this summer!,"Roger, Ashley, Sasha, Kayla"
+1,test_A,Do you want to go fishing with Eugene and William,"Eugene, William"

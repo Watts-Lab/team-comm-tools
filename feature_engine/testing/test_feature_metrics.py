@@ -34,6 +34,32 @@ def test_chat_unit_equality(row):
         raise  # Re-raise the AssertionError to mark the test as failed
 
 
+test_ner = pd.read_csv('../output/chat/test_named_entity_chat_level.csv')
+
+@pytest.mark.parametrize("row", test_ner.iterrows())
+def test_named_entity_recognition(row):
+    if pd.isnull(row[1]['expected_value']):
+        assert row[1]['named_entities'] == "()"
+    else:
+        expected = row[1]['expected_value'].split(',')
+        parsed_actual = row[1]['named_entities'].replace(" ","").replace("(","").replace(")", "").split(',')
+        actual = parsed_actual[0::2]    
+        
+        try:   
+            for named_entity in expected:
+                assert named_entity.lower().strip() in actual
+        except AssertionError:
+
+            with open('test.log', 'a') as file:
+                file.write("\n")
+                file.write("------TEST FAILED------\n")
+                file.write(f"Testing NER for message: {row[1]['message_original']}\n")
+                file.write(f"Expected value: {expected}\n")
+                file.write(f"Actual value: {actual}\n")
+
+            raise  # Re-raise the AssertionError to mark the test as failed
+
+
 @pytest.mark.parametrize("conversation_num, conversation_rows", test_conv_df.groupby('conversation_num'))
 def test_conv_unit_equality(conversation_num, conversation_rows):
     test_failed = False
