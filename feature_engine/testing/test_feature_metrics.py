@@ -140,3 +140,40 @@ def test_chat_complex(batch):
             file.write(f"Ratio (DIR / INV): {ratio}\n")
 
         raise  # Re-raise the AssertionError to mark the test as failed
+
+test_chat_complex_df =  pd.read_csv("../output/conv/test_conv_level_conv_complex.csv")
+batches = get_batches(test_chat_complex_df, batch_size=3)
+
+@pytest.mark.parametrize("batch", batches)
+def test_conv_complex(batch):
+    feature = batch[0][1]['feature']
+    og_result = batch[0][1][feature]
+    inv_result = batch[1][1][feature]
+    dir_result = batch[2][1][feature]
+
+    inv_distance = og_result - inv_result
+    dir_distance = og_result - dir_result
+
+    # calculate ratio between inv and dir
+    ratio = dir_distance / inv_distance
+    
+    try:
+        
+        assert ratio > 1
+        with open('test.log', 'a') as file:
+            file.write("\n")
+            file.write("------TEST PASSED------\n")
+            file.write(f"Testing {feature} for conversation: {batch[0][1]['conversation_num']}\n")
+            file.write(f"Inv conversation: {batch[1][1]['conversation_num']}\n")
+            file.write(f"Dir conversation: {batch[2][1]['conversation_num']}\n")
+            file.write(f"Ratio (DIR / INV): {ratio}\n")
+    except AssertionError:
+        with open('test.log', 'a') as file:
+            file.write("\n")
+            file.write("------TEST FAILED------\n")
+            file.write(f"Testing {feature} for conversation: {batch[0][1]['conversation_num']}\n")
+            file.write(f"Inv conversation: {batch[1][1]['conversation_num']}\n")
+            file.write(f"Dir conversation: {batch[2][1]['conversation_num']}\n")
+            file.write(f"Ratio (DIR / INV): {ratio}\n")
+
+        raise  # Re-raise the AssertionError to mark the test as failed
