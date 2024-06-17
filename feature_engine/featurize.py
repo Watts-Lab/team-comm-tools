@@ -20,10 +20,6 @@ if __name__ == "__main__":
 	with open("../feature_engine/testing/data/cleaned_data/test_conv_level.csv", 'rb') as file:
 		conv_encoding = chardet.detect(file.read())
 
-	chat_df = pd.read_csv("../feature_engine/testing/data/cleaned_data/test_chat_level.csv", encoding=chat_encoding['encoding'])
-	chat_complex_df = pd.read_csv("../feature_engine/testing/data/cleaned_data/test_chat_level_complex.csv", encoding=chat_encoding['encoding'])
-	conv_complex_df = pd.read_csv("../feature_engine/testing/data/cleaned_data/test_conv_level_complex.csv", encoding=chat_encoding['encoding'])
-	conv_df = pd.read_csv("../feature_engine/testing/data/cleaned_data/test_conv_level.csv", encoding=conv_encoding['encoding'])
 	tiny_juries_df = pd.read_csv("../feature_engine/tpm-data/cleaned_data/test_data/juries_tiny_for_testing.csv", encoding='utf-8')
 	tiny_multi_task_df = pd.read_csv("../feature_engine/tpm-data/cleaned_data/test_data/multi_task_TINY.csv", encoding='utf-8')
 	juries_df = pd.read_csv("../feature_engine/tpm-data/cleaned_data/jury_conversations_with_outcome_var.csv", encoding='utf-8')
