@@ -30,8 +30,8 @@ if __name__ == "__main__":
 	conv_df = pd.read_csv("data/cleaned_data/test_conv_level.csv", encoding=conv_encoding['encoding'])
 	test_ner_df = pd.read_csv("data/cleaned_data/test_named_entity.csv", encoding='utf-8')
 	test_ner_training_df = pd.read_csv("data/cleaned_data/train_named_entity.csv")
-	chat_complex_df = pd.read_csv("../feature_engine/testing/data/cleaned_data/test_chat_level_complex.csv", encoding=chat_encoding['encoding'])
-	conv_complex_df = pd.read_csv("../feature_engine/testing/data/cleaned_data/test_conv_level_complex.csv", encoding=chat_encoding['encoding'])
+	chat_complex_df = pd.read_csv("data/cleaned_data/test_chat_level_complex.csv", encoding=chat_encoding['encoding'])
+	conv_complex_df = pd.read_csv("data/cleaned_data/test_conv_level_complex.csv", encoding=chat_encoding['encoding'])
 		
 	# TESTING DATASETS -------------------------------
 
