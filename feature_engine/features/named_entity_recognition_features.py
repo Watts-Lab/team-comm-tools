@@ -130,6 +130,3 @@ def train_spacy_ner(training):
                     doc = nlp.make_doc(text)
                     example = Example.from_dict(doc, annotations)
                     nlp.update([example], drop=0.35, sgd=optimizer, losses=losses)
-
-
-

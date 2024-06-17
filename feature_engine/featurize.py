@@ -45,41 +45,20 @@ if __name__ == "__main__":
 	# )
 	# feature_builder.featurize(col="message")
 
-	# test_turn_taking_feature_builder = FeatureBuilder(
-	# 	input_file_path = "../feature_engine/tpm-data/cleaned_data/test_data/test_turn_taking.csv",
+	# # Tiny multi-task
+	# tiny_multi_task_feature_builder = FeatureBuilder(
+	# 	input_df = tiny_multi_task_df,
 	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_turn_taking_chat_level.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_turn_taking_user_level.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_turn_taking_conversation_level.csv",
-	# 	turns = False,
-	# )
-	# test_turn_taking_feature_builder.featurize(col="message")
-    
-	# test_ner_feature_builder = FeatureBuilder(
-	# 	input_df = test_ner_df,
-	# 	ner_training_df = test_ner_training_df,
-	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_named_entity_chat_level.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_named_entity_user_level.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_named_entity_conversation_level.csv",
+	# 	output_file_path_chat_level = "../feature_engine/output/chat/multi_task_TINY_output_chat_level_stageId_cumulative.csv",
+	# 	output_file_path_user_level = "../feature_engine/output/user/multi_task_TINY_output_user_level_stageId_cumulative.csv",
+	# 	output_file_path_conv_level = "../feature_engine/output/conv/multi_task_TINY_output_conversation_level_stageId_cumulative.csv",
 	# 	turns = False,
 	# 	conversation_id = "stageId",
 	# 	cumulative_grouping = True
 	# )
-	# test_ner_feature_builder.featurize(col="message")
+	# tiny_multi_task_feature_builder.featurize(col="message")
 
-	# # # Tiny multi-task
-	# # tiny_multi_task_feature_builder = FeatureBuilder(
-	# # 	input_df = tiny_multi_task_df,
-	# # 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# # 	output_file_path_chat_level = "../feature_engine/output/chat/multi_task_TINY_output_chat_level_stageId_cumulative.csv",
-	# # 	output_file_path_user_level = "../feature_engine/output/user/multi_task_TINY_output_user_level_stageId_cumulative.csv",
-	# # 	output_file_path_conv_level = "../feature_engine/output/conv/multi_task_TINY_output_conversation_level_stageId_cumulative.csv",
-	# # 	turns = False,
-	# # 	conversation_id = "stageId",
-	# # 	cumulative_grouping = True
-	# # )
-	# # tiny_multi_task_feature_builder.featurize(col="message")
+	# TEST DATATSETS (these need to be moved to run_tests.py under testing/) ------------------------------------- #
 
 	# # testing chat features
 	# testing_chat = FeatureBuilder(
@@ -104,16 +83,28 @@ if __name__ == "__main__":
 	# )
 	# testing_chat_complex.featurize(col="message")
 
-	# # testing conv features
-	# testing_conv = FeatureBuilder(
-	# 	input_df = conv_df,
+	# test_turn_taking_feature_builder = FeatureBuilder(
+	# 	input_file_path = "../feature_engine/tpm-data/cleaned_data/test_data/test_turn_taking.csv",
 	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_conv_level_chat.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_conv_level_user.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_conv_level_conv.csv",
+	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_turn_taking_chat_level.csv",
+	# 	output_file_path_user_level = "../feature_engine/output/user/test_turn_taking_user_level.csv",
+	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_turn_taking_conversation_level.csv",
 	# 	turns = False,
 	# )
-	# testing_conv.featurize(col="message")
+	# test_turn_taking_feature_builder.featurize(col="message")
+    
+	# test_ner_feature_builder = FeatureBuilder(
+	# 	input_df = test_ner_df,
+	# 	ner_training_df = test_ner_training_df,
+	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
+	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_named_entity_chat_level.csv",
+	# 	output_file_path_user_level = "../feature_engine/output/user/test_named_entity_user_level.csv",
+	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_named_entity_conversation_level.csv",
+	# 	turns = False,
+	# 	conversation_id = "stageId",
+	# 	cumulative_grouping = True
+	# )
+	# test_ner_feature_builder.featurize(col="message")
 
 	# testing conv features
 	testing_conv_complex = FeatureBuilder(

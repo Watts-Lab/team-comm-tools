@@ -314,8 +314,6 @@ class FeatureBuilder:
         """
         # TODO: For now this function is very trivial. We will finalize the output formats (with date-time info etc) 
         # and control the output mechanism through this function.
-        # print(self.chat_data)
-        # self.chat_data.to_csv("C:/Users/amyta/Documents/GitHub/team-process-map/feature_engine/output/chat/jury_output_chat_level.csv", index=False)
         self.chat_data.to_csv(self.output_file_path_chat_level, index=False)
         self.user_data.to_csv(self.output_file_path_user_level, index=False)
         self.conv_data.to_csv(self.output_file_path_conv_level, index=False)

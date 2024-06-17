@@ -114,9 +114,6 @@ class ChatLevelFeaturesCalculator:
         # Forward Flow
         self.get_forward_flow()
         self.get_certainty_score()
-        # # Forward Flow
-        # self.get_forward_flow()
-        # self.get_certainty_score()
 
         # Reddit / online communication features
         self.get_reddit_features()
@@ -330,4 +327,3 @@ class ChatLevelFeaturesCalculator:
             train_spacy_ner(self.ner_training)
             self.chat_data["num_named_entity"] = self.chat_data["message"].apply(num_named_entity, cutoff=self.ner_cutoff)
             self.chat_data["named_entities"] = self.chat_data["message"].apply(named_entities, cutoff=self.ner_cutoff)
-            # evaluate_model()
