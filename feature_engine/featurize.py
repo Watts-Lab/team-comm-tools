@@ -58,65 +58,6 @@ if __name__ == "__main__":
 	# )
 	# tiny_multi_task_feature_builder.featurize(col="message")
 
-	# TEST DATATSETS (these need to be moved to run_tests.py under testing/) ------------------------------------- #
-
-	# # testing chat features
-	# testing_chat = FeatureBuilder(
-	# 	input_df = chat_df,
-	# 	ner_training_df = test_ner_training_df,
-	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_chat_level_chat.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_chat_level_user.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_chat_level_conv.csv",
-	# 	turns = False,
-	# )
-	# testing_chat.featurize(col="message")
-
-	# # testing perturbed chat level features
-	# testing_chat_complex = FeatureBuilder(
-	# 	input_df = chat_complex_df,
-	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_chat_level_chat_complex.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_chat_level_user_complex.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_chat_level_conv_complex.csv",
-	# 	turns = False,
-	# )
-	# testing_chat_complex.featurize(col="message")
-
-	# test_turn_taking_feature_builder = FeatureBuilder(
-	# 	input_file_path = "../feature_engine/tpm-data/cleaned_data/test_data/test_turn_taking.csv",
-	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_turn_taking_chat_level.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_turn_taking_user_level.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_turn_taking_conversation_level.csv",
-	# 	turns = False,
-	# )
-	# test_turn_taking_feature_builder.featurize(col="message")
-    
-	# test_ner_feature_builder = FeatureBuilder(
-	# 	input_df = test_ner_df,
-	# 	ner_training_df = test_ner_training_df,
-	# 	vector_directory = "../feature_engine/tpm-data/vector_data/",
-	# 	output_file_path_chat_level = "../feature_engine/output/chat/test_named_entity_chat_level.csv",
-	# 	output_file_path_user_level = "../feature_engine/output/user/test_named_entity_user_level.csv",
-	# 	output_file_path_conv_level = "../feature_engine/output/conv/test_named_entity_conversation_level.csv",
-	# 	turns = False,
-	# 	conversation_id = "stageId",
-	# 	cumulative_grouping = True
-	# )
-	# test_ner_feature_builder.featurize(col="message")
-
-	# testing conv features
-	testing_conv_complex = FeatureBuilder(
-		input_df = conv_complex_df,
-		vector_directory = "../feature_engine/tpm-data/vector_data/",
-		output_file_path_chat_level = "../feature_engine/output/chat/test_conv_level_chat_complex.csv",
-		output_file_path_user_level = "../feature_engine/output/user/test_conv_level_user_complex.csv",
-		output_file_path_conv_level = "../feature_engine/output/conv/test_conv_level_conv_complex.csv",
-		turns = False,
-	)
-	testing_conv_complex.featurize(col="message")
-
 	# FULL DATASETS BELOW ------------------------------------- #
 	
 	# Juries
