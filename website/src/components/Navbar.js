@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import { Button } from './Button';
-// import { slide as Menu } from 'react-burger-menu';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar() {
