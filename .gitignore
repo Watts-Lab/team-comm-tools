@@ -17,8 +17,7 @@ tests/vector_data/*
 src/utils/__pycache__/
 .idea/
 *.py[cod]
-src/data/vectors/sentence
-src/data/vectors/sentiment
-src/features/lexicons/certainty.txt
-examples/vector_data/*
-examples/output/*
+feature_engine/data/vectors/sentence
+feature_engine/data/vectors/sentiment
+feature_engine/features/lexicons/certainty.txt
+node_modules
