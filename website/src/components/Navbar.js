@@ -27,7 +27,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        Team Process Mapping
+                        Team Communication Toolkit
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}

@@ -45,50 +45,197 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .home,
 .research,
 .how-it-works,
 .team {
   display: flex;
-  height: 90vh;
+  height: 35vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #000;
+  color: #011954;
   font-size: 50px;
 }
 
-/* .home {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #000;
-  font-size: 50px;
+.research-container p,
+.how-it-words-container p {
+  font-size: 1.2em;
+  width: 100%;
 }
 
-.research {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #000;
-  font-size: 50px;
+.how-it-words-container p1 {
+  font-size: 1.2em;
+  width: 100%;
+  font-weight: bold;
 }
 
-.how-it-works {
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #000;
-  font-size: 50px;
+.bullet-points {
+  margin-left: 50px;
+  display: inline-block;
+  font-size: 1.2em;
 }
 
-.team {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #000;
-  font-size: 50px;
-} */
+.research-container p1 {
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.team-headers,
+.how-it-works-headers,
+.research-headers {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 30px;
+  color: #011954;
+}
+
+.research-subheaders {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 25px;
+  color: #616569;
+}
+
+.team-container,
+.how-it-words-container,
+.research-container {
+  text-align: left;
+  padding: 0 150px 150px 150px;
+}
+
+.current,
+.alumni,
+.emily {
+  display: grid;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.current-member,
+.alumni-member,
+.emily-member {
+  margin: 20px 0 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+  width: 200px;
+}
+
+.current-image,
+.alumni-image {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  height: 220px;
+}
+
+.emily-image {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+
+.current-member h2,
+.alumni-member h2,
+.emily h2 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  text-align: center;
+  width: 250px;
+  color: #011954;
+}
+
+.current-member h3,
+.alumni-member h3,
+.emily h3 {
+  font-size: 1.0em;
+  margin: 10px 0 5px;
+  text-align: center;
+  width: 250px;
+  color: #616569;
+  font-weight: 500;
+}
+
+.emily h4 {
+  font-size: 1.0em;
+  margin: 10px 0 5px;
+  text-align: center;
+  width: 250px;
+  color: #616569;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+
+  .current,
+  .alumni {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* Adjust columns for smaller screens */
+  }
+}
+
+@media (max-width: 800px) {
+
+  .current,
+  .alumni {
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    /* Adjust columns for mobile screens */
+    gap: 10px;
+  }
+
+  .team-container {
+    padding: 0 100px 100px 100px;
+  }
+
+  .how-it-words-container,
+  .research-container {
+    padding: 0 50px 50px 50px;
+  }
+
+  .current-member,
+  .alumni-member {
+    padding: 5px;
+  }
+
+  .current-image,
+  .alumni-image,
+  .emily-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .current-member h2,
+  .alumni-member h2,
+  .emily-member h2 {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .current-member h3,
+  .alumni-member h3,
+  .emily h3 {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  .emily h4 {
+    font-size: 0.8em;
+    width: 100%;
+  }
+}
