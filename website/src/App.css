@@ -5,6 +5,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* body {
   overflow-x: hidden;
   width: 100%;
@@ -16,6 +20,7 @@
 .supporters,
 .contact {
   display: flex;
+  height: 35vh;
   height: 35vh;
   align-items: center;
   justify-content: center;

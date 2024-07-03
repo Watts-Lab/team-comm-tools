@@ -60,11 +60,12 @@ function Team() {
     <div className='team-container'>
       <h1 className='team'>
         Meet Our Team
+        Meet Our Team
       </h1>
 
-      <img src={`${process.env.PUBLIC_URL}/xinlan-emily-hu.jpg`} alt={'Xinlan Emily Hu'} className="emily-image" style={{ alignSelf: 'center' }} />
       <div className="emily">
         <div className='emily-member'>
+          <img src='./team-process-map/xinlan-emily-hu.jpg' alt={'Xinlan Emily Hu'} className="emily-image" />
           <h2> Xinlan Emily Hu </h2>
           <h4> Project Lead </h4>
           <h3> PhD Student at the University of Pennsylvania</h3>
@@ -77,10 +78,10 @@ function Team() {
           let title = 'Undergraduate Student, UPenn';
           if (member.name === 'Evan Rowbotham') {
             title = 'Undergraduate Student, FSU';
-          }
+          } 
           else if (member.name === 'Gina Chen') {
             title = 'Data Scientist';
-          }
+          } 
           else if (member.name === 'Yuxuan Zhang') {
             title = 'Data Scientist';
           }
@@ -103,10 +104,10 @@ function Team() {
           let title = 'Undergraduate Student, UPenn';
           if (member.name === 'Yuluan Cao') {
             title = 'Graduate Student, UPenn';
-          }
+          } 
           else if (member.name === 'Yashveer Singh Sohi') {
             title = 'Data Scientist';
-          }
+          } 
           else if (member.name === 'Eric Zhong') {
             title = 'Undergraduate Student, Cornell';
           }
