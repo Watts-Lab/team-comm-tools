@@ -14,7 +14,7 @@ function Footer() {
                     <img src='./team-process-map/wharton_logo_white.png' alt='whartonLogo' />
                 </a>
             </div>
-
+            <br />
             <p style={{color: 'white'}}> &copy; Copyright 2024, Xinlan Emily Hu and the Team Communication Toolkit Research Group</p>
         </div>
     );

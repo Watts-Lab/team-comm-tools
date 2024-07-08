@@ -37,7 +37,6 @@
   }
 } */
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -49,10 +48,10 @@ body {
   overflow-x: hidden;
 }
 
-.home,
 .research,
 .how-it-works,
-.team {
+.team,
+.supporters {
   display: flex;
   height: 35vh;
   align-items: center;
@@ -65,8 +64,39 @@ body {
   font-size: 50px;
 }
 
+.home-body,
+.team-container,
+.how-it-words-container,
+.research-container,
+.supporters-container {
+  text-align: left;
+  padding: 0 150px 150px 150px;
+}
+
+.background-container {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-position: center top 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/public/team_convo (2).png");
+  /* opacity: 0.4; */
+  color: #011954;
+  font-size: 50px;
+}
+
+.welcome {
+  position: relative;
+  color: #011954;
+}
+
+.home-container p,
 .research-container p,
-.how-it-words-container p {
+.how-it-words-container p,
+.supporters-container p {
   font-size: 1.2em;
   width: 100%;
 }
@@ -88,9 +118,10 @@ body {
   width: 100%;
 }
 
+.home-headers,
 .team-headers,
 .how-it-works-headers,
-.research-headers {
+.research-headers{
   margin-top: 50px;
   margin-bottom: 10px;
   text-align: left;
@@ -98,19 +129,13 @@ body {
   color: #011954;
 }
 
+.home-subheaders,
 .research-subheaders {
   margin-top: 50px;
   margin-bottom: 5px;
   text-align: left;
   font-size: 25px;
   color: #616569;
-}
-
-.team-container,
-.how-it-words-container,
-.research-container {
-  text-align: left;
-  padding: 0 150px 150px 150px;
 }
 
 .current,
@@ -202,8 +227,10 @@ body {
     padding: 0 100px 100px 100px;
   }
 
+  .home-body,
   .how-it-words-container,
-  .research-container {
+  .research-container,
+  .supporters-container {
     padding: 0 50px 50px 50px;
   }
 

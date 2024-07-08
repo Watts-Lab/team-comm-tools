@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Research from './components/pages/Research';
 import Team from './components/pages/Team';
 import HowItWorks from './components/pages/HowItWorks';
+import Supporters from './components/pages/Supporters.js';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Research" element={<Research />} />
           <Route path="/Team" element={<Team />} />
           <Route path="/HowItWorks" element={<HowItWorks />} />
+          <Route path = "/Supporters" element={<Supporters />} />
         </Routes>
         <Footer />
       </Router>
