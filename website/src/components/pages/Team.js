@@ -49,7 +49,7 @@ const alumni = [
     name: 'Eric Zhong',
     image: `${process.env.PUBLIC_URL}/eric.jfif`
   }
-];
+]
 
 function Team() {
   useEffect(() => {
@@ -65,7 +65,7 @@ function Team() {
 
       <div className="emily">
         <div className='emily-member'>
-          <img src='./team-process-map/xinlan-emily-hu.jpg' alt={'Xinlan Emily Hu'} className="emily-image" />
+          <img src={`${process.env.PUBLIC_URL}/xinlan-emily-hu.jpg`} alt={'Xinlan Emily Hu'} className="emily-image" />
           <h2> Xinlan Emily Hu </h2>
           <h4> Project Lead </h4>
           <h3> PhD Student at the University of Pennsylvania</h3>
