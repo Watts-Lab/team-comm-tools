@@ -8,10 +8,10 @@ function Footer() {
         <div className='footer-container'>
             <div className='logo-links'>
                 <a href='https://css.seas.upenn.edu/'>
-                    <img src='./team-process-map/csslab_logo.png' alt='csslabLogo' />
+                    <img src={`${process.env.PUBLIC_URL}/csslab_logo.png`} alt='csslabLogo' />
                 </a>
                 <a href='https://ai-analytics.wharton.upenn.edu/'>
-                    <img src='./team-process-map/wharton_logo_white.png' alt='whartonLogo' />
+                    <img src={`${process.env.PUBLIC_URL}/wharton_logo_white.png`} alt='whartonLogo' />
                 </a>
             </div>
             <br />

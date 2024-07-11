@@ -4,52 +4,53 @@ import '../../App.css';
 const current = [
   {
     name: 'Shruti Agarwal',
-    image: './team-process-map/shruti.png'
+    image: `${process.env.PUBLIC_URL}/shruti.png`
   },
   {
     name: 'Gina Chen',
-    image: './team-process-map/gina.jfif'
+    image: `${process.env.PUBLIC_URL}/gina.jfif`
   },
   {
     name: 'Priya DCosta',
-    image: './team-process-map/priya.png'
+    image: `${process.env.PUBLIC_URL}/priya.png`
   },
   {
     name: 'Evan Rowbotham',
-    image: './team-process-map/evan.png'
+    image: `${process.env.PUBLIC_URL}/evan.png`
   },
   {
     name: 'Yuxuan Zhang',
-    image: './team-process-map/yuxuan.jpg'
+    image: `${process.env.PUBLIC_URL}/yuxuan.jpg`
   },
   {
     name: 'Amy Zheng',
-    image: './team-process-map/amy.png'
+    image: `${process.env.PUBLIC_URL}/amy.png`
   },
   {
     name: 'Helena Zhou',
-    image: './team-process-map/helena.png'
+    image: `${process.env.PUBLIC_URL}/helena.png`
   }
-]
+];
 
 const alumni = [
   {
     name: 'Yuluan Cao',
-    image: './team-process-map/yuluan.jpg'
+    image: `${process.env.PUBLIC_URL}/yuluan.jpg`
   },
   {
     name: 'Nikhil Kumar',
-    image: './team-process-map/nikhil.png'
+    image: `${process.env.PUBLIC_URL}/nikhil.png`
   },
   {
     name: 'Yashveer Singh Sohi',
-    image: './team-process-map/yashveer.png'
+    image: `${process.env.PUBLIC_URL}/yashveer.png`
   },
   {
     name: 'Eric Zhong',
-    image: './team-process-map/eric.jfif'
+    image: `${process.env.PUBLIC_URL}/eric.jfif`
   }
-]
+];
+
 
 function Team() {
   return (
@@ -60,7 +61,7 @@ function Team() {
 
       <div className="emily">
         <div className='emily-member'>
-          <img src='./team-process-map/xinlan-emily-hu.jpg' alt={'Xinlan Emily Hu'} className="emily-image" />
+          <img src={`${process.env.PUBLIC_URL}/xinlan-emily-hu.jpg`} alt={'Xinlan Emily Hu'} className="emily-image" />
           <h2> Xinlan Emily Hu </h2>
           <h4> Project Lead </h4>
           <h3> PhD Student at the University of Pennsylvania</h3>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -42,7 +43,7 @@ function Home() {
                 </p>
                 <br />
                 <p>
-                    To learn more about our research, please visit the <a href="/Research">Research</a> page.
+                    To learn more about our research, please visit the <Link to="/Research">Research</Link> page.
                 </p>
 
                 <h1 className='home-subheaders'>
@@ -82,8 +83,8 @@ function Home() {
                     (2) features for each speaker; and (3) features for the conversation as a whole.
                 </p>
                 <br />
-                <p> 
-                More information about our toolkit can be found in the <a href="/HowItWorks"> How it Works </a> page.
+                <p>
+                    More information about our toolkit can be found in the <Link to="/HowItWorks">How It Works</Link> page.
                 </p>
 
             </div>
