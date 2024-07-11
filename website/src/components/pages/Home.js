@@ -42,7 +42,7 @@ function Home() {
                 </p>
                 <br />
                 <p>
-                    To learn more about our research, please visit the <a href="/research">Research</a> page.
+                    To learn more about our research, please visit the <a href="/Research">Research</a> page.
                 </p>
 
                 <h1 className='home-subheaders'>
@@ -83,7 +83,7 @@ function Home() {
                 </p>
                 <br />
                 <p> 
-                More information about our toolkit can be found in the <a href="/how-it-works"> How it Works </a> page.
+                More information about our toolkit can be found in the <a href="/HowItWorks"> How it Works </a> page.
                 </p>
 
             </div>

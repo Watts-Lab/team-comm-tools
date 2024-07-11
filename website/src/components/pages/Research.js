@@ -65,7 +65,7 @@ function Research() {
       </p>
       
       <h2 className='research-subheaders'> Collaborations </h2>
-      <p> If you are interested in a collaboration, please reach out to <a href='xinlanemilyhu.com'> Xinlan Emily Hu</a>.</p>
+      <p> If you are interested in a collaboration, please reach out to <a href='https://xinlanemilyhu.com'> Xinlan Emily Hu</a>.</p>
 
 
       <h2 className='research-subheaders'> Citation </h2>
