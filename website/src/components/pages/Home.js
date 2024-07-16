@@ -69,6 +69,7 @@ function Home() {
                     </ol>
                 </div>
                 <br />
+                <br />
                 <p> Thinking about conversations along these dimensions can help researchers think about the different attributes that they can consider. </p>
 
                 <h1 className='home-subheaders'>

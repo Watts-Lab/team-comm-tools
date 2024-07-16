@@ -63,7 +63,7 @@ body {
 .supporters-container p,
 .contact-container p {
   font-size: 1.2em;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .how-it-words-container p1 {
@@ -186,7 +186,6 @@ body {
 .emily h4 {
   font-size: 1.0em;
   margin: 10px 0 5px;
-  /* text-align: center; */
   color: #616569;
   font-weight: 700;
 }
@@ -253,6 +252,10 @@ body {
     font-size: 0.8em;
     width: 100%;
   }
+
+  .bullet-points {
+    margin-left: 25px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -262,7 +265,7 @@ body {
   .research-container,
   .supporters-container,
   .contact-container {
-    padding: 0 20px 20px 20px;
+    padding: 0 25px 25px 25px;
   }
 
   .current,
@@ -277,7 +280,8 @@ body {
   }
 
   .current-image,
-  .alumni-image {
+  .alumni-image,
+  .emily-image {
     width: 100%;
     height: auto;
   }
@@ -300,5 +304,9 @@ body {
 
   .emily h4 {
     font-size: 0.7em;
+  }
+
+  .bullet-points {
+    margin-left: 25px;
   }
 }
