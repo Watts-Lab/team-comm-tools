@@ -7,6 +7,7 @@
 
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* body {
@@ -96,7 +97,7 @@ body {
 .home-headers,
 .team-headers,
 .how-it-works-headers,
-.research-headers{
+.research-headers {
   margin-top: 50px;
   margin-bottom: 10px;
   text-align: left;
@@ -371,5 +372,101 @@ table th {
 
   .bullet-points {
     margin-left: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-body,
+  .team-container,
+  .how-it-works-container,
+  .research-container,
+  .supporters-container,
+  .contact-container {
+    padding: 0 20px 20px 20px;
+  }
+
+  .current,
+  .alumni {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .current-member,
+  .alumni-member {
+    width: 100%;
+  }
+
+  .current-image,
+  .alumni-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome {
+    font-size: 1.55em;
+  }
+
+  .current-member h2,
+  .alumni-member h2,
+  .emily-member h2 {
+    font-size: 0.9em;
+  }
+
+  .current-member h3,
+  .alumni-member h3,
+  .emily h3 {
+    font-size: 0.7em;
+  }
+
+  .emily h4 {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-body,
+  .team-container,
+  .how-it-works-container,
+  .research-container,
+  .supporters-container,
+  .contact-container {
+    padding: 0 20px 20px 20px;
+  }
+
+  .current,
+  .alumni {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .current-member,
+  .alumni-member {
+    width: 100%;
+  }
+
+  .current-image,
+  .alumni-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome {
+    font-size: 1.55em;
+  }
+
+  .current-member h2,
+  .alumni-member h2,
+  .emily-member h2 {
+    font-size: 0.9em;
+  }
+
+  .current-member h3,
+  .alumni-member h3,
+  .emily h3 {
+    font-size: 0.7em;
+  }
+
+  .emily h4 {
+    font-size: 0.7em;
   }
 }
