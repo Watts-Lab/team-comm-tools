@@ -74,7 +74,7 @@ body {
 .supporters-container p,
 .contact-container p {
   font-size: 1.2em;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .how-it-works-container p1 {
@@ -430,7 +430,7 @@ table th {
   .research-container,
   .supporters-container,
   .contact-container {
-    padding: 0 25px 25px 25px;
+    padding: 0 20px 20px 20px;
   }
 
   .current,
