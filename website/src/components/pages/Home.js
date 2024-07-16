@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../App.css';
 import { Link } from 'react-router-dom';
 
 function Home() {
+    useEffect(() => {
+        document.title = "Team Communication Toolkit";
+      }, []);
+
     return (
         <div className='home-container'>
             <div className='background-container'>

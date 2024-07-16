@@ -22,4 +22,20 @@
     width: auto;
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .footer-container {
+        padding: 2rem 5rem 1rem 5rem;
+    }
+
+    .logo-links {
+        flex-direction: column;
+    }
+
+    .logo-links a {
+        margin: 10px 0; 
+    }
+
+    .logo-links img {
+        height: 40px; 
+    }
+}

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../App.css';
 
 function HowItWorks() {
+  useEffect(() => {
+    document.title = "How It Works | Team Communication Toolkit";
+  }, []);
+
   return (
     <div className='how-it-words-container'>
       <h1 className='how-it-works'>

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../App.css';
 
 function Research() {
+  useEffect(() => {
+    document.title = "Research | Team Communication Toolkit";
+  }, []);
+
   return (
     <div className='research-container'>
       <h1 className='research'>
