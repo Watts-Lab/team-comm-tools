@@ -29,7 +29,7 @@ body {
 
 .home-body,
 .team-container,
-.how-it-words-container,
+.how-it-works-container,
 .research-container,
 .supporters-container,
 .contact-container {
@@ -59,14 +59,14 @@ body {
 
 .home-container p,
 .research-container p,
-.how-it-words-container p,
+.how-it-works-container p,
 .supporters-container p,
 .contact-container p {
   font-size: 1.2em;
-  /* width: 100%; */
+  width: 100%;
 }
 
-.how-it-words-container p1 {
+.how-it-works-container p1 {
   font-size: 1.2em;
   width: 100%;
   font-weight: bold;
@@ -211,7 +211,7 @@ body {
   }
 
   .home-body,
-  .how-it-words-container,
+  .how-it-works-container,
   .research-container,
   .supporters-container,
   .contact-container {
@@ -265,7 +265,7 @@ body {
   .research-container,
   .supporters-container,
   .contact-container {
-    padding: 0 25px 25px 25px;
+    padding: 0 20px 20px 20px;
   }
 
   .current,

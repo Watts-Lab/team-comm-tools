@@ -78,13 +78,12 @@
         flex-direction: column;
         width: 250px;
         height: fit-content;
-        position: absolute;
+        position: fixed;
         top: 80px;
         right: -100%;
         opacity: 1;
         transition: all 0.5s ease;
         margin: 0;
-        padding: 0;
     }
 
     .nav-menu.active {

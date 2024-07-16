@@ -7,7 +7,7 @@ function HowItWorks() {
   }, []);
 
   return (
-    <div className='how-it-words-container'>
+    <div className='how-it-works-container'>
       <h1 className='how-it-works'>
         How It Works
       </h1>
