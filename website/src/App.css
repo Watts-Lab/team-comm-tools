@@ -74,7 +74,7 @@ body {
 .supporters-container p,
 .contact-container p {
   font-size: 1.2em;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .how-it-works-container p1 {
@@ -430,7 +430,7 @@ table th {
   .research-container,
   .supporters-container,
   .contact-container {
-    padding: 0 20px 20px 20px;
+    padding: 0 25px 25px 25px;
   }
 
   .current,
@@ -445,7 +445,8 @@ table th {
   }
 
   .current-image,
-  .alumni-image {
+  .alumni-image,
+  .emily-image {
     width: 100%;
     height: auto;
   }
@@ -468,5 +469,9 @@ table th {
 
   .emily h4 {
     font-size: 0.7em;
+  }
+
+  .bullet-points {
+    margin-left: 25px;
   }
 }
