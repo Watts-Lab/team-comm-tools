@@ -37,6 +37,11 @@ body {
   padding: 0 150px 150px 150px;
 }
 
+.supporters-container,
+.contact-container {
+  height:70vh;
+}
+
 .background-container {
   display: flex;
   height: 80vh;
