@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "https://teamcommtools.seas.upenn.edu/", 
-=======
-  "homepage": "https://watts-lab.github.io/team-process-map/",
->>>>>>> 62ac204 (changed from tpm-website to website)
   "name": "website",
   "version": "0.1.0",
   "private": true,

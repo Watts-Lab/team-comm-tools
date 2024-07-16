@@ -13,7 +13,7 @@ import Contact from './components/pages/Contact.js';
 function App() {
   return (
     <>
-      <Router basename="/team-process-map">
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
