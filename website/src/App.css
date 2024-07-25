@@ -5,10 +5,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-body {
+/* body {
   overflow-x: hidden;
   width: 100%;
-}
+} */
 
 .research,
 .how-it-works,
@@ -39,7 +39,7 @@ body {
 
 .supporters-container,
 .contact-container {
-  height:70vh;
+  height: 70vh;
 }
 
 .background-container {
@@ -164,7 +164,7 @@ body {
 }
 
 .current-member h3,
-.alumni-member h3{
+.alumni-member h3 {
   font-size: 1.0em;
   margin: 10px 0 5px;
   text-align: center;
@@ -193,6 +193,58 @@ body {
   margin: 10px 0 5px;
   color: #616569;
   font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.features {
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #ddd;
+}
+
+.feature-name {
+  position: sticky;
+  left: 0;
+  background-color: #f1f1f1;
+  z-index: 2;
+  width: 200px;
+}
+
+.norm {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  /* max-width: 200px;  */
+  /* word-wrap: break-word; */
+  /* white-space: nowrap; */
+}
+
+.desc {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  /* max-width: 600px;  */
+  /* word-wrap: break-word; */
+  /* white-space: nowrap; */
 }
 
 @media (max-width: 1200px) {
@@ -229,7 +281,7 @@ body {
   }
 
   .current-image,
-  .alumni-image{
+  .alumni-image {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -264,6 +316,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
   .home-body,
   .team-container,
   .how-it-works-container,
