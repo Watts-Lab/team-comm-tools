@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "team-communication-toolkit"
+version = "2024.0.0a1"
+dynamic = ["version"]
+requires-python = "== 3.11"
+dependencies = []
+authors = [
+  {name = "Xinlan Emily Hu", email = "xehu@wharton.upenn.edu"},
+  {name = "Yuxuan Zhang", email = "yuxuanzh@seas.upenn.edu"},
+]
+description = "A toolkit that generates a variety of features for team conversation data."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["computational social science", "teams", "communication", "conversation", "chat", "analysis"]
+
+[project.urls]
+Homepage = "https://teamcommtools.seas.upenn.edu/"
+Documentation = "https://conversational-featurizer.readthedocs.io/en/latest/"
+Repository = "https://github.com/Watts-Lab/team-comm-tools"
