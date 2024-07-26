@@ -69,13 +69,19 @@ if __name__ == "__main__":
 
 	test_ner_feature_builder = FeatureBuilder(
 		input_df = test_ner_df,
+		conversation_id_col = "stageId",
 		ner_training_df = test_ner_training_df,
 		vector_directory = "./vector_data/",
 		output_file_path_chat_level = "./output/chat/test_named_entity_chat_level.csv",
 		output_file_path_user_level = "./output/user/test_named_entity_user_level.csv",
 		output_file_path_conv_level = "./output/conv/test_named_entity_conversation_level.csv",
+		custom_features = [
+            "(BERT) Mimicry",
+            "Moving Mimicry",
+            "Forward Flow",
+            "Discursive Diversity"
+        ],
 		turns = False,
-		conversation_id = "stageId",
 		cumulative_grouping = True
 	)
 	test_ner_feature_builder.featurize(col="message")
@@ -87,6 +93,12 @@ if __name__ == "__main__":
 		output_file_path_chat_level = "./output/chat/test_chat_level_chat_complex.csv",
 		output_file_path_user_level = "./output/user/test_chat_level_user_complex.csv",
 		output_file_path_conv_level = "./output/conv/test_chat_level_conv_complex.csv",
+		custom_features = [
+            "(BERT) Mimicry",
+            "Moving Mimicry",
+            "Forward Flow",
+            "Discursive Diversity"
+        ],
 		turns = False,
 	)
 	testing_chat_complex.featurize(col="message")
@@ -98,6 +110,12 @@ if __name__ == "__main__":
 		output_file_path_chat_level = "./output/chat/test_conv_level_chat_complex.csv",
 		output_file_path_user_level = "./output/user/test_conv_level_user_complex.csv",
 		output_file_path_conv_level = "./output/conv/test_conv_level_conv_complex.csv",
+		custom_features = [
+            "(BERT) Mimicry",
+            "Moving Mimicry",
+            "Forward Flow",
+            "Discursive Diversity"
+        ],
 		turns = False,
 	)
 	testing_conv_complex.featurize(col="message")
