@@ -9,12 +9,12 @@ If you are new to this repository, welcome! Please follow the steps below to get
 First, clone this repository into your local development environment: 
 
 ```
-git clone https://github.com/Watts-Lab/team-process-map.git
+git clone https://github.com/Watts-Lab/team-comm-tools.git
 ```
 
 ### Step 2: Download Dependencies
 Second, we *strongly* recommend using a virtual environment to install the dependencies required for the project.=
-The dependencies of the project are listed in `src/requirements.txt`: https://github.com/Watts-Lab/team-process-map/blob/main/src/requirements.txt
+The dependencies of the project are listed in `src/requirements.txt`: https://github.com/Watts-Lab/team-comm-tools/blob/main/src/requirements.txt
 
 **Python Version**: We recommend `python3.11` when running this repository.
 
@@ -41,7 +41,7 @@ python3 featurize.py
 This calls the `featurizer.py` file, which declares a FeatureBuilder object for different dataset of interest, and featurizes them using our framework. The `featurize.py` file provides an end-to-end worked example of how you can declare a FeatureBuilder and call it on data; equally, you can replace this file with any file / notebook of your choosing, as long as you import the FeatureBuilder module.
 
 ## Contributing Code and Automated Unit Testing
-If you would like to contribute to the repository, we have implemented a [Pull Request Template](https://github.com/Watts-Lab/team-process-map/blob/main/.github/pull_request_template.md) with a basic checklist that you should consider when adding code (e.g., improving documentation or developing a new feature).
+If you would like to contribute to the repository, we have implemented a [Pull Request Template](https://github.com/Watts-Lab/team-comm-tools/blob/main/.github/pull_request_template.md) with a basic checklist that you should consider when adding code (e.g., improving documentation or developing a new feature).
 
 We have also implemented automated unit testing of all code (which runs upon every push to GitHub), allowing us to ensure that new features function as expected and do not break any previous features. The points below highlight key steps to using our automated test suite.
 
