@@ -1,3 +1,0 @@
-[submodule "feature_engine/tpm-data"]
-	path = feature_engine/tpm-data
-	url = https://github.com/Watts-Lab/tpm-data.git

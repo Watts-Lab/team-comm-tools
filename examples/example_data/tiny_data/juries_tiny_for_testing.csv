@@ -1,0 +1,98 @@
+batch_num,round_num,speaker_hash,speaker_nickname,timestamp,message,majority_pct,num_flipped,flipped_pct,num_votes
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:27:20.125Z,Hello! ,1,1,0.333333333,3
+0,0,5e31d6e4e31c5304c46f1413,culturedCow,2020-04-20T18:27:23.764Z,Hi!,1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:27:27.724Z,Hello,1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:27:30.410Z,Hi,1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:27:35.506Z,hi,1,1,0.333333333,3
+0,0,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:28:09.451Z,hello,1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:28:20.136Z,I don't think the guy is the a$$hole. Thoughts?,1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:28:28.501Z,So who thinks the guy is an ass for asking his mother in law to learn english,1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:28:30.530Z,"I think that this person is not an asshole because, according to him, he was very polite while approaching the issue",1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:28:30.637Z,I can see how the family is upset because they feel the mother was disrespected but I can also understand the guy's feelings. Why should he have to work as interpreter for his mother in law?,1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:28:50.848Z,"Yes, I think his feeling makes sense to me to. Who doesn't want to be independent.",1,1,0.333333333,3
+0,0,5e31d6e4e31c5304c46f1413,culturedCow,2020-04-20T18:28:51.159Z,I was conflicted because I could understand his frustration however I feel he should have maybe discussed strategies with how to approach the mother in law with his wife first.,1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:28:59.058Z,His MIL has been here for 8 years. You would think she'd pick up some English by now.,1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:29:00.317Z,I think he had every right to want to help his mother in law,1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:29:03.788Z,I also agree with culturedCow,1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:29:13.705Z,"I don't think he's an asshole. I think his request is reasonable. If you go to live in a foreign country, you should learn the language.",1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:29:25.384Z,"I think the guy is an asshole because for all his talk about how easy it is to use resources to learn a language, he didn't take the time to research WHY some people do not.",1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:29:27.170Z,I think he also tried to utilize other resources such as language learning apps to help her learn,1,1,0.333333333,3
+0,0,5e31d6e4e31c5304c46f1413,culturedCow,2020-04-20T18:29:48.376Z,"I think also he needs to understand that language learning is not the same for everyone, not everyone has the same capacity to learn new languages quickly.",1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:29:55.355Z,"Maybe she does have a problem with learning languages, but she could at least try.",1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:30:01.417Z,After the edit he done it made it sound like he really loves his family,1,1,0.333333333,3
+0,0,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:30:08.967Z,"I don't think the guy is wrong in asking her to learn more english being that she lives in America, but he has to understand she is older and may not have the patience or capacity to learn a lot of english.",1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:30:11.191Z,"Learning a second language is easiest when you're a child for a reason. Your brain is wired differently then, which makes it easier.",1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:30:20.031Z,I think he tried to help her.  He gave her resources to use and she apparently didn't use them.,1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:30:49.913Z,Older people can have a hard time because of brain. intelligence and cognitive limits. It's not so easy to just read a book or dictionary after a certain point.,1,1,0.333333333,3
+0,0,5e31d6e4e31c5304c46f1413,culturedCow,2020-04-20T18:30:50.048Z,"I don't think he's an asshole for having the feelings he does, but I do think he is a bit of an asshole for handling it the way that he did without discussing it with his wife first or maybe finding a better way to approach it.",1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:30:50.423Z,I think he wouldn't be so upset about it if she at least tried.,1,1,0.333333333,3
+0,0,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:30:51.928Z,He should also ask his wife to step up and talk to the mother to healp her learn more and to make herself more available to her mother to help with translations.,1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:31:02.701Z,I agree that learning a foreign language as an adult is more difficult but 8 years is a long time.,1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:31:30.459Z,I think that both sides have right and wrong. But overall i think he's not an asshole because of the way he approached the issue (politely) and because he also tried in his own way (although some of us may say not effective) to help her,1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:31:33.641Z,"Yes, why can't other members of the family help their mother? If they think he's being a jerk, they should step in.  I",1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:31:36.370Z,What are your verdicts?,1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:31:38.393Z,"If he doesn't want to help, that's fine, but dictating what his MIL, who I assume is not so young, should do is complete asshole-ry.",1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:31:43.131Z,I think he is a nice person trying to relieve some stress off his plate by asking his mother in law to be more responsible.,1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:31:46.516Z,"Yes, asshole, all the way.",1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:31:47.752Z,Not an asshole,1,1,0.333333333,3
+0,0,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:31:53.913Z,MIL is at least 20 years older than the couple so 8 years is a long time but how often is she interacting with other Americans.,1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:31:58.777Z,We all have to agree,1,1,0.333333333,3
+0,0,5e31d6e4e31c5304c46f1413,culturedCow,2020-04-20T18:32:08.796Z,"Yeah I am also inclined to vote 'asshole' just because something seems fishy that the entire family freaked out on him, so I don't know if he was as polite as he claimed he was.",1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:32:15.014Z,I think his family is partally dorrect for being upset because of his approach.,1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:32:15.176Z,I descent. Asshole still for me.,1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:32:22.544Z,Asswhole it is,1,1,0.333333333,3
+0,0,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:32:24.016Z,The guy is not wrong and definitely not a racist.,1,1,0.333333333,3
+0,0,5e8b6dd0b35db8283c501b7a,littleSquirrel,2020-04-20T18:32:36.791Z,I think he should consider the fact that for some reason some people always tend to be dependent especially coming from a specific culture and upbringing - especially women and elderly.,1,1,0.333333333,3
+0,0,5d6feec65f80ae21f5c5f054,spryOrangutan,2020-04-20T18:32:37.756Z,"No, he's not a racist, agrred.",1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:32:45.488Z,we can call him a nice asswhole,1,1,0.333333333,3
+0,0,5d482ea421c9be351f762255,youngLion,2020-04-20T18:32:51.655Z,I will go with the group and vote asshole.,1,1,0.333333333,3
+0,0,5d482ea621c9be351f762ae5,culturedBear,2020-04-20T18:32:53.008Z,"The guy just wants MIL to put in more effort, if possible.",1,1,0.333333333,3
+0,0,5e7e1e0031f4e454e196c30b,niceRhino,2020-04-20T18:32:53.113Z,I believe that this person is not an asshole because he tried to help the MIL.,1,1,0.333333333,3
+0,0,5e7e4f4c31f4e454e196c9c4,spryBison,2020-04-20T18:33:06.880Z,Asshole,1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:33:37.552Z,I agree with niceRhino,1,1,0.333333333,3
+0,0,5e84cc3c50f6e364321d6265,smallGiraffe,2020-04-20T18:33:58.011Z,I don't think he's the asshole,1,1,0.333333333,3
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T18:57:21.726Z,hi,0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T18:57:26.714Z,I don't think she's the asshole because she's extremely busy.,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T18:57:26.989Z,howdy,0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T18:57:32.295Z,This girl seems like an asshole,0.6,0,0,5
+0,2,5e31d6e4e31c5304c46f1413,littleCow,2020-04-20T18:57:37.268Z,Hello,0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T18:57:43.115Z,Her husband knows Spanish and communicates well with it.,0.6,0,0,5
+0,2,5e31d6e4e31c5304c46f1413,littleCow,2020-04-20T18:57:56.277Z,"I don't think she's an asshole, she clearly has more on her plate so it shouldn't be an issue for her husband to help relieve some of that burden.",0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T18:58:10.461Z,"If she weren't so busy, I'd say she was an asshole but she's got a very full plate",0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T18:58:16.555Z,He married the daughter not the mother,0.6,0,0,5
+0,2,5d482ea421c9be351f762255,newPanda,2020-04-20T18:58:24.296Z,I'm on the fence about this one. She may be busy but how often is her mother really bothering her husband? How long have they lived in the US? Information is missing as far as I'm concerned.,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T18:58:25.941Z,I think she's an asshole. Her husband has the right to not want to be a translator. It's his choice and he shouldn't be forced.,0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T18:58:38.685Z,"Yes, he married the daughter but his MIL is now family too.",0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T18:58:40.031Z,true conventionalMonkey conventionalMonkey,0.6,0,0,5
+0,2,5e8b6dd0b35db8283c501b7a,likelyGorilla,2020-04-20T18:58:53.558Z,"She says ""she just passes it on to her husband"", if her husband sees that she doesn't try to put in any efforts to help her parents with such issues, then why would he care either?",0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T18:59:06.451Z,"But then again, I think many Latino families are more egalitarian in that they expect everyone to contribute more.",0.6,0,0,5
+0,2,5d482ea421c9be351f762255,newPanda,2020-04-20T18:59:13.295Z,"I agree conventionalMonkey While they are his in-laws, they are her family. ",0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T18:59:14.855Z,I think the mother needs to find an alternative,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T18:59:29.946Z,Her stance is probably more of a culture perspective than an asshole-y one.,0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T18:59:35.400Z,I haven't personally gone for my Masters but I have gone to college.  That's a ton of work she's doing.,0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T18:59:40.967Z,The have google translator on phones,0.6,0,0,5
+0,2,5d482ea421c9be351f762255,newPanda,2020-04-20T18:59:47.848Z,We are only hearing her side of it too. I agree newLion  the MIL could find other people to translate.,0.6,0,0,5
+0,2,5e31d6e4e31c5304c46f1413,littleCow,2020-04-20T19:00:01.357Z,"I feel there is also some cultural things that need to be taken into account. There maybe a difference between hers and her husband's, but I don't think that makes her an asshole.",0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T19:00:11.560Z,I say nice asshole,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:00:11.565Z,I think she should ask her husband when and if he's available to translate beforehand.,0.6,0,0,5
+0,2,5e8b6dd0b35db8283c501b7a,likelyGorilla,2020-04-20T19:00:30.041Z,"She should expect to do more herself than expecting her husband to help every time. Once in a while, if the husband can be of help, then it's great. But can't be expected to help all the time, when she ""just passes on""",0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T19:00:32.376Z,newLion Great point.  Maybe they can educate her mom.,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:00:40.756Z,Just having mom call out of the blue is unacceptable to me.,0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T19:00:55.905Z,But the mother quit going through the daughter and started calling him directly.,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:01:21.636Z,"I have considered both sides. While I don't dislike this person, I think her expectations of her husband are somewhat asshole-y.",0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T19:01:40.801Z,I say asshole,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:01:45.458Z,I think the daughter made the mother think it was okay to just call directly.,0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T19:01:54.179Z,I still say not an asshole.  She's very busy.,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:02:01.093Z,"She's so busy, she wanted to stop being the middleman.",0.6,0,0,5
+0,2,5d482ea421c9be351f762255,newPanda,2020-04-20T19:02:18.356Z,I understand wanting to help her parents but I think there is also an issue with this woman using her husband. She is an asshole.,0.6,0,0,5
+0,2,5e8b6dd0b35db8283c501b7a,likelyGorilla,2020-04-20T19:02:21.314Z,"Every relationship has limitation in terms of expectation. If the husband willingly helps, that's great. If not, she should nicely try to approach him for helping out",0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:02:22.733Z,Asshole with reservations from me.,0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T19:02:26.402Z,Maybe she needs to take some off her plate,0.6,0,0,5
+0,2,5e31d6e4e31c5304c46f1413,littleCow,2020-04-20T19:02:30.624Z,"Yeah, I'm not convinced she's an asshole. I do think the situation could be settled in a way that's more ideal to both parties, but she's working full time and going through her Master's which is a lot.",0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:02:46.021Z,If only there was choice beside yay or nay.,0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T19:02:48.819Z,I agree littleCow,0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T19:02:55.111Z,I say asshole under stress,0.6,0,0,5
+0,2,5d6feec65f80ae21f5c5f054,conventionalMonkey,2020-04-20T19:03:21.819Z,"Yes, she is the asshole... unfortunately. Husband has stuff to do too and is entitled to not want to translate at her mother's whim.",0.6,0,0,5
+0,2,5d482ea421c9be351f762255,newPanda,2020-04-20T19:03:36.308Z,I think she is being presumptuous and acting like her husband's feelings don't matter. ,0.6,0,0,5
+0,2,5e7e4f4c31f4e454e196c9c4,newLion,2020-04-20T19:03:53.219Z,"Tha's true, she ins't considering her husband and his feelings",0.6,0,0,5
+0,2,5e84cc3c50f6e364321d6265,likelyRabbit,2020-04-20T19:04:02.642Z,I don't agree.  Not the asshole.  She's too busy.,0.6,0,0,5

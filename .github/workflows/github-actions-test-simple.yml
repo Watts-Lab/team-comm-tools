@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./feature_engine
+        working-directory: ./src
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -28,17 +28,21 @@ jobs:
 
       - name: Run featurizer
         run: |
-          cd testing
+          cd ..
+          cd tests
           python3 run_tests.py
+          python3 run_package_grouping_tests.py
 
       - name: Run tests
         run: |
-          cd testing
+          cd ..
+          cd tests
           pytest test_feature_metrics.py
+          pytest test_package.py
 
       - name: Upload test results
         uses: actions/upload-artifact@v2
         with:
           name: test-log
-          path: ./feature_engine/testing/test.log
+          path: ./tests/test.log
         if: ${{ always() }}
