@@ -16,9 +16,7 @@ git clone https://github.com/Watts-Lab/team-comm-tools.git
 Second, we *strongly* recommend using a virtual environment to install the dependencies required for the project.=
 The dependencies of the project are listed in `src/requirements.txt`: https://github.com/Watts-Lab/team-comm-tools/blob/main/src/requirements.txt
 
-**Python Version**: We recommend `python3.11` when running this repository.
-
-Later versions of Python (e.g., 3.12) are currently incompatible with the `sentence-transformers` library. There is an open issue here: https://github.com/google/sentencepiece/issues/968 [Updated as of January 30, 2024]
+**Python Version**: We recommend >= `python3.11` when running this repository.
 
 #### Run Initial Scripts for Dependencies
 Before starting the featurizer, you need to run the following to obtain dependencies for the project:
