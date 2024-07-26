@@ -70,10 +70,10 @@ if __name__ == "__main__":
 	test_ner_feature_builder = FeatureBuilder(
 		input_df = test_ner_df,
 		ner_training_df = test_ner_training_df,
-		vector_directory = "../tpm-data/vector_data/",
-		output_file_path_chat_level = "../output/chat/test_named_entity_chat_level.csv",
-		output_file_path_user_level = "../output/user/test_named_entity_user_level.csv",
-		output_file_path_conv_level = "../output/conv/test_named_entity_conversation_level.csv",
+		vector_directory = "./vector_data/",
+		output_file_path_chat_level = "./output/chat/test_named_entity_chat_level.csv",
+		output_file_path_user_level = "./output/user/test_named_entity_user_level.csv",
+		output_file_path_conv_level = "./output/conv/test_named_entity_conversation_level.csv",
 		turns = False,
 		conversation_id = "stageId",
 		cumulative_grouping = True
@@ -83,10 +83,10 @@ if __name__ == "__main__":
 	# testing perturbed chat level features
 	testing_chat_complex = FeatureBuilder(
 		input_df = chat_complex_df,
-		vector_directory = "../tpm-data/vector_data/",
-		output_file_path_chat_level = "../output/chat/test_chat_level_chat_complex.csv",
-		output_file_path_user_level = "../output/user/test_chat_level_user_complex.csv",
-		output_file_path_conv_level = "../output/conv/test_chat_level_conv_complex.csv",
+		vector_directory = "./vector_data/",
+		output_file_path_chat_level = "./output/chat/test_chat_level_chat_complex.csv",
+		output_file_path_user_level = "./output/user/test_chat_level_user_complex.csv",
+		output_file_path_conv_level = "./output/conv/test_chat_level_conv_complex.csv",
 		turns = False,
 	)
 	testing_chat_complex.featurize(col="message")
@@ -94,10 +94,10 @@ if __name__ == "__main__":
 	# testing conv features
 	testing_conv_complex = FeatureBuilder(
 		input_df = conv_complex_df,
-		vector_directory = "../feature_engine/tpm-data/vector_data/",
-		output_file_path_chat_level = "../output/chat/test_conv_level_chat_complex.csv",
-		output_file_path_user_level = "../output/user/test_conv_level_user_complex.csv",
-		output_file_path_conv_level = "../output/conv/test_conv_level_conv_complex.csv",
+		vector_directory = "./vector_data/",
+		output_file_path_chat_level = "./output/chat/test_conv_level_chat_complex.csv",
+		output_file_path_user_level = "./output/user/test_conv_level_user_complex.csv",
+		output_file_path_conv_level = "./output/conv/test_conv_level_conv_complex.csv",
 		turns = False,
 	)
 	testing_conv_complex.featurize(col="message")
