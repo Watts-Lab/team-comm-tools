@@ -69,7 +69,6 @@ if __name__ == "__main__":
 
 	test_ner_feature_builder = FeatureBuilder(
 		input_df = test_ner_df,
-		conversation_id_col = "stageId",
 		ner_training_df = test_ner_training_df,
 		vector_directory = "./vector_data/",
 		output_file_path_chat_level = "./output/chat/test_named_entity_chat_level.csv",
@@ -82,7 +81,6 @@ if __name__ == "__main__":
             "Discursive Diversity"
         ],
 		turns = False,
-		cumulative_grouping = True
 	)
 	test_ner_feature_builder.featurize(col="message")
 
