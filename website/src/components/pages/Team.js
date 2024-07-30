@@ -80,7 +80,7 @@ function Team() {
             title = 'Undergraduate Student, FSU';
           }
           else if (member.name === 'Gina Chen') {
-            title = 'Data Scientist';
+            title = 'Graduate Student, UPenn';
           }
           else if (member.name === 'Yuxuan Zhang') {
             title = 'Data Scientist';
