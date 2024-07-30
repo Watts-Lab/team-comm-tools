@@ -2,6 +2,7 @@
   "homepage": "https://teamcommtools.seas.upenn.edu/", 
   "name": "website",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "react": "^18.3.1",
@@ -14,12 +15,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "react-scripts start", 
+    "server": "python ../src/feature_dict.py"  
   },
   "eslintConfig": {
     "extends": [

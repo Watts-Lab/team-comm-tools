@@ -202,9 +202,9 @@ body {
 }
 
 table {
-  width: 100%;
+  width: 200%;
   border-collapse: collapse;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 .features {
@@ -240,17 +240,17 @@ table th {
 .norm {
   padding: 12px;
   border-bottom: 1px solid #ddd;
-  /* max-width: 200px;  */
-  /* word-wrap: break-word; */
-  /* white-space: nowrap; */
+  max-width: 250px;
+  word-wrap: break-word; 
+  white-space: normal; 
 }
 
 .desc {
   padding: 12px;
   border-bottom: 1px solid #ddd;
-  /* max-width: 600px;  */
-  /* word-wrap: break-word; */
-  /* white-space: nowrap; */
+  max-width: 800px; 
+  word-wrap: break-word; 
+  white-space: normal; 
 }
 
 @media (max-width: 1200px) {

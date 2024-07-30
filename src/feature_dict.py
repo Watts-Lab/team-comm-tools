@@ -2,6 +2,11 @@ from utils.calculate_chat_level_features import ChatLevelFeaturesCalculator
 from utils.calculate_conversation_level_features import ConversationLevelFeaturesCalculator
 from utils.preprocess import *
 
+from flask import Flask, jsonify
+import json
+
+app = Flask(__name__)
+
 feature_dict = { # TODO: customize preprocess methods
     # Chat Level
     "Named Entity Recognition": {
@@ -596,3 +601,15 @@ feature_dict = { # TODO: customize preprocess methods
     "bert_sentiment_data": False
   }
 }
+
+keys_to_keep = ["columns", "file", "level", "semantic_grouping", "description", "references", "wiki_link"]
+
+filtered_dict = {feature_name: {key: value for key, value in feature_data.items() if key in keys_to_keep}
+                 for feature_name, feature_data in feature_dict.items()}
+
+@app.route('/features')
+def get_features():
+    return jsonify(filtered_dict)
+
+if __name__ == '__main__':
+    app.run(debug=True)
