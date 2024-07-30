@@ -32,6 +32,8 @@ def burstiness(df, timediff):
     if len(wait_times) <= 1:
         return 0
     
+    wait_times = wait_times[1:]
+
     # Compute coefficient of variation measure B (Goh & Barabasi 2008)
     standard_deviation = np.std(wait_times)
     mean = np.mean(wait_times)
