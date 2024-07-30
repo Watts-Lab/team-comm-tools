@@ -48,3 +48,85 @@ C, C, 2020-04-20T20:35:32.456Z, I've found that it's also important to take brea
 C, D, 2020-04-20T20:35:44.567Z, I agree. It helps me to stay focused and avoid burnout.,team_burstiness
 C, A, 2020-04-20T20:35:52.456Z, I've also found that it helps to study with a friend or classmate.,team_burstiness
 C, B, 2020-04-20T20:35:56.567Z, That's a good idea. It can help you to stay motivated and on track.,team_burstiness
+D,Adam,, I just saw the craziest thing on the way to work,discursive_diversity
+D,Brad,, Did you hear about the new restaurant opening up downtown? I've heard nothing but good things,discursive_diversity
+D,Chris,, Hey team we need to finalize the plans for the client presentation by tomorrow,discursive_diversity
+D,Brad,, I'm so excited to try the new sushi place,discursive_diversity
+D,Chris,, Please let me know if you have any questions,discursive_diversity
+D,Adam,, It was like something out of a movie,discursive_diversity
+D,Chris,, We should aim to have a draft ready for review by the end of the day,discursive_diversity
+D,Adam,, I couldn't believe my eyes,discursive_diversity
+D,Brad,, The reviews say the ambiance is amazing too,discursive_diversity
+D,Adam,, I had to stop and take a picture,discursive_diversity
+E,person a,,I love my new job.,discursive_diversity
+E,person a,,I think this is the most money I've ever made.,discursive_diversity
+E,person a,,Working with like-minded people is great.,discursive_diversity
+E,person a,,I'm so happy I found this job.,discursive_diversity
+E,person b,,Painting is my passion.,discursive_diversity
+E,person b,,I love painting landscapes.,discursive_diversity
+E,person b,,I'm going to buy new brushes soon.,discursive_diversity
+E,person b,,I'm going to start getting into art more often.,discursive_diversity
+E,person c,,What should I cook for dinner?,discursive_diversity
+E,person c,,I'm thinking of making spaghetti.,discursive_diversity
+E,person c,,I'm going to make a salad too.,discursive_diversity
+E,person c,,I'm going to make a cake for dessert.,discursive_diversity
+E,person d,,I'm going to the gym today.,discursive_diversity
+E,person d,,I'm going to work on my legs.,discursive_diversity
+E,person d,,I'm going to do some cardio.,discursive_diversity
+E,person d,,I'll finish off with some weight lifting.,discursive_diversity
+F, Amy,, I'm really excited for the party tomorrow night.,discursive_diversity
+F, Bob,, Me too! I can't wait to see everyone and dance the night away.,discursive_diversity
+F, Carol,, I'm bringing a new dish to the party. It's a secret family recipe.,discursive_diversity
+F, Dave,, That sounds delicious Carol. I can't wait to try it.,discursive_diversity
+F, Amy,, I'm sure it will be a hit. You're such a good cook.,discursive_diversity
+F, Bob,, I agree. Carol's cooking is always amazing.,discursive_diversity
+F, Carol,, Thanks guys. I'm glad you're all excited.,discursive_diversity
+F, Dave,, So what time should we meet at the party?,discursive_diversity
+F, Amy,, Let's say 8 pm. That way we can all have some time to mingle before the music starts.,discursive_diversity
+F, Bob,, Sounds good to me. I'll see you guys there.,discursive_diversity
+F, Carol,, Me too. Can't wait!,discursive_diversity
+F, Dave,, I just realized I don't have anything to wear.,discursive_diversity
+F, Amy,, Don't worry I have a spare dress you can borrow.,discursive_diversity
+F, Bob,, That's so nice of you Amy.,discursive_diversity
+F, Carol,, I'm sure it will look great on you Dave.,discursive_diversity
+F, Dave,, Thanks everyone. I really appreciate it.,discursive_diversity
+G,A,2024-07-15 23:09:36.779590, I love eating.,variance_in_DD
+G,B,2024-07-15 23:10:36.779590, What's your favorite place to eat?,variance_in_DD
+G,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,variance_in_DD
+G,B,2024-07-15 23:12:36.779590, I could go for some pasta and pizza right now.,variance_in_DD
+G,A,2024-07-15 23:13:36.779590, Now I'm hungry!,variance_in_DD
+G,B,2024-07-15 23:14:36.779590, Anyways what are your vacation plans?,variance_in_DD
+G,A,2024-07-15 23:15:36.779590, I'm going to start cooking more.,variance_in_DD
+G,B,2024-07-15 23:16:36.779590, Greg and I are flying to Panama tomorrow.,variance_in_DD
+G,A,2024-07-15 23:17:36.779590, I'm thinking of publishing my own recipe book.,variance_in_DD
+G,B,2024-07-15 23:18:36.779590, We're excited to go on a vacation together.,variance_in_DD
+G,A,2024-07-15 23:19:36.779590, Is this your first trip abroad?,variance_in_DD
+G,B,2024-07-15 23:20:36.779590, Yes we've never travelled outside the country before.,variance_in_DD
+G,A,2024-07-15 23:21:36.779590, Travelling abroad is a different type of fun.,variance_in_DD
+G,B,2024-07-15 23:22:36.779590, I'm looking forward to the trip greatly.,variance_in_DD
+H,A,2024-07-15 23:09:36.779590, I love eating.,variance_in_DD
+H,B,2024-07-15 23:10:36.779590, I'm going for a run.,variance_in_DD
+H,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,variance_in_DD
+H,B,2024-07-15 23:12:36.779590, I'm running my first race in a few days.,variance_in_DD
+H,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,variance_in_DD
+H,B,2024-07-15 23:14:36.779590, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+H,A,2024-07-15 23:15:36.779590, How else do you stay fit?,variance_in_DD
+H,B,2024-07-15 23:16:36.779590, Sports and running are great options.,variance_in_DD
+H,A,2024-07-15 23:17:36.779590, I want to exercise more frequently.,variance_in_DD
+H,B,2024-07-15 23:18:36.779590, You can join me during my runs.,variance_in_DD
+H,A,2024-07-15 23:19:36.779590, I want to eat something.,variance_in_DD
+H,B,2024-07-15 23:20:36.779590, Exercising is my passion.,variance_in_DD
+H,A,2024-07-15 23:21:36.779590, Let's go get food.,variance_in_DD
+H,B,2024-07-15 23:22:36.779590, I think I'm going to just run.,variance_in_DD
+I,A,2024-07-15 23:09:36.779590, I love exercising.,variance_in_DD
+I,B,2024-07-15 23:10:36.779590, I'm going for a run.,variance_in_DD
+I,A,2024-07-15 23:11:36.779590, I play sports like tennis and baseball too.,variance_in_DD
+I,B,2024-07-15 23:12:36.779590, I'm running my first race in a few days.,variance_in_DD
+I,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,variance_in_DD
+I,B,2024-07-15 23:14:36.779590, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+I,A,2024-07-15 23:15:36.779590, How else do you stay fit?,variance_in_DD
+I,B,2024-07-15 23:16:36.779590, Sports and running are great options.,variance_in_DD
+I,A,2024-07-15 23:17:36.779590, I want to exercise more frequently.,variance_in_DD
+I,B,2024-07-15 23:18:36.779590, You can join me during my runs.,variance_in_DD
+I,A,2024-07-15 23:19:36.779590, How athletic are you?,variance_in_DD
+I,B,2024-07-15 23:20:36.779590, Exercising is my passion.,variance_in_DD
