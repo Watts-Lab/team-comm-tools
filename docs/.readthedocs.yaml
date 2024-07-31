@@ -34,4 +34,4 @@ sphinx:
 python:
    install:
     - requirements: ./docs/requirements.txt
-    - requirements: ./src/requirements.txt
+    - requirements: ./src/team_comm_tools/requirements.txt

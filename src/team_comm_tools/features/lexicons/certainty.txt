@@ -1,0 +1,3486 @@
+Word,Certainty,NumWords,NumCharacters
+100 percent,7.88,2,11
+a bit worried,2.83,3,13
+a clearly,7.71,2,9
+a commitment,7.23,2,12
+a conviction,6.97,2,12
+a focus on,6.64,3,10
+a guarantee,8.15,2,11
+a little confused,2.47,3,17
+a little confusing,2.43,3,18
+a lot,6.2,2,5
+a matter of fact,7.6,4,16
+a no,7.07,2,4
+a potential,5.74,2,11
+abide by,6.24,2,8
+able to achieve,6.27,3,15
+above all,6.85,2,9
+absolute,8.1,1,8
+absolutely,8.67,1,10
+absolutely necessary,7.77,2,20
+absolutely not,7.17,2,14
+absolutely sure,8.16,2,15
+absolutist,8.25,1,10
+accepted as,7.12,2,11
+accepted that,7.21,2,13
+accomplished by,7.1,2,15
+accordance with,6.12,2,15
+accountable,7.17,1,11
+accounted,7.21,1,9
+accounted for,6.48,2,13
+accounts,5.85,1,8
+accumulated,6.17,1,11
+accuracy,7.64,1,8
+accurate information,7.58,2,20
+accusations,4.23,1,11
+achievable,6.83,1,10
+acknowledged,7.16,1,12
+actual fact,7.61,2,11
+actually being,7.07,2,14
+actually going,6.83,2,14
+actually happening,8.2,2,18
+actually has,7,2,12
+actually means,7.23,2,14
+adamantly,8.07,1,9
+addressed in the,6.23,3,16
+adequately,6.21,1,10
+adhered to,6.74,2,10
+administration has,6.23,2,18
+administration is,7.04,2,17
+admitting,7.27,1,9
+affairs,5.28,1,7
+affects,5.73,1,7
+affirm,7.18,1,6
+affirmative,8.12,1,11
+affirming,8.18,1,9
+afforded,6.5,1,8
+aforementioned,6.73,1,14
+agreed,8,1,6
+agreed on,7.64,2,9
+agreed to,6.58,2,9
+agreed with,6.92,2,11
+agreement,7.36,1,9
+agreement was,6.67,2,13
+agrees,7.79,1,6
+agrees to,7.37,2,9
+aim is to,6.83,3,9
+aligned with,6.67,2,12
+aligned with the,6.53,3,16
+all cases,7.16,2,9
+all i know,5.52,3,10
+all i know is,5.19,4,13
+all individuals,7.47,2,15
+all intents and purposes,7.27,4,24
+all is,6.44,2,6
+all issues,6.47,2,10
+all it is,6.57,3,9
+all kinds of,4.94,3,12
+all likelihood,7.33,2,14
+all set,7.72,2,7
+all things considered,6.12,3,21
+alleged to,5.43,2,10
+allowed the,7.07,2,11
+allowed to be,5.81,3,13
+almost certainly,7.76,2,16
+almost definitely,6.62,2,17
+already been said,6.36,3,17
+already completed,7.42,2,17
+already dead,7.5,2,12
+already did,7.79,2,11
+already known,7.88,2,13
+already lost,4.93,2,12
+also appears,5.43,2,12
+also become,5.81,2,11
+also believe,5.83,2,12
+also confirmed,8,2,14
+also found,6.47,2,10
+also likely,5.44,2,11
+also received,7,2,13
+also seems to,6.21,3,13
+alternatives and,3.68,2,16
+although they are,4.52,3,17
+always been,7.27,2,11
+always been a,7.88,3,13
+always seen,8.13,2,11
+always used,7.3,2,11
+am aware,6.52,2,8
+am certain,8,2,10
+am confident,8.16,2,12
+am convinced,7.63,2,12
+am going to,6.48,3,11
+am i right,3.96,3,10
+am pleased,7.2,2,10
+am referring,5.9,2,12
+am sure,7.96,2,7
+am sure the,7.69,3,11
+am very,7.17,2,7
+ambiguity,2.52,1,9
+an absolute,8.23,2,11
+an agreement,7.5,2,12
+an entirely,7.17,2,11
+an increasingly,6.67,2,15
+an indication,6.15,2,13
+an indication of,6.69,3,16
+analyses,6.36,1,8
+analysis,6,1,8
+and a sense,5.11,3,11
+and absolutely,8.37,2,14
+and according to,5.8,3,16
+and affirmed,8,2,12
+and appears,4.64,2,11
+and are,6.85,2,7
+and are now,6.87,3,11
+and around,5.22,2,10
+and assuming,4.48,2,12
+and attempted to,5.27,3,16
+and believe that,6.04,3,16
+and caused,6.31,2,10
+and decided,6.97,2,11
+and determine,5.56,2,13
+and died,7.46,2,8
+and especially,6.74,2,14
+and established,7.84,2,15
+and expected,6.96,2,12
+and expects,4.76,2,11
+and feel that,5.27,3,13
+and fully,7.24,2,9
+and guaranteed,8.3,2,14
+and i am sure,8.08,4,13
+and i believe,5.96,3,13
+and i really,6.19,3,12
+and i'm going,6.45,3,13
+and i'm not,5.81,3,11
+and indicating,6.5,2,14
+and insisted,7.26,2,12
+and is,6.79,2,6
+and is able,6.77,3,11
+and is able to,6.87,4,14
+and is currently,6.7,3,16
+and is likely,5.31,3,13
+and is still,7.14,3,12
+and is therefore,6.87,3,16
+and is very,6.48,3,11
+and it appears,5.62,3,14
+and it is,7.54,3,9
+and it is the,6.83,4,13
+and it isn't,6.32,3,12
+and it seems,4.67,3,12
+and it wasn't,6.45,3,13
+and make sure that,6.74,4,18
+and needs to,5.68,3,12
+and neither is,5.4,3,14
+and not to,5.68,3,10
+and notes,6.13,2,9
+and obviously,7.33,2,13
+and of course,7.12,3,13
+and provides,6.12,2,12
+and required,6.79,2,12
+and said that,6.44,3,13
+and seems to,4.8,3,12
+and shows that,6.56,3,14
+and suggest,4.42,2,11
+and supports,6.17,2,12
+and that is,7.21,3,11
+and that is what,6.48,4,16
+and that is why,7.16,4,15
+and that means,6.66,3,14
+and that was,6.53,3,12
+and that will,6.93,3,13
+and there are,7.5,3,13
+and there was,6.73,3,13
+and thereby,6.24,2,11
+and they are,6.32,3,12
+and think that,5.06,3,14
+and thinks,4.61,2,10
+and this has,6.33,3,12
+and this is something,6.07,4,21
+and this is what,6.27,4,16
+and this is why,6.43,4,15
+and totally,7.8,2,11
+and uncertainty,2.4,2,15
+and verified,8.27,2,12
+and which is,6.52,3,12
+annually,7.29,1,8
+answer is yes,8.7,3,13
+anticipate,5.21,1,10
+anticipated,5.6,1,11
+any proof,4.79,2,9
+anyone know,3.77,2,11
+apologise,6.64,1,9
+apparent that,6.83,2,13
+apparently,4.36,1,10
+apparently been,4.83,2,15
+appear as,5.25,2,9
+appear to be,4.67,3,12
+appeared as,5.44,2,11
+appears to,5.33,2,10
+appears to be,5.8,3,13
+appears to be the,4.97,4,17
+appears to have been,5.58,4,20
+applies to,6.55,2,10
+apprehensive,2.46,1,12
+apprehensive about,3.61,2,18
+approached,6,1,10
+approaches,5.46,1,10
+appropriately,6.48,1,13
+approve,7.7,1,7
+approved,8.15,1,8
+approved by,7.06,2,11
+approves,7.37,1,8
+approximated,4.8,1,12
+approximately,4.38,1,13
+arbitrarily,3.85,1,11
+are a number,5.42,3,12
+are able to,7.13,3,11
+are absolutely,8.26,2,14
+are actually,7.59,2,12
+are all,7.71,2,7
+are allowed to,6.53,3,14
+are always,8.07,2,10
+are among,6.79,2,9
+are apparently,6.24,2,14
+are asking,4.97,2,10
+are aware of the,6.2,4,16
+are aware that,6.87,3,14
+are basically,5.47,2,13
+are becoming,6.83,2,12
+are better,6.36,2,10
+are bound to,6.96,3,12
+are but,4.33,2,7
+are capable,7.52,2,11
+are certain,7.81,2,11
+are claiming,5.08,2,12
+are clear,7.52,2,9
+are committed,7.63,2,13
+are completely,8.13,2,14
+are confident,7.93,2,13
+are confirmed,8.19,2,13
+are considerably,6.21,2,16
+are consistently,7.63,2,16
+are contributing,5.76,2,16
+are convinced,7.68,2,13
+are correct,7.33,2,11
+are dangerous,6.2,2,13
+are deemed,6.41,2,10
+are deeply,6.32,2,10
+are defined,7.92,2,11
+are definitely,8.24,2,14
+are dependent on,6.65,3,16
+are determined,7.58,2,14
+are either,3.36,2,10
+are engaged,7.29,2,11
+are entirely,7.8,2,12
+are entitled to,7.12,3,15
+are established,8.21,2,15
+are expected to be,6.36,4,18
+are experiencing,6.28,2,16
+are explicitly,7.6,2,14
+are extremely,7.77,2,13
+are following,6.41,2,13
+are fully,7.88,2,9
+are generally,5.17,2,13
+are gonna,5.85,2,9
+are gonna be,6.27,3,12
+are great,7.38,2,9
+are guaranteed,8,2,14
+are immediately,7.4,2,15
+are implemented,7.65,2,15
+are in fact,7.83,3,11
+are in place,6.45,3,12
+are inconsistent,4.09,2,16
+are increasingly,6.82,2,16
+are indeed,8,2,10
+are influenced,5.88,2,14
+are injured,6.55,2,11
+are intended to,6.21,3,15
+are involved,6.86,2,12
+are just as,5.97,3,11
+are likely to,4.69,3,13
+are likely to be,5.36,4,16
+are listed,7.21,2,10
+are looking for,4.63,3,15
+are most,6.57,2,8
+are needed,7.13,2,10
+are never,7.36,2,9
+are not,7.5,2,7
+are not able,5.84,3,12
+are not able to,6.48,4,15
+are not allowed,7.33,3,15
+are not allowed to,5.91,4,18
+are not always,4,3,14
+are not available,6.14,3,17
+are not required,6.07,3,16
+are not so,6.24,3,10
+are not yet,5.55,3,11
+are now being,7.14,3,13
+are often,6.44,2,9
+are often the,5.47,3,13
+are only,6.44,2,8
+are organized,7.29,2,13
+are particularly,6.5,2,16
+are perfectly,7.3,2,13
+are positive,7.33,2,12
+are possible,4.57,2,12
+are probably,4.46,2,12
+are probably the,4.42,3,16
+are problems,5.79,2,12
+are proposing,5.79,2,13
+are providing,7.23,2,13
+are real,7.85,2,8
+are required,7.63,2,12
+are required to,6.92,3,15
+are responsible,7.44,2,15
+are roughly,3.76,2,11
+are safe,7,2,8
+are scheduled,6.28,2,13
+are showing,5.7,2,11
+are shown,7.16,2,9
+are similar to,6,3,14
+are specifically,7.59,2,16
+are supported,6.34,2,13
+are supported by,7,3,16
+are sure,8.07,2,8
+are surely,7,2,10
+are therefore,6.96,2,13
+are totally,7.65,2,11
+are truly,6.81,2,9
+are typically,6,2,13
+are unknown,2.72,2,11
+are unlikely,4.4,2,12
+are very much,6.96,3,13
+are well aware,7.13,3,14
+are willing,6.13,2,11
+are witnessing,6.83,2,14
+arguably,4.83,1,8
+argue that,4.6,2,10
+argues that,4.56,2,11
+argument against,5.16,2,16
+argument to,5.57,2,11
+arguments to,6.38,2,12
+articulating,6.73,1,12
+as defined,7.13,2,10
+as has been,6.38,3,11
+as is the case,7.24,4,14
+as it is,5.92,3,8
+as specified,7.92,2,12
+as stated in the,7.63,4,16
+as suggested,5.79,2,12
+as supporting,6.6,2,13
+as there is,6.4,3,11
+as they are,6.86,3,11
+as well as,5.93,3,10
+ascertain,5.21,1,9
+asks,3.34,1,4
+asserted,7.08,1,8
+asserting that,5.96,2,14
+assigned to,6.89,2,11
+assisted,6.57,1,8
+assumed,5.57,1,7
+assumes,3.75,1,7
+assumption is,4.52,2,13
+assumptions,4.04,1,11
+assurance that,6.93,2,14
+assuredly,7.75,1,9
+assures,7.87,1,7
+at any given time,5.43,4,17
+at exactly,8.2,2,10
+attacks,6.21,1,7
+attained,7.03,1,8
+attempts at,4.48,2,11
+attended,7,1,8
+available are,5.71,2,13
+available is,6.8,2,12
+aware of,6.13,2,8
+aware that,5.57,2,10
+awfully,4.96,1,7
+baffled,3.03,1,7
+based solely,6.5,2,12
+basic facts,7.24,2,11
+be accomplished,6.7,2,15
+be achieved,6.1,2,11
+be admitted,6.97,2,11
+be affected by,5.69,3,14
+be appointed,6.83,2,12
+be argued,5.34,2,9
+be argued that,5.33,3,14
+be assumed,4.97,2,10
+be assumed that,5.27,3,15
+be believed,5.57,2,11
+be changed,5.42,2,10
+be considered,5.57,2,13
+be controlled,6.81,2,13
+be dealt with,7.34,3,13
+be detected,5.73,2,11
+be determined by,6.33,3,16
+be discussed,4.47,2,12
+be executed,7.13,2,11
+be expected,6.2,2,11
+be expected to,5.59,3,14
+be finished,7.38,2,11
+be given,6.82,2,8
+be guaranteed,7.39,2,13
+be helped,6.47,2,9
+be informed,6.64,2,11
+be interpreted,5.7,2,14
+be killed,7.32,2,9
+be known,6.88,2,8
+be left,4.92,2,7
+be met,5.93,2,6
+be noted,5.6,2,8
+be organized,6.6,2,12
+be perceived,5.63,2,12
+be perceived as,5.43,3,15
+be pointed out,6.7,3,14
+be possible,5.53,2,11
+be proven,7.29,2,9
+be receiving,6.15,2,12
+be regarded as,6.12,3,14
+be regulated,6.54,2,12
+be reported,6.55,2,11
+be required,7,2,11
+be searched,5.67,2,11
+be studied,4.77,2,10
+be subjected to,6.48,3,15
+be sufficient,7.34,2,13
+be sure,7.45,2,7
+be taking,6.54,2,9
+be tested,5.83,2,9
+be told,6.07,2,7
+be trusted,7.28,2,10
+be understood,6.31,2,13
+be valued,6.33,2,9
+be verified,7.21,2,11
+be viewed,5.68,2,9
+bearing in mind,5.5,3,15
+became clear,7.33,2,12
+became clear that,7.4,3,17
+because i,5.81,2,9
+because i do,7.41,3,12
+because i'm not,6.54,3,15
+because it,6.67,2,10
+because it was,6.76,3,14
+because of its,6.53,3,14
+become clear,6.84,2,12
+become increasingly,6.16,2,19
+becoming more and,6.32,3,17
+been able to,6.27,3,12
+been addressed,6.46,2,14
+been allowed,6.48,2,12
+been cancelled,7,2,14
+been committed,7.48,2,14
+been confirmed,8.54,2,14
+been decided,7.53,2,12
+been declared,7.52,2,13
+been delivered,7.83,2,14
+been determined,7.73,2,15
+been discovered,6.75,2,15
+been doing,5.67,2,10
+been established,7.8,2,16
+been found,7.07,2,10
+been good,6.76,2,9
+been identified,7.27,2,15
+been identified as,6.96,3,18
+been increasing,5.81,2,15
+been known,6.59,2,10
+been looking,5.15,2,12
+been observed,6.24,2,13
+been particularly,5.71,2,17
+been performed,7.31,2,14
+been possible,5.41,2,13
+been reached,7.93,2,12
+been released,7.24,2,13
+been removed,7.37,2,12
+been repeatedly,6.63,2,15
+been reported,6.15,2,13
+been resolved,7.77,2,13
+been said,5.48,2,9
+been set up,7.08,3,11
+been so,5.96,2,7
+been stated,6.63,2,11
+been successful,6.73,2,15
+been successfully,7.76,2,17
+been suggested,4.32,2,14
+been thinking about it,4.16,4,22
+been totally,7.26,2,12
+been unable,5,2,11
+been verified,8.31,2,13
+been waiting for,5.04,3,16
+been warned,5.72,2,11
+been wrong,5.96,2,10
+beginning with,5.89,2,14
+being addressed,6.19,2,15
+being aware,6.38,2,11
+being investigated,5.87,2,18
+being promoted,6.83,2,14
+belief,6.36,1,6
+belief that the,5.93,3,15
+believe,6.18,1,7
+believe are,4.58,2,11
+believe is,6.33,2,10
+believe it is,5.7,3,13
+believe that,5.07,2,12
+believe that a,4.72,3,14
+believe that it is,5.57,4,18
+believe that the,4.83,3,16
+believe this is,5.26,3,15
+believe to be,5.68,3,13
+believe you,6.56,2,11
+believed in,6.33,2,11
+believed that,6.1,2,13
+believed that the,6.04,3,17
+believes in,6.4,2,11
+believes in the,6.21,3,15
+believes it,7.53,2,11
+believes that,5.65,2,13
+believing,6.26,1,9
+believing that,6.54,2,14
+benefit from,6.52,2,12
+best and brightest,6.81,3,18
+best guess,3.7,2,10
+best of all,7.27,3,11
+betrays,5.47,1,7
+better chance,4.94,2,13
+better job of,6.2,3,13
+beyond any doubt,8.81,3,16
+blocking,6.73,1,8
+both are,7.63,2,8
+bounded,6.62,1,7
+but he is,6.2,3,9
+but i believe,6.46,3,13
+but i don't know,1.34,4,16
+but i'm not,4.71,3,11
+but is,5.3,2,6
+but isn't,5.1,2,9
+but it has to,5.81,4,13
+but it is also,5.6,4,14
+but it seems,4.33,3,12
+but the fact is,7.83,4,15
+but the truth is,7.77,4,16
+but there are,5.73,3,13
+but there is,5.63,3,12
+but there is also,4.92,4,17
+but there is still,6.34,4,18
+but this isn't,5.41,3,14
+but you are,6.63,3,11
+calculations are,7.03,2,16
+called off,7.17,2,10
+can be,4.41,2,6
+can be accessed,6.47,3,15
+can be considered,5.8,3,17
+can be expected,6.4,3,15
+can be obtained,7.36,3,15
+can be taken,6.4,3,12
+can certainly,7.33,2,13
+can know,6.43,2,8
+can no longer be,7.77,4,16
+can not,6.23,2,7
+can not be,6.13,3,10
+can only be,7.35,3,11
+can't be,5.81,2,8
+can't be done,6.8,3,13
+can't change,7.66,2,12
+captures,6.92,1,8
+carefully,6.8,1,9
+case that,6.63,2,9
+categorized as,5.81,2,14
+caused,7.29,1,6
+causing,6.39,1,7
+caution,3.36,1,7
+ceased,6.08,1,6
+ceased to,7.92,2,9
+ceases,6.5,1,6
+centred,6.44,1,7
+certain,8.28,1,7
+certain is,8.2,2,10
+certain of,8.18,2,10
+certainly be,7.3,2,12
+certainly been,7.36,2,14
+certainly do,7.7,2,12
+certainly have,8.1,2,14
+certainly in,7.57,2,12
+certainly is,8.46,2,12
+certainly no,7.11,2,12
+certainly will,8.17,2,14
+certainty,8.57,1,9
+certification,7.93,1,13
+certified,8.38,1,9
+certify,7.88,1,7
+chances,3.33,1,7
+characterized by,6.38,2,16
+checking to see,4.56,3,15
+checks are,6.21,2,10
+choose to,6.43,2,9
+chose,5.73,1,5
+circumstances that,5.38,2,18
+cited as,6.55,2,8
+citing,6.79,1,6
+citing the,7.17,2,10
+claim,6.25,1,5
+claims that,5.11,2,11
+clarification,5.04,1,13
+clarifications,5.37,1,14
+clarifies,7.62,1,9
+clarifying,6.25,1,10
+clarity,7.48,1,7
+classifies,7.13,1,10
+clear,7.8,1,5
+clear is,7.11,2,8
+clear that,7.83,2,10
+clearly and,7.42,2,11
+clearly been,7.69,2,12
+clearly defined,7.63,2,15
+clearly has,8.04,2,11
+clearly is,8.16,2,10
+clearly it,7.52,2,10
+clearly show,8.23,2,12
+clearly shows,7.85,2,13
+clearly stated,7.63,2,14
+clearly stated that,8.34,3,19
+clearly states,8.33,2,14
+close to,5.24,2,8
+cognizant,6.96,1,9
+combined with,5.57,2,13
+come to an,6.4,3,10
+come to fruition,6.97,3,16
+come to light,6.52,3,13
+comes down to it,6.63,4,16
+commanded,7.4,1,9
+commended,6.83,1,9
+commented that,5.63,2,14
+commit,6.81,1,6
+commitment,7.07,1,10
+committed to the,7.3,3,16
+committing,7.38,1,10
+common sense,6.53,2,12
+commonly used,6.28,2,13
+compatible with,6.84,2,15
+compelled,6.36,1,9
+complete,7.83,1,8
+complete and,7.5,2,12
+completed,8.38,1,9
+completed all,7.87,2,13
+completed by,7.2,2,12
+completely impossible,7.17,2,21
+completely out of,7.58,3,17
+completely sure,8.12,2,15
+completeness,7.6,1,12
+completion of the,7.32,3,17
+completly,8.54,1,9
+complies with,6.74,2,13
+comprises,6.6,1,9
+compromised,5.37,1,11
+concern is that,5.04,3,15
+concerning,5.13,1,10
+concerns about,4.64,2,14
+concerns regarding,4.53,2,18
+concise,7.16,1,7
+concluded,7.65,1,9
+concludes,7.82,1,9
+conclusion,8.17,1,10
+conclusion of,7.28,2,13
+conclusion to,7.2,2,13
+conclusions,6.46,1,11
+conclusive,8.66,1,10
+concur with,6.81,2,11
+condemned,6.83,1,9
+condemns,6.79,1,8
+conducted in,6.83,2,12
+confident,7.8,1,9
+confident that,7.67,2,14
+confirm the,7.59,2,11
+confirmations,7.88,1,13
+confirmed,7.88,1,9
+confirmed a,8,2,11
+confirmed as,7.71,2,12
+confirmed by,8.1,2,12
+confirmed in,7.55,2,12
+confirmed that,8.13,2,14
+confirmed the,7.26,2,13
+confirmed to,8.32,2,12
+confirmed to be,7.85,3,15
+confirming,6.89,1,10
+confirming that,7.64,2,15
+confirming the,6.93,2,14
+confirms,7.93,1,8
+confirms the,7.65,2,12
+conflicted,2.48,1,10
+confused,1.92,1,8
+confusing,1.29,1,9
+connection to,5.64,2,13
+consensus,7.37,1,9
+consent,7.08,1,7
+consequences,6.31,1,12
+consider as,4.85,2,11
+consider that,5.87,2,13
+considerably,6.54,1,12
+considered as,5.93,2,13
+considered this,5.5,2,15
+considered to,5.72,2,13
+considered to be,5.89,3,16
+considered to be the,6.09,4,20
+consist of,6.91,2,10
+consistency with,6.52,2,16
+consistent in,7.13,2,13
+consistently been,6.92,2,17
+consists,7.08,1,8
+constructive,5.76,1,12
+contains no,6.53,2,11
+contest,5.37,1,7
+continues,6.29,1,9
+contradicted,4.07,1,12
+contributed to,7,2,14
+conversion,5.93,1,10
+convictions,6.48,1,11
+convinced by,6.39,2,12
+convinced of,7.4,2,12
+convinced that,7.17,2,14
+convinces,6.53,1,9
+corporation is,5.89,2,14
+correct that,6.44,2,12
+corrected,7.27,1,9
+corresponds,6.77,1,11
+could be considered,5.25,3,19
+could be used to,5.63,4,16
+could help,4.68,2,10
+could not,5.96,2,9
+could not have been,6.17,4,19
+could still,4.38,2,11
+could tell,6.43,2,10
+couldn't,5.8,1,8
+couldn't be,5.4,2,11
+count on it,7.3,3,11
+course i am,7.7,3,11
+covered,7,1,7
+creates,6.1,1,7
+credible,7.54,1,8
+credibly,7.5,1,8
+curious,3.24,1,7
+curtailed,5.85,1,9
+dead,6.6,1,4
+dealing,5.93,1,7
+debatable,2.72,1,9
+decentralized,5.38,1,13
+decided,7.7,1,7
+decided on,7.76,2,10
+decided to,7.29,2,10
+decided to put,5.63,3,14
+decidedly,8.04,1,9
+decides not,6.27,2,11
+decides that,6.32,2,12
+decision made,7.7,2,13
+decision was made,7.76,3,17
+decision which,6.43,2,14
+decisions have,6.92,2,14
+decisive,7.36,1,8
+decisively,7.57,1,10
+declare,7.83,1,7
+declared,8.13,1,8
+declared that,7.3,2,13
+declares,7.77,1,8
+declining,4.96,1,9
+decree,6.88,1,6
+deduced,6.6,1,7
+deem,6.46,1,4
+deemed to,6.1,2,9
+deemed to be,6.32,3,12
+defends,5.68,1,7
+defined and,7.33,2,11
+defined as,7.52,2,10
+defined by,7.08,2,10
+defined the,7.57,2,11
+definetly,8.6,1,9
+definite,8.24,1,8
+definition is,7.71,2,13
+definitive,8,1,10
+degraded,4.65,1,8
+deliberately,7.7,1,12
+delivers,7.27,1,8
+demonstrable,6.48,1,12
+demonstrated that,7.67,2,17
+demonstrates that,7.04,2,17
+demonstrating that,6.97,2,18
+denies,6.71,1,6
+dependent on the,5.23,3,16
+depending,3.94,1,9
+depending on whether,2.79,3,20
+depends,3,1,7
+depends on,3.07,2,10
+depends on a,3.63,3,12
+derailed,5.64,1,8
+derived from,7.03,2,12
+despite,5.22,1,7
+determined,7.44,1,10
+determined by,6.88,2,13
+determined that,7.17,2,15
+determined to be,7.9,3,16
+determining if,3.84,2,14
+determining the,6.1,2,15
+deviates,5.17,1,8
+dictates that,6.94,2,13
+did everything,7.04,2,14
+did not change,6.4,3,14
+did not happen,7,3,14
+did not have,5.2,3,12
+did not have a,6.47,4,14
+did not have any,5.6,4,16
+did not provide,7.23,3,15
+did not seem,3.89,3,12
+did say that,7.41,3,12
+didn't do it,6.74,3,12
+didn't even,5.83,2,11
+didn't he,4.08,2,9
+didn't mean,4.37,2,11
+didn't quite,4.83,2,12
+didn't see it,5.85,3,13
+didn't work out,6.2,3,15
+different options,3.27,2,17
+differentiates,6.5,1,14
+difficult,5.6,1,9
+difficult to understand,2.58,3,23
+dignified,6.8,1,9
+diminished,4.31,1,10
+directly involved in,7.7,3,20
+disagree,5.36,1,8
+disagreed with,6.12,2,14
+disbelieving,4.54,1,12
+discarded,6.56,1,9
+disconcert,3.22,1,10
+discretionary,5.04,1,13
+distributed,6.63,1,11
+do exist,7.56,2,8
+do not contain,7.14,3,14
+do not have,7.03,3,11
+do not know,1.24,3,11
+do not necessarily,3.77,3,18
+do not seem to,3.03,4,14
+doable,6.96,1,6
+dodgy,2.52,1,5
+does exist,7.63,2,10
+does not actually,6.86,3,17
+does not appear to,3.8,4,18
+does not constitute,5.94,3,19
+does not contain,6.27,3,16
+does not do,5.41,3,11
+does not exist,6.2,3,14
+does not go,5.93,3,11
+does not happen,7.23,3,15
+does not have an,5.62,4,16
+does not have to,5.17,4,16
+does not include,7.04,3,16
+does not know,1.45,3,13
+does not necessarily,3.44,3,20
+does not provide,5.26,3,16
+does not seem,3,3,13
+does not want to,5.72,4,16
+does not work,6.86,3,13
+does seem,5.6,2,9
+doesn't,5.5,1,7
+doesn't exist,7.25,2,13
+doesn't seem to,3.94,3,15
+doesn't work,7.88,2,12
+doing okay,5.71,2,10
+doing something,5.8,2,15
+don't,4.67,1,5
+don't even know,1.77,3,15
+don't exist,7.17,2,11
+don't have any,5.7,3,14
+don't have anything,5.56,3,19
+don't know,0.59,2,10
+don't really,2.83,2,12
+don't really know,2.96,3,17
+don't seem,3.56,2,10
+don't think,2.53,2,11
+don't think i,2.97,3,13
+don't think we,3.13,3,14
+done,7.68,1,4
+done already,6.56,2,12
+done and,7,2,8
+done for,6.06,2,8
+done the,6.8,2,8
+done this,7.26,2,9
+doubt about,3.5,2,11
+doubt as,2.41,2,8
+doubted,2.76,1,7
+doubtless,7.04,1,9
+doubtlessly,6.3,1,11
+doubts,2.21,1,6
+educated guess,4.1,2,14
+effect is,6.23,2,9
+emphasized,7.04,1,10
+emphatic,6.89,1,8
+enable,6.8,1,6
+end by,6.12,2,6
+end result is,8,3,13
+endangering,5.8,1,11
+enforced,7.55,1,8
+enlisted,6.87,1,8
+enough is,6.04,2,9
+ensure that,6.9,2,11
+ensured,7.24,1,7
+ensures the,7.83,2,11
+ensuring that,7,2,13
+ensuring the,6.75,2,12
+entails,5.82,1,7
+entitled to,6.65,2,11
+entrenched in,6.93,2,13
+equates,7.07,1,7
+eradicated,7.82,1,10
+especially,6.52,1,10
+especially regarding,7.1,2,20
+especially when it comes,5.5,4,24
+essential,7.4,1,9
+established and,7.19,2,15
+established by,7.6,2,14
+established in,7,2,14
+establishing,6.9,1,12
+estates,6,1,7
+estimate is,4.04,2,11
+estimated that,4.07,2,14
+estimates,3.86,1,9
+estimates are,4.71,2,13
+estimates that,4.67,2,14
+estimation,3.64,1,10
+estimations,4.52,1,11
+even believe,5.62,2,12
+even possible,4.96,2,13
+everybody is,7.87,2,12
+everybody knows,7.61,2,15
+everyday,7.15,1,8
+everyone has,7.22,2,12
+everyone has the,7.15,3,16
+everyone is,7.33,2,11
+everyone knows,7.9,2,14
+everything but,6.33,2,14
+everything goes,7.13,2,15
+everything is fine,7.07,3,18
+everything possible,5.08,2,19
+evidence as,7.24,2,11
+evidence of,7.63,2,11
+evidence presented,7.29,2,18
+evidence supporting,7.19,2,19
+evidence that,7.03,2,13
+evidence to,6.77,2,11
+evidence to suggest that,5.58,4,24
+evidence was,6.64,2,12
+evidenced,7.8,1,9
+evidences,7.33,1,9
+evident that,7.83,2,12
+evidently,6.83,1,9
+exact,8.48,1,5
+exactly,8.07,1,7
+exactly is,7.78,2,10
+exactly right,7.97,2,13
+exactly the same,7.77,3,16
+exactly what,6.03,2,12
+exactness,8.46,1,9
+examining,5.83,1,9
+exclude,6.79,1,7
+excluded,6.27,1,8
+exclusively,8.38,1,11
+exemplifies,7.92,1,11
+exempted,7.42,1,8
+exhibiting,6.47,1,10
+exists,7.11,1,6
+expect,5.63,1,6
+expect that the,6.15,3,15
+expectation is,5.28,2,14
+expectations are,5.81,2,16
+expectations that,5.5,2,17
+expected,7.09,1,8
+expected to,6.7,2,11
+expected to have,5.8,3,16
+expecting,5.97,1,9
+expects a,5.68,2,9
+explains,7.33,1,8
+explicitly,8.39,1,10
+exposed to,5.84,2,10
+exposing,6.63,1,8
+extensively,7,1,11
+extremely,7.8,1,9
+extremely likely,8.1,2,16
+extremely unlikely,5.92,2,18
+extremly,7.9,1,8
+fact is,7.72,2,7
+fact was,7.39,2,8
+facts about,7.62,2,11
+factual,7.44,1,7
+factually,8.47,1,9
+failed,6.67,1,6
+faith in,6.47,2,8
+fallacy,4.94,1,7
+false,6.77,1,5
+favorably,6.07,1,9
+favours,6.35,1,7
+feasible,4.68,1,8
+feel confident,6.7,2,14
+feel is,5.4,2,7
+feel that the,5.33,3,13
+feeling is that,5.33,3,15
+feelings are,5.27,2,12
+felt that,4.69,2,9
+finalize,7.52,1,8
+finalized,7.96,1,9
+finalizing,7.59,1,10
+find it,6.07,2,7
+finished,7.9,1,8
+firm,7.6,1,4
+fluctuation,3.61,1,11
+focus on,6.42,2,8
+for ever,7.88,2,8
+for long periods,6.28,3,16
+for providing,6.28,2,13
+forced,6.9,1,6
+forecasts,5.69,1,9
+found guilty,7.78,2,12
+found it,6.83,2,8
+found out that,6.6,3,14
+found that,6.97,2,10
+found to be,7.47,3,11
+founded,7.24,1,7
+frequently used,6.69,2,15
+fuck knows,1.86,2,10
+fucked,6.11,1,6
+fulfill,7.45,1,7
+fulfilled,7.79,1,9
+full,7.28,1,4
+fully committed,8.14,2,15
+fully understood,7.52,2,16
+functional,6.18,1,10
+fundamentally,7.17,1,13
+game over,7.93,2,9
+general is,6.47,2,10
+generally,5.57,1,9
+generally considered,5.53,2,20
+given the fact,6.96,3,14
+god knows,3.5,2,9
+going to be able,6.47,4,16
+going to change,5.87,3,15
+going to die,6.88,3,12
+going to happen,7.47,3,15
+gonna do,5.96,2,8
+good chance,5,2,11
+got no idea,2.38,3,11
+got to be,6.5,3,9
+granted,6.7,1,7
+great potential,6.15,2,15
+great sense,6.19,2,11
+greatest,7.33,1,8
+growing,5.55,1,7
+guarantee,7.88,1,9
+guarantee of,8.21,2,12
+guarantee that,8,2,14
+guarantee to,8.19,2,12
+guaranteed,8.11,1,10
+guaranteed a,7.63,2,12
+guaranteed and,8.2,2,14
+guaranteed by,8.21,2,13
+guaranteed to,8.37,2,13
+guaranteeing,7.72,1,12
+guarantees,8.24,1,10
+guess i am,2.63,3,10
+guess is,2.3,2,8
+guess that,3.17,2,10
+guessed,2.48,1,7
+guessing,1.81,1,8
+guesswork,1.57,1,9
+guided,6.64,1,6
+had already been,6.85,3,16
+had always,6.93,2,10
+had always been,7.41,3,15
+had ended,6.33,2,9
+had found,6.78,2,9
+had happened,7.15,2,12
+had in mind,5.55,3,11
+had reached,6.44,2,11
+had shown,7.08,2,9
+had to have,5.54,3,11
+had worked,6.57,2,10
+happen,6.83,1,6
+happened here,7.47,2,13
+happened to,6.03,2,11
+happened today,8.1,2,14
+hard to believe,3.32,3,15
+hard to say,1.77,3,11
+hard to tell,2.71,3,12
+hard to understand,2.83,3,18
+has about,5.5,2,9
+has absolutely nothing,6.56,3,22
+has accomplished,7.25,2,16
+has actually been,7.03,3,17
+has agreed to,7.15,3,13
+has already,7.06,2,11
+has already made,7.56,3,16
+has always had,7.48,3,14
+has appeared,6.41,2,12
+has become a,7.52,3,12
+has been a very,6.81,4,15
+has been estimated that,5.17,4,23
+has been extremely,7.9,3,18
+has been further,6.57,3,16
+has been happening,6.56,3,18
+has been identified,7.33,3,19
+has been no,6.77,3,11
+has been reported,5.33,3,17
+has been suggested,5.44,3,18
+has been used,7.12,3,13
+has been very,6.77,3,13
+has certainly,8.25,2,13
+has claimed,5.6,2,11
+has come,6.93,2,8
+has come to,6.85,3,11
+has completed,7.64,2,13
+has completely,8.3,2,14
+has confirmed,8.33,2,13
+has control,7.47,2,11
+has decided,7.4,2,11
+has decided that,7.47,3,16
+has established,7.73,2,15
+has ever been,6.83,3,13
+has failed to,5.73,3,13
+has found,7,2,9
+has happened,7.48,2,12
+has just been,6.53,3,13
+has less,4.79,2,8
+has never,7.36,2,9
+has no,6.79,2,6
+has not been,5.62,3,12
+has not yet,4.03,3,11
+has not yet been,4.27,4,16
+has previously,6.44,2,14
+has probably,5.08,2,12
+has proved,8,2,10
+has proven that,7.61,3,15
+has provided,7.6,2,12
+has recently,6.27,2,12
+has resulted,6.39,2,12
+has said,6.82,2,8
+has some,5.47,2,8
+has stopped,7.45,2,11
+has successfully,7.27,2,16
+has the potential,5.2,3,17
+has the potential to,4.56,4,20
+has therefore,7.03,2,13
+has to be,7.68,3,9
+has to come,6.12,3,11
+has turned out,6.88,3,14
+hasn't been,6.08,2,11
+have a feeling,3.76,3,14
+have a feeling that,4.63,4,19
+have achieved,7.83,2,13
+have agreed to,7.38,3,14
+have already become,7.18,3,19
+have already been,7.47,3,17
+have already had,7.16,3,16
+have already made,6.41,3,17
+have always had,6.88,3,15
+have always maintained,7.42,3,22
+have appeared,5.97,2,13
+have been found,7.31,3,15
+have been given,7.38,3,15
+have been lost,6.29,3,14
+have been successful,7.72,3,20
+have begun,6.16,2,10
+have begun to,6.24,3,13
+have caused,7.29,2,11
+have come,6.15,2,9
+have completed,7.67,2,14
+have concluded,7.75,2,14
+have confirmed,8.52,2,14
+have consistently,7.19,2,17
+have contributed,6.76,2,16
+have decided,7.12,2,12
+have developed,6.93,2,14
+have disappeared,6.09,2,16
+have doubts,2.04,2,11
+have either,4.52,2,11
+have established,7.68,2,16
+have expected,5.11,2,13
+have experienced,7.54,2,16
+have found that,6.5,3,15
+have had enough,7.45,3,15
+have had to,6.55,3,11
+have happened,7.33,2,13
+have included,7.03,2,13
+have known,7.58,2,10
+have mentioned,5.22,2,14
+have met,7.41,2,8
+have never been,6.55,3,15
+have not been able,5.42,4,18
+have not had,5.06,3,12
+have now,6,2,8
+have now been,6.43,3,13
+have occurred,7.61,2,13
+have pointed out,6.19,3,16
+have proved,8.06,2,11
+have proven,8,2,11
+have proven to,8.04,3,14
+have provided,7.19,2,13
+have reached,7.24,2,12
+have received,7.5,2,13
+have reported,6.87,2,13
+have stated that,6.85,3,16
+have suggested,5.57,2,14
+have taken place,7.3,3,16
+have talked about,6.5,3,17
+have the feeling that,3.96,4,21
+haven't been able,4.33,3,17
+haven't heard,3.73,2,13
+he always has,7.77,3,13
+he argues,6.07,2,9
+he believes,5.24,2,11
+he believes that,6,3,16
+he can't,6,2,8
+he didn't,6.73,2,9
+he felt,4.36,2,7
+he hasn't,7.16,2,9
+he is not,6.63,3,9
+he isn't,6.53,2,8
+he knows,7.74,2,8
+he proposed,5.65,2,11
+he said,6.67,2,7
+he seems,4.3,2,8
+he seems to,5.21,3,11
+he seems to be,4.23,4,14
+he thinks,4.23,2,9
+he understands,7.57,2,14
+he was able,6.93,3,11
+he's feeling,6.2,2,12
+he's got a,6.46,3,10
+he's lost,5.07,2,9
+he's most,6.75,2,9
+he's not,6.36,2,8
+he's not even,5.88,3,13
+he's not in,6.36,3,11
+he's not really,4.37,3,15
+he's supposed to,5.08,3,16
+he's thinking,5.08,2,13
+he's trying,4.52,2,11
+held that,6.16,2,9
+here it is,7.48,3,10
+hesitant,2.26,1,8
+hesitantly,1.97,1,10
+hesitated,2.08,1,9
+hesitates,1.68,1,9
+highest possible,7.67,2,16
+highlighted,6.68,1,11
+highly,7.31,1,6
+hinders,5.56,1,7
+hinted,3.36,1,6
+hinted that,3.97,2,11
+hinting,4.42,1,7
+hiring,6.47,1,6
+honestly,6.67,1,8
+honesty,6.09,1,7
+hoped that,4.3,2,10
+hopelessly,4.93,1,10
+however,3.93,1,7
+hugely,6.57,1,6
+hunch,3.03,1,5
+hypotheses,4.17,1,10
+hypothetical,3.62,1,12
+i absolutely,7.88,2,12
+i ain't,5.03,2,7
+i also find it,6.78,4,14
+i also think,6.12,3,12
+i always,7.9,2,8
+i always knew,7.58,3,13
+i am able to,6.41,4,12
+i am absolutely,8.73,3,15
+i am assuming,3.28,3,13
+i am aware,7.38,3,10
+i am certain,8.73,3,12
+i am certainly,8.58,3,14
+i am concerned,4.68,3,14
+i am confident,8.73,3,14
+i am convinced,7.38,3,14
+i am extremely,8.16,3,14
+i am fully,7.52,3,10
+i am glad,6.88,3,9
+i am going,7.6,3,10
+i am here,7.66,3,9
+i am not,4.58,3,8
+i am not sure,1,4,13
+i am ready,7.96,3,10
+i am really,6.14,3,11
+i am referring,6.35,3,14
+i am sure,7.87,3,9
+i am sure that,8.04,4,14
+i am sure the,7.77,4,13
+i am sure you,7.15,4,13
+i am talking,6.83,3,12
+i am thinking,4.77,3,13
+i am truly,7.64,3,10
+i am very,7.47,3,9
+i am very much,7.42,4,14
+i ask,3.66,2,5
+i asked for,5.3,3,11
+i assume,3.83,2,8
+i believe,6.2,2,9
+i believe are,5.04,3,13
+i believe i,5.69,3,11
+i believe is,6.23,3,12
+i believe it is,6.44,4,15
+i believe it was,5.07,4,16
+i believe it would,5.53,4,18
+i believe so,5.27,3,12
+i believe that is,6.12,4,17
+i believe that the,4.36,4,18
+i believe the,5.86,3,13
+i believe there,5.07,3,15
+i believe there is,5.9,4,18
+i believe this is,6.07,4,17
+i believe to,6.35,3,12
+i believe to be,5.04,4,15
+i believe we,5.53,3,12
+i believed,6.24,2,10
+i belong,7.24,2,8
+i can confirm,8.23,3,13
+i can confirm that,7.93,4,18
+i can feel,6.32,3,10
+i can not,6.68,3,9
+i can't be,5.97,3,10
+i can't decide,1.67,3,14
+i can't get,3.35,3,11
+i can't think,1.74,3,13
+i caught,6.87,2,8
+i certainly,7.63,2,11
+i completely,7.87,2,12
+i conclude,7.68,2,10
+i consider,5.93,2,10
+i consider that,5.31,3,15
+i could only,5.35,3,12
+i did,8,2,5
+i did not,5.97,3,9
+i didn't know that,3.37,4,18
+i didn't know you,4.6,4,17
+i didnt,6.88,2,7
+i do believe that,6.5,4,17
+i do feel,6.2,3,9
+i do find it,7.17,4,12
+i do hope,4.71,3,9
+i do know,6.18,3,9
+i do not know,2.83,4,13
+i don't,5.97,2,7
+i don't feel,4.48,3,12
+i don't get,4.14,3,11
+i don't have,5.87,3,12
+i don't know how,3.13,4,16
+i don't quite understand,1.3,4,24
+i don't really know,1.33,4,19
+i don't remember,1.66,3,16
+i don't think i,2.85,4,15
+i don't understand,2.46,3,18
+i doubt,3.3,2,7
+i doubt it,3.62,3,10
+i ended,5.93,2,7
+i expected,6.07,2,10
+i feel are,4.73,3,10
+i feel is,4.4,3,9
+i feel it is,5.41,4,12
+i feel like,5.87,3,11
+i feel so,6.13,3,9
+i feel that,4.32,3,11
+i feel that it,5.25,4,14
+i feel that the,4.77,4,15
+i feel very,6.27,3,11
+i finally,6.67,2,9
+i find it,5.58,3,9
+i find this,6.73,3,11
+i firmly,7.54,2,8
+i firmly believe,7.83,3,16
+i firmly believe that,8.33,4,21
+i follow,6.59,2,8
+i found,6.8,2,7
+i found this,6.43,3,12
+i fully,7.7,2,7
+i gave,6.63,2,6
+i got,6.67,2,5
+i got it,7.37,3,8
+i greatly,6.92,2,9
+i guess,2,2,7
+i guess i,3.5,3,9
+i guess so,3.11,3,10
+i guess that,3.04,3,12
+i had no,4.8,3,8
+i had thought,3.77,3,13
+i have been,6.8,3,11
+i have ever had,7.18,4,15
+i have learned,7.03,3,14
+i have no doubt,7.82,4,15
+i have no idea,1.61,4,14
+i have not,5.93,3,10
+i have now,7.67,3,10
+i have only,6,3,11
+i have this,7.47,3,11
+i haven't been,5.5,3,14
+i hear,5.2,2,6
+i heard,5.03,2,7
+i intend,6.73,2,8
+i just didn't,5.93,3,13
+i just don't,5.68,3,12
+i just don't understand,1.84,4,23
+i just had,6.53,3,10
+i just hope,3.62,3,11
+i just wanted to,5.96,4,16
+i kind of,3.93,3,9
+i knew it was,8,4,13
+i know i'm,7.53,3,10
+i know it,8.26,3,9
+i know it is,7.62,4,12
+i know that,7.47,3,11
+i know there is,7.8,4,15
+i know this,8.23,3,11
+i know this is,8.1,4,14
+i know you,8.48,3,10
+i love you,7.7,3,10
+i may not,3.67,3,9
+i mean it,7.93,3,9
+i never,6.91,2,7
+i noticed,6.38,2,9
+i only have,6.29,3,11
+i own,7.47,2,5
+i presume,5.1,2,9
+i promise you,7.9,3,13
+i really,6.3,2,8
+i really am,7.48,3,11
+i really did,7.97,3,12
+i really don't,3.77,3,14
+i really don't know,0.76,4,19
+i really think,5.4,3,14
+i said it,7.17,3,9
+i saw that,6.7,3,10
+i see as,6,3,8
+i see it,7.47,3,8
+i see it as,5.97,4,11
+i still do,6.5,3,10
+i still don't know,1.3,4,18
+i still don't understand,2.1,4,24
+i strongly,7.53,2,10
+i strongly believe,8.16,3,18
+i suggest that,4.76,3,14
+i support,7.13,2,9
+i support the,7.07,3,13
+i supposed to,5.73,3,13
+i suspect,4.27,2,9
+i think,4.28,2,7
+i think about it,5.04,4,16
+i think he is,4.43,4,13
+i think i can,4.3,4,13
+i think i have,4.25,4,14
+i think i was,4.3,4,13
+i think i'm,4.85,3,11
+i think i'm going,4.52,4,17
+i think is,4.32,3,10
+i think it,4.73,3,10
+i think it does,5.17,4,15
+i think it is,4.74,4,13
+i think most,4.2,3,12
+i think so,4.89,3,10
+i think that,4.61,3,12
+i think that is,4.93,4,15
+i think that the,4.9,4,16
+i think this,4.86,3,12
+i think this is,4.19,4,15
+i thought,3.21,2,9
+i thought about it,5.2,4,18
+i thought i could,4.36,4,17
+i thought i had,3.44,4,15
+i thought i might,4.35,4,17
+i thought i would,4.52,4,17
+i thought it was,5.11,4,16
+i truly believe,6.48,3,15
+i trust,7.07,2,7
+i was,7.41,2,5
+i was expecting,6.21,3,15
+i was gonna,4.85,3,11
+i was never,6.8,3,11
+i was not,6.11,3,9
+i was there,8.42,3,11
+i wasn't sure,1.76,3,13
+i will certainly,8.21,3,16
+i would argue,6.25,3,13
+i would just like,5.93,4,17
+i would say that,6.37,4,16
+i'm a,6.41,2,5
+i'm assuming,4.16,2,12
+i'm being,6.36,2,9
+i'm certain,8.48,2,11
+i'm confident,7.72,2,13
+i'm confident that,6.63,3,18
+i'm confused,2.27,2,12
+i'm convinced,8.13,2,13
+i'm convinced that,7.22,3,18
+i'm getting,6.88,2,11
+i'm gonna be,6.28,3,12
+i'm guessing,1.85,2,12
+i'm guessing that,3.8,3,17
+i'm hearing,4.8,2,11
+i'm just not,4.27,3,12
+i'm making,6.83,2,10
+i'm not,6.21,2,7
+i'm not entirely sure,1.45,4,21
+i'm not sure,0.97,3,12
+i'm pretty,6.21,2,10
+i'm pretty sure,6.06,3,15
+i'm really,6.33,2,10
+i'm really not,4.54,3,14
+i'm right,7.96,2,9
+i'm seeing,6.22,2,10
+i'm still confused,1.47,3,18
+i'm sure that,7.18,3,13
+i'm thinking of,4.55,3,15
+i'm totally,7.7,2,11
+idea is,5.67,2,7
+ideal,7.07,1,5
+identified,7.03,1,10
+identified as,7.14,2,13
+identified by,7.83,2,13
+if required,5.27,2,11
+if so,4.58,2,5
+if this is true,4.04,4,15
+if yes,4.94,2,6
+if you are not,4.47,4,14
+iffy,1.48,1,4
+illustrates,6.77,1,11
+im not,6.21,2,6
+im sure,8.3,2,7
+imminent,7.03,1,8
+implication,5,1,11
+implication is,6.03,2,14
+implicitly,7.13,1,10
+implies that,5.03,2,12
+implying that,5.75,2,13
+important thing is,6.33,3,18
+important thing is that,6.83,4,23
+impression,5.03,1,10
+impression is that,5.17,3,18
+improbable,5.33,1,10
+improvements,6.41,1,12
+improves,6.21,1,8
+impunity,6.04,1,8
+in accordance with the,6.69,4,22
+in all cases,8.1,3,12
+in all likelihood,6.97,3,17
+in all probability,5.84,3,18
+in certain situations,4.9,3,21
+in complete,7,2,11
+in fact,8.46,2,7
+in favor of,6.44,3,11
+in favour,6.37,2,9
+in general are,5.71,3,14
+in general is,5.58,3,13
+in its entirety,7.08,3,15
+in many cases,5.94,3,13
+in mind,5.97,2,7
+in most cases,6.04,3,13
+in my opinion,5.36,3,13
+in my view,6.26,3,10
+in other cases,4.57,3,14
+in reality,7.48,2,10
+in reference to,6.58,3,15
+in regard,5.8,2,9
+in regard to,6.35,3,12
+in spades,6.45,2,9
+in the context of,5.65,4,17
+in these cases,5.67,3,14
+in this context,5.88,3,15
+in truth,8.28,2,8
+inaccuracies,3.57,1,12
+inappropriate,6.58,1,13
+inconclusive,2.13,1,12
+incontrovertible,5.5,1,16
+incurred,6.14,1,8
+indecisive,0.7,1,10
+indefinitely,4.79,1,12
+indeterminate,2,1,13
+indicate,6.38,1,8
+indicated that,5.56,2,14
+indicates,6.2,1,9
+indicates that the,6.03,3,18
+indicating,5.52,1,10
+indication that,6.24,2,15
+indications,5.59,1,11
+indictments,5.56,1,11
+indisputably,8.54,1,12
+indubitably,7.3,1,11
+inescapable,7.44,1,11
+inevitable,7.56,1,10
+inexplicable,2.32,1,12
+inferring,5.43,1,9
+informed about,6.6,2,14
+informing,6.37,1,9
+infrequently,5.35,1,12
+initiated by,5.93,2,12
+insecure,2.91,1,8
+insight,6.44,1,7
+insinuation,3.75,1,11
+insist,6.83,1,6
+insists,7.17,1,7
+inspecting,6.27,1,10
+institutionalized,6.85,1,17
+instructing,6.83,1,11
+insufficient,5,1,12
+integral,7.31,1,8
+intended to be,5.52,3,14
+intended to be used,6.04,4,19
+intending to,5.41,2,12
+interested,6.25,1,10
+interested to hear,5.62,3,18
+intrinsically,6.27,1,13
+introduced,5.54,1,10
+intuitions,3.93,1,10
+invalidated,4.21,1,11
+invariable,6.81,1,10
+invented,5.56,1,8
+investigated and,6.58,2,16
+invokes,6.04,1,7
+irrefutable,7.85,1,11
+irrefutably,8,1,11
+is a clear,7.58,3,10
+is a direct,6.77,3,11
+is a fact,8.65,3,9
+is a fundamental,7.23,3,16
+is a genuine,7.68,3,12
+is a highly,7.03,3,11
+is a legitimate,7.23,3,15
+is a measure,6.62,3,12
+is a part,5.5,3,9
+is a particularly,6.96,3,17
+is a permanent,8.21,3,14
+is a possibility,4.3,3,16
+is a potential,4.42,3,14
+is a question,3.1,3,13
+is a really,7.08,3,11
+is a risk,3.76,3,9
+is a sign that,5.62,4,14
+is a truly,7.96,3,10
+is about,6.16,2,8
+is absolutely,8.5,2,13
+is accepted,7.27,2,11
+is actually a,7.53,3,13
+is affected,6.6,2,11
+is after all,7.23,3,12
+is almost a,5.43,3,11
+is also expected to,5.43,4,19
+is also important,7.12,3,17
+is also possible,4.69,3,16
+is always a,8.03,3,11
+is always the,7.4,3,13
+is an absolute,8.53,3,14
+is an attempt,4.9,3,13
+is an extremely,7.31,3,15
+is an important,7,3,15
+is apparent,6.16,2,11
+is apparently,5.5,2,13
+is approved,7.9,2,11
+is approximately,4.61,2,16
+is as,6.15,2,5
+is available in,6.83,3,15
+is available to,6.3,3,15
+is aware of the,6.25,4,15
+is aware that,6.86,3,13
+is basically,6.5,2,12
+is becoming,5.7,2,11
+is being done,7.52,3,13
+is being held,6.71,3,13
+is believed,4.69,2,11
+is believed to,5.21,3,14
+is believed to be,5.73,4,17
+is bound,7.31,2,8
+is built,7.31,2,8
+is by no means,5.71,4,14
+is calculated,7.4,2,13
+is capable,6.93,2,10
+is certain,8.23,2,10
+is changing,5.32,2,11
+is clear,7.67,2,8
+is clear that,7.77,3,13
+is close to,5.82,3,11
+is committed,6.59,2,12
+is committed to,7.2,3,15
+is commonly,6.33,2,11
+is compatible with,6.27,3,18
+is complete,7.52,2,11
+is completed,7.84,2,12
+is completely,7.96,2,13
+is confident,7.78,2,12
+is confirmed,7.77,2,12
+is considerably,7,2,15
+is considered,5.88,2,13
+is consistent,6.67,2,13
+is consistent with,6.79,3,18
+is consistently,6.72,2,15
+is constant,7.6,2,11
+is contrary,4.8,2,11
+is controlling,6.87,2,14
+is convinced,7.48,2,12
+is correct,8,2,10
+is crucial,6.71,2,10
+is dead,6.73,2,7
+is decided,7.64,2,10
+is defined,7.71,2,10
+is definitely,8.59,2,13
+is definitely not,7.54,3,17
+is destined,6.93,2,11
+is determined,7.06,2,13
+is discussed,6.37,2,12
+is due to,6.97,3,9
+is ending,7.57,2,9
+is entirely,7.48,2,11
+is equivalent to,7.87,3,16
+is especially true,7.61,3,18
+is essential,7.6,2,12
+is essential to,6.64,3,15
+is established,8.17,2,14
+is ever,6,2,7
+is everything,7.44,2,13
+is evidence of,6.55,3,14
+is evident,7.79,2,10
+is exactly,8.17,2,10
+is exactly the,7.92,3,14
+is exclusively,7.76,2,14
+is extremely,7.4,2,12
+is feasible,5.69,2,11
+is fine,6.36,2,7
+is finished,7.6,2,11
+is found,7.45,2,8
+is frequently,6.31,2,13
+is fundamental,7.43,2,14
+is genuinely,7.77,2,12
+is going to happen,7.6,4,18
+is gonna,5.61,2,8
+is gonna happen,7.73,3,15
+is greatly,7.06,2,10
+is guaranteed,8.54,2,13
+is happening,6.78,2,12
+is hardly,5,2,9
+is helping,6.25,2,10
+is highly,6.93,2,9
+is implemented,6.97,2,14
+is important,6.88,2,12
+is impossible,6.75,2,13
+is impossible to,6,3,16
+is in fact,7.59,3,10
+is in fact a,7.48,4,12
+is in full,7.4,3,10
+is in line,6.86,3,10
+is in line with,6.25,4,15
+is incapable of,6.13,3,15
+is incomplete,5.87,2,13
+is indeed,8,2,9
+is indeed a,7.39,3,11
+is indeed the,7.41,3,13
+is inevitable,7.54,2,13
+is insane,6.31,2,9
+is intended,6.07,2,11
+is investigating,4.09,2,16
+is it possible for,4.23,4,18
+is it possible that,4.6,4,19
+is it really,5.63,3,12
+is it true,4.79,3,10
+is it true that,6.67,4,15
+is just a,5.79,3,9
+is just like,6.03,3,12
+is just not,6,3,11
+is known,7.6,2,8
+is largely,6.17,2,10
+is less,5.62,2,7
+is like,5.68,2,7
+is likely,5.89,2,9
+is likely that,5.31,3,14
+is likely to,5.53,3,12
+is likely to be,5.26,4,15
+is looking,5.2,2,10
+is mainly,6.52,2,9
+is managed,6.57,2,10
+is mandatory,8.03,2,12
+is measured,6.77,2,11
+is merely,5.63,2,9
+is more likely,6.31,3,14
+is more or less,4.37,4,15
+is near,6.35,2,7
+is necessary for,7.13,3,16
+is never,7.63,2,8
+is nice,6.84,2,7
+is no longer,7.04,3,12
+is no longer in,6.6,4,15
+is no more,7.03,3,10
+is no need,6.6,3,10
+is no question,8.1,3,14
+is no way,7.29,3,9
+is normally,6.27,2,11
+is not,6.3,2,6
+is not actually,6.31,3,15
+is not available,6.21,3,16
+is not clear,3.03,3,12
+is not currently,6.36,3,16
+is not happening,7.75,3,16
+is not known,1.7,3,12
+is not likely,4.12,3,13
+is not likely to,4.9,4,16
+is not necessary,5.87,3,16
+is not only,5.44,3,11
+is not possible,6.7,3,15
+is not so,6.42,3,9
+is not something,5.22,3,16
+is not sufficient,5.59,3,17
+is not the case,6.48,4,15
+is not there,7.07,3,12
+is not true,7.6,3,11
+is now,6.56,2,6
+is now being,6.64,3,12
+is obvious,8.13,2,10
+is obvious that,7.32,3,15
+is of course,8,3,12
+is of particular,6.37,3,16
+is often,6.38,2,8
+is often the,5.83,3,12
+is okay,5.23,2,7
+is on,6.43,2,5
+is only possible,5.73,3,16
+is particularly,6,2,15
+is perceived,5.43,2,12
+is perhaps,4.45,2,10
+is permitted,7.46,2,12
+is pointless,6.08,2,12
+is possible,5.33,2,11
+is possible to,5.19,3,14
+is possibly,3.93,2,11
+is potential,5.07,2,12
+is precisely,8.06,2,12
+is precisely the,7.72,3,16
+is predominantly,7.08,2,16
+is prepared,7,2,11
+is presumably,4.55,2,13
+is principally,6.73,2,14
+is probably,4.67,2,11
+is probably a,5.61,3,13
+is probably the,4,3,15
+is produced,7.47,2,11
+is projected,6,2,12
+is proof,7.59,2,8
+is proof that,8,3,13
+is protected,6.8,2,12
+is provided,6.96,2,11
+is published,7.43,2,12
+is purely,6.7,2,9
+is reached,6.58,2,10
+is ready,7.76,2,8
+is really not,5.24,3,13
+is referred,6.31,2,11
+is referring,5.86,2,12
+is related to,5.97,3,13
+is reported,6.11,2,11
+is required in,7.44,3,14
+is required to,7.5,3,14
+is responsible for,7.5,3,18
+is right,7.53,2,8
+is right to,7.79,3,11
+is safe,7.59,2,7
+is seriously,6.91,2,12
+is settled,7.55,2,10
+is shown,6.7,2,8
+is significantly,6.42,2,16
+is similar,5.16,2,10
+is simply,7.12,2,9
+is solved,7.8,2,9
+is sometimes,4.57,2,12
+is somewhat,4,2,11
+is specific,7.97,2,11
+is specifically,7.9,2,15
+is stable,7.47,2,9
+is stated,7.12,2,9
+is still in,6.75,3,11
+is still possible,5.2,3,17
+is substantially,6.52,2,16
+is sufficient,6.57,2,13
+is sufficiently,6.33,2,15
+is suggested that,4.39,3,17
+is supported,7.42,2,12
+is supported by,6.36,3,15
+is supporting,6.83,2,13
+is supportive,6.85,2,13
+is supposed,5.4,2,11
+is supposed to,4.62,3,14
+is supposed to be,4.84,4,17
+is sure to,7.29,3,10
+is surely,7.73,2,9
+is taking place,7.43,3,15
+is tantamount,6.83,2,13
+is that this,5.59,3,12
+is that when,4.6,3,12
+is the direct,7.92,3,13
+is the end,7.37,3,10
+is the fact,8.31,3,11
+is the fact that,8.03,4,16
+is the one,7.82,3,10
+is the right,7.3,3,12
+is the very,7.47,3,11
+is there no,3.74,3,11
+is there something,4.57,3,18
+is thought,5.43,2,10
+is to be expected,5.88,4,17
+is to say,5.87,3,9
+is too,6.14,2,6
+is totally,8.03,2,10
+is traditionally,5.93,2,16
+is true,8.36,2,7
+is truly,7.77,2,8
+is unable to,5.73,3,12
+is unclear,2.21,2,10
+is understood,6.93,2,13
+is undoubtedly,7.97,2,14
+is unlikely,4.63,2,11
+is up,6.32,2,5
+is used,6.64,2,7
+is usually,6.2,2,10
+is utterly,6.3,2,10
+is valid,7.9,2,8
+is very clear,8.37,3,13
+is very good,7.37,3,12
+is very important,7.12,3,17
+is very similar,6.63,3,15
+is viewed as,5.7,3,12
+is virtually,6.65,2,12
+is vital to,6.78,3,11
+is well known,8.1,3,13
+is wholly,8.11,2,9
+is worried,3.71,2,10
+is worth,6,2,8
+is wrong,7.24,2,8
+isn't happening,6.27,2,15
+isn't just,5.59,2,10
+isn't really,4.75,2,12
+isn't right,7.08,2,11
+isn't there,4.96,2,11
+isn't true,6.48,2,10
+isn't working,6.11,2,13
+isolated,6.35,1,8
+issue is,6.5,2,8
+issues being,4.68,2,12
+issues that are,5.12,3,15
+issues will,5.81,2,11
+it ain't,6,2,8
+it allows,6.47,2,9
+it also seems,5.5,3,13
+it appears,4.96,2,10
+it appears that,4.85,3,15
+it appears to,5,3,13
+it appears to be,5.12,4,16
+it became clear,7.11,3,15
+it becomes clear,7.53,3,16
+it can be seen,6.5,4,14
+it can not be,6.48,4,13
+it certainly,7.72,2,12
+it confirmed,8,2,12
+it considered,5.03,2,13
+it continues to,6.88,3,15
+it could be,4,3,11
+it did not,7.47,3,10
+it does appear,5.73,3,14
+it does not,6.69,3,11
+it does seem,5.9,3,12
+it does so,7.03,3,10
+it doesn't,6.88,2,10
+it doesn't have,6.4,3,15
+it doesn't make sense,2.52,4,21
+it failed to,6.04,3,12
+it has become,7.56,3,13
+it has ever been,7.53,4,16
+it has never,7.35,3,12
+it has to,6.88,3,9
+it hasn't,6.32,2,9
+it implies,6.12,2,10
+it is a fact,8.53,4,12
+it is absolutely,7.6,3,16
+it is actually,7.8,3,14
+it is also clear,6.97,4,16
+it is also possible,4.73,4,19
+it is an,7.26,3,8
+it is appropriate,7.41,3,17
+it is because,6.63,3,13
+it is clear,8.21,3,11
+it is clear that,7.77,4,16
+it is clearly,8.14,3,13
+it is common,7,3,12
+it is completely,8,3,16
+it is difficult to,5.54,4,18
+it is entirely,7.67,3,14
+it is exactly,8.1,3,13
+it is extremely,8.04,3,15
+it is fair to,6.04,4,13
+it is fully,7.87,3,11
+it is generally,6.41,3,15
+it is happening,7.62,3,15
+it is however,5.64,3,13
+it is important,6.73,3,15
+it is impossible,7.16,3,16
+it is impossible to,6.43,4,19
+it is indeed,7.5,3,12
+it is known,7.6,3,11
+it is likely,5.76,3,12
+it is likely that,6.27,4,17
+it is necessary,7.07,3,15
+it is never,7.13,3,11
+it is nevertheless,6.55,3,18
+it is no,7.5,3,8
+it is not,6.53,3,9
+it is nothing,6.07,3,13
+it is obvious,7.47,3,13
+it is obvious that,7.44,4,18
+it is of course,7.24,4,15
+it is possible,5.65,3,14
+it is possible that,4.43,4,19
+it is possible to,5.47,4,17
+it is probably,5.17,3,14
+it is right,8.04,3,11
+it is so,7.57,3,8
+it is sometimes,4.44,3,15
+it is this,7.27,3,10
+it is to be,6.6,4,11
+it is truly,7.88,3,11
+it is unclear,3.53,3,13
+it is unlikely that,5.23,4,19
+it is useful,6.42,3,12
+it is usually,5.17,3,13
+it is very,6.79,3,10
+it isn't the,6,3,12
+it just doesn't,4.3,3,15
+it knows,7.61,2,8
+it looks,4.96,2,8
+it looks like,5.08,3,13
+it may be possible,3.42,4,18
+it may well be,5.47,4,14
+it must have been,5.9,4,17
+it needs to be,6.1,4,14
+it never happened,6.4,3,17
+it obvious,7.3,2,10
+it really is,7.7,3,12
+it seemed like,5.32,3,14
+it seemed to,4.53,3,12
+it seems as,4.84,3,11
+it seems as though,4.63,4,18
+it seems like,4.68,3,13
+it seems likely,4.97,3,15
+it seems obvious,7,3,16
+it seems so,5.63,3,11
+it seems that,4.84,3,13
+it seems to,5.15,3,11
+it seems to be,5.14,4,14
+it shall be,6.44,3,11
+it sounds,4.41,2,9
+it stands to reason,5.6,4,19
+it states that,7.21,3,14
+it stopped,6.77,2,10
+it suggests,4.44,2,11
+it true,7.38,2,7
+it was,7.33,2,6
+it was before,6.42,3,13
+it was clear,8,3,12
+it was clearly,7.68,3,14
+it was expected,6.43,3,15
+it was found,7.37,3,12
+it was likely,6,3,13
+it was necessary,7.5,3,16
+it was necessary to,7.24,4,19
+it was not,6.59,3,10
+it was obvious,7.83,3,14
+it was probably,4.71,3,15
+it was reported,6.1,3,15
+it was true,7.82,3,11
+it won't be,6.42,3,11
+it would appear that,5.4,4,20
+it's allowed,7.57,2,12
+it's always been,6.7,3,16
+it's because,7.2,2,12
+it's broken,6.5,2,11
+it's coming,7.07,2,11
+it's doing,7.17,2,10
+it's done,7.7,2,9
+it's expected,6.14,2,13
+it's going to be,6.41,4,16
+it's happened,7.73,2,13
+it's happening,7.84,2,14
+it's known,7.7,2,10
+it's lost,5.73,2,9
+it's never been,6.1,3,15
+it's no,6.85,2,7
+it's not coming,7.04,3,15
+it's not quite,2.5,3,14
+it's not really,3.28,3,15
+it's probably not,3.63,3,17
+it's really not,5.81,3,15
+it's supposed,4.47,2,13
+it's supposed to,4.63,3,16
+it's this,6.76,2,9
+it's true,8.57,2,9
+its entirety,7.45,2,12
+its over,7.77,2,8
+its total,7.6,2,9
+job well done,6.96,3,13
+just a guess,2.28,3,12
+just about,5.2,2,10
+just came in,6.84,3,12
+just decided,6.59,2,12
+just don't know,0.63,3,15
+just don't think,4.13,3,16
+just finished,7.03,2,13
+just happened,6.93,2,13
+just is,6.86,2,7
+just isn't,5.23,2,10
+just now i,5.77,3,10
+just seems,4.9,2,10
+just wasn't,5.48,2,11
+killed,7.41,1,6
+kills,6.89,1,5
+kind,5.97,1,4
+kind of,3.89,2,7
+kinda,2.6,1,5
+knew about,7,2,10
+know about this,7.13,3,15
+know it is,7.6,3,10
+know now,7.52,2,8
+know of,5.53,2,7
+know something,7,2,14
+know the truth,7.77,3,14
+know well,7.82,2,9
+know what it is,7.47,4,15
+know what that is,7.1,4,17
+know why,6.31,2,8
+knowledge of,7.3,2,12
+knowledge that,6.97,2,14
+known,7.78,1,5
+known is,7.61,2,8
+known that,7.6,2,10
+known the,6.33,2,9
+known to,6.84,2,8
+knows,8.03,1,5
+knows about,6.8,2,11
+knows exactly,8.5,2,13
+lacking,4.63,1,7
+lagging,5.39,1,7
+landed,6.97,1,6
+legal rights,7.4,2,12
+lesson learned,7.07,2,14
+like to think,4.6,3,13
+liked,6.09,1,5
+likelihood,5.42,1,10
+likelihood of,4.85,2,13
+likelihood that,5.17,2,15
+likely,5.6,1,6
+likely be,4.87,2,9
+literally,7.22,1,9
+look forward to,5.83,3,15
+look just like,6.06,3,14
+looked like a,5.79,3,13
+looks like,4.88,2,10
+looks very,6.04,2,10
+lost everything,5.53,2,15
+lots of,6.14,2,7
+love it,6.54,2,7
+loved it,7.43,2,8
+made clear,7.11,2,10
+made clear that,7.65,3,15
+made it clear,7.93,3,13
+made possible,6.79,2,13
+made sure,7.27,2,9
+mainly,6.25,1,6
+maintained,6.82,1,10
+majority of them are,7.2,4,20
+make an informed decision,6.37,4,25
+make choices,5.59,2,12
+make decisions,5.76,2,14
+making decisions,6.41,2,16
+mandated,7.57,1,8
+mandating,7.23,1,9
+manifesto,6.56,1,9
+marginally,4.48,1,10
+matter is,6,2,9
+matter of fact,7.07,3,14
+may be,4.07,2,6
+may consider,3.45,2,12
+may have been,3.76,3,13
+may not,3.04,2,7
+may not be able,3.48,4,15
+may or may not,1.8,4,14
+may seem,4.48,2,8
+may think,3.72,2,9
+maybe,3.79,1,5
+maybe he is,3.7,3,11
+maybe i can,3.04,3,11
+maybe i was,3.13,3,11
+maybe there is,3.55,3,14
+maybe this is,2.27,3,13
+meaning that,6.41,2,12
+meant it,7.2,2,8
+measured by,6.3,2,11
+measures,6.59,1,8
+might,3.68,1,5
+might've,3.73,1,8
+mind that,4.96,2,9
+minimize,5.7,1,8
+mistaken,4.63,1,8
+more beneficial,6.93,2,15
+more desirable,6.22,2,14
+more detailed,6.77,2,13
+more effectively,7.2,2,16
+more inclined,4.89,2,13
+more likely,5.5,2,11
+more precisely,6.96,2,14
+most accurate,8.38,2,13
+most advanced,7.42,2,13
+most beautiful,7.36,2,14
+most beneficial,6.9,2,15
+most certainly,8.09,2,14
+most convenient,6.1,2,15
+most definitely,8.27,2,15
+most effective,7.15,2,14
+most especially,7.27,2,15
+most important are,6.97,3,18
+most is,5.59,2,7
+most likely,5.76,2,11
+most notably,6.96,2,12
+most of all,6.48,3,11
+most of them are,6.46,4,16
+most of them were,6.04,4,17
+most of which are,6.47,4,17
+most often,7.07,2,10
+most positive,7.36,2,13
+most probably,5.63,2,13
+most productive,7.6,2,15
+most reliable,7.64,2,13
+most successful,6.7,2,15
+mostly been,5.74,2,11
+moves,5.26,1,5
+much has,5.81,2,8
+must,7.64,1,4
+must be given to,8.07,4,16
+must be made,7,3,12
+must have been,6.2,3,14
+my concern is,5.14,3,13
+my guess is,3.57,3,11
+my name is,7.91,3,10
+my opinion,5.71,2,10
+my understanding is,5.88,3,19
+my view is,5.87,3,10
+mysterious,2.77,1,10
+nailed,6.67,1,6
+necessarily mean that,4.52,3,21
+necessary,6.85,1,9
+necessary measures,7.03,2,18
+need more information,2.1,3,21
+needs to have,6,3,13
+never,6.57,1,5
+never found,5.81,2,11
+no doubt,8,2,8
+no doubt about it,8.62,4,17
+no guarantee,2.73,2,12
+no history,4.83,2,10
+no one does,6.45,3,11
+no one has,6.85,3,10
+no one knows,2.48,3,12
+no proof,4.5,2,8
+no question,8.41,2,11
+no trace,5.45,2,8
+nobody knows,1.8,2,12
+noon,7,1,4
+nor does it,5.07,3,11
+not able to,5.5,3,11
+not allowed,6.24,2,11
+not allowed to,6.33,3,14
+not available,6.12,2,13
+not aware of,2,3,12
+not be a,6,3,8
+not being a,6,3,11
+not clear,1.93,2,9
+not clearly,2.12,2,11
+not confident,1.96,2,13
+not convinced,3.4,2,13
+not convinced that,2.83,3,18
+not enough information,1.24,3,22
+not feasible,6.71,2,12
+not impossible,4.16,2,14
+not included,6.36,2,12
+not knowing,2.54,2,11
+not known,1.8,2,9
+not likely,4.38,2,10
+not possible,6.27,2,12
+not possible to,6.43,3,15
+not provided,4.43,2,12
+not quite sure,2.17,3,14
+not really sure,1.41,3,15
+not sure,1.32,2,8
+not sure how,1.33,3,12
+not sure how i,3.08,4,14
+not sure if,2.03,3,11
+not want,5.4,2,8
+not yet,4.13,2,7
+notably,6.73,1,7
+nothing has,6.44,2,11
+noticeable,6.71,1,10
+now i do,7.17,3,8
+now i have,7.1,3,10
+nowhere to be found,6.33,4,19
+objection,4.74,1,9
+objectionable,4.7,1,13
+obvious that,7.81,2,12
+obvious that the,6.86,3,16
+obviously be,7.79,2,12
+obviously it,7.6,2,12
+occurring,6,1,9
+of circumstances,5.04,2,16
+of commitment,6.24,2,13
+of confusion,1.72,2,12
+of course i am,7.97,4,14
+of course it is,7.71,4,15
+of course there is,7.41,4,18
+of course they are,7.15,4,18
+of evidence,6.45,2,11
+of exactly,7,2,10
+of possibilities,4.56,2,16
+of roughly,3.83,2,10
+of the highest,6.44,3,14
+of uncertainty,2,2,14
+of varying,4.5,2,10
+often,6.5,1,5
+often referred,6.3,2,14
+oftentimes,4.67,1,10
+on occasion,4.27,2,11
+on target,7.03,2,9
+one does not,4.83,3,12
+one which is,6.46,3,12
+only are,6.33,2,8
+only is,6.1,2,7
+only knows,5.31,2,10
+only question is,4,3,16
+only temporary,5.08,2,14
+opinion is,5.6,2,10
+opinion it,5.1,2,10
+opinion that,5.9,2,12
+opinions are,3.76,2,12
+opinions that,5.8,2,13
+or not,2.41,2,6
+or not to,4.55,3,9
+order to ensure,6.16,3,15
+order to try,5.6,3,12
+originally,6.5,1,10
+other hand,3.63,2,10
+overestimated,5.03,1,13
+overstated,6.07,1,10
+overwhelming majority of,7.63,3,24
+paradoxical,3.41,1,11
+participates in,6.53,2,15
+partly,4.42,1,6
+people are afraid,5.83,3,17
+people feel,5.18,2,11
+people think,5.73,2,12
+people were killed,7.93,3,18
+perceived to be,5.43,3,15
+perception of,5.37,2,13
+perhaps,4.37,1,7
+perhaps even,4.41,2,12
+perhaps i,3.14,2,9
+perhaps it is,4.08,3,13
+perhaps it was,3.48,3,14
+perhaps not,2.88,2,11
+perpetuating,5.54,1,12
+persistently,6.93,1,12
+personally believe,5.52,2,18
+placements,5.79,1,10
+plausible,5.68,1,9
+pointed out that,6.54,3,16
+pointed out the,6.35,3,15
+pointed that,5.97,2,12
+pointing out that,6.27,3,17
+pointing that,6.03,2,13
+points out that,6.77,3,15
+portraying,6,1,10
+position was,6.33,2,12
+positions are,6.37,2,13
+positive,8.15,1,8
+positive results,6.96,2,16
+positives,7.1,1,9
+positivity,7.13,1,10
+possibilities and,3.76,2,17
+possibilities are,4.88,2,17
+possibilities to,5.26,2,16
+possibility is,3.66,2,14
+possible,4.73,1,8
+possibly,3.52,1,8
+posts that,6.28,2,10
+potential is,5.56,2,12
+precaution,4.68,1,10
+precisely,8.17,1,9
+precisely the,7.52,2,13
+precision,7.7,1,9
+predicated,6.9,1,10
+predict,3.97,1,7
+predictable,7.16,1,11
+predicted,5.97,1,9
+predictor,6.17,1,9
+predicts,4.9,1,8
+predominantly,7.12,1,13
+predominately,6.52,1,13
+preferable,6.33,1,10
+prefers,6.24,1,7
+presence,6.57,1,8
+presented by,6.08,2,12
+presumably,4.87,1,10
+presume,4.97,1,7
+presumption,4.21,1,11
+pretend,4.1,1,7
+pretty confused,1.78,2,15
+pretty obvious,7.16,2,14
+pretty sure,5.77,2,11
+pride,5.92,1,5
+proactively,6.6,1,11
+probability,4.31,1,11
+probability is,4.92,2,14
+probable,4.94,1,8
+probably,4.03,1,8
+probably be,4.21,2,11
+probably best,5.7,2,13
+probably is,4.96,2,11
+problem is,4.48,2,10
+process,5.93,1,7
+proclaiming,7.1,1,11
+progressed,6.96,1,10
+prohibits,6.77,1,9
+project is,6.75,2,10
+projected,4.83,1,9
+projections,4.56,1,11
+promise,6.1,1,7
+promised,6.81,1,8
+promised that,7.33,2,13
+promises,6.68,1,8
+proof,8.1,1,5
+proof that,7.68,2,10
+prospects of,5.21,2,12
+protection,5.96,1,10
+prove anything,5.17,2,14
+proved to,8.12,2,9
+proved to be,7.33,3,12
+proves,8.29,1,6
+proves that,8.27,2,11
+proves to be,7.77,3,12
+provide a better,5.84,3,16
+provide evidence,6.73,2,16
+provided in,6.88,2,11
+provides for,6.9,2,12
+provides the,6.5,2,12
+providing an,6.43,2,12
+providing the,6.77,2,13
+proving,7.24,1,7
+proving to be,6.43,3,13
+published,7.5,1,9
+purchases,6.54,1,9
+purportedly,4.63,1,11
+put an end to,6.92,4,13
+put forth,6.47,2,9
+put up,6,2,6
+qualifies,7,1,9
+quantified,7.43,1,10
+question is,4.74,2,11
+question is whether,2.83,3,19
+questionable,3.38,1,12
+questioned by,4.96,2,13
+questioning,2.38,1,11
+questions regarding,4,2,19
+questions the,3.13,2,13
+quite accurate,7.93,2,14
+quite certain,7.44,2,13
+quite clearly,7.77,2,13
+quite difficult,5.97,2,15
+quite happy,6.9,2,11
+quite likely,6.2,2,12
+quite literally,7.96,2,15
+quite obvious,7.86,2,13
+quite possibly,5.36,2,14
+quite powerful,7.03,2,14
+quite right,7.29,2,11
+quite sure,8.07,2,10
+quoting,6.58,1,7
+random,1.97,1,6
+rarely,4,1,6
+ready,7,1,5
+ready to go,8,3,11
+reaffirm,7.77,1,8
+reaffirmed,8.33,1,10
+real possibility,5.03,2,16
+realise,6.9,1,7
+realising,6.86,1,9
+realistically,6.04,1,13
+realities of,6.41,2,12
+reality is,7.73,2,10
+reality is that,7.44,3,15
+really am,7.56,2,9
+really believe,7.43,2,14
+really didn't,4.75,2,13
+really doesn't,4.97,2,14
+really don't,6,2,12
+really don't know,2,3,17
+really good,7.07,2,11
+really happened,7.76,2,15
+really happy,7.6,2,12
+really is a,7.23,3,11
+really isn't,6.17,2,12
+really knows,7.57,2,12
+really scared,5.56,2,13
+really think,5.7,2,12
+really was,7.19,2,10
+really works,7.32,2,12
+reason to believe,5.6,3,17
+reason was,7.17,2,10
+reasonably,5.92,1,10
+recalled,6.63,1,8
+reciprocated,6.52,1,12
+reckon,4.58,1,6
+recognize,7.18,1,9
+recognized,6,1,10
+recognized as a,6.19,3,15
+recognized for,6.9,2,14
+recognizes that,6.73,2,15
+recognizing that,6.58,2,16
+recommended,6.54,1,11
+recommended that,5.96,2,16
+refer to,6.19,2,8
+referenced,6.67,1,10
+referencing,6.47,1,11
+reflected in the,5.9,3,16
+refuse,6.23,1,6
+refuse to,6.94,2,9
+refutable,4,1,9
+relates to,6.11,2,10
+reliable sources,6.91,2,16
+reliably,7.32,1,8
+remain,5.46,1,6
+remains to be seen,2.6,4,18
+removing,5.79,1,8
+renders,5.08,1,7
+report,6.46,1,6
+report said,7.03,2,11
+report states that,6.76,3,18
+report suggests,5.4,2,15
+reported to,6,2,11
+reportedly,5.23,1,10
+reports about,5.81,2,13
+required and,6.3,2,12
+required by,7.8,2,11
+required of,7.09,2,11
+requirement is,7.47,2,14
+requirements,6.45,1,12
+requires,7.77,1,8
+requires an,6.06,2,11
+researched,7.4,1,10
+reservations,4.67,1,12
+reservations about,3.29,2,18
+resolute,7.56,1,8
+resolved,8.1,1,8
+resolves,6.74,1,8
+resources available,6.47,2,19
+responded,6.97,1,9
+restored,7.07,1,8
+restricted to,5.67,2,13
+restrictions are,6.72,2,16
+restrictions in,6.63,2,15
+restrictions that,5.5,2,17
+result is,7.36,2,9
+reveal that,6.77,2,11
+revealed that,7.08,2,13
+revealing that,7.03,2,14
+right that is,7.21,3,13
+risk is,5.4,2,7
+robbed,6.92,1,6
+roughly,3.88,1,7
+ruled out,7.62,2,9
+ruled that,7.5,2,10
+ruling,7.27,1,6
+said before,6.27,2,11
+said that,6.53,2,9
+said that a,6.4,3,11
+said that he,6.62,3,12
+said that his,5.94,3,13
+said to have,5.67,3,12
+same as,6.46,2,7
+satisfaction of,6.11,2,15
+satisfied with,6.8,2,14
+satisfies,6.81,1,9
+say that they,5.77,3,13
+say we,5.12,2,6
+saying this,6.3,2,11
+scenarios,4.67,1,9
+sceptical,3,1,9
+scored,7.24,1,6
+searched,5.59,1,8
+second,5.4,1,6
+seconded,7.16,1,8
+secured,7.9,1,7
+see it as,5,3,9
+seeing,7.04,1,6
+seem,4.37,1,4
+seem like,4.44,2,9
+seem like a,4.37,3,11
+seem to,4.15,2,7
+seem to be,3.88,3,10
+seem to be a,4.36,4,12
+seemed like a,4.67,3,13
+seeming,5.27,1,7
+seemingly,4.9,1,9
+seems,3.97,1,5
+seems like,4.27,2,10
+seems so,4.93,2,8
+seems to,4.1,2,8
+seems to be,5.23,3,11
+seems to be a,4.15,4,13
+seems to be an,5.26,4,14
+seems to be more,5.48,4,16
+seems to be that,5.13,4,16
+seems to be the,4.68,4,15
+seems to have,4.55,3,13
+seems to me to,4.6,4,14
+seems very,4.83,2,10
+seen as an,5.93,3,10
+seen to be,5.46,3,10
+sees fit,6.18,2,8
+separated,5.27,1,9
+service is,6.83,2,10
+severing,6.27,1,8
+she didn't,7.2,2,10
+she was able to,7.17,4,15
+she's coming,7.77,2,12
+she's doing,5.64,2,11
+she's going,7.83,2,11
+shifts,4.19,1,6
+shot dead,7.45,2,9
+should be,4.64,2,9
+should be noted that,5.94,4,20
+should be removed,6.23,3,17
+should be seen,6.37,3,14
+should have been able,4.7,4,21
+should not be allowed,6.63,4,21
+should not have been,5.54,4,20
+shouldn't even,5.08,2,14
+show the,5.23,2,8
+showcasing,5.96,1,10
+showed that,7.04,2,11
+shown that,5.96,2,10
+shown to be,6.6,3,11
+signaling,6.48,1,9
+signals that,5.87,2,12
+sincerely believe,6.87,2,17
+situation with,5.13,2,14
+size fits,7.8,2,9
+skeptic,2.9,1,7
+skeptical,1.88,1,9
+skeptically,3.07,1,11
+smuggled,6.04,1,8
+so are,7.1,2,6
+so certain,8.58,2,10
+so is it,5.36,3,8
+so it seems,4.74,3,11
+so many questions,1.96,3,17
+so sure,7.96,2,7
+so wrong,6.13,2,8
+so you are,6.83,3,10
+solidified,6.73,1,10
+solution,7.73,1,8
+solved,8.32,1,6
+solved by,7.52,2,9
+solved with,7.24,2,11
+solves,7.5,1,6
+some are,5.07,2,8
+some instances,3.86,2,14
+somebody is,7,2,11
+someone who is,5.87,3,14
+something that,5.68,2,14
+something that is,6.03,3,17
+sort of,2.5,2,7
+sorta,1.96,1,5
+sorts of,5.27,2,8
+sound like,4.67,2,10
+sounds good,6.5,2,11
+sounds to me like,5.11,4,17
+specifics,7.48,1,9
+specifics of,7.34,2,12
+specified in,6.73,2,12
+specified that,7.71,2,14
+specifying,6.79,1,10
+speculate,3.07,1,9
+speculating,2.93,1,11
+speculation,2.72,1,11
+speculations,2.43,1,12
+speculative,2.7,1,11
+spreading,5.85,1,9
+stances,5.79,1,7
+standards are,7.3,2,13
+starting,5.87,1,8
+starting in,6.27,2,11
+stated that,6.77,2,11
+states that,7.21,2,11
+still believe,5.85,2,13
+still does not,4.5,3,14
+still have not,5.07,3,14
+still is,7.47,2,8
+still know,7.19,2,10
+still not,5.07,2,9
+still remains,5.7,2,13
+stopped,7.08,1,7
+straightened out,6.88,2,16
+straightforward,7.31,1,15
+strong feeling,6.79,2,14
+strongest,7.68,1,9
+studied the,6.69,2,11
+studies that,6.46,2,12
+study was,6.29,2,9
+stumped,3.44,1,7
+subjectively,3.79,1,12
+subjects are,6.62,2,12
+submitted,7.1,1,9
+substantiate,6.11,1,12
+substantiated,7.13,1,13
+succeeded,8.23,1,9
+succeeded in,6.85,2,12
+successfully completed,7.84,2,22
+suggest that,5.17,2,12
+suggest to,5.2,2,10
+suggested by,5.3,2,12
+suggesting that,5.33,2,15
+suggestion is,5.17,2,13
+suggestions that,5.22,2,16
+suggests the,5.35,2,12
+suggests to,4.72,2,11
+superseded,6.85,1,10
+support here,5.93,2,12
+supportive,6.97,1,10
+supportive of the,7.08,3,17
+suppose it is,4.53,3,13
+supposed,4.68,1,8
+supposed to happen,5.38,3,18
+supposed to mean,4.97,3,16
+sure about this,7.48,3,15
+sure are,6.94,2,8
+sure enough,7.2,2,11
+sure he was,6.6,3,11
+sure how,5.84,2,8
+sure is,7.33,2,7
+sure it was,7.38,3,11
+sure of it,8.4,3,10
+sure of that,7.77,3,12
+sure there is,6.74,3,13
+surely,6.6,1,6
+surely the,6.43,2,10
+susceptible to,4.92,2,14
+suspecting,4.15,1,10
+suspicious,3.24,1,10
+take into consideration,5.29,3,23
+taking into account the,5.55,4,23
+talking about here,5.86,3,18
+task is,6.52,2,7
+tell,6.3,1,4
+telling,6.84,1,7
+tends,5.63,1,5
+tends to be,4.87,3,11
+tentatively,2.68,1,11
+testified,7.4,1,9
+that already exists,7.38,3,19
+that applies,6.47,2,12
+that are less,5.04,3,13
+that being,6.17,2,10
+that being the case,6.62,4,19
+that can't be,6.32,3,13
+that defines,7.03,2,12
+that doesn't,5.45,2,12
+that explains,6.55,2,13
+that happens,6.45,2,12
+that have already been,7.39,4,22
+that i did,7,3,10
+that includes,6.73,2,13
+that indicate,6.5,2,13
+that indicates,6.76,2,14
+that is already,7.37,3,15
+that is also,6.37,3,12
+that is certainly,8.26,3,17
+that is clearly,7.33,3,15
+that is completely,7.44,3,18
+that is correct,8.03,3,15
+that is enough,7.32,3,14
+that is exactly,7.96,3,15
+that is exactly what,7.93,4,20
+that is highly,6.79,3,14
+that is how,7.07,3,11
+that is more,6.27,3,12
+that is most,6.37,3,12
+that is needed,6.5,3,14
+that is no,7.13,3,10
+that is possible,5.71,3,16
+that is precisely,7.47,3,17
+that is quite,6.2,3,13
+that is really,6.47,3,14
+that is required,7.62,3,16
+that is so,7.97,3,10
+that is the case,7.96,4,16
+that is totally,7.54,3,15
+that is true,7.48,3,12
+that is truly,7.59,3,13
+that is very,7.1,3,12
+that is what,6.36,3,12
+that isn't,5.86,2,10
+that it needs,6.5,3,13
+that means,6.63,2,10
+that seems,4.12,2,10
+that seems to,5.11,3,13
+that sounds,4.76,2,11
+that sounds like,4.76,3,16
+that there are,6.48,3,14
+that there is no,6.43,4,16
+that was a great,6.63,4,16
+that was not,6.5,3,12
+that was the case,7.68,4,17
+that wasn't,6.2,2,11
+that were the case,5.59,4,18
+that will be required,7.6,4,21
+the answer is no,8.43,4,16
+the answer is yes,8.8,4,17
+the apparent,6.42,2,12
+the best chance,5.86,3,15
+the chances,3.88,2,11
+the chances of,4.71,3,14
+the conclusion of,7.17,3,17
+the confirmation,7.52,2,16
+the decision of,7.66,3,15
+the end of,6.83,3,10
+the end result is,8.17,4,17
+the ending of the,5.83,4,17
+the estimate,4.4,2,12
+the estimated,5.43,2,13
+the evidence,6.52,2,12
+the expectation,5.64,2,15
+the expectations of,5.56,3,19
+the fact remains,7.13,3,16
+the guarantee,7.5,2,13
+the issues at,5.54,3,13
+the knowledge that,5.96,3,18
+the likelihood,5.44,2,14
+the most effective,7.6,3,18
+the obvious,7.71,2,11
+the possibility of,4.47,3,18
+the potential of,4.89,3,16
+the reality is,7.4,3,14
+the reality is that,7.63,4,19
+the risks,5.08,2,9
+the rules,7.14,2,9
+the specified,7.59,2,13
+the suggested,5.07,2,13
+the thinking,5.33,2,12
+the truth is,7.26,3,12
+the truth is that,7.24,4,17
+the world is,6.24,3,12
+their potential,5.03,2,15
+then i believe,6.73,3,14
+then i think,4.68,3,12
+then of course,7.08,3,14
+then this is,6.41,3,12
+theoretically,5.53,1,13
+there appears,5.13,2,13
+there appears to,5.71,3,16
+there appears to be,5.6,4,19
+there are a few,5.46,4,15
+there are a number,6,4,18
+there are about,4.59,3,15
+there are already,7.43,3,17
+there are also many,6.07,4,19
+there are currently,6.77,3,19
+there are many people,5.21,4,21
+there are numerous,6.28,3,18
+there are of course,5.93,4,19
+there are only,6.83,3,14
+there are several,6.52,3,17
+there are some,5.35,3,14
+there are two,7.42,3,13
+there aren't,5.81,2,12
+there exist,6.93,2,11
+there had been,6.88,3,14
+there has,6.64,2,9
+there has been,6.56,3,14
+there has to,6.52,3,12
+there have been,6.04,3,15
+there is a clear,7.56,4,16
+there is a great,7.21,4,16
+there is a need,6.67,4,15
+there is a possibility,4.63,4,22
+there is a risk,6.04,4,15
+there is absolutely,8.34,3,19
+there is also no,6.88,4,16
+there is an,6.3,3,11
+there is another,6.8,3,16
+there is any,5.32,3,12
+there is but,4.77,3,12
+there is certainly,7.76,3,18
+there is however,5.04,3,16
+there is indeed,7.8,3,15
+there is just,5.92,3,13
+there is likely,5.86,3,15
+there is much,6.73,3,13
+there is no denying,7.67,4,19
+there is no evidence,5.3,4,20
+there is no need,6.87,4,16
+there is no one,6.59,4,15
+there is no point,6.65,4,17
+there is no question,8.48,4,20
+there is no such,7.69,4,16
+there is no way,7.52,4,15
+there is really,7.28,3,15
+there is some,4.7,3,13
+there is someone,6.88,3,16
+there is something,6.6,3,18
+there isn't,6.25,2,11
+there it is,7.69,3,11
+there needs to,5.63,3,14
+there needs to be,5.75,4,17
+there seemed to,5.03,3,15
+there seems,4.84,2,11
+there seems to,5.2,3,14
+there seems to be,4.97,4,17
+there was a,6.67,3,11
+there was a lot,6.85,4,15
+there was an,6.43,3,12
+there was no,6.57,3,12
+there was no evidence,6.79,4,21
+there were no,6.58,3,13
+there were several,6.59,3,18
+these are all,7,3,13
+these aren't,6.1,2,12
+these reasons,6.3,2,13
+they ain't,5.31,2,10
+they appear to,4.7,3,14
+they are all,7.87,3,12
+they are likely,6.17,3,15
+they are likely to,4.86,4,18
+they are usually,5.03,3,16
+they believe,5.5,2,12
+they can not,6.3,3,12
+they can't,6.57,2,10
+they confirmed,7.93,2,14
+they did,7.52,2,8
+they expected,6.23,2,13
+they feel that,5.13,3,14
+they have no,6.46,3,12
+they really are,7.29,3,15
+they think that,4.78,3,15
+they were,7.17,2,9
+they were able to,6.3,4,17
+they weren't,6.97,2,12
+they're both,7.28,2,12
+they're going to be,6.89,4,19
+they're in,7.4,2,10
+they're lying,6.7,2,13
+they're not going to,6.12,4,20
+they're right,8.19,2,13
+they're talking about,5.74,3,21
+they're thinking,5.04,2,16
+they're told,5.77,2,12
+they're trying,5.83,2,14
+they've already,7.47,2,15
+they've decided,6.41,2,15
+they've not,6.27,2,11
+things aren't,4.62,2,13
+think i am,4.37,3,10
+think is,4.42,2,8
+think it is,4.62,3,11
+think that a,4.24,3,12
+think that is,4.81,3,13
+think that it,5.04,3,13
+think that it is,5.08,4,16
+think that the,4.43,3,14
+think that this is,5.36,4,18
+think the,4.91,2,9
+think there is,4.58,3,14
+think this is,4.8,3,13
+think you are,4.81,3,13
+thinks that the,4.68,3,15
+this appears,5.26,2,12
+this appears to,4.43,3,15
+this applies,6.29,2,12
+this becomes,5.7,2,12
+this came,5.56,2,9
+this case is,6.71,3,12
+this doesn't,4.17,2,12
+this explains,7.2,2,13
+this feels,4.4,2,10
+this happens,6.47,2,12
+this has been,6.48,3,13
+this has happened,7.69,3,17
+this includes,6.17,2,13
+this indicates,6.45,2,14
+this is a,6.44,3,9
+this is a great,7.23,4,15
+this is absolutely,8.08,3,18
+this is also,6.03,3,12
+this is clear,7.39,3,13
+this is clearly,8.59,3,15
+this is completely,8,3,18
+this is especially,7,3,18
+this is especially true,7.93,4,23
+this is exactly,8.1,3,15
+this is exactly the,7.26,4,19
+this is gonna be,6.35,4,16
+this is how,7.83,3,11
+this is indeed,7.66,3,14
+this is it,7.37,3,10
+this is just,6.24,3,12
+this is likely,5.7,3,14
+this is no,6.67,3,10
+this is not,6.19,3,11
+this is of course,7.53,4,17
+this is often,6.24,3,13
+this is over,6.74,3,12
+this is particularly,7.1,3,20
+this is possible,5.43,3,16
+this is pretty,6.37,3,14
+this is probably,4.57,3,16
+this is really,6.76,3,14
+this is serious,7.54,3,15
+this is some,4.47,3,12
+this is something,6.08,3,17
+this is totally,7.42,3,15
+this is true,8.06,3,12
+this is what happens,6.89,4,20
+this is why i,6.38,4,13
+this isn't a,5.33,3,12
+this knowledge,7.3,2,14
+this really is,7.44,3,14
+this seems,4.54,2,10
+this seems to,4.56,3,13
+this seems to be,5.25,4,16
+this shows that,7.2,3,15
+this was not,5.9,3,12
+this was the case,7.77,4,17
+this wasn't,6.08,2,11
+this won't,4.52,2,10
+thoroughly,7.64,1,10
+though it is,5.47,3,12
+thought of that,5.54,3,15
+thought that,5.4,2,12
+thought to,4.56,2,10
+thought to be,5.59,3,13
+thought you were,4.71,3,16
+thoughts are,5.57,2,12
+to accept,6.66,2,9
+to acknowledge,6.28,2,14
+to anticipate,4.55,2,13
+to ascertain,5.45,2,12
+to back up,6.32,3,10
+to be considered,5.23,3,16
+to be continued,4.8,3,15
+to be determined,4.06,3,16
+to be developed,4.27,3,15
+to be discussed,4.1,3,15
+to be expected,5.87,3,14
+to be reviewed,3.57,3,14
+to be sure,7.13,3,10
+to be taken,6.83,3,11
+to believe,6.21,2,10
+to confirm the,7.46,3,14
+to constantly,7.12,2,13
+to continually,5.88,2,14
+to decide,5.81,2,9
+to determine whether,4.3,3,20
+to doubt,2.46,2,8
+to ensure,6.6,2,9
+to establish,6.43,2,12
+to guarantee,8.13,2,12
+to illustrate,6.9,2,13
+to know is,7.07,3,10
+to predict,4.55,2,10
+to prove that,6.8,3,13
+to put an end,7,4,13
+to question,4.41,2,11
+to specify,6.83,2,10
+to suggest,5.27,2,10
+to take into account,5.81,4,20
+to take over,7.67,3,12
+to the fact that,7.58,4,16
+to the full,6.89,3,11
+to the fullest,7.27,3,14
+told ya,7.07,2,7
+told you,7.16,2,8
+told you so,7.26,3,11
+tolerated,6.04,1,9
+too confusing,2.31,2,13
+too risky,4.68,2,9
+torn apart,5.38,2,10
+totality,8.2,1,8
+totally honest,7.68,2,14
+transparent,6.93,1,11
+transpired,7.21,1,10
+tremendously,7.47,1,12
+trend,5.88,1,5
+trends are,5.08,2,10
+trial,3,1,5
+truly,7.82,1,5
+truly is,7.43,2,8
+trust,6.97,1,5
+trust me,6.88,2,8
+trusted,7.69,1,7
+trusting,5.97,1,8
+truth,8.35,1,5
+turned out to be,6.57,4,16
+turns out that,5.83,3,14
+typically,5.04,1,9
+unambiguously,7.23,1,13
+unanimous,7.62,1,9
+unattainable,6.15,1,12
+unavailable,6.35,1,11
+uncertain,1,1,9
+uncertainly,0.93,1,11
+uncertainty,0.73,1,11
+unchanging,7.69,1,10
+uncharted,2.78,1,9
+unclear,1.1,1,7
+unconditional,7.42,1,13
+unconfirmed,1.94,1,11
+unconvinced,3.34,1,11
+undecided,1.83,1,9
+undeniable,7.7,1,10
+underline,6.23,1,9
+understand that,6.63,2,15
+understand that the,6.73,3,19
+understanding is,6.37,2,16
+understands that,6.29,2,16
+understood,7.92,1,10
+undetermined,1.88,1,12
+undisputed,8.2,1,10
+undoubtedly,7.57,1,11
+unequivocally,7.95,1,13
+unexpected,3.58,1,10
+unfamiliar,2,1,10
+unfolds,5.36,1,7
+unfounded,6.03,1,9
+unintelligible,2.97,1,14
+unions,6.09,1,6
+unknowingly,4.36,1,11
+unknown,1.92,1,7
+unknowns,3.08,1,8
+unlikely,4.77,1,8
+unmistakably,8.21,1,12
+unpredictable,2.63,1,13
+unpredicted,2.47,1,11
+unproven,2.78,1,8
+unquestionable,8.54,1,14
+unquestionably,7.27,1,14
+unquestioning,6.92,1,13
+unstable,3,1,8
+unsubstantiated,2.67,1,15
+unsure,0.9,1,6
+unsure if,1.96,2,9
+untouchable,6.96,1,11
+untrue,5.56,1,6
+used to be,5.7,3,10
+used to think,4.64,3,13
+using the,6.13,2,9
+usually,5.68,1,7
+usually used,4.72,2,12
+vagueness,1.79,1,9
+validated,7.67,1,9
+validates,7.62,1,9
+validating,7.03,1,10
+varies,3.4,1,6
+varies depending,3.46,2,16
+varying degrees,3.68,2,15
+verification,7.3,1,12
+verified,7.77,1,8
+verified by,8.32,2,11
+verifies,6.88,1,8
+verify,6.9,1,6
+verifying,6.81,1,9
+very apparent,7.7,2,13
+very certain,8.9,2,12
+very challenging,6.27,2,16
+very clear,8.08,2,10
+very clearly,7.87,2,12
+very concerned about,5.69,3,20
+very confident,8.52,2,14
+very funny,6.67,2,10
+very hard,6,2,9
+very obviously,7.74,2,14
+very odd,4.04,2,8
+very often,7,2,10
+very optimistic,7.21,2,15
+very plausible,5.03,2,14
+very pleased,6.8,2,12
+very precise,7.72,2,12
+very promising,6.45,2,14
+very real,8.07,2,9
+very slightly,5.03,2,13
+very sure,8.39,2,9
+very tough,6.24,2,10
+very uncertain,2.15,2,14
+very vague,1.97,2,10
+very well known,7.07,3,15
+viewed as a,5.7,3,11
+viewpoints,4.97,1,10
+views with,5.93,2,10
+vow,8.5,1,3
+vowed,7.09,1,5
+waived,6.79,1,6
+was a major,5.96,3,11
+was absolutely,7.54,2,14
+was adopted,6.44,2,11
+was afraid,3.72,2,10
+was agreed,7.64,2,10
+was allegedly,4.11,2,13
+was allowed to,6.67,3,14
+was almost,5.67,2,10
+was always,7.7,2,10
+was an issue,4.8,3,12
+was apparently,6.19,2,14
+was aware,6.84,2,9
+was born,7.81,2,8
+was bound to happen,6.67,4,19
+was certainly,7.93,2,13
+was clear,8.21,2,9
+was clearly,7.5,2,11
+was complete,7.15,2,12
+was completely,8,2,14
+was confident,6.8,2,13
+was confirmed,8.19,2,13
+was convinced,6.74,2,13
+was convinced that,7.2,3,18
+was decided,7.72,2,11
+was deemed,6.89,2,10
+was determined,7.04,2,14
+was due,6.9,2,7
+was due to,6.09,3,10
+was enough,6.7,2,10
+was entirely,7.48,2,12
+was especially,6.67,2,14
+was established,7.43,2,15
+was exactly,8.81,2,11
+was examining,6.13,2,13
+was found,7.16,2,9
+was found guilty,8.41,3,16
+was found to,7.04,3,12
+was fully,7.92,2,9
+was given,7.09,2,9
+was identified,7.5,2,14
+was important,6.69,2,13
+was impossible,6.59,2,14
+was indeed,7.32,2,10
+was informed,6.93,2,12
+was intended to be,5.3,4,18
+was just,5.7,2,8
+was killed,7.97,2,10
+was known,7.27,2,9
+was likely,4.72,2,10
+was located,7.07,2,11
+was most,7.24,2,8
+was mostly,5.97,2,10
+was necessary,7.81,2,13
+was never,5.74,2,9
+was not able,5.85,3,12
+was not able to,7.04,4,15
+was now,7.1,2,7
+was obvious,7.67,2,11
+was obviously,7.88,2,13
+was offered,6.1,2,11
+was officially,7.3,2,14
+was partially,4.38,2,13
+was prepared,7.21,2,12
+was probably,4.06,2,12
+was provided,7,2,12
+was required,7.18,2,12
+was responsible,6.52,2,15
+was right,8.12,2,9
+was right to,6.83,3,12
+was scheduled,6.32,2,13
+was simply,6.87,2,10
+was somewhat,4.36,2,12
+was supported,7.33,2,13
+was supporting,6.53,2,14
+was supposed to be,4.56,4,18
+was the case,7,3,12
+was therefore,7.23,2,13
+was thought,5.37,2,11
+was told,5.85,2,8
+was told that,6.67,3,13
+was totally,7.97,2,11
+was true,7.72,2,8
+was unsuccessful,5.88,2,16
+was usually,5.5,2,11
+was very,7.2,2,8
+was wrong,6.81,2,9
+wasn't,5.82,1,6
+wasn't aware,3.9,2,12
+wasn't really,3.67,2,13
+way of thinking,4.82,3,15
+we are,6.56,2,6
+we are able,6.56,3,11
+we are able to,6.26,4,14
+we are all,6.87,3,10
+we believe that,6.93,3,15
+we can find,6.56,3,11
+we certainly,7.56,2,12
+we don't know,1.46,3,13
+we find,6.2,2,7
+we finish,7.55,2,9
+we found that,7.32,3,13
+we got a lot,6.57,4,12
+we have no,6.83,3,10
+we seem,5.33,2,7
+we're done,7.37,2,10
+we're going to,7.03,3,14
+we're moving,6.93,2,12
+we're not,4.62,2,9
+we're right,7.47,2,11
+we're thinking,4.45,2,14
+we've always,7.57,2,12
+we've done,7,2,10
+we've got to,7.1,3,12
+we've learned,7.83,2,13
+we've seen,6.87,2,10
+well aware,7.3,2,10
+well done,7.54,2,9
+well established,7.36,2,16
+well known and,7.69,3,14
+well known that,7.66,3,15
+well understood,7.37,2,15
+welldefined,7.45,1,11
+were able,7.23,2,9
+were able to,7.28,3,12
+were already,6.46,2,12
+were assigned,7.59,2,13
+were clearly,7.47,2,12
+were completely,7.77,2,15
+were destroyed,6.84,2,14
+were due to,6.39,3,11
+were expected to,5.55,3,16
+were found,7.15,2,10
+were fully,8.09,2,10
+were included,6.77,2,13
+were lost,5.38,2,9
+were not able,5.73,3,13
+were really,6.81,2,11
+were reported,6.9,2,13
+were required,7.67,2,13
+were required to,6.7,3,16
+were right,7.88,2,10
+were supposed,5.15,2,13
+were supposed to be,5.07,4,19
+were unable to,6.12,3,14
+were wrong,6.31,2,10
+what appears to be,5.69,4,18
+what are they,3.21,3,13
+what is,4.68,2,7
+what is more,6.36,3,12
+what is required,6.23,3,16
+what the hell is,1.52,4,16
+whatever it is,3.31,3,14
+when i was,6.63,3,10
+when is it,4,3,10
+when needed,5.85,2,11
+where possible,4.9,2,14
+whether or not,4.5,3,14
+whether or not to,3.12,4,17
+which appears to,5.27,3,16
+which are more,6.3,3,14
+which are very,5.8,3,14
+which have been,6.33,3,15
+which i believe,5.8,3,15
+which identifies,6.55,2,16
+which implies,5.34,2,13
+which included,7.13,2,14
+which is always,8.06,3,15
+which is exactly,7.34,3,16
+which is generally,5.38,3,18
+which is in,5.9,3,11
+which is most,5.84,3,13
+which is often,6.08,3,14
+which is one of,5.96,4,15
+which is probably,4.15,3,17
+which is usually,5.79,3,16
+which is very,6.96,3,13
+which is why,6.5,3,12
+which is why i,6.15,4,14
+which means,7.48,2,11
+which resulted in,6.7,3,17
+which seems to,5.17,3,14
+which showed,7.1,2,12
+which was a,6.12,3,11
+whichever is,3.97,2,12
+who can say,3.17,3,11
+who is,5.13,2,6
+who knows,1.38,2,9
+wholly,7.23,1,6
+will accept,6.54,2,11
+will be added to,5.93,4,16
+will be delivered,7.15,3,17
+will be implemented,7.28,3,19
+will be included,7.24,3,16
+will be ready,6.8,3,13
+will benefit,7.07,2,12
+will certainly be,8.33,3,17
+will depend,4.57,2,11
+will include,8.03,2,12
+will inevitably,6.88,2,15
+will no doubt,7.83,3,13
+will not be able,6.21,4,16
+will not do,7.42,3,11
+will remain,7.81,2,11
+will surely,6.82,2,11
+will undoubtedly,7.53,2,16
+wish all,4.88,2,8
+wish to see,4.8,3,11
+wishes to,4,2,9
+with certainty,8.13,2,14
+without doubt,8.58,2,13
+without hesitation,7.32,2,18
+witnessed,7.6,1,9
+won't be,5.94,2,8
+wondering if,2.77,2,12
+working in,6.23,2,10
+works,7.32,1,5
+would appear that,4.83,3,17
+would be,5.73,2,8
+would be considered,5.44,3,19
+would be expected,6.18,3,17
+would be preferable,5.5,3,19
+would be required,7.32,3,17
+would be required to,6.38,4,20
+would be used,5.74,3,13
+would certainly be,7.53,3,18
+would entail,5.96,2,12
+would expect,5.79,2,12
+would have given,5.21,3,16
+would have happened,5.69,3,19
+would indicate that,6.45,3,19
+would like to,5.88,3,13
+would never,6.64,2,11
+would seem to,5.4,3,13
+would seem to be,5.3,4,16
+would suggest,5.23,2,13
+would surely,7,2,12
+wouldn't be,5.77,2,11
+wouldn't be able,5.03,3,16
+written up,6.71,2,10
+wrong about that,5.7,3,16
+wrong about this,5.67,3,16
+yearning,5,1,8
+yep,7.07,1,3
+yes he was,7.83,3,10
+yet it is,5.48,3,9
+yielding,5.2,1,8
+you are absolutely,7.82,3,18
+you believe,6.63,2,11
+you can't,6.58,2,9
+you can't be,5.54,3,12
+you know this is,7.23,4,16
+you probably,4.56,2,12
+you think i'm,5.23,3,13
+you understand,6.85,2,14
+you were,6.96,2,8
+you're going to,7.13,3,15
+you're going to be,6.97,4,18
+you're not the,4.7,3,14
+you're right,8,2,12
+you've done,6.8,2,11
+you've got this,6.61,3,15

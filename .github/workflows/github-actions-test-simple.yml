@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./src
+        working-directory: ./src/team_comm_tools/
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -23,19 +23,19 @@ jobs:
 
       - name: Additional setup
         run: |
-          git submodule update --init --recursive
+          cd utils
           python import_nltk.py
 
       - name: Run featurizer
         run: |
-          cd ..
+          cd ../..
           cd tests
           python3 run_tests.py
           python3 run_package_grouping_tests.py
 
       - name: Run tests
         run: |
-          cd ..
+          cd ../..
           cd tests
           pytest test_feature_metrics.py
           pytest test_package.py
