@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>zscore_chats_and_conversation module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=837179f8"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -57,7 +57,11 @@
 <li class="toctree-l3"><a class="reference internal" href="preload_word_lists.html">preload_word_lists module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="preprocess.html">preprocess module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="summarize_features.html">summarize_features module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">zscore_chats_and_conversation module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">zscore_chats_and_conversation module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#utils.zscore_chats_and_conversation.get_zscore_across_all_chats"><code class="docutils literal notranslate"><span class="pre">get_zscore_across_all_chats()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.zscore_chats_and_conversation.get_zscore_across_all_conversations"><code class="docutils literal notranslate"><span class="pre">get_zscore_across_all_conversations()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="assign_chunk_nums.html">assign_chunk_nums module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="check_embeddings.html">check_embeddings module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gini_coefficient.html">gini_coefficient module</a></li>
@@ -93,10 +97,10 @@
            <div itemprop="articleBody">
              
   <section id="module-utils.zscore_chats_and_conversation">
-<span id="zscore-chats-and-conversation-module"></span><h1>zscore_chats_and_conversation module<a class="headerlink" href="#module-utils.zscore_chats_and_conversation" title="Permalink to this heading"></a></h1>
+<span id="zscore-chats-and-conversation-module"></span><h1>zscore_chats_and_conversation module<a class="headerlink" href="#module-utils.zscore_chats_and_conversation" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.zscore_chats_and_conversation.get_zscore_across_all_chats">
-<span class="sig-prename descclassname"><span class="pre">utils.zscore_chats_and_conversation.</span></span><span class="sig-name descname"><span class="pre">get_zscore_across_all_chats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chats_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.zscore_chats_and_conversation.get_zscore_across_all_chats" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.zscore_chats_and_conversation.</span></span><span class="sig-name descname"><span class="pre">get_zscore_across_all_chats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chats_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.zscore_chats_and_conversation.get_zscore_across_all_chats" title="Link to this definition"></a></dt>
 <dd><p>Calculate the z-score of a specified column for each chat message across the entire dataset.</p>
 <p>This function computes the z-score for the values in the specified numeric column, comparing
 each value to the mean and standard deviation of that column across all chat messages in the dataset.</p>
@@ -118,7 +122,7 @@ each value to the mean and standard deviation of that column across all chat mes
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.zscore_chats_and_conversation.get_zscore_across_all_conversations">
-<span class="sig-prename descclassname"><span class="pre">utils.zscore_chats_and_conversation.</span></span><span class="sig-name descname"><span class="pre">get_zscore_across_all_conversations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chats_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.zscore_chats_and_conversation.get_zscore_across_all_conversations" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.zscore_chats_and_conversation.</span></span><span class="sig-name descname"><span class="pre">get_zscore_across_all_conversations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chats_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.zscore_chats_and_conversation.get_zscore_across_all_conversations" title="Link to this definition"></a></dt>
 <dd><p>Calculate the z-score of a specified column for each chat message within each conversation.</p>
 <p>This function computes the z-score for the values in the specified numeric column,
 comparing each value to the mean and standard deviation of that column within each conversation.</p>

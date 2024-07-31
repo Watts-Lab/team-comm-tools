@@ -60,8 +60,7 @@ class FeatureBuilder:
     :param timestamp_col: A string representing the column name that should be selected as the message. Defaults to "timestamp".
     :type timestamp_col: str, optional
 
-    :param grouping_keys: A list of multiple identifiers that collectively identify a conversation. If non-empty, we will group by all of the keys in the list and use the
-    grouped key as the unique "conversational identifier."
+    :param grouping_keys: A list of multiple identifiers that collectively identify a conversation. If non-empty, we will group by all of the keys in the list and use the grouped key as the unique "conversational identifier."
         Defaults to an empty list.
     :type grouping_keys: list, optional
     

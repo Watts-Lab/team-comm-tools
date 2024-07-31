@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>summarize_features module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=837179f8"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -56,7 +56,16 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#other-utilities">Other Utilities</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="preload_word_lists.html">preload_word_lists module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="preprocess.html">preprocess module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">summarize_features module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">summarize_features module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_average"><code class="docutils literal notranslate"><span class="pre">get_average()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_max"><code class="docutils literal notranslate"><span class="pre">get_max()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_min"><code class="docutils literal notranslate"><span class="pre">get_min()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_stdev"><code class="docutils literal notranslate"><span class="pre">get_stdev()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_sum"><code class="docutils literal notranslate"><span class="pre">get_sum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_user_average_dataframe"><code class="docutils literal notranslate"><span class="pre">get_user_average_dataframe()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.summarize_features.get_user_sum_dataframe"><code class="docutils literal notranslate"><span class="pre">get_user_sum_dataframe()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="zscore_chats_and_conversation.html">zscore_chats_and_conversation module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="assign_chunk_nums.html">assign_chunk_nums module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="check_embeddings.html">check_embeddings module</a></li>
@@ -93,10 +102,10 @@
            <div itemprop="articleBody">
              
   <section id="module-utils.summarize_features">
-<span id="summarize-features-module"></span><h1>summarize_features module<a class="headerlink" href="#module-utils.summarize_features" title="Permalink to this heading"></a></h1>
+<span id="summarize-features-module"></span><h1>summarize_features module<a class="headerlink" href="#module-utils.summarize_features" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_average">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_average</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_average" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_average</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_average" title="Link to this definition"></a></dt>
 <dd><p>Generate a summary DataFrame with the average of a specified column per conversation.</p>
 <p>This function calculates the average of a specified column for each conversation in the input data,
 and returns a DataFrame containing the conversation number and the calculated average.</p>
@@ -120,7 +129,7 @@ and returns a DataFrame containing the conversation number and the calculated av
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_max">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_max" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_max" title="Link to this definition"></a></dt>
 <dd><p>Generate a summary DataFrame with the maximum value of a specified column per conversation.</p>
 <p>This function calculates the maximum value of a specified column for each conversation in the input data,
 and returns a DataFrame containing the conversation number and the calculated maximum value.</p>
@@ -144,7 +153,7 @@ and returns a DataFrame containing the conversation number and the calculated ma
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_min">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_min</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_min" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_min</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_min" title="Link to this definition"></a></dt>
 <dd><p>Generate a summary DataFrame with the minimum value of a specified column per conversation.</p>
 <p>This function calculates the minimum value of a specified column for each conversation in the input data,
 and returns a DataFrame containing the conversation number and the calculated minimum value.</p>
@@ -168,7 +177,7 @@ and returns a DataFrame containing the conversation number and the calculated mi
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_stdev">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_stdev</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_stdev" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_stdev</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_stdev" title="Link to this definition"></a></dt>
 <dd><p>Generate a summary DataFrame with the standard deviation of a specified column per conversation.</p>
 <p>This function calculates the standard deviation of a specified column for each conversation in the input data,
 and returns a DataFrame containing the conversation number and the calculated standard deviation.</p>
@@ -192,7 +201,7 @@ and returns a DataFrame containing the conversation number and the calculated st
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_sum">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_sum" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_to_summarize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_sum" title="Link to this definition"></a></dt>
 <dd><p>Generate a summary DataFrame with the sum of a specified column per conversation.</p>
 <p>This function calculates the sum of a specified column for each conversation in the input data,
 and returns a DataFrame containing the conversation number and the calculated sum.</p>
@@ -216,7 +225,7 @@ and returns a DataFrame containing the conversation number and the calculated su
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_user_average_dataframe">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_user_average_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_level_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_user_average_dataframe" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_user_average_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_level_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_user_average_dataframe" title="Link to this definition"></a></dt>
 <dd><p>Generate a user-level summary DataFrame by averaging a specified column per individual.</p>
 <p>This function groups chat-level data by user and conversation, calculates the average values
 of a specified numeric column for each user, and returns the resulting DataFrame.</p>
@@ -240,7 +249,7 @@ of a specified numeric column for each user, and returns the resulting DataFrame
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.summarize_features.get_user_sum_dataframe">
-<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_user_sum_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_level_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_user_sum_dataframe" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.summarize_features.</span></span><span class="sig-name descname"><span class="pre">get_user_sum_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_level_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.summarize_features.get_user_sum_dataframe" title="Link to this definition"></a></dt>
 <dd><p>Generate a user-level summary DataFrame by summing a specified column per individual.</p>
 <p>This function groups chat-level data by user and conversation, sums the values of a
 specified numeric column for each user (speaker), and returns the resulting DataFrame.</p>

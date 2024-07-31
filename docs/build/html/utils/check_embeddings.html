@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>check_embeddings module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=837179f8"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -58,7 +58,16 @@
 <li class="toctree-l3"><a class="reference internal" href="summarize_features.html">summarize_features module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zscore_chats_and_conversation.html">zscore_chats_and_conversation module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="assign_chunk_nums.html">assign_chunk_nums module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">check_embeddings module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">check_embeddings module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.check_embeddings"><code class="docutils literal notranslate"><span class="pre">check_embeddings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.generate_bert"><code class="docutils literal notranslate"><span class="pre">generate_bert()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.generate_lexicon_pkl"><code class="docutils literal notranslate"><span class="pre">generate_lexicon_pkl()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.generate_vect"><code class="docutils literal notranslate"><span class="pre">generate_vect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.get_sentiment"><code class="docutils literal notranslate"><span class="pre">get_sentiment()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.read_in_lexicons"><code class="docutils literal notranslate"><span class="pre">read_in_lexicons()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utils.check_embeddings.unpickle_certainty"><code class="docutils literal notranslate"><span class="pre">unpickle_certainty()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gini_coefficient.html">gini_coefficient module</a></li>
 </ul>
 </li>
@@ -91,8 +100,146 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="check-embeddings-module">
-<h1>check_embeddings module<a class="headerlink" href="#check-embeddings-module" title="Permalink to this heading"></a></h1>
+  <section id="module-utils.check_embeddings">
+<span id="check-embeddings-module"></span><h1>check_embeddings module<a class="headerlink" href="#module-utils.check_embeddings" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.check_embeddings">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">check_embeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vect_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bert_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">need_sentence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">need_sentiment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'message'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.check_embeddings" title="Link to this definition"></a></dt>
+<dd><p>Check if embeddings and required lexicons exist, and generate them if they don’t.</p>
+<p>This function ensures the necessary vector and BERT embeddings are available.
+It also checks for the presence of certainty and lexicon files, generating them if needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – Dataframe containing chat data</p></li>
+<li><p><strong>vect_path</strong> (<em>str</em>) – Path to the vector embeddings file (by default, we want SBERT vectors; embeddings for each utterance.)</p></li>
+<li><p><strong>bert_path</strong> (<em>str</em>) – Path to the RoBERTa sentiment inference output file</p></li>
+<li><p><strong>need_sentence</strong> (<em>bool</em>) – Whether at least one feature will require SBERT vectors; we will not need to calculate them otherwise.</p></li>
+<li><p><strong>need_sentiment</strong> (<em>bool</em>) – Whether at least one feature will require the RoBERTa sentiments; we will not need to calculate them otherwise.</p></li>
+<li><p><strong>message_col</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representing the column name that should be selected as the message. Defaults to “message”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.generate_bert">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">generate_bert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.generate_bert" title="Link to this definition"></a></dt>
+<dd><p>Generates RoBERTa sentiment scores for the given chat data and saves them to a CSV file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – Contains message data to be analyzed for sentiments.</p></li>
+<li><p><strong>output_path</strong> (<em>str</em>) – Path to save the CSV file containing sentiment scores.</p></li>
+<li><p><strong>message_col</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representing the column name that should be selected as the message. Defaults to “message”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If the output path is invalid.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.generate_lexicon_pkl">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">generate_lexicon_pkl</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.generate_lexicon_pkl" title="Link to this definition"></a></dt>
+<dd><p>Helper function for generating the pickle file containing lexicons.</p>
+<p>This function reads in lexicon files from a specified directory, processes the content,
+and appends the cleaned lexicon patterns to a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>directory</strong> (<em>Path</em>) – The directory containing the lexicon files</p></li>
+<li><p><strong>lexicons_dict</strong> (<em>dict</em>) – Dictionary to store the processed lexicon patterns</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.generate_vect">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">generate_vect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.generate_vect" title="Link to this definition"></a></dt>
+<dd><p>Generates sentence vectors for the given chat data and saves them to a CSV file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – Contains message data to be vectorized.</p></li>
+<li><p><strong>output_path</strong> (<em>str</em>) – Path to save the CSV file containing message embeddings.</p></li>
+<li><p><strong>message_col</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representing the column name that should be selected as the message. Defaults to “message”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If the output path is invalid.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.get_sentiment">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">get_sentiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.get_sentiment" title="Link to this definition"></a></dt>
+<dd><p>Analyzes the sentiment of the given text using a BERT model and returns the scores for positive, negative, and neutral sentiments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em><em> or </em><em>None</em>) – The input text to analyze.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary with sentiment scores.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.read_in_lexicons">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">read_in_lexicons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lexicons_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.read_in_lexicons" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.check_embeddings.unpickle_certainty">
+<span class="sig-prename descclassname"><span class="pre">utils.check_embeddings.</span></span><span class="sig-name descname"><span class="pre">unpickle_certainty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.check_embeddings.unpickle_certainty" title="Link to this definition"></a></dt>
+<dd><p>Unpickles the certainty data from a ‘.pkl’ file and writes it to a ‘.txt’ file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>FileNotFoundError</strong> – If the ‘.pkl’ file is not found.</p></li>
+<li><p><strong>IOError</strong> – If there is an issue reading from the ‘.pkl’ file or writing to the ‘.txt’ file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 

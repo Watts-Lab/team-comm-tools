@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>info_exchange_zscore module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=837179f8"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -54,7 +54,10 @@
 <li class="toctree-l3"><a class="reference internal" href="certainty.html">certainty module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lexical_features_v2.html">lexical_features_v2 module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="other_lexical_features.html">other_lexical_features module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">info_exchange_zscore module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">info_exchange_zscore module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.info_exchange_zscore.get_info_exchange_wordcount"><code class="docutils literal notranslate"><span class="pre">get_info_exchange_wordcount()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="question_num.html">question_num module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="politeness_features.html">politeness_features module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hedge.html">hedge module</a></li>
@@ -99,10 +102,10 @@
            <div itemprop="articleBody">
              
   <section id="module-features.info_exchange_zscore">
-<span id="info-exchange-zscore-module"></span><h1>info_exchange_zscore module<a class="headerlink" href="#module-features.info_exchange_zscore" title="Permalink to this heading"></a></h1>
+<span id="info-exchange-zscore-module"></span><h1>info_exchange_zscore module<a class="headerlink" href="#module-features.info_exchange_zscore" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="features.info_exchange_zscore.get_info_exchange_wordcount">
-<span class="sig-prename descclassname"><span class="pre">features.info_exchange_zscore.</span></span><span class="sig-name descname"><span class="pre">get_info_exchange_wordcount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_person</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.info_exchange_zscore.get_info_exchange_wordcount" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.info_exchange_zscore.</span></span><span class="sig-name descname"><span class="pre">get_info_exchange_wordcount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_person</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.info_exchange_zscore.get_info_exchange_wordcount" title="Link to this definition"></a></dt>
 <dd><p>This functinon computes the total word count in a message minus first person singular pronouns.</p>
 <p>Note that the function assumes that lexical features and basic features have already been run, and have generated a raw count of
 first-person pronouns (stored in “first_person_raw”) and a total number of words (stored in “num_words”).</p>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>burstiness module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=837179f8"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -51,7 +51,11 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Technical Documentation</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">burstiness module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">burstiness module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.burstiness.burstiness"><code class="docutils literal notranslate"><span class="pre">burstiness()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.burstiness.get_team_burstiness"><code class="docutils literal notranslate"><span class="pre">get_team_burstiness()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="information_diversity.html">information_diversity module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utils/gini_coefficient.html">gini_coefficient module</a></li>
 </ul>
@@ -90,10 +94,10 @@
            <div itemprop="articleBody">
              
   <section id="module-features.burstiness">
-<span id="burstiness-module"></span><h1>burstiness module<a class="headerlink" href="#module-features.burstiness" title="Permalink to this heading"></a></h1>
+<span id="burstiness-module"></span><h1>burstiness module<a class="headerlink" href="#module-features.burstiness" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="features.burstiness.burstiness">
-<span class="sig-prename descclassname"><span class="pre">features.burstiness.</span></span><span class="sig-name descname"><span class="pre">burstiness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timediff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.burstiness.burstiness" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.burstiness.</span></span><span class="sig-name descname"><span class="pre">burstiness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timediff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.burstiness.burstiness" title="Link to this definition"></a></dt>
 <dd><p>Computes the level of “burstiness” in a conversation, or the extent to which messages in a
 conversation occur periodically (e.g., every X seconds), versus in a “bursty” pattern
 (e.g., with long pauses and many messages in rapid succession.)</p>
@@ -117,7 +121,7 @@ conversation occur periodically (e.g., every X seconds), versus in a “bursty�
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.burstiness.get_team_burstiness">
-<span class="sig-prename descclassname"><span class="pre">features.burstiness.</span></span><span class="sig-name descname"><span class="pre">get_team_burstiness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timediff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.burstiness.get_team_burstiness" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.burstiness.</span></span><span class="sig-name descname"><span class="pre">get_team_burstiness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timediff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.burstiness.get_team_burstiness" title="Link to this definition"></a></dt>
 <dd><p>Applies the burstiness coefficient to each conversation in the utterance (chat)-level dataframe and returns a conversation-level dataframe.
 The Burstiness feature takes advantage of the fact that we already compute the time difference between messages
 as one of the utterance (chat)-level features.</p>
