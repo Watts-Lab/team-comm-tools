@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>assign_chunk_nums module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=837179f8"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -58,13 +58,7 @@
 <li class="toctree-l3"><a class="reference internal" href="preprocess.html">preprocess module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="summarize_features.html">summarize_features module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zscore_chats_and_conversation.html">zscore_chats_and_conversation module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">assign_chunk_nums module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#utils.assign_chunk_nums.assign_chunk_nums"><code class="docutils literal notranslate"><span class="pre">assign_chunk_nums()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.assign_chunk_nums.create_chunks"><code class="docutils literal notranslate"><span class="pre">create_chunks()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.assign_chunk_nums.create_chunks_messages"><code class="docutils literal notranslate"><span class="pre">create_chunks_messages()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.assign_chunk_nums.reduce_chunks"><code class="docutils literal notranslate"><span class="pre">reduce_chunks()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">assign_chunk_nums module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="check_embeddings.html">check_embeddings module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gini_coefficient.html">gini_coefficient module</a></li>
 </ul>
@@ -99,10 +93,10 @@
            <div itemprop="articleBody">
              
   <section id="module-utils.assign_chunk_nums">
-<span id="assign-chunk-nums-module"></span><h1>assign_chunk_nums module<a class="headerlink" href="#module-utils.assign_chunk_nums" title="Link to this heading"></a></h1>
+<span id="assign-chunk-nums-module"></span><h1>assign_chunk_nums module<a class="headerlink" href="#module-utils.assign_chunk_nums" title="Permalink to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.assign_chunk_nums.assign_chunk_nums">
-<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">assign_chunk_nums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_chunks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_time_if_possible</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.assign_chunk_nums" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">assign_chunk_nums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_chunks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_time_if_possible</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.assign_chunk_nums" title="Permalink to this definition"></a></dt>
 <dd><p>Assign chunks to the chat data, splitting it into “equal” pieces.</p>
 <p>This functionality is necessary for some conversational features that examine what happens throughout the course
 of a conversation (e.g., in the beginning, middle, and end).</p>
@@ -129,7 +123,7 @@ Otherwise, it will chunk based on the number of messages.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.assign_chunk_nums.create_chunks">
-<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">create_chunks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_chunks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.create_chunks" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">create_chunks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_chunks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.create_chunks" title="Permalink to this definition"></a></dt>
 <dd><p>Assign chunk numbers to the chats within each conversation based on time.</p>
 <p>This function divides each conversation into time-based chunks, ensuring each chunk spans an equal duration.</p>
 <dl class="field-list simple">
@@ -152,7 +146,7 @@ Otherwise, it will chunk based on the number of messages.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.assign_chunk_nums.create_chunks_messages">
-<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">create_chunks_messages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_chunks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.create_chunks_messages" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">create_chunks_messages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_chunks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.create_chunks_messages" title="Permalink to this definition"></a></dt>
 <dd><p>Assign chunk numbers to the chats within each conversation based on the number of messages.</p>
 <p>This function ensures that there is an even number of messages per chunk by calculating
 the chunk size for each conversation and adjusting the chunk number accordingly.</p>
@@ -175,7 +169,7 @@ the chunk size for each conversation and adjusting the chunk number accordingly.
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.assign_chunk_nums.reduce_chunks">
-<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">reduce_chunks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_num_chunks</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.reduce_chunks" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.assign_chunk_nums.</span></span><span class="sig-name descname"><span class="pre">reduce_chunks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_num_chunks</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.assign_chunk_nums.reduce_chunks" title="Permalink to this definition"></a></dt>
 <dd><p>Reduce the number of chunks based on the number of rows.</p>
 <p>This function adjusts the number of chunks to ensure that each chunk has at least two rows.
 If the total number of rows is less than twice the maximum number of chunks,

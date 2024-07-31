@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>information_diversity module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=837179f8"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -52,13 +52,7 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="burstiness.html">burstiness module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">information_diversity module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#features.information_diversity.calculate_ID_score"><code class="docutils literal notranslate"><span class="pre">calculate_ID_score()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.information_diversity.get_info_diversity"><code class="docutils literal notranslate"><span class="pre">get_info_diversity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.information_diversity.info_diversity"><code class="docutils literal notranslate"><span class="pre">info_diversity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.information_diversity.preprocessing"><code class="docutils literal notranslate"><span class="pre">preprocessing()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">information_diversity module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utils/gini_coefficient.html">gini_coefficient module</a></li>
 </ul>
 </li>
@@ -96,10 +90,10 @@
            <div itemprop="articleBody">
              
   <section id="module-features.information_diversity">
-<span id="information-diversity-module"></span><h1>information_diversity module<a class="headerlink" href="#module-features.information_diversity" title="Link to this heading"></a></h1>
+<span id="information-diversity-module"></span><h1>information_diversity module<a class="headerlink" href="#module-features.information_diversity" title="Permalink to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="features.information_diversity.calculate_ID_score">
-<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">calculate_ID_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc_topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_topics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.calculate_ID_score" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">calculate_ID_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc_topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_topics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.calculate_ID_score" title="Permalink to this definition"></a></dt>
 <dd><p>Computes info diversity score as suggested in Reidl &amp; Woolley (2017); determines a topic vector
 for every message using an LDA Model, computes a mean topic vector across all messages, and measures the average
 cosine similarity between the message vectors and the mean vector.</p>
@@ -122,7 +116,7 @@ cosine similarity between the message vectors and the mean vector.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.information_diversity.get_info_diversity">
-<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">get_info_diversity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.get_info_diversity" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">get_info_diversity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.get_info_diversity" title="Permalink to this definition"></a></dt>
 <dd><p>Computes information diversity (value between 0 and 1 inclusive) for all conversations.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -143,7 +137,7 @@ cosine similarity between the message vectors and the mean vector.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.information_diversity.info_diversity">
-<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">info_diversity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.info_diversity" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">info_diversity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.info_diversity" title="Permalink to this definition"></a></dt>
 <dd><p>Preprocess data and then create numeric mapping of words in dataset to pass into LDA model
 Uses square root of number of rows as number of topics</p>
 <dl class="field-list simple">
@@ -164,7 +158,7 @@ Uses square root of number of rows as number of topics</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.information_diversity.preprocessing">
-<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">preprocessing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.preprocessing" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">features.information_diversity.</span></span><span class="sig-name descname"><span class="pre">preprocessing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.information_diversity.preprocessing" title="Permalink to this definition"></a></dt>
 <dd><p>Preprocesses the data by lowercasing, lemmatizing, and removing words of size less than 4</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

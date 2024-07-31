@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>preprocess module &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=837179f8"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -55,17 +55,7 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#driver-classes-utterance-conversation-and-speaker-level-features">“Driver” Classes: Utterance-, Conversation-, and Speaker-Level Features</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#other-utilities">Other Utilities</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="preload_word_lists.html">preload_word_lists module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">preprocess module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.assert_key_columns_present"><code class="docutils literal notranslate"><span class="pre">assert_key_columns_present()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.compress"><code class="docutils literal notranslate"><span class="pre">compress()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.create_cumulative_rows"><code class="docutils literal notranslate"><span class="pre">create_cumulative_rows()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.get_turn_id"><code class="docutils literal notranslate"><span class="pre">get_turn_id()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.preprocess_conversation_columns"><code class="docutils literal notranslate"><span class="pre">preprocess_conversation_columns()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.preprocess_naive_turns"><code class="docutils literal notranslate"><span class="pre">preprocess_naive_turns()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.preprocess_text"><code class="docutils literal notranslate"><span class="pre">preprocess_text()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#utils.preprocess.preprocess_text_lowercase_but_retain_punctuation"><code class="docutils literal notranslate"><span class="pre">preprocess_text_lowercase_but_retain_punctuation()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">preprocess module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="summarize_features.html">summarize_features module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zscore_chats_and_conversation.html">zscore_chats_and_conversation module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="assign_chunk_nums.html">assign_chunk_nums module</a></li>
@@ -103,10 +93,10 @@
            <div itemprop="articleBody">
              
   <section id="module-utils.preprocess">
-<span id="preprocess-module"></span><h1>preprocess module<a class="headerlink" href="#module-utils.preprocess" title="Link to this heading"></a></h1>
+<span id="preprocess-module"></span><h1>preprocess module<a class="headerlink" href="#module-utils.preprocess" title="Permalink to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.assert_key_columns_present">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">assert_key_columns_present</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.assert_key_columns_present" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">assert_key_columns_present</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.assert_key_columns_present" title="Permalink to this definition"></a></dt>
 <dd><p>Ensure that the DataFrame has essential columns and handle missing values.</p>
 <p>This function removes all special characters from the DataFrame column names
 and checks if the essential columns <cite>conversation_num</cite>, <cite>message</cite>, and
@@ -126,7 +116,7 @@ with default values.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.compress">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">compress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">turn_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.compress" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">compress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">turn_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.compress" title="Permalink to this definition"></a></dt>
 <dd><p>Combine messages in the same turn into a single message.</p>
 <p>This function takes a DataFrame representing messages in a single turn and
 concatenates their ‘message’ and ‘message_lower_with_punc’ columns into
@@ -147,7 +137,7 @@ single strings if there are multiple messages in the same turn.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.create_cumulative_rows">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">create_cumulative_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grouping_keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">within_task</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.create_cumulative_rows" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">create_cumulative_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grouping_keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">within_task</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.create_cumulative_rows" title="Permalink to this definition"></a></dt>
 <dd><p>Generate cumulative rows for chat data to analyze conversations in context.</p>
 <p>This function takes chat-level data and duplicates rows to facilitate the analysis of conversations
 in the context of preceding chats. It enables the inclusion of chats from previous stages or tasks within
@@ -184,7 +174,7 @@ are one or more items at the lowest level.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.get_turn_id">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">get_turn_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.get_turn_id" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">get_turn_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.get_turn_id" title="Permalink to this definition"></a></dt>
 <dd><p>Generate turn IDs for a conversation to identify turns taken by speakers.</p>
 <p>This function compares the current speaker with the previous one to identify when a change in speaker occurs,
 and then assigns a unique ‘turn_id’ that increments whenever the speaker changes within the conversation.</p>
@@ -204,7 +194,7 @@ and then assigns a unique ‘turn_id’ that increments whenever the speaker cha
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.preprocess_conversation_columns">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_conversation_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grouping_keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cumulative_grouping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">within_task</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_conversation_columns" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_conversation_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grouping_keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cumulative_grouping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">within_task</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_conversation_columns" title="Permalink to this definition"></a></dt>
 <dd><p>Preprocesses conversation data by removing special characters from column names and assigning a conversation number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -230,7 +220,7 @@ This option was created in the context of a multi-stage Empirica game (see: <a c
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.preprocess_naive_turns">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_naive_turns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_naive_turns" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_naive_turns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_naive_turns" title="Permalink to this definition"></a></dt>
 <dd><p>Combine adjacent rows of the same speaker in the same conversation and compress messages into a “turn”.</p>
 <p>This function first generates a ‘turn_id’ for each chat message within the same conversation,
 indicating turns taken by the active speaker. It then combines messages with the same ‘turn_id’
@@ -251,7 +241,7 @@ within each conversation to compress repeated messages from the same speaker.</p
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.preprocess_text">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_text" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_text" title="Permalink to this definition"></a></dt>
 <dd><p>Preprocess text by removing non-alphanumeric characters and converting to lowercase.</p>
 <p>This function takes a string, removes any characters that are not letters, numbers, or spaces,
 and converts the remaining text to lowercase.</p>
@@ -270,7 +260,7 @@ and converts the remaining text to lowercase.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="utils.preprocess.preprocess_text_lowercase_but_retain_punctuation">
-<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_text_lowercase_but_retain_punctuation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_text_lowercase_but_retain_punctuation" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">utils.preprocess.</span></span><span class="sig-name descname"><span class="pre">preprocess_text_lowercase_but_retain_punctuation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#utils.preprocess.preprocess_text_lowercase_but_retain_punctuation" title="Permalink to this definition"></a></dt>
 <dd><p>Convert the input text to lowercase while retaining punctuation.</p>
 <p>This function takes a string and converts all characters to lowercase,
 keeping any punctuation marks intact.</p>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Utilities &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=837179f8"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -97,10 +97,10 @@
            <div itemprop="articleBody">
              
   <section id="utilities">
-<span id="utils"></span><h1>Utilities<a class="headerlink" href="#utilities" title="Link to this heading"></a></h1>
+<span id="utils"></span><h1>Utilities<a class="headerlink" href="#utilities" title="Permalink to this heading"></a></h1>
 <p>The <a class="reference internal" href="../feature_builder.html#feature-builder"><span class="std std-ref">FeatureBuilder</span></a> relies on a number of utilities to help preprocess conversations and generate features.</p>
 <section id="driver-classes-utterance-conversation-and-speaker-level-features">
-<h2>“Driver” Classes: Utterance-, Conversation-, and Speaker-Level Features<a class="headerlink" href="#driver-classes-utterance-conversation-and-speaker-level-features" title="Link to this heading"></a></h2>
+<h2>“Driver” Classes: Utterance-, Conversation-, and Speaker-Level Features<a class="headerlink" href="#driver-classes-utterance-conversation-and-speaker-level-features" title="Permalink to this heading"></a></h2>
 <p>The most important of these utilities are three classes — the <a class="reference internal" href="calculate_chat_level_features.html#chat-level-features"><span class="std std-ref">ChatLevelFeaturesCalculator</span></a>, <a class="reference internal" href="calculate_conversation_level_features.html#conv-level-features"><span class="std std-ref">ConversationLevelFeaturesCalculator</span></a>, and <a class="reference internal" href="calculate_user_level_features.html#user-level-features"><span class="std std-ref">UserLevelFeaturesCalculator</span></a>. These classes “drive” the process of computing features for each utterance, or “chat”; each conversation; and each speaker, or “user”. When you declare and run a FeatureBuilder, it automatically calls each of these classes to compute features for utterances, conversations, and speakers, respectively. Therefore, users <em>indirectly</em> interact with each of these classes by making the appropriate specifications in the FeatureBuilder. Users do not directly interact with these classes.</p>
 <p>Additional documentation for the three core classes can be found on their respective pages.</p>
 <div class="toctree-wrapper compound">
@@ -112,7 +112,7 @@
 </div>
 </section>
 <section id="other-utilities">
-<h2>Other Utilities<a class="headerlink" href="#other-utilities" title="Link to this heading"></a></h2>
+<h2>Other Utilities<a class="headerlink" href="#other-utilities" title="Permalink to this heading"></a></h2>
 <p>The FeatureBuilder and its driver classes also rely on a number of other utilities, which help to load lexicons and word embeddings, apply preprocessing rules, and summarize features. These utilities are documented below, but should largely function without direct user interaction.</p>
 <div class="toctree-wrapper compound">
 <ul>

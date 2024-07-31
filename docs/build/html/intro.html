@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Introduction &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
 
   
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=837179f8"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -86,7 +86,7 @@
            <div itemprop="articleBody">
              
   <section id="introduction">
-<span id="intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<span id="intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
 <div class="line-block">
 <div class="line">“Language most showeth a man; speak that I may see thee.”</div>
 <div class="line">— Johnson, qtd. in Matarazzo &amp; Wiens (1977)</div>
@@ -94,7 +94,7 @@
 <p>The Team Communication Toolkit is a Python package that makes it easy for social scientists to analyze and understand <em>text-based communication data</em>. Our aim is to facilitate seamless analyses of conversational data — especially among groups and teams! — by providing a single interface for researchers to generate and explore dozens of research-backed conversational features.</p>
 <p><strong>Don’t reinvent the wheel</strong>: bootstrap analyses and build models with just a few lines of code.</p>
 <section id="motivation">
-<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading"></a></h2>
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading"></a></h2>
 <p>Conversations are at the center of nearly every human interaction. For social scientists, conversational data is a rich resource for unpacking a person’s cognitive process, demystifying a team’s problem-solving procedures, and providing important clues for downstream outcomes, such as whether a negotiation is likely to succeed, whether a conflict will be resolved amicably, and whether a group of collaborators is likely to achieve their goals.</p>
 <p>But all too often, exploring conversational data involves heavy computational lift and ad-hoc design decisions. To even begin studying conversations, researchers must decide what aspect of conversations to study: should they examine how much was said, who said the content, or the manner in which it was said? What should they measure — the sentiment? The number of words? The similarity between speakers? A thorough review of the conversational literature reveals a veritable rabbit-hole of possibilities. And even when a researcher has decided on a particular dimension (or a collection of dimensions to study), they must go through the non-trivial process of defining a measurement for the dimension and building it out in software.</p>
 <p>Finally, even when researchers build and measure their own features, what happens when other researchers need to study a similar concept in a different area? Each person needs to “reinvent the wheel,” creating redundant work and opening the possibility of making slightly different design decisions that make the study of conversations less reproducible.</p>
@@ -102,11 +102,11 @@
 <p>We introduce the <strong>Team Communication Toolkit</strong>: a “one-stop shop” for exploring conversational data. Our framework is a single package encompassing a variety of common, research-backed measures of communication. These include tools like <a class="reference external" href="https://www.liwc.app/">LIWC</a>, <a class="reference external" href="https://convokit.cornell.edu/">Convokit</a>, <a class="reference external" href="https://www.mikeyeomans.info/papers/receptiveness.pdf">The Conversational Receptiveness Package</a>, <a class="reference external" href="https://www.lexicalsuite.com/">The Lexical Suite</a> and much more. If you are working with conversational data for the first time, or just seeking to understand what you can possibly learn from open-ended conversations, this is the right place for you. We have collected over 100 features that you can explore, so that researchers can spend more time learning from conversations and less time worrying about how to begin studying them.</p>
 </section>
 <section id="the-featurebuilder">
-<h2>The FeatureBuilder<a class="headerlink" href="#the-featurebuilder" title="Link to this heading"></a></h2>
+<h2>The FeatureBuilder<a class="headerlink" href="#the-featurebuilder" title="Permalink to this heading"></a></h2>
 <p>The heart of our tool is a class called the <a class="reference internal" href="feature_builder.html#feature-builder"><span class="std std-ref">FeatureBuilder</span></a>. This is the main way that you (as a user) should interact with the Toolkit. After you install the package, simply declare a FeatureBuilder object with the specifications you want — which dataframe you want to analyze, any custom features you need, and so on — and voila! We will generate conversational features from your data and return them to you in a CSV.</p>
 </section>
 <section id="generating-features-utterance-speaker-and-conversation-level">
-<h2>Generating Features: Utterance-, Speaker-, and Conversation-Level<a class="headerlink" href="#generating-features-utterance-speaker-and-conversation-level" title="Link to this heading"></a></h2>
+<h2>Generating Features: Utterance-, Speaker-, and Conversation-Level<a class="headerlink" href="#generating-features-utterance-speaker-and-conversation-level" title="Permalink to this heading"></a></h2>
 <p>Notably, not all communication features are made equal, as they can be defined at different levels of analysis. For example, a single utterance (“you are great!”) may be described as a “positive statement.” An individual who makes many such utterances may be described as a “positive person.” Finally, the entire team may enjoy a “positive conversation,” an interaction in which everyone speaks positively to each other. In this way, the same concept of positivity can be applied to three levels: the utterance, the speaker, and the conversation.</p>
 <p>The table below provides a simple illustrative example of two conversations, presented in the Toolkit’s required input format. We require only three columns: a conversation ID, a speaker ID, and a message/text input. The timestamp column is optional, but behaviors related to the conversation’s pace cannot be measured without it.</p>
 <a class="reference internal image-reference" href="_images/sample_convo.png"><img alt="A simple example of two conversations, as they would be formatted for input into the toolkit." src="_images/sample_convo.png" style="width: 80%;" /></a>
@@ -121,12 +121,12 @@
 <p>The driving functions for generating features at different levels are located in the <a class="reference internal" href="utils/index.html#utils"><span class="std std-ref">Utilities</span></a>. In general, you do not have to directly interact with these utilties, as the Toolkit generates utterance-, speaker-, and conversational-level features by default. However, you (as a researcher) may only only be interested a subset of the outputs, and customizable options will be made avilable in the FeatureBuilder soon.</p>
 </section>
 <section id="feature-documentation">
-<h2>Feature Documentation<a class="headerlink" href="#feature-documentation" title="Link to this heading"></a></h2>
+<h2>Feature Documentation<a class="headerlink" href="#feature-documentation" title="Permalink to this heading"></a></h2>
 <p>For technical information on the features generated by our Toolkit, please refer to the <a class="reference internal" href="features/index.html#features-technical"><span class="std std-ref">Features: Technical Documentation</span></a> page.</p>
 <p>For conceptual documentation on how our features relate to social science research, please refer to <a class="reference internal" href="features_conceptual/index.html#features-conceptual"><span class="std std-ref">Features: Conceptual Documentation</span></a> page.</p>
 </section>
 <section id="our-team">
-<h2>Our Team<a class="headerlink" href="#our-team" title="Link to this heading"></a></h2>
+<h2>Our Team<a class="headerlink" href="#our-team" title="Permalink to this heading"></a></h2>
 <p>This tool is developed by <a class="reference external" href="https://xinlanemilyhu.com">Xinlan Emily Hu</a> at the Wharton School, University of Pennyslvania, with generous funding from <a class="reference external" href="https://ai-analytics.wharton.upenn.edu/about/">Wharton AI &amp; Analytics Initiative (WAIAI)</a>.</p>
 <p>This tool is a project of the <a class="reference external" href="https://css.seas.upenn.edu/">Computational Social Science Lab</a> at the University of Pennyslvania, led by Professor Duncan Watts.</p>
 <p>We are deeply grateful to the many people who have directly contributed to this tool’s development. Without them, creating this resource would not be possible:</p>

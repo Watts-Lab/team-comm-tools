@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Features: Technical Documentation &mdash; Team Communication Toolkit 0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=837179f8"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -103,10 +103,10 @@
            <div itemprop="articleBody">
              
   <section id="features-technical-documentation">
-<span id="features-technical"></span><h1>Features: Technical Documentation<a class="headerlink" href="#features-technical-documentation" title="Link to this heading"></a></h1>
+<span id="features-technical"></span><h1>Features: Technical Documentation<a class="headerlink" href="#features-technical-documentation" title="Permalink to this heading"></a></h1>
 <p>Below is a list of the features currently built and documented within our toolkit. We describe the different levels of analysis for features in <a class="reference internal" href="../intro.html#intro"><span class="std std-ref">the Introduction, under Generating Features: Utterance-, Speaker-, and Conversation-Level</span></a>.</p>
 <section id="utterance-chat-level-features">
-<h2>Utterance- (Chat) Level Features<a class="headerlink" href="#utterance-chat-level-features" title="Link to this heading"></a></h2>
+<h2>Utterance- (Chat) Level Features<a class="headerlink" href="#utterance-chat-level-features" title="Permalink to this heading"></a></h2>
 <p>Utterance-Level features are calculated <em>first</em> in the Toolkit, as many conversation-Level features are derived from utterance-level information. These are the basic attributes that can be used to describe a single message (“utterance”) in a conversation.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -126,7 +126,7 @@
 </div>
 </section>
 <section id="conversation-level-features">
-<h2>Conversation-Level Features<a class="headerlink" href="#conversation-level-features" title="Link to this heading"></a></h2>
+<h2>Conversation-Level Features<a class="headerlink" href="#conversation-level-features" title="Permalink to this heading"></a></h2>
 <p>Once utterance-level features are computed, we compute conversation-level features; some of these features represent an aggregation of utterance-level information (for example, the “average level of positivity” in a conversation is simply the mean positivity score for each utterance). Other conversation-level features are constructs that are defined only at the conversation-level, such as the level of “burstiness” in a team’s communication patterns.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -137,7 +137,7 @@
 </div>
 </section>
 <section id="speaker-user-level-features">
-<h2>Speaker- (User) Level Features<a class="headerlink" href="#speaker-user-level-features" title="Link to this heading"></a></h2>
+<h2>Speaker- (User) Level Features<a class="headerlink" href="#speaker-user-level-features" title="Permalink to this heading"></a></h2>
 <p>User-level features currently represent an aggregation of features at the utterance- level (for example, the average number of words spoken <em>by a particular user</em>). There is therefore no separate speaker-level feature documentation; you may reference the <a class="reference internal" href="../utils/calculate_user_level_features.html#user-level-features"><span class="std std-ref">Speaker (User)-Level Features Page</span></a> for more information.</p>
 </section>
 </section>
