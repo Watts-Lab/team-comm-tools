@@ -19,7 +19,7 @@ import sys
 import os
 
 # Add the parent directory to the sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/team_comm_tools/')))
 from feature_dict import feature_dict
 
 def test_path_robustness():
