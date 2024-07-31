@@ -6,7 +6,6 @@ gensim==4.3.2
 matplotlib==3.8.2
 nltk==3.8.1
 numpy==1.26.3
-packaging==20.9
 pandas==2.2.2
 pip==24.2
 pyphen==0.14.0
@@ -15,13 +14,10 @@ pytest-runner==6.0.1
 python-dateutil==2.9.0
 pytz==2024.1
 regex==2023.12.25
-requests==2.32.2
-requests-async==0.5.0
 scikit-learn==1.5.1
 scipy==1.12.0
 sentence-transformers==2.3.1
 sentencepiece==0.2.0
-setuptools==70.0.0
 spacy==3.7.2
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
@@ -34,7 +30,3 @@ tqdm==4.66.3
 transformers==4.38.0
 tzdata==2023.3
 tzlocal==5.2
-urllib3==2.2.2
-websockets==9.1
-wheel==0.41.2
-xgboost==2.0.3
