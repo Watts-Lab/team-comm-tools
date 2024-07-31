@@ -14,7 +14,7 @@ git clone https://github.com/Watts-Lab/team_comm_tools.git
 
 ### Step 2: Download Dependencies
 Second, we *strongly* recommend using a virtual environment to install the dependencies required for the project.
-The dependencies of the project are listed in `src/requirements.txt`: https://github.com/Watts-Lab/team_comm_tools/blob/main/src/requirements.txt
+The dependencies of the project are listed in `src/team_comm_tools/requirements.txt`: https://github.com/Watts-Lab/team_comm_tools/blob/main/src/team_comm_tools/requirements.txt
 
 **Python Version**: We recommend >= `python3.11` when running this repository.
 
@@ -48,7 +48,7 @@ We have also implemented automated unit testing of all code (which runs upon eve
 - For example,  "This is a test message." should return 5 for `num_words` at the chat level (note that `conversation_num` and `speaker` have no effect on the ultimate result, so they can be chosen arbitrarily).
 - Testing a conversation level feature, say `discursive_diversity`, requires a series of chats rather than just one chat. For example, "This is a test message." (speaker 1), "This is a test message." (speaker 1), "This is a test message." (speaker 2), "This is a test message." (speaker 2), within the same conversation, should return 0. Note that the `conversation_num` for each new test should be distinct from all previous `conversation_num`, even if the feature being tested is different.
 
-2. Once you have test inputs, add each CHAT (and its associated conversation_num and speaker) as a separate row in either `test_chat_level.csv` or `test_conv_level.csv`, within `./src/testing/data/cleaned_data`. The format of the CSV is as follows: `id, conversation_num, speaker_nickname, message, expected_column, expected_value`, where `expected_column` is the feature name (i.e. num_words).
+2. Once you have test inputs, add each CHAT (and its associated conversation_num and speaker) as a separate row in either `test_chat_level.csv` or `test_conv_level.csv`, within `./tests/data/cleaned_data`. The format of the CSV is as follows: `id, conversation_num, speaker_nickname, message, expected_column, expected_value`, where `expected_column` is the feature name (i.e. num_words).
 
 3. Push all your changes to GitHub, including feature development and test dataset additions. Go under the "Actions" tab in the toolbar. Notice there's a new job running called "Testing-Features". A green checkmark at the conclusion of this job indicates all new tests have passed. A red cross means some test has failed. Navigate to the uploaded "Artifact" (near the bottom of the status page) for list of failed tests and their associated inputs/outputs.
 
