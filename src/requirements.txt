@@ -39,6 +39,7 @@ entrypoints==0.4
 exceptiongroup==1.2.0
 executing==2.0.1
 filelock==3.13.1
+flask==3.0.3
 fonttools==4.47.2
 fsspec==2023.12.2
 ftfy==6.1.3
