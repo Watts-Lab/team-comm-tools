@@ -14,7 +14,8 @@ numpy==1.26.3
 packaging==20.9
 pandas==2.2.2
 pip==24.0
-pytest
+pyphen==0.14.0
+pytest==8.3.2
 pytest-runner==6.0.1
 python-dateutil==2.9.0
 pytz==2024.1
