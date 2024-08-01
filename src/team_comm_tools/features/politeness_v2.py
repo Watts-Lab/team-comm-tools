@@ -2,11 +2,16 @@ import pandas as pd
 from features.politeness_v2_helper import *
 
 def get_politeness_v2(df,on_column):
-    """
-    @Args:
-        The text dataframe
-    @Returns:
-        The dataframe after adding the politness v2 features
+    """ 
+    Calculates politness based on Yeomans et. al, 2020: https://www.mikeyeomans.info/papers/receptiveness.pdf, 
+    coded into this package: https://github.com/bbevis/SECR 
+    
+    Args:
+        df (pd.DataFrame): The dataframe containing the text on which we wish to apply the feature
+        on_column (str): The header of the column containing the text on which this feature will be applied
+    
+    Returns:
+        pd.DataFrame: A dataframe containing the values of linguistic markers that determine politeness
     """
 
     # Extract column headers by running script on first row

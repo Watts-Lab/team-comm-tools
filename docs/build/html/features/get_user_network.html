@@ -81,12 +81,44 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="features.get_user_network.get_user_network">
 <span class="sig-prename descclassname"><span class="pre">features.get_user_network.</span></span><span class="sig-name descname"><span class="pre">get_user_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.get_user_network.get_user_network" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Takes in data at the user level, and generates a “user_list” per user per conversation. This “user_list” contains the other participating in this conversation.
+This is a user level feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_df</strong> (<em>pd.DataFrame</em>) – The dataset for which we are generating a “user_list” per user per conversation.</p></li>
+<li><p><strong>conversation_id_col</strong> (<em>str</em>) – The name of the column containing conversation identifiers.</p></li>
+<li><p><strong>speaker_id_col</strong> (<em>str</em>) – The name of the column containing the speaker’s unique identifier.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Updated user_df with a ‘user_list’ column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.get_user_network.remove_active_user">
 <span class="sig-prename descclassname"><span class="pre">features.get_user_network.</span></span><span class="sig-name descname"><span class="pre">remove_active_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.get_user_network.remove_active_user" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Removes the active user from their own ‘user_list’ in each row of the DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Contains ‘speaker_nickname’ and ‘user_list’ columns.</p></li>
+<li><p><strong>speaker_id_col</strong> (<em>str</em>) – The name of the column containing the speaker’s unique identifier.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Modified pd.DataFrame with ‘user_list’ updated to remove the active user.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 

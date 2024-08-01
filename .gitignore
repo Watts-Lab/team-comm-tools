@@ -17,6 +17,13 @@ tests/vector_data/*
 src/utils/__pycache__/
 .idea/
 *.py[cod]
+<<<<<<< HEAD
 src/team_comm_tools/features/lexicons/certainty.txt
+=======
+node_modules
+src/data/vectors/sentence
+src/data/vectors/sentiment
+src/features/lexicons/certainty.txt
+>>>>>>> main
 examples/vector_data/*
 examples/output/*

@@ -59,6 +59,7 @@ def dale_chall_helper(text, **easy_words):
      Because of the need to split up sentences, this function requires the version of pre-processed text WITH punctuation retained.
 
      Source: https://en.wikipedia.org/wiki/Dale%E2%80%93Chall_readability_formula
+     
      Citation (of example usage) in Cao et al. (2020): https://dl.acm.org/doi/pdf/10.1145/3432929 
 
      Args:

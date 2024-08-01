@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FEATURE NAME &mdash; Team Communication Toolkit 0.0 documentation</title>
+  <title>Word Type-Token Ratio &mdash; Team Communication Toolkit 0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -20,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Turn Taking Index" href="turn_taking_index.html" />
+    <link rel="prev" title="Named Entity Recognition" href="named_entity_recognition.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,11 +45,26 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../feature_builder.html">feature_builder module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features/index.html">Features: Technical Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Features: Conceptual Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Conceptual Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="named_entity_recognition.html">Named Entity Recognition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Word Type-Token Ratio</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#high-level-intuition">High-Level Intuition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#citation">Citation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#implementation-basics">Implementation Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#interpreting-the-feature">Interpreting the Feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#related-features">Related Features</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utils/index.html">Utilities</a></li>
 </ul>
@@ -66,9 +83,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">FEATURE NAME</li>
+          <li class="breadcrumb-item"><a href="index.html">Features: Conceptual Documentation</a></li>
+      <li class="breadcrumb-item active">Word Type-Token Ratio</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/features_conceptual/TEMPLATE.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/features_conceptual/word_ttr.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -76,45 +94,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="feature-name">
-<span id="template"></span><h1>FEATURE NAME<a class="headerlink" href="#feature-name" title="Link to this heading"></a></h1>
+  <section id="word-type-token-ratio">
+<span id="word-ttr"></span><h1>Word Type-Token Ratio<a class="headerlink" href="#word-type-token-ratio" title="Link to this heading"></a></h1>
 <section id="high-level-intuition">
 <h2>High-Level Intuition<a class="headerlink" href="#high-level-intuition" title="Link to this heading"></a></h2>
-<p>High-level, what does this feature measure?</p>
+<p>This feature measures the ratio of the number of unique words (“types”) to the total number of words (“tokens”) is an utterance. This is a standard measure of <a class="reference external" href="https://en.wikipedia.org/wiki/Lexical_density">lexical density</a>.</p>
 </section>
 <section id="citation">
 <h2>Citation<a class="headerlink" href="#citation" title="Link to this heading"></a></h2>
-<p>Provide a citation of the relevant social science paper(s) and computational paper(s).</p>
+<p><a class="reference external" href="https://cpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/f/1603/files/2017/01/Reichel_etal_Interspeech_2015-2i4gnzk.pdf">Reichel, et al. (2015)</a></p>
+<p><a class="reference external" href="https://www.sltinfo.com/wp-content/uploads/2014/01/type-token-ratio.pdf">Williamson (2009)</a></p>
 </section>
 <section id="implementation-basics">
 <h2>Implementation Basics<a class="headerlink" href="#implementation-basics" title="Link to this heading"></a></h2>
-<p>Read the code associated with this feature and give an intuitive explanation of what the code does. How does the technical implementation link to the high-level concept?</p>
-</section>
-<section id="implementation-notes-caveats">
-<h2>Implementation Notes/Caveats<a class="headerlink" href="#implementation-notes-caveats" title="Link to this heading"></a></h2>
-<p>Read the code associated with this feature, as well as the internal Wiki page associated with the feature. Does our implementation deviate from the paper in any way? How might this affect someone’s ability to interpret the feature?</p>
-<p>If this is not applicable (e.g., the implementation is straightforward and there are no caveats), <em>delete this section.</em></p>
+<p>The Type-Token Ratio is calculated as follows: Number of Unique Words / Number of Total Words.</p>
+<p>The function assumes that punctuation is retained when being inputted, but parses it out within the function.</p>
 </section>
 <section id="interpreting-the-feature">
 <h2>Interpreting the Feature<a class="headerlink" href="#interpreting-the-feature" title="Link to this heading"></a></h2>
-<p>Read the code associated with this feature and answer the following questions, if applicable:</p>
-<ol class="arabic simple">
-<li><p>What are the bounds of the score? What does a high versus low score mean? (How should you read this score?)</p></li>
-<li><p>Give a concrete example (e.g., negative score versus positive score)</p></li>
-<li><p>What DOESN’T the score measure? That is, what does the score take into account, and what are some ways that it might not capture the high-level social science concept?</p></li>
-<li><p>Are there any edge cases that we should be aware of? (e.g., if the conversation contains only one chat?) To the best of your knowledge, how does the code handle it?</p></li>
-</ol>
+<p>A low type-token ratio indicates that an individual is using many of the same words over and over; for example, if an individual is speaking with great hesitation, repeating themselves, or using filler and functional words (“um”, “that is”, “the”), there will be fewer unique words relative to the total number of words. Individuals who choose their words carefully, with minimal repetition, will tend to have a higher type-token ratio. The mode of communication can also impact lexical density; individuals typically have a lower type-token ratio when speaking out loud than when writing.</p>
 </section>
 <section id="related-features">
 <h2>Related Features<a class="headerlink" href="#related-features" title="Link to this heading"></a></h2>
-<p>Are there any related/similar features to this one? Is this part of an “umbrella” or group of features? Write about them here, and do your best to explain how they are different. Why would you use one implementation over the other?</p>
+<p>N/A</p>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="named_entity_recognition.html" class="btn btn-neutral float-left" title="Named Entity Recognition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="turn_taking_index.html" class="btn btn-neutral float-right" title="Turn Taking Index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

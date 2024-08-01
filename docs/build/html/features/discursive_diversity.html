@@ -20,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="get_all_DD_features module" href="get_all_DD_features.html" />
+    <link rel="prev" title="gini_coefficient module" href="../utils/gini_coefficient.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,10 +45,28 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../feature_builder.html">feature_builder module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Features: Technical Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Technical Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="burstiness.html">burstiness module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="information_diversity.html">information_diversity module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utils/gini_coefficient.html">gini_coefficient module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">discursive_diversity module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.discursive_diversity.get_DD"><code class="docutils literal notranslate"><span class="pre">get_DD()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.discursive_diversity.get_cosine_similarity"><code class="docutils literal notranslate"><span class="pre">get_cosine_similarity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.discursive_diversity.get_unique_pairwise_combos"><code class="docutils literal notranslate"><span class="pre">get_unique_pairwise_combos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="get_all_DD_features.html">get_all_DD_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="turn_taking_features.html">turn_taking_features module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#speaker-user-level-features">Speaker- (User) Level Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../features_conceptual/index.html">Features: Conceptual Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utils/index.html">Utilities</a></li>
@@ -66,6 +86,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Features: Technical Documentation</a></li>
       <li class="breadcrumb-item active">discursive_diversity module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/features/discursive_diversity.rst.txt" rel="nofollow"> View page source</a>
@@ -81,22 +102,54 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="features.discursive_diversity.get_DD">
 <span class="sig-prename descclassname"><span class="pre">features.discursive_diversity.</span></span><span class="sig-name descname"><span class="pre">get_DD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.discursive_diversity.get_DD" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Computes degree of divergence amongst the meanings conveyed by speakers in a given conversation.
+This is a conversation level feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – DataFrame containing chat data with ‘conversation_num’, ‘speaker_nickname’, and ‘message_embedding’ columns.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pd.DataFrame with ‘conversation_num’ and ‘discursive_diversity’ columns representing discursive diversity per conversation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.discursive_diversity.get_cosine_similarity">
 <span class="sig-prename descclassname"><span class="pre">features.discursive_diversity.</span></span><span class="sig-name descname"><span class="pre">get_cosine_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vecs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.discursive_diversity.get_cosine_similarity" title="Link to this definition"></a></dt>
-<dd><p>computes cosine similarity between a list of vectors
-input: list of vectors (vecs) (this has to be a pair!)
-output: cosine similarity</p>
+<dd><p>Computes cosine similarity between a list of vectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vecs</strong> (<em>list</em>) – List of vectors (this must be a pair).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cosine similarity value.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.discursive_diversity.get_unique_pairwise_combos">
 <span class="sig-prename descclassname"><span class="pre">features.discursive_diversity.</span></span><span class="sig-name descname"><span class="pre">get_unique_pairwise_combos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.discursive_diversity.get_unique_pairwise_combos" title="Link to this definition"></a></dt>
-<dd><p>Computes all unique pairwise combinations of the elements in a list.
-input: array or list
-output: list of unique pairwise combinations of elements of the input list</p>
+<dd><p>Computes all unique pairwise combinations of the elements in a list.</p>
+<p>Code sourced from: <a class="reference external" href="https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2021.4274">https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2021.4274</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>lst</strong> (<em>list</em>) – Array or list of elements.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of unique pairwise combinations of elements of the input list.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -104,7 +157,10 @@ output: list of unique pairwise combinations of elements of the input list</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../utils/gini_coefficient.html" class="btn btn-neutral float-left" title="gini_coefficient module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="get_all_DD_features.html" class="btn btn-neutral float-right" title="get_all_DD_features module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
