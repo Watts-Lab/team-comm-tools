@@ -20,7 +20,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL)
 model_bert = AutoModelForSequenceClassification.from_pretrained(MODEL)
 
 # Check if embeddings exist
-def check_embeddings(chat_data, vect_path, bert_path, need_sentence, need_sentiment, message_col = "message"):
+def check_embeddings(chat_data, vect_path, bert_path, need_sentence, need_sentiment, regenerate_vectors, message_col = "message"):
     """
     Check if embeddings and required lexicons exist, and generate them if they don't.
 
@@ -37,19 +37,32 @@ def check_embeddings(chat_data, vect_path, bert_path, need_sentence, need_sentim
     :type need_sentence: bool
     :param need_sentiment: Whether at least one feature will require the RoBERTa sentiments; we will not need to calculate them otherwise.
     :type need_sentiment: bool
+    :param regenerate_vectors: If true, will regenerate vector data even if it already exists
+    :type regenerate_vectors: bool, optional
     :param message_col: A string representing the column name that should be selected as the message. Defaults to "message".
     :type message_col: str, optional
 
     :return: None
     :rtype: None
     """
-    if (not os.path.isfile(vect_path) and need_sentence):
+    if regenerate_vectors or (not os.path.isfile(vect_path)):
         generate_vect(chat_data, vect_path, message_col)
-    if (not os.path.isfile(bert_path) and need_sentiment):
+    if regenerate_vectors or (not os.path.isfile(bert_path)):
         generate_bert(chat_data, bert_path, message_col)
     if (not os.path.isfile(Path(__file__).resolve().parent.parent/"features/lexicons/certainty.txt")):
         # unpickle certainty
         unpickle_certainty()
+
+    vector_df = pd.read_csv(vect_path)
+    bert_df = pd.read_csv(bert_path)
+    # check is given vector and bert data matches length of chat data 
+    if len(vector_df) != len(chat_data):
+        print("ERROR: The length of the vector data does not match the length of the chat data.")
+        generate_vect(chat_data, vect_path, message_col)
+
+    if len(bert_df) != len(chat_data):
+        print("ERROR: The length of the bert data does not match the length of the chat data.")
+        generate_bert(chat_data, bert_path, message_col)
 
     current_script_directory = Path(__file__).resolve().parent
     LEXICON_PATH_STATIC = current_script_directory.parent/"features/lexicons_dict.pkl"

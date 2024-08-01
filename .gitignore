@@ -27,3 +27,4 @@ src/features/lexicons/certainty.txt
 >>>>>>> main
 examples/vector_data/*
 examples/output/*
+node_modules/
