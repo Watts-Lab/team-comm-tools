@@ -9,8 +9,9 @@ import pickle
 
 # parse certainty lexicon, compile into master regex, delimited by | 
 # Construct the absolute path to certainty.txt using the current script directory
-current_script_directory = Path(__file__).resolve().parent
-certainty_file_pkl_path = current_script_directory / "lexicons/certainty.pkl"
+current_dir = os.path.dirname(__file__)
+certainty_file_pkl_path = os.path.join(current_dir, './lexicons/certainty.pkl')
+certainty_file_pkl_path = os.path.abspath(certainty_file_pkl_path)
 with open(certainty_file_pkl_path, 'rb') as f:
     certainty_data = pickle.load(f)  # Load pickled data
     certainty = pd.read_csv(io.StringIO(certainty_data), sep = ",")

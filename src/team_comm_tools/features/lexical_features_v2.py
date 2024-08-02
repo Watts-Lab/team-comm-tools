@@ -42,8 +42,9 @@ def liwc_features(chat_df: pd.DataFrame, message_col) -> pd.DataFrame:
 		pd.DataFrame: Dataframe of the lexical features stacked as columns.
 	"""
 	# Load the preprocessed lexical regular expressions
-	current_script_directory = Path(__file__).resolve().parent
-	lexicon_pkl_file_path = current_script_directory / "lexicons_dict.pkl"
+	current_dir = os.path.dirname(__file__)
+	lexicon_pkl_file_path = os.path.join(current_dir, './assets/lexicons_dict.pkl')
+	lexicon_pkl_file_path = os.path.abspath(lexicon_pkl_file_path)
 	with open(lexicon_pkl_file_path, "rb") as lexicons_pickle_file:
 		lexicons_dict = pickle.load(lexicons_pickle_file)
 	
