@@ -13,8 +13,9 @@ import sys
 import os
 
 # Add the parent directory to the sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/team_comm_tools/')))
-from feature_dict import feature_dict
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/team_comm_tools/')))
+# from feature_dict import feature_dict
+from team_comm_tools import feature_dict
 
 chat_features = [feature_dict[feature]["columns"] for feature in feature_dict.keys() if feature_dict[feature]["level"] == "Chat"]
 conversation_features = [feature_dict[feature]["columns"] for feature in feature_dict.keys() if feature_dict[feature]["level"] == "Conversation"]
