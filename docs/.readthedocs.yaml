@@ -15,7 +15,7 @@ build:
     # rust: "1.64"
     # golang: "1.19"
   jobs:
-    pre_install: # Stuff in src/requirements.txt dependso on en_core_web_sm, which in turn depends on spacy
+    pre_install: # Stuff in src/requirements.txt depends on en_core_web_sm, which in turn depends on spacy
       - pip install spacy==3.7.2 
       - bash -c "python3 -m spacy download en_core_web_sm"
 
@@ -34,4 +34,4 @@ sphinx:
 python:
    install:
     - requirements: ./docs/requirements.txt
-    - requirements: ./src/team_comm_tools/requirements.txt
+    - requirements: ./requirements.txt

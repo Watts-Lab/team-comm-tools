@@ -61,14 +61,7 @@
 <li class="toctree-l3"><a class="reference internal" href="temporal_features.html">temporal_features module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="readability.html">readability module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="textblob_sentiment_analysis.html">textblob_sentiment_analysis module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">named_entity_recognition_features module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#features.named_entity_recognition_features.built_spacy_ner"><code class="docutils literal notranslate"><span class="pre">built_spacy_ner()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.named_entity_recognition_features.calculate_named_entities"><code class="docutils literal notranslate"><span class="pre">calculate_named_entities()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.named_entity_recognition_features.named_entities"><code class="docutils literal notranslate"><span class="pre">named_entities()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.named_entity_recognition_features.num_named_entity"><code class="docutils literal notranslate"><span class="pre">num_named_entity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#features.named_entity_recognition_features.train_spacy_ner"><code class="docutils literal notranslate"><span class="pre">train_spacy_ner()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">named_entity_recognition_features module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="politeness_v2.html">politeness_v2 module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="politeness_v2_helper.html">politeness_v2_helper module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reddit_tags.html">reddit_tags module</a></li>
@@ -110,106 +103,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-features.named_entity_recognition_features">
-<span id="named-entity-recognition-features-module"></span><h1>named_entity_recognition_features module<a class="headerlink" href="#module-features.named_entity_recognition_features" title="Link to this heading"></a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="features.named_entity_recognition_features.built_spacy_ner">
-<span class="sig-prename descclassname"><span class="pre">features.named_entity_recognition_features.</span></span><span class="sig-name descname"><span class="pre">built_spacy_ner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.named_entity_recognition_features.built_spacy_ner" title="Link to this definition"></a></dt>
-<dd><p>Returns a tuple of sentences, the named entity and its position in the sentence, and its label for training</p>
-<p>Inspired by <a class="reference external" href="https://dataknowsall.com/blog/ner.html">https://dataknowsall.com/blog/ner.html</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> (<em>str</em>) – The message (utterance) for which we are counting named entities.</p></li>
-<li><p><strong>target</strong> (<em>str</em>) – The named entity.</p></li>
-<li><p><strong>type</strong> (<em>str</em>) – The entity type (e.g. PERSON, ORG, LOC, PRODUCT, LANGUAGE, etc.)</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The message and a dictionary of its identified named entities associated with
-the start and end characters and the type of named entity</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="features.named_entity_recognition_features.calculate_named_entities">
-<span class="sig-prename descclassname"><span class="pre">features.named_entity_recognition_features.</span></span><span class="sig-name descname"><span class="pre">calculate_named_entities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.named_entity_recognition_features.calculate_named_entities" title="Link to this definition"></a></dt>
-<dd><p>Counts the number of named entities in a message in which their confidence scores
-exceed the cutoff.</p>
-<p>Inspired by <a class="reference external" href="https://support.prodi.gy/t/accessing-probabilities-in-ner/94">https://support.prodi.gy/t/accessing-probabilities-in-ner/94</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> (<em>str</em>) – The message (utterance) for which we are counting named entities.</p></li>
-<li><p><strong>cutoff</strong> (<em>int</em>) – The confidence threshold for each named entity.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The list of all named entities in a message and their confidence scores</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="features.named_entity_recognition_features.named_entities">
-<span class="sig-prename descclassname"><span class="pre">features.named_entity_recognition_features.</span></span><span class="sig-name descname"><span class="pre">named_entities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.named_entity_recognition_features.named_entities" title="Link to this definition"></a></dt>
-<dd><p>Returns a tuple of all (named-entities, confidence score) in a message</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> (<em>str</em>) – The message (utterance) for which we are counting named entities.</p></li>
-<li><p><strong>cutoff</strong> (<em>int</em>) – The confidence threshold for each named entity.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A tuple of tuples that contains the (named entity, confidence score)</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>tuple</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="features.named_entity_recognition_features.num_named_entity">
-<span class="sig-prename descclassname"><span class="pre">features.named_entity_recognition_features.</span></span><span class="sig-name descname"><span class="pre">num_named_entity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.named_entity_recognition_features.num_named_entity" title="Link to this definition"></a></dt>
-<dd><p>Returns the number of named entities in a message.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> (<em>str</em>) – The message (utterance) for which we are counting named entities.</p></li>
-<li><p><strong>cutoff</strong> (<em>int</em>) – The confidence threshold for each named entity.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Number of named entities in a message</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="features.named_entity_recognition_features.train_spacy_ner">
-<span class="sig-prename descclassname"><span class="pre">features.named_entity_recognition_features.</span></span><span class="sig-name descname"><span class="pre">train_spacy_ner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">training</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.named_entity_recognition_features.train_spacy_ner" title="Link to this definition"></a></dt>
-<dd><p>Trains model based on user inputted dataframe that provides example sentences and the named entity that appears in each sentence.</p>
-<p>Inspired by <a class="reference external" href="https://dataknowsall.com/blog/ner.html">https://dataknowsall.com/blog/ner.html</a></p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>training</strong> (<em>pd.DataFrame</em>) – The user inputted training dataframe</p>
-</dd>
-</dl>
-<p>Returns:</p>
-</dd></dl>
-
+  <section id="named-entity-recognition-features-module">
+<h1>named_entity_recognition_features module<a class="headerlink" href="#named-entity-recognition-features-module" title="Link to this heading"></a></h1>
 </section>
 
 

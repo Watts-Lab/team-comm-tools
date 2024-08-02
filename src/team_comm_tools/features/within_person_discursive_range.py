@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 from .discursive_diversity import get_cosine_similarity
 import os
+import warnings
+warnings.filterwarnings('ignore') # We get empty slice warnings for short conversations
 
 '''
 This is a conversation level feature, which computes the semantic modulation that 

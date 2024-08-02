@@ -14,7 +14,7 @@ git clone https://github.com/Watts-Lab/team_comm_tools.git
 
 ### Step 2: Download Dependencies
 Second, we *strongly* recommend using a virtual environment to install the dependencies required for the project.
-The dependencies of the project are listed in `src/team_comm_tools/requirements.txt`: https://github.com/Watts-Lab/team_comm_tools/blob/main/src/team_comm_tools/requirements.txt
+The dependencies of the project are listed in `requirements.txt`: https://github.com/Watts-Lab/team_comm_tools/blob/main/requirements.txt
 
 **Python Version**: We recommend >= `python3.11` when running this repository.
 

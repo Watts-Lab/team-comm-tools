@@ -66,10 +66,7 @@
 <li class="toctree-l3"><a class="reference internal" href="politeness_v2_helper.html">politeness_v2_helper module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reddit_tags.html">reddit_tags module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="word_mimicry.html">word_mimicry module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">fflow module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#features.fflow.get_forward_flow"><code class="docutils literal notranslate"><span class="pre">get_forward_flow()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">fflow module</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a></li>
@@ -106,30 +103,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-features.fflow">
-<span id="fflow-module"></span><h1>fflow module<a class="headerlink" href="#module-features.fflow" title="Link to this heading"></a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="features.fflow.get_forward_flow">
-<span class="sig-prename descclassname"><span class="pre">features.fflow.</span></span><span class="sig-name descname"><span class="pre">get_forward_flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vect_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.fflow.get_forward_flow" title="Link to this definition"></a></dt>
-<dd><p>Measures the extent to which each chat in the conversation ‘builds on’ the previous chats in the conversation.
-This is a chat level feature.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing chat data with ‘conversation_num’ and ‘message_embedding’ columns.</p></li>
-<li><p><strong>vect_data</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing vectorized data.</p></li>
-<li><p><strong>conversation_id_col</strong> (<em>str</em>) – The name of the column representing conversation IDs.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>List of cosine similarities representing forward flow for each chat in the conversation.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List</p>
-</dd>
-</dl>
-</dd></dl>
-
+  <section id="fflow-module">
+<h1>fflow module<a class="headerlink" href="#fflow-module" title="Link to this heading"></a></h1>
 </section>
 
 

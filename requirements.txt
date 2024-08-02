@@ -1,12 +1,10 @@
 chardet==3.0.4
 convokit==3.0.0
 emoji==1.7.0
-# en-core-web-sm==3.7.1
 gensim==4.3.2
 nltk==3.8.1
 numpy==1.26.3
 pandas==2.2.2
-# pip==24.2
 pyphen==0.14.0
 pytest==8.3.2
 pytest-runner==6.0.1
@@ -25,7 +23,6 @@ tokenizers==0.15.1
 torch==2.2.0
 torchaudio==2.2.0
 torchvision==0.17.0
-# tqdm==4.66.3
 transformers==4.38.0
 tzdata==2023.3
 tzlocal==5.2

@@ -12,7 +12,9 @@ from sentence_transformers import SentenceTransformer, util
 from transformers import AutoTokenizer
 from transformers import AutoModelForSequenceClassification
 from scipy.special import softmax
+from transformers import logging
 
+logging.set_verbosity(40) # only log errors
 
 model_vect = SentenceTransformer('all-MiniLM-L6-v2')
 MODEL  = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
