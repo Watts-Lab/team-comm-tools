@@ -4,9 +4,9 @@ on: [push]
 jobs:
   Testing-Features:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./src/team_comm_tools/
+    # defaults:
+    #   run:
+    #     working-directory: ./src/team_comm_tools/
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -19,12 +19,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz --no-deps
-          pip install -r ../requirements.txt
+          pip install -r requirements.txt
 
       - name: Additional setup
         run: |
           cd utils
           python import_nltk.py
+        working-directory: ./src/team_comm_tools/
 
       - name: Run featurizer
         run: |
@@ -32,6 +33,7 @@ jobs:
           cd tests
           python3 run_tests.py
           python3 run_package_grouping_tests.py
+        working-directory: ./src/team_comm_tools/
 
       - name: Run tests
         run: |
@@ -39,6 +41,7 @@ jobs:
           cd tests
           pytest test_feature_metrics.py
           pytest test_package.py
+        working-directory: ./src/team_comm_tools/
 
       - name: Upload test results
         uses: actions/upload-artifact@v2
