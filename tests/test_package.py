@@ -21,7 +21,7 @@ import os
 # Add the parent directory to the sys.path
 # sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/team_comm_tools/')))
 # from feature_dict import feature_dict
-from team_comm_tools import feature_dict
+from team_comm_tools.feature_dict import feature_dict
 
 def test_path_robustness():
     # case 1 was specified without the necessary 'output/', 'chat/', and '.csv' in its path. Ensure it works!
