@@ -29,6 +29,7 @@ jobs:
         run: |
           cd utils
           python import_nltk.py
+        working-directory: ./src/team_comm_tools/
 
       - name: Run featurizer
         run: |
