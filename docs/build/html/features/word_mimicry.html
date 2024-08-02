@@ -65,7 +65,18 @@
 <li class="toctree-l3"><a class="reference internal" href="politeness_v2.html">politeness_v2 module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="politeness_v2_helper.html">politeness_v2_helper module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reddit_tags.html">reddit_tags module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">word_mimicry module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">word_mimicry module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.Content_mimicry_score"><code class="docutils literal notranslate"><span class="pre">Content_mimicry_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.computeTF"><code class="docutils literal notranslate"><span class="pre">computeTF()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.compute_frequency"><code class="docutils literal notranslate"><span class="pre">compute_frequency()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.function_mimicry_score"><code class="docutils literal notranslate"><span class="pre">function_mimicry_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.get_content_words_in_message"><code class="docutils literal notranslate"><span class="pre">get_content_words_in_message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.get_function_words_in_message"><code class="docutils literal notranslate"><span class="pre">get_function_words_in_message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.get_mimicry_bert"><code class="docutils literal notranslate"><span class="pre">get_mimicry_bert()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.get_moving_mimicry"><code class="docutils literal notranslate"><span class="pre">get_moving_mimicry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.word_mimicry.mimic_words"><code class="docutils literal notranslate"><span class="pre">mimic_words()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="fflow.html">fflow module</a></li>
 </ul>
 </li>
@@ -103,8 +114,189 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="word-mimicry-module">
-<h1>word_mimicry module<a class="headerlink" href="#word-mimicry-module" title="Link to this heading"></a></h1>
+  <section id="module-features.word_mimicry">
+<span id="word-mimicry-module"></span><h1>word_mimicry module<a class="headerlink" href="#module-features.word_mimicry" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.Content_mimicry_score">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">Content_mimicry_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_count_frequency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_count_mimic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.Content_mimicry_score" title="Link to this definition"></a></dt>
+<dd><p>Combine the steps to compute the content word mimicry score.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>DataFrame</em>) – The input dataframe.</p></li>
+<li><p><strong>column_count_frequency</strong> (<em>str</em>) – The column with content words to calculate frequency.</p></li>
+<li><p><strong>column_count_mimic</strong> (<em>str</em>) – The column with content word mimicry.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A series with content word accommodation scores.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Series</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.computeTF">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">computeTF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_mimc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.computeTF" title="Link to this definition"></a></dt>
+<dd><p>Compute the term frequency of each content mimic word, then sum them up.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>column_mimc</strong> (<em>list</em>) – Each entry under the <cite>content_word_mimicry</cite> column.</p></li>
+<li><p><strong>frequency_dict</strong> (<em>dict</em>) – A dictionary of content word frequency across the dataset.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The sum of term frequencies for the content mimic words.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.compute_frequency">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">compute_frequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.compute_frequency" title="Link to this definition"></a></dt>
+<dd><p>Compute the frequency of each content word across the whole dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>DataFrame</em>) – The input dataframe.</p></li>
+<li><p><strong>on_column</strong> (<em>str</em>) – The column with which we calculate content word frequency.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary with content words as keys and their frequencies as values.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.function_mimicry_score">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">function_mimicry_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_mimic_words</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.function_mimicry_score" title="Link to this definition"></a></dt>
+<dd><p>Compute the number of mimic words for function words by simply counting the number of mimic words using len().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>function_mimic_words</strong> (<em>list</em>) – Each entry under the <cite>function_word_mimicry</cite> column.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of function mimic words.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.get_content_words_in_message">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">get_content_words_in_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function_word_reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.get_content_words_in_message" title="Link to this definition"></a></dt>
+<dd><p>Extract the non-function words in a given message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The input text to be analyzed.</p></li>
+<li><p><strong>function_word_reference</strong> (<em>list</em>) – A list of function words to reference against.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of content words found in the input text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.get_function_words_in_message">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">get_function_words_in_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function_word_reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.get_function_words_in_message" title="Link to this definition"></a></dt>
+<dd><p>Extract the function words &amp; non-functions words from a message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The input text to be analyzed.</p></li>
+<li><p><strong>function_word_reference</strong> (<em>list</em>) – A list of function words to reference against.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of function words found in the input text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.get_mimicry_bert">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">get_mimicry_bert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vect_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.get_mimicry_bert" title="Link to this definition"></a></dt>
+<dd><p>Uses SBERT vectors to get the cosine similarity between each message and the previous message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>DataFrame</em>) – The input chat dataframe.</p></li>
+<li><p><strong>vect_data</strong> (<em>DataFrame</em>) – The dataframe containing SBERT vectors.</p></li>
+<li><p><strong>conversation_id</strong> (<em>str</em>) – The column name that should be selected as the conversation ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of cosine similarity scores between each message and the previous message.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.get_moving_mimicry">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">get_moving_mimicry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vect_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.get_moving_mimicry" title="Link to this definition"></a></dt>
+<dd><p>Calculate the moving average of mimicry scores using SBERT vectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>DataFrame</em>) – The input chat dataframe.</p></li>
+<li><p><strong>vect_data</strong> (<em>DataFrame</em>) – The dataframe containing SBERT vectors.</p></li>
+<li><p><strong>conversation_id</strong> (<em>str</em>) – The column name that should be selected as the conversation ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of moving average mimicry scores for each message in the conversation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.word_mimicry.mimic_words">
+<span class="sig-prename descclassname"><span class="pre">features.word_mimicry.</span></span><span class="sig-name descname"><span class="pre">mimic_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.word_mimicry.mimic_words" title="Link to this definition"></a></dt>
+<dd><p>Return a list of words that are also used in the other’s previous turn.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>DataFrame</em>) – The dataset that removed all punctuations.</p></li>
+<li><p><strong>on_column</strong> (<em>str</em>) – The column that we want to find mimicry on.</p></li>
+<li><p><strong>conversation_id</strong> (<em>str</em>) – The column name that should be selected as the conversation ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of lists, where each sublist contains words mimicked from the previous turn.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 

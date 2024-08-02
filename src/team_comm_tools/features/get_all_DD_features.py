@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 from functools import reduce
 
-from .discursive_diversity import *
-from .variance_in_DD import *
-from .within_person_discursive_range import *
-from ..utils.assign_chunk_nums import *
+from team_comm_tools.features.discursive_diversity import *
+from team_comm_tools.features.variance_in_DD import *
+from team_comm_tools.features.within_person_discursive_range import *
+from team_comm_tools.utils.assign_chunk_nums import *
 
 def conv_to_float_arr(df):
     """

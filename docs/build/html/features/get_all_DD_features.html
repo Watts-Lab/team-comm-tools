@@ -55,7 +55,11 @@
 <li class="toctree-l3"><a class="reference internal" href="information_diversity.html">information_diversity module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../utils/gini_coefficient.html">gini_coefficient module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="discursive_diversity.html">discursive_diversity module</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">get_all_DD_features module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">get_all_DD_features module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.get_all_DD_features.conv_to_float_arr"><code class="docutils literal notranslate"><span class="pre">conv_to_float_arr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.get_all_DD_features.get_DD_features"><code class="docutils literal notranslate"><span class="pre">get_DD_features()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="turn_taking_features.html">turn_taking_features module</a></li>
 </ul>
 </li>
@@ -92,8 +96,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="get-all-dd-features-module">
-<h1>get_all_DD_features module<a class="headerlink" href="#get-all-dd-features-module" title="Link to this heading"></a></h1>
+  <section id="module-features.get_all_DD_features">
+<span id="get-all-dd-features-module"></span><h1>get_all_DD_features module<a class="headerlink" href="#module-features.get_all_DD_features" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="features.get_all_DD_features.conv_to_float_arr">
+<span class="sig-prename descclassname"><span class="pre">features.get_all_DD_features.</span></span><span class="sig-name descname"><span class="pre">conv_to_float_arr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.get_all_DD_features.conv_to_float_arr" title="Link to this definition"></a></dt>
+<dd><p>Converts message embeddings in pd.DataFrame from string format to float arrays.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing ‘message_embedding’ column with string-encoded embeddings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pd.DataFrame with ‘message_embedding’ column containing float arrays.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="features.get_all_DD_features.get_DD_features">
+<span class="sig-prename descclassname"><span class="pre">features.get_all_DD_features.</span></span><span class="sig-name descname"><span class="pre">get_DD_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vect_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.get_all_DD_features.get_DD_features" title="Link to this definition"></a></dt>
+<dd><p>This is an “umbrella” feature called at the conversation level.
+Returns four discusive metrics: discursive diversity, variance in discursive diversity, incongruent modulation, and within person discursive range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing conversation-level chat data.</p></li>
+<li><p><strong>vect_data</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing vectorized data.</p></li>
+<li><p><strong>conversation_id_col</strong> (<em>str</em>) – Column name for conversation identifiers.</p></li>
+<li><p><strong>speaker_id_col</strong> (<em>str</em>) – Column name for speaker identifiers.</p></li>
+<li><p><strong>timestamp_col</strong> (<em>str</em>) – Column name for message timestamps.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pd.DataFrame containing merged discursive metrics for each conversation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 

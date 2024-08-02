@@ -4,7 +4,7 @@ from string import punctuation
 import re
 from sklearn.metrics.pairwise import cosine_similarity
 
-from .get_all_DD_features import *
+from team_comm_tools.features.get_all_DD_features import *
 
 # '''
 #     To compute word mimicry, we use the dataset that removed all the punctuations

@@ -6,7 +6,7 @@ from spacy.scorer import Scorer
 import random
 import pandas as pd
 from collections import defaultdict
-from ..utils.preprocess import *
+from team_comm_tools.utils.preprocess import *
 
 #Detects whether a user is talking about (or to) someone else in a conversation.
 

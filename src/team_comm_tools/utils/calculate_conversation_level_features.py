@@ -1,14 +1,12 @@
 # Importing modules from features
-from ..features.basic_features import *
-from ..features.get_all_DD_features import *
-from ..features.turn_taking_features import*
-from ..features.burstiness import *
-from ..features.information_diversity import *
-from .summarize_features import *
-from .gini_coefficient import *
-from .preprocess import *
-
-
+from team_comm_tools.features.basic_features import *
+from team_comm_tools.features.get_all_DD_features import *
+from team_comm_tools.features.turn_taking_features import*
+from team_comm_tools.features.burstiness import *
+from team_comm_tools.features.information_diversity import *
+from team_comm_tools.utils.summarize_features import *
+from team_comm_tools.utils.gini_coefficient import *
+from team_comm_tools.utils.preprocess import *
 
 class ConversationLevelFeaturesCalculator:
     """

@@ -1,20 +1,20 @@
 # Importing modules from features
-from ..features.politeness_features import *
-from ..features.basic_features import *
-from ..features.info_exchange_zscore import *
-from ..features.lexical_features_v2 import *
-from ..features.other_lexical_features import *
-from ..features.word_mimicry import *
-from ..features.hedge import *
-from ..features.textblob_sentiment_analysis import *
-from ..features.readability import *
-from ..features.question_num import *
-from ..features.temporal_features import *
-from ..features.fflow import *
-from ..features.certainty import *
-from ..features.politeness_v2 import *
-from ..features.reddit_tags import *
-from ..features.named_entity_recognition_features import*
+from team_comm_tools.features.politeness_features import *
+from team_comm_tools.features.basic_features import *
+from team_comm_tools.features.info_exchange_zscore import *
+from team_comm_tools.features.lexical_features_v2 import *
+from team_comm_tools.features.other_lexical_features import *
+from team_comm_tools.features.word_mimicry import *
+from team_comm_tools.features.hedge import *
+from team_comm_tools.features.textblob_sentiment_analysis import *
+from team_comm_tools.features.readability import *
+from team_comm_tools.features.question_num import *
+from team_comm_tools.features.temporal_features import *
+from team_comm_tools.features.fflow import *
+from team_comm_tools.features.certainty import *
+from team_comm_tools.features.politeness_v2 import *
+from team_comm_tools.features.reddit_tags import *
+from team_comm_tools.features.named_entity_recognition_features import*
 
 # Importing utils
 from .preload_word_lists import *

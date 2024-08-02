@@ -1,8 +1,7 @@
 # Importing modules from features
-from .summarize_features import get_user_sum_dataframe, get_user_average_dataframe
-from ..features.get_user_network import *
-from ..features.user_centroids import *
-
+from team_comm_tools.utils.summarize_features import get_user_sum_dataframe, get_user_average_dataframe
+from team_comm_tools.features.get_user_network import *
+from team_comm_tools.features.user_centroids import *
 
 class UserLevelFeaturesCalculator:
     """

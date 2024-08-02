@@ -10,12 +10,12 @@ import time
 import itertools
 
 # Imports from feature files and classes
-from .utils.calculate_chat_level_features import ChatLevelFeaturesCalculator
-from .utils.calculate_user_level_features import UserLevelFeaturesCalculator
-from .utils.calculate_conversation_level_features import ConversationLevelFeaturesCalculator
-from .utils.preprocess import *
-from .utils.check_embeddings import *
-from .feature_dict import feature_dict
+from team_comm_tools.utils.calculate_chat_level_features import ChatLevelFeaturesCalculator
+from team_comm_tools.utils.calculate_user_level_features import UserLevelFeaturesCalculator
+from team_comm_tools.utils.calculate_conversation_level_features import ConversationLevelFeaturesCalculator
+from team_comm_tools.utils.preprocess import *
+from team_comm_tools.utils.check_embeddings import *
+from team_comm_tools.feature_dict import feature_dict
 
 class FeatureBuilder:
     """The FeatureBuilder is the main engine that reads in the user's inputs and specifications and generates 
