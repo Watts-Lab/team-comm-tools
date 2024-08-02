@@ -28,6 +28,8 @@ python3 -m spacy download en_core_web_sm
 import nltk
 nltk.download('nps_chat')
 nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 ```
 
 ### Step 3: Run the Featurizer

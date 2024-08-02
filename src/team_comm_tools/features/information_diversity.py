@@ -4,8 +4,6 @@ import math
 import nltk
 from nltk.corpus import stopwords
 from nltk import tokenize
-nltk.download('stopwords')
-nltk.download('wordnet')
 stopword = list(stopwords.words('english'))
 
 from nltk.stem import WordNetLemmatizer  
