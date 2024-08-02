@@ -54,12 +54,12 @@ const alumni = [
 function Team() {
   useEffect(() => {
     document.title = "Team | Team Communication Toolkit";
+    window.scrollTo(0, 0)
   }, []);
 
   return (
     <div className='team-container'>
       <h1 className='team'>
-        Meet Our Team
         Meet Our Team
       </h1>
 

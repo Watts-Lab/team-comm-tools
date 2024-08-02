@@ -4,6 +4,7 @@ import '../../App.css';
 function Research() {
   useEffect(() => {
     document.title = "Research | Team Communication Toolkit";
+    window.scrollTo(0, 0)
   }, []);
 
   return (

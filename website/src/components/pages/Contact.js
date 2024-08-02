@@ -4,6 +4,7 @@ import '../../App.css';
 function Contact() {
     useEffect(() => {
         document.title = "Contact | Team Communication Toolkit";
+        window.scrollTo(0, 0)
     }, []);
 
     return (

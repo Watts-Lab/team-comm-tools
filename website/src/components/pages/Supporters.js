@@ -4,6 +4,7 @@ import '../../App.css';
 function Supporters() {
   useEffect(() => {
     document.title = "Our Supporters | Team Communication Toolkit";
+    window.scrollTo(0, 0)
   }, []);
 
   return (

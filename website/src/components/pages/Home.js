@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     useEffect(() => {
         document.title = "Team Communication Toolkit";
+        window.scrollTo(0, 0)
       }, []);
 
     return (
