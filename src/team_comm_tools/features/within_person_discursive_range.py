@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from .discursive_diversity import get_cosine_similarity
 import os
-from pathlib import Path
 
 '''
 This is a conversation level feature, which computes the semantic modulation that 
@@ -13,8 +12,9 @@ while within person discursive range measures the average amount of shifting.
 '''
 
 def get_nan_vector():
-    current_script_directory = Path(__file__).resolve().parent
-    nan_vector_file_path = current_script_directory.parent / "../../src/team_comm_tools/features/assets" / "nan_vector.txt"
+    current_dir = os.path.dirname(__file__)
+    nan_vector_file_path = os.path.join(current_dir, './assets/nan_vector.txt')
+    nan_vector_file_path = os.path.abspath(nan_vector_file_path)
 
     f = open(nan_vector_file_path, "r")
     str_vec = f.read()

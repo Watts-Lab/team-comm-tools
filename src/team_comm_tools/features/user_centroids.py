@@ -1,6 +1,7 @@
-from .get_all_DD_features import *
 import pandas as pd
 import numpy as np
+
+from .get_all_DD_features import *
 
 def get_user_centroids(chat_data, vect_data, conversation_id_col, speaker_id_col):
 

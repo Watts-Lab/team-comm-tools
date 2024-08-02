@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 from string import punctuation
 import re
-from .get_all_DD_features import *
 from sklearn.metrics.pairwise import cosine_similarity
+
+from .get_all_DD_features import *
 
 # '''
 #     To compute word mimicry, we use the dataset that removed all the punctuations

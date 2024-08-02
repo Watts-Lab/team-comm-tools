@@ -1,7 +1,7 @@
 # Importing modules from features
-from utils.summarize_features import get_user_sum_dataframe, get_user_average_dataframe
-from features.get_user_network import *
-from features.user_centroids import *
+from .summarize_features import get_user_sum_dataframe, get_user_average_dataframe
+from ..features.get_user_network import *
+from ..features.user_centroids import *
 
 
 class UserLevelFeaturesCalculator:

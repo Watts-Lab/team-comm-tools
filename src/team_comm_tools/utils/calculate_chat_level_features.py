@@ -1,24 +1,24 @@
 # Importing modules from features
-from features.politeness_features import *
-from features.basic_features import *
-from features.info_exchange_zscore import *
-from features.lexical_features_v2 import *
-from features.other_lexical_features import *
-from features.word_mimicry import *
-from features.hedge import *
-from features.textblob_sentiment_analysis import *
-from features.readability import *
-from features.question_num import *
-from features.temporal_features import *
-from features.fflow import *
-from features.certainty import *
-from features.politeness_v2 import *
-from features.reddit_tags import *
-from features.named_entity_recognition_features import*
+from ..features.politeness_features import *
+from ..features.basic_features import *
+from ..features.info_exchange_zscore import *
+from ..features.lexical_features_v2 import *
+from ..features.other_lexical_features import *
+from ..features.word_mimicry import *
+from ..features.hedge import *
+from ..features.textblob_sentiment_analysis import *
+from ..features.readability import *
+from ..features.question_num import *
+from ..features.temporal_features import *
+from ..features.fflow import *
+from ..features.certainty import *
+from ..features.politeness_v2 import *
+from ..features.reddit_tags import *
+from ..features.named_entity_recognition_features import*
 
 # Importing utils
-from utils.preload_word_lists import *
-from utils.zscore_chats_and_conversation import get_zscore_across_all_chats, get_zscore_across_all_conversations
+from .preload_word_lists import *
+from .zscore_chats_and_conversation import get_zscore_across_all_chats, get_zscore_across_all_conversations
 
 class ChatLevelFeaturesCalculator:
     """

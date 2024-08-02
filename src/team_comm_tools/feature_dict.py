@@ -1,6 +1,6 @@
-from utils.calculate_chat_level_features import ChatLevelFeaturesCalculator
-from utils.calculate_conversation_level_features import ConversationLevelFeaturesCalculator
-from utils.preprocess import *
+from .utils.calculate_chat_level_features import ChatLevelFeaturesCalculator
+from .utils.calculate_conversation_level_features import ConversationLevelFeaturesCalculator
+from .utils.preprocess import *
 
 feature_dict = { # TODO: customize preprocess methods
     # Chat Level

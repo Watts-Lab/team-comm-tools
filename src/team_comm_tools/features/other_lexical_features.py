@@ -1,6 +1,6 @@
 import re
 
-from features.basic_features import *
+from .basic_features import *
 
 NTRI_regex = "what\?+|sorry|excuse me|huh\??|who\?+|pardon\?+|say.*again\??|what'?s that|what is that"
 def classify_NTRI(text):

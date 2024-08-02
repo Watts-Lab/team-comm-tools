@@ -4,14 +4,15 @@ import spacy
 import en_core_web_sm
 import re
 import numpy as np
-import features.keywords as keywords
 import regex
 import pickle
 import errno
 
+from .keywords import kw
+
 nlp = en_core_web_sm.load()
 nlp.enable_pipe("senter")
-kw = keywords.kw
+# kw = keywords.kw
 
 import nltk
 from nltk.corpus import stopwords

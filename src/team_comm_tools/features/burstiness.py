@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from features.temporal_features import coerce_to_date_or_number
+from .temporal_features import coerce_to_date_or_number
 
 def burstiness(df, timediff):
     """ Computes the level of "burstiness" in a conversation, or the extent to which messages in a 

@@ -1,5 +1,5 @@
 import pandas as pd
-from features.politeness_v2_helper import *
+from .politeness_v2_helper import *
 
 def get_politeness_v2(df,on_column):
     """ 
