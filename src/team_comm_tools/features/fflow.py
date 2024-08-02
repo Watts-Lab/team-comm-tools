@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from .get_all_DD_features import *
+from team_comm_tools.features.get_all_DD_features import *
 # from sklearn.metrics.pairwise import cosine_similarity
 
 
