@@ -7,7 +7,7 @@ function HowItWorks() {
   useEffect(() => {
     document.title = "How It Works | Team Communication Toolkit";
 
-    fetch('/features').then(
+    fetch('https://5f9vk2anlb.execute-api.us-east-2.amazonaws.com/team-comm-tools-features/team-comm-tools').then(
       res => res.json()
     ).then(
       data => {

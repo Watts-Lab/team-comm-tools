@@ -2,7 +2,7 @@
   "homepage": "https://teamcommtools.seas.upenn.edu/", 
   "name": "website",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://5f9vk2anlb.execute-api.us-east-2.amazonaws.com/team-comm-tools-features/team-comm-tools",
   "private": true,
   "dependencies": {
     "react": "^18.3.1",
@@ -20,9 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start": "concurrently \"npm run client\" \"npm run server\"",
-    "client": "react-scripts start", 
-    "server": "python ../src/feature_dict.py"  
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
