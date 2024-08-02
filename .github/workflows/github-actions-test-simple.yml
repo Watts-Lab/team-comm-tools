@@ -33,14 +33,12 @@ jobs:
 
       - name: Run featurizer
         run: |
-          cd ../..
           cd tests
           python3 run_tests.py
           python3 run_package_grouping_tests.py
 
       - name: Run tests
         run: |
-          cd ../..
           cd tests
           pytest test_feature_metrics.py
           pytest test_package.py
