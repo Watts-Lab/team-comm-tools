@@ -1,6 +1,10 @@
 # The Team Communication Toolkit
 The Team Communication Toolkit is a research project and Python package that aims to make it easier for social scientists to explore text-based conversational data.
 
+Our website: https://teamcommtools.seas.upenn.edu/
+
+Our documentation: https://conversational-featurizer.readthedocs.io/en/latest/
+
 ## Getting Started
 
 If you are new to this repository, welcome! Please follow the steps below to get started.
