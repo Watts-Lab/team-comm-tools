@@ -5,15 +5,7 @@ This file runs the feature builder pipeline on our custom testing datasets.
 """
 
 # Importing the Feature Generating Class
-import sys
-import os
 from team_comm_tools import FeatureBuilder
-
-# Add the parent directory to the sys.path
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/team_comm_tools/')))
-
-# Now you can import feature_builder
-# from feature_builder import FeatureBuilder
 import pandas as pd
 import chardet
 

@@ -51,7 +51,17 @@
 <li class="toctree-l1"><a class="reference internal" href="features/index.html">Features: Technical Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="features_conceptual/index.html">Features: Conceptual Documentation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation-usage">Installation/Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-package">Using the Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importing-the-package">Importing the Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-featurebuilder-on-your-data">Running the FeatureBuilder on Your Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic-input-columns">Basic Input Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-configuration-columns">Advanced Configuration Columns</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-featurebuilder-considerations">Additional FeatureBuilder Considerations</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="utils/index.html">Utilities</a></li>
@@ -82,10 +92,265 @@
            <div itemprop="articleBody">
              
   <section id="examples">
-<h1>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h1>
-<section id="installation-usage">
-<h2>Installation/Usage<a class="headerlink" href="#installation-usage" title="Link to this heading"></a></h2>
-<p>Please check back soon!</p>
+<span id="id1"></span><h1>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h1>
+<p><strong>Note:</strong> Our “Examples” page is constantly being improved. This page is a work in progress!</p>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>To use our tool, please ensure that you have Python &gt;= 3.10 installed and a working version of <a class="reference external" href="https://pypi.org/project/pip/">pip</a>, which is Python’s package installer. Then, in your local environment, run the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">team_comm_tools</span>
+</pre></div>
+</div>
+<p>You will also need to manually install some additional required dependencies to set up the package. In your terminal, run the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">setup</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Once complete, you should see, “Installation and requirements check completed successfully.” This means you are ready to go!</p>
+</section>
+<section id="using-the-package">
+<h2>Using the Package<a class="headerlink" href="#using-the-package" title="Link to this heading"></a></h2>
+<p>After you install it, the Team Communication Toolkit can be imported at the top of any Python script. We have provided a simple example file, “featurize.py”, under our <a class="reference external" href="https://github.com/Watts-Lab/team_comm_tools/tree/main/examples">examples folder</a> on GitHub, and this walkthrough will highlight some of our top use cases. However, it won’t follow the file exactly.</p>
+<section id="importing-the-package">
+<h3>Importing the Package<a class="headerlink" href="#importing-the-package" title="Link to this heading"></a></h3>
+<p>At the top of your Python script, write the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">team_comm_tools</span> <span class="kn">import</span> <span class="n">FeatureBuilder</span>
+</pre></div>
+</div>
+<p>Now you have access to the <a class="reference internal" href="feature_builder.html#feature-builder"><span class="std std-ref">feature_builder module</span></a>. This is the main class that you’ll need to interact with the Team Communication Toolkit.</p>
+</section>
+<section id="running-the-featurebuilder-on-your-data">
+<h3>Running the FeatureBuilder on Your Data<a class="headerlink" href="#running-the-featurebuilder-on-your-data" title="Link to this heading"></a></h3>
+<p>Next, you’ll want to get some data to run your FeatureBuilder on! The FeatureBuilder accepts any Pandas DataFrame as the input, so you can read in data in whatever format you like. For the purposes of this walkthrough, we’ll be using some jury deliberation data from <a class="reference external" href="https://dl.acm.org/doi/pdf/10.1145/3411764.3445433?casa_token=d-b5sCdwpNcAAAAA:-U-ePTSSE3rY1_BLXy1-0spFN_i4gOJqy8D0CeXHLAJna5bFRTee9HEnM0TnK_R-g0BOqOn35mU">Hu et al. (2021)</a>.</p>
+<p>We first import Pandas and read in the dataframe:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">juries_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./example_data/full_empirical_datasets/jury_conversations_with_outcome_var.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now we are ready to call the FeatureBuilder on our data. All we need to do is declare a FeatureBuilder object and run the .featurize() function, like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">jury_feature_builder</span> <span class="o">=</span> <span class="n">FeatureBuilder</span><span class="p">(</span>
+        <span class="n">input_df</span> <span class="o">=</span> <span class="n">juries_df</span><span class="p">,</span>
+        <span class="n">speaker_id_col</span> <span class="o">=</span> <span class="s2">&quot;speaker_nickname&quot;</span><span class="p">,</span>
+        <span class="n">message_col</span> <span class="o">=</span> <span class="s2">&quot;message&quot;</span><span class="p">,</span>
+        <span class="n">timestamp_col</span> <span class="o">=</span> <span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
+        <span class="n">grouping_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;batch_num&quot;</span><span class="p">,</span> <span class="s2">&quot;round_num&quot;</span><span class="p">],</span>
+        <span class="n">vector_directory</span> <span class="o">=</span> <span class="s2">&quot;./vector_data/&quot;</span><span class="p">,</span>
+        <span class="n">output_file_path_chat_level</span> <span class="o">=</span> <span class="s2">&quot;./jury_output_chat_level.csv&quot;</span><span class="p">,</span>
+        <span class="n">output_file_path_user_level</span> <span class="o">=</span> <span class="s2">&quot;./jury_output_user_level.csv&quot;</span><span class="p">,</span>
+        <span class="n">output_file_path_conv_level</span> <span class="o">=</span> <span class="s2">&quot;./jury_output_conversation_level.csv&quot;</span><span class="p">,</span>
+        <span class="n">turns</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+<span class="n">jury_feature_builder</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="s2">&quot;message&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="basic-input-columns">
+<h4>Basic Input Columns<a class="headerlink" href="#basic-input-columns" title="Link to this heading"></a></h4>
+<ul>
+<li><p>The <strong>input_df</strong> parameter is where you pass in your dataframe. In this case, we want to run the FeatureBuilder on the juries data that we read in!</p></li>
+<li><p>The <strong>speaker_id_col</strong> refers to the name of the column containing a unique identifier for each speaker / participant in the conversation. Here, in the data, the name of our columns is called “speaker_nickname.”</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you do not pass anything in, “speaker_nickname” is the default value for this parameter.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The <strong>message_col</strong> refers to the name of the column containing the utterances/messages that you want to featurize. In our data, the name of this column is “message.”</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you do not pass anything in, “message” is the default value for this parameter.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The <strong>timestamp_col</strong> refers to the name of the column containing when each utterance was said. In this case, we have exactly one timestamp for each message, stored in “timestamp.”</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you do not pass anything in, “timestamp” is the default value for this parameter.</p></li>
+<li><p>Sometimes, you may have data on both the <em>start</em> and the <em>end</em> of a message; when people are speaking live, it’s possible that they talk over each other! In this case, the parameter <strong>timestamp_col</strong> also accepts a tuple of two strings, assumed to be <em>(start, end)</em>. For example, if we had two columns insteac, we could use the following:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">timestamp_col</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;timestamp_start&quot;</span><span class="p">,</span> <span class="s2">&quot;timestamp_end&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>In the FeatureBuilder, we assume that every conversation has a unique identifying string, and that all the messages belonging to the same conversation have the same identifier.</strong> Typically, we would use the column <strong>conversation_id_col</strong> to indicate the name of this identifier. However, we also support cases in which there is more than one identifer per conversation, and our example here illustrates this functionality. The <strong>grouping_keys</strong> parameter means that we want to group by more than one column, and allow the FeatureBuilder to treat unique combinations of the grouping keys as the “conversational identifier”. This means that we treat each unique combination of “batch_num” and “round_num” as a different conversation.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In cases where you are using <strong>conversation_id_col</strong>, “conversation_num” is the default value for this parameter.</p></li>
+<li><p>If we were to use just one of the columns as our conversation identifier instead — for example, treat each instance of “batch_num” as a unique conversation, we would use this syntax:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">conversation_id_col</span> <span class="o">=</span> <span class="s2">&quot;batch_num&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>The <strong>vector_directory</strong> is the name of a directory in which we will store some pre-processed information. Some features require running inference from HuggingFace’s <a class="reference external" href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment">RoBERTa-based sentiment model</a>, and others require generating <a class="reference external" href="https://sbert.net/">SBERT vectors</a>. These processes take time, and we cache the outputs so that subsequent runs of the FeatureBuilder on the same dataset will not take as much time. Therefore, we require you to pass in a location where you’d like us to save these outputs.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Note that we do not require the name of the vector directory to be a folder that already exists</strong>; if it doesn’t exist, we will create it for you.</p></li>
+<li><p>Inside the folder, we will store the RoBERTa outputs in a subfolder called “sentiment”, and the SBERT vectors in a subfolder called “sentence.” We will create both of these subfolders for you.</p></li>
+<li><p>The <strong>turns</strong> parameter, which we will discuss later, controls whether or not you’d like the FeatureBuilder to treat successive utterances by the same individual as a single “turn,” or whether you’d like them to be treated separately. We will cache different versions of outputs based on this parameter; we use a subfolder called “chats” (when <strong>turns=False</strong>) or “turns” (when <strong>turns=True</strong>).</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>There are three output files for each run of the FeatureBuilder, which mirror the three levels of analysis: utterance-, speaker-, and conversation-level. (Please see the section on <a class="reference external" href="intro#generating_features">Generating Features: Utterance-, Speaker-, and Conversation-Level</a> for more details.) However, this means that we require you to provide a path for where you would like us to store each of the output files; <strong>output_file_path_chat_level</strong> (Utterance- or Chat-Level Features), <strong>output_file_path_user_level</strong> (Speaker- or User-Level Features), and <strong>output_file_path_conv_level</strong> (Conversation-Level Features).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>We expect that you pass in a <strong>path</strong>, not just a filename. For example, the path needs to be “./my_file.csv”, and not just “my_file.csv”; you will get an error if you pass in only a name without the “/”.</p></li>
+<li><p>Regardless of your path location, we will automatically append the name “output” to the fornt of your file path, such that <strong>all of the outputs will be generated in a folder called “output.”</strong></p></li>
+<li><p>Within the “output” folder, <strong>we will also generate sub-folders such that the three files will be located in subfolders called “chat,” “user,” and “conv,” respectively.</strong></p></li>
+<li><p>If you pass in a path that already contains the above automatically-generated elements (for example, “./output/chat/my_chat_features.csv”), we will skip these steps and directly save it in the relevant folder.</p></li>
+<li><p>Similar to the <strong>vector_directory</strong> parameter, the “chat” directory will be renamed to “turn” depending on the value of the <strong>turns</strong> parameter.</p></li>
+<li><p>This means that the following two ways of specifying an output path are equivalent, assuming that turns=False:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">output_file_path_chat_level</span> <span class="o">=</span> <span class="s2">&quot;./jury_output_chat_level.csv&quot;</span>
+
+<span class="n">output_file_path_chat_level</span> <span class="o">=</span> <span class="s2">&quot;./output/chat/jury_output_chat_level.csv&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>And these two ways of specifying an output path are equivalent, assumign that turns=True:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">output_file_path_chat_level</span> <span class="o">=</span> <span class="s2">&quot;./jury_output_turn_level.csv&quot;</span>
+
+<span class="n">output_file_path_chat_level</span> <span class="o">=</span> <span class="s2">&quot;./output/turn/jury_output_turn_level.csv&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>The <strong>turns</strong> parameter controls whether we want to treat successive messages from the same person as a single turn. For example, in a text conversation, sometimes individuals will send many message in rapid succession, as follows:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>John</strong>: Hey Michael</p></li>
+<li><p><strong>John</strong>: How are you?</p></li>
+<li><p><strong>John</strong>: I wanted to talk you real quick!</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>These messages by John can be thought of as a single turn, in which he says, “Hey Michael, how are you? I wanted to talk to you real quick!” Instead, however, John sent three messages in a row, suggesting that he took three “turns.” When the <strong>turns</strong> parameter is set to True, the FeatureBuilder will automatically combine messages like this into a single “turn.”</p></li>
+<li><p>We note, however, that one of our features (<cite>:ref:turn_taking_index</cite>) will always give the value of “1” in the case when you set <strong>turns=True</strong>, since, by definition, people will never take multiple “turns” in a row.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="advanced-configuration-columns">
+<h4>Advanced Configuration Columns<a class="headerlink" href="#advanced-configuration-columns" title="Link to this heading"></a></h4>
+<p>More advanced users of the FeatureBuilder should consider the following optional parameters, depending on their needs.</p>
+<ul>
+<li><p>The <strong>regenerate_vectors</strong> parameter controls whether you’d like the FeatureBuilder to re-generate the content in the <strong>vector_directory</strong>, even if we have already cached the output of a previous run. It is useful if the underlying data has changed, but you want to give the output file the same name as a previous run of the FeatureBuilder.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>By default, <strong>we assume that, if your output file is named the same, that the underlying vectors are the same</strong>. If this isn’t true, you should set <strong>regenerate_vectors = True</strong> in order to clear out the cache and re-generate the RoBERTa and SBERT outputs.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The <strong>custom_features</strong> parameter allows you to specify features that do not exist within our default set. <strong>We default to NOT generating four features that depend on SBERT vectors, as the process for generating the vectors tends to be slow.</strong> However, these features can provide interesting insights into the extent to which individuals in a conversation speak “similarly” or not, based on a vector similarity metric. To access these features, simply use the <strong>custom_features</strong> parameter:</p>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">custom_features</span> <span class="o">=</span> <span class="p">[</span>
+<span class="s2">&quot;(BERT) Mimicry&quot;</span><span class="p">,</span>
+<span class="s2">&quot;Moving Mimicry&quot;</span><span class="p">,</span>
+<span class="s2">&quot;Forward Flow&quot;</span><span class="p">,</span>
+<span class="s2">&quot;Discursive Diversity&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>You can chose to add any of these features depending on your preference.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The <strong>analyze_first_pct</strong> parameter allows you to “cut off” and separately analyze the first X% of a conversation, in case you wish to separately study different sections of a conversation as it progresses. For example, you may be interested in knowing how the attributes of the first 50% of a conversation differ from the attributes of the entire conversation. Then you can sepcify the following:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">analyze_first_pct</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This will first analyze the first 50% of each conversation, and then analyze the full conversation.</p></li>
+<li><p>By default, we will simply analyze 100% of each conversation.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The parameters <strong>ner_training_df</strong> and <strong>ner_cutoff</strong> are required if you would like the FeatureBuilder to identify named entities in your conversations. For example, the sentence, “John, did you talk to Michael this morning?” has two named entities: “John” and “Michael.” The FeatureBuilder includes a tool that automatically detects these named entities, but it requires the user (you!) to specify some training data with examples of the types of named entities you’d like to recognize. This is because proper nouns can take many forms, from standard Western-style names (e.g., “John”) to pseudonymous online nicknames (like “littleHorse”). More information about these parameters can be found in <a class="reference internal" href="features_conceptual/named_entity_recognition.html#named-entity-recognition"><span class="std std-ref">Named Entity Recognition</span></a>.</p></li>
+<li><p>The parameters <strong>cumulative_grouping</strong> and <strong>within_task</strong> address a special case of having multiple conversational identifiers; <strong>they assume that the same team has multiple sequential conversations, and that, in each conversation, they perform one or more separate activities</strong>. This was originally created as a companion to a multi-stage Empirica game (see: <a class="reference external" href="https://github.com/Watts-Lab/multi-task-empirica">https://github.com/Watts-Lab/multi-task-empirica</a>). For example, imagine that a team must complete 3 different tasks, each with 3 different subparts. Then we can model this event in terms of 1 team (High level), 3 tasks (Mid level), and 3 subparts per task (Low level).</p>
+<blockquote>
+<div><ul>
+<li><p>In such an activity, we assume that there are three levels of identifiers: High, Mid, and Low.</p></li>
+<li><p>The “High” level identifier can be thought of as the team’s identifier, and the same team then completes multiple different activities (or has multiple different conversations), each with one or more subparts.</p></li>
+<li><p>The “Mid” level identifier is a sequence of separate conversations about different topics.</p></li>
+<li><p>The “Low” level identifier assumes that, within each topic, there are one or more subparts/subtasks. For example, suppose that teams must discuss three different political issues (Gun Control, Death Penalty, and Abortion), and within each topic, they need to discuss it from two perspectives (Democrat, Republican). In this case, there would be an identifier for each of the 3 Mid-level activities (political issues), and for each Low-level subpart (Democrat/Republican).</p></li>
+<li><p>If your activity does not have any subparts, set your Low-level identifier equal to the Mid-level identifier.</p></li>
+<li><p>The <strong>cumulative_grouping</strong> parameter accounts for the case in which, in such a nested sequence of conversations, you may want to count a team’s previous conversations as “part” of the current conversation. For example, suppose that the team first discussed the Gun Control issue, and then moves on to discuss the Death Penalty issue. You may imagine that a heated discussion about Gun Control might impact the later discussion about the Death Penalty, and you may want to incorporate the previous topic when analyzing the second conversation. <strong>In effect, the cumulative_grouping paramter creates a duplicate of the “earlier” conversation and groups it with the later conversation, so that analyses of sequential conversations can incorporate information from what happened before.</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Thus, without <strong>cumulative_grouping</strong>, we would have 6 independent conversations:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Gun Control, Democrat</p></li>
+<li><p>Gun Control, Republican</p></li>
+<li><p>Death Penalty, Democrat</p></li>
+<li><p>Death Penalty, Republican</p></li>
+<li><p>Abortion, Democrat</p></li>
+<li><p>Abortion, Republican</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>But with <strong>cumulative_grouping = True</strong>, we would have the following conversations, in which we treat each conversation as building on the last one:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Gun Control, Democrat</p></li>
+<li><p>Gun Control, Democrat; Gun Control, Republican</p></li>
+<li><p>Gun Control, Democrat; Gun Control, Republican; Death Penalty, Democrat</p></li>
+<li><p>Gun Control, Democrat; Gun Control, Republican; Death Penalty, Democrat; Death Penalty, Republican</p></li>
+<li><p>Gun Control, Democrat; Gun Control, Republican; Death Penalty, Democrat; Death Penalty, Republican; Abortion, Democrat</p></li>
+<li><p>Gun Control, Democrat; Gun Control, Republican; Death Penalty, Democrat; Death Penalty, Republican; Abortion, Democrat; Abortion, Republican</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A further consideration is that the user may only wish to make a conversation “cumulative” at the Mid level, but not across all Mid levels. For example, extending the political discussion case, you may think that discussing the Democratic perspective on the same issue might influence the discussion of the Republican perspective, but you may think the Gun Control, Death Penalty, and Abortion issues are separate topics that should not be treated as the same “conversation.” In this case, setting <strong>within_task = True</strong> would combine conversations at the “Low” level, but would not combine conversations at the “Mid” level.</p>
+<blockquote>
+<div><ul>
+<li><p>Thus, with <strong>cumulative_grouping = True</strong>, we would have the following conversations:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Gun Control, Democrat</p></li>
+<li><p>Gun Control, Democrat; Gun Control, Republican</p></li>
+<li><p>Death Penalty, Democrat</p></li>
+<li><p>Death Penalty, Democrat; Death Penalty, Republican</p></li>
+<li><p>Abortion, Democrat</p></li>
+<li><p>Abortion, Democrat, Abortion, Republican</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Finally, it is important to remember that, since cumulative groupings mean that we progressively consider more and more of the same conversation, <strong>your conversation dataframe will substantially increase in size</strong>, and this may affect the runtime of your FeatureBuilder.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+<section id="additional-featurebuilder-considerations">
+<h3>Additional FeatureBuilder Considerations<a class="headerlink" href="#additional-featurebuilder-considerations" title="Link to this heading"></a></h3>
+<p>Here are some additional design details of the FeatureBuilder that you may wish to keep in mind:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Outside of the required columns (Conversation Identifier, Speaker Identifier, Message, and Timestamp), the FeatureBuilder will ignore any remaining columns in your conversation data.</strong> The FeatureBuilder strictly <em>appends</em> new columns to the input dataset. We made this design decision so that researchers can run the FeatureBuilder and conduct additional analyses (e.g, regression) directly on the output; for example, you may have additional information (metadata, outcome variables) included in your input dataframe that you want to analyze alongside the conversation features. We will not touch them.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The only caveat to this rule is if you happen to have a column that is named exactly the same as one of the conversation features that we generate. In that case, your column will be overwritten. Please refer to <a class="reference external" href="https://teamcommtools.seas.upenn.edu/HowItWorks">https://teamcommtools.seas.upenn.edu/HowItWorks</a> for a list of all the features we generate, along with their column names.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>When summarizing features from the utterance level to the conversation and speaker level, we only consider numeric features.</strong> This is perhaps a simplifying assumption more than anything else; although we do extract non-numeric information (for example, a Dale-Chall label of whether an utterance is “Easy” to ready or not; a list of named entities identified), we cannot summarize these efficiently, so they are not considered.</p></li>
+</ul>
+</div></blockquote>
+</section>
 </section>
 </section>
 

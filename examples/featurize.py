@@ -4,12 +4,6 @@ file: featurize.py
 This is an example file that declares a FeatureBuilder constructor for several empirical datasets.
 """
 
-import sys
-import os
-
-# Add the parent directory to the sys.path
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/team_comm_tools/')))
-
 from team_comm_tools import FeatureBuilder
 import pandas as pd
 
