@@ -13,23 +13,15 @@ git clone https://github.com/Watts-Lab/team_comm_tools.git
 ```
 
 ### Step 2: Download Dependencies
-Second, we *strongly* recommend using a virtual environment to install the dependencies required for the project.
-The dependencies of the project are listed in `requirements.txt`: https://github.com/Watts-Lab/team_comm_tools/blob/main/requirements.txt
 
-**Python Version**: We recommend >= `python3.11` when running this repository.
+**Python Version**: We require >= `python3.10` when running this repository.
 
-#### Run Initial Scripts for Dependencies
-Before starting the featurizer, you need to run the following to obtain dependencies for the project:
+We *strongly* recommend using a virtual environment to install the dependencies required for the project.
+
+Running the following script will install all required packages and dependencies:
 
 ```
-python3 -m spacy download en_core_web_sm
-```
-```
-import nltk
-nltk.download('nps_chat')
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+./setup.sh
 ```
 
 ### Step 3: Run the Featurizer
