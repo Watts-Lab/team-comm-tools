@@ -20,6 +20,7 @@ model_vect = SentenceTransformer('all-MiniLM-L6-v2')
 MODEL  = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
 tokenizer = AutoTokenizer.from_pretrained(MODEL)
 model_bert = AutoModelForSequenceClassification.from_pretrained(MODEL)
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Check if embeddings exist
 def check_embeddings(chat_data, vect_path, bert_path, need_sentence, need_sentiment, regenerate_vectors, message_col = "message"):
