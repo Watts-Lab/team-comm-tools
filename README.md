@@ -1,9 +1,17 @@
+[![Testing Features](https://github.com/Watts-Lab/team_comm_tools/workflows/Testing%20Features/badge.svg)](https://github.com/Watts-Lab/team_comm_tools/actions?query=workflow:"Testing+Features")
+[![GitHub release](https://img.shields.io/github/release/Watts-Lab/team_comm_tools?include_prereleases=&sort=semver&color=blue)](https://github.com/Watts-Lab/team_comm_tools/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
 # The Team Communication Toolkit
 The Team Communication Toolkit is a research project and Python package that aims to make it easier for social scientists to explore text-based conversational data.
 
-Our website: https://teamcommtools.seas.upenn.edu/
+<div align="center">
 
-Our documentation: https://conversational-featurizer.readthedocs.io/en/latest/
+[![View - Home Page](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://teamcommtools.seas.upenn.edu/)
+
+[![View - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://conversational-featurizer.readthedocs.io/en/latest/ "Go to project documentation")
+
+</div>
 
 ## Getting Started
 
