@@ -1,0 +1,13 @@
+conversation_num,speaker_nickname,timestamp,message,feature
+U,A,2024-07-15 23:09:36.779590, I love sports.,incongruent_modulation
+U,B,2024-07-15 23:10:36.779590, I love sports.,incongruent_modulation
+U,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,incongruent_modulation
+U,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,incongruent_modulation
+U,A,2024-07-15 23:13:36.779590, Do you enjoy Mexican food?,incongruent_modulation
+U,B,2024-07-15 23:14:36.779590, Sports is my passion.,incongruent_modulation
+U,A,2024-07-15 23:15:36.779590, My favorite food is quesadillas.,incongruent_modulation
+U,B,2024-07-15 23:16:36.779590, I think running is my favorite exercise.,incongruent_modulation
+U,A,2024-07-15 23:19:36.779590, I want to go on a run.,incongruent_modulation
+U,B,2024-07-15 23:20:36.779590, I want to play some sports.,incongruent_modulation
+U,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,incongruent_modulation
+U,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,incongruent_modulation

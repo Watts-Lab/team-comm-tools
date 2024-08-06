@@ -1,4 +1,4 @@
-conversation_num, speaker_nickname, timestamp, message,feature
+conversation_num,speaker_nickname,timestamp,message,feature
 A, John, 2020-04-20T18:27:20.125Z, I'm curious how do you all feel about using flashcards?,team_burstiness
 A, Mary, 2020-04-20T18:27:40.125Z, I think flashcards are a great way to memorize information.,team_burstiness
 A, John, 2020-04-20T18:28:00.125Z, I agree I've found them to be really helpful.,team_burstiness
@@ -94,7 +94,6 @@ G,A,2024-07-15 23:09:36.779590, I love eating.,variance_in_DD
 G,B,2024-07-15 23:10:36.779590, What's your favorite place to eat?,variance_in_DD
 G,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,variance_in_DD
 G,B,2024-07-15 23:12:36.779590, I could go for some pasta and pizza right now.,variance_in_DD
-G,A,2024-07-15 23:13:36.779590, Now I'm hungry!,variance_in_DD
 G,B,2024-07-15 23:14:36.779590, Anyways what are your vacation plans?,variance_in_DD
 G,A,2024-07-15 23:15:36.779590, I'm going to start cooking more.,variance_in_DD
 G,B,2024-07-15 23:16:36.779590, Greg and I are flying to Panama tomorrow.,variance_in_DD
@@ -103,7 +102,6 @@ G,B,2024-07-15 23:18:36.779590, We're excited to go on a vacation together.,vari
 G,A,2024-07-15 23:19:36.779590, Is this your first trip abroad?,variance_in_DD
 G,B,2024-07-15 23:20:36.779590, Yes we've never travelled outside the country before.,variance_in_DD
 G,A,2024-07-15 23:21:36.779590, Travelling abroad is a different type of fun.,variance_in_DD
-G,B,2024-07-15 23:22:36.779590, I'm looking forward to the trip greatly.,variance_in_DD
 H,A,2024-07-15 23:09:36.779590, I love eating.,variance_in_DD
 H,B,2024-07-15 23:10:36.779590, I'm going for a run.,variance_in_DD
 H,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,variance_in_DD
@@ -112,8 +110,6 @@ H,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,variance_in_DD
 H,B,2024-07-15 23:14:36.779590, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
 H,A,2024-07-15 23:15:36.779590, How else do you stay fit?,variance_in_DD
 H,B,2024-07-15 23:16:36.779590, Sports and running are great options.,variance_in_DD
-H,A,2024-07-15 23:17:36.779590, I want to exercise more frequently.,variance_in_DD
-H,B,2024-07-15 23:18:36.779590, You can join me during my runs.,variance_in_DD
 H,A,2024-07-15 23:19:36.779590, I want to eat something.,variance_in_DD
 H,B,2024-07-15 23:20:36.779590, Exercising is my passion.,variance_in_DD
 H,A,2024-07-15 23:21:36.779590, Let's go get food.,variance_in_DD
@@ -130,3 +126,147 @@ I,A,2024-07-15 23:17:36.779590, I want to exercise more frequently.,variance_in_
 I,B,2024-07-15 23:18:36.779590, You can join me during my runs.,variance_in_DD
 I,A,2024-07-15 23:19:36.779590, How athletic are you?,variance_in_DD
 I,B,2024-07-15 23:20:36.779590, Exercising is my passion.,variance_in_DD
+J,A,2024-07-15 23:09:36.779590, I love exercising.,variance_in_DD
+J,B,2024-07-15 23:10:36.779590, I'm going for a run.,variance_in_DD
+J,A,2024-07-15 23:11:36.779590, I play sports like tennis and baseball too.,variance_in_DD
+J,B,2024-07-15 23:12:36.779590, I'm running my first race in a few days.,variance_in_DD
+J,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,variance_in_DD
+J,B,2024-07-15 23:14:36.779590, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+J,A,2024-07-15 23:15:36.779590, How else do you stay fit?,variance_in_DD
+J,B,2024-07-15 23:16:36.779590, Sports and running are great options.,variance_in_DD
+J,A,2024-07-15 23:17:36.779590, I want to exercise more frequently.,variance_in_DD
+J,B,2024-07-15 23:18:36.779590, You can join me during my runs.,variance_in_DD
+J,A,2024-07-15 23:19:36.779590, How athletic are you?,variance_in_DD
+J,B,2024-07-15 23:20:36.779590, Exercising is my passion.,variance_in_DD
+K,A,2024-07-15 23:09:36.779590, I love exercising.,variance_in_DD
+K,B,2024-07-15 23:10:36.779590, I don't see the point in partying.,variance_in_DD
+K,A,2024-07-15 23:11:36.779590, I play sports like tennis and baseball too.,variance_in_DD
+K,B,2024-07-15 23:12:36.779590, Partying isn't productive at all.,variance_in_DD
+K,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,variance_in_DD
+K,B,2024-07-15 23:14:36.779590, Dirty basements and uncomfortable music ugh.,variance_in_DD
+K,A,2024-07-15 23:15:36.779590, How else do you stay fit?,variance_in_DD
+K,B,2024-07-15 23:16:36.779590, I don't enjoy alcohol either,variance_in_DD
+K,A,2024-07-15 23:17:36.779590, I want to exercise more frequently.,variance_in_DD
+K,B,2024-07-15 23:18:36.779590, Thank god my friends hate partying too.,variance_in_DD
+K,A,2024-07-15 23:19:36.779590, How athletic are you?,variance_in_DD
+K,B,2024-07-15 23:20:36.779590, I barely even party on my birthday!,variance_in_DD
+L,A,2024-07-15 23:09:36.779590, I love eating.,variance_in_DD
+L,B,2024-07-15 23:10:36.779590, I'm going for a run.,variance_in_DD
+L,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,variance_in_DD
+L,B,2024-07-15 23:12:36.779590, I'm running my first race in a few days.,variance_in_DD
+L,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,variance_in_DD
+L,B,2024-07-15 23:14:36.779590, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+L,A,2024-07-15 23:15:36.779590, How else do you stay fit?,variance_in_DD
+L,B,2024-07-15 23:16:36.779590, Sports and running are great options.,variance_in_DD
+L,A,2024-07-15 23:19:36.779590, I want to eat something.,variance_in_DD
+L,B,2024-07-15 23:20:36.779590, Exercising is my passion.,variance_in_DD
+L,A,2024-07-15 23:21:36.779590, Let's go get food.,variance_in_DD
+L,B,2024-07-15 23:22:36.779590, I think I'm going to just run.,variance_in_DD
+M,A,2024-07-15 23:09:36.779590, I love eating.,within_person_disc_range
+M,B,2024-07-15 23:10:36.779590, I love eating.,within_person_disc_range
+M,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,within_person_disc_range
+M,B,2024-07-15 23:12:36.779590, I love anything that's serving Italian food.,within_person_disc_range
+M,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,within_person_disc_range
+M,B,2024-07-15 23:14:36.779590, Do you exercise a lot!,within_person_disc_range
+M,A,2024-07-15 23:15:36.779590, Sports and running are great options.,within_person_disc_range
+M,B,2024-07-15 23:16:36.779590, Sports and running are great options.,within_person_disc_range
+M,A,2024-07-15 23:19:36.779590, I want to eat something.,within_person_disc_range
+M,B,2024-07-15 23:20:36.779590, I want to eat something.,within_person_disc_range
+M,A,2024-07-15 23:21:36.779590, Let's go get food.,within_person_disc_range
+M,B,2024-07-15 23:22:36.779590, Let's go get food.,within_person_disc_range
+N,A,2024-07-15 23:09:36.779590, I love sports.,within_person_disc_range
+N,B,2024-07-15 23:10:36.779590, I love sports.,within_person_disc_range
+N,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,within_person_disc_range
+N,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,within_person_disc_range
+N,A,2024-07-15 23:13:36.779590, Do you enjoy Mexican food?,within_person_disc_range
+N,B,2024-07-15 23:14:36.779590, Do you enjoy Mexican food?,within_person_disc_range
+N,A,2024-07-15 23:15:36.779590, My favorite food is quesadillas.,within_person_disc_range
+N,B,2024-07-15 23:16:36.779590, My favorite food is quesadillas.,within_person_disc_range
+N,A,2024-07-15 23:19:36.779590, I want to go on a run.,within_person_disc_range
+N,B,2024-07-15 23:20:36.779590, I want to play some sports.,within_person_disc_range
+N,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,within_person_disc_range
+N,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,within_person_disc_range
+O,A,2024-07-15 23:09:36.779590, I love sports.,within_person_disc_range
+O,B,2024-07-15 23:10:36.779590, I love sports.,within_person_disc_range
+O,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,within_person_disc_range
+O,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,within_person_disc_range
+O,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,within_person_disc_range
+O,B,2024-07-15 23:14:36.779590, Do you exercise a lot!,within_person_disc_range
+O,A,2024-07-15 23:15:36.779590, Sports and running are great options.,within_person_disc_range
+O,B,2024-07-15 23:16:36.779590, Sports and running are great options.,within_person_disc_range
+O,A,2024-07-15 23:19:36.779590, I want to go on a run.,within_person_disc_range
+O,B,2024-07-15 23:20:36.779590, I want to play some sports.,within_person_disc_range
+O,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,within_person_disc_range
+O,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,within_person_disc_range
+P,A,2024-07-15 23:09:36.779590, I love sports.,incongruent_modulation
+P,B,2024-07-15 23:10:36.779590, I love sports.,incongruent_modulation
+P,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,incongruent_modulation
+P,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,incongruent_modulation
+P,A,2024-07-15 23:13:36.779590, Do you enjoy Mexican food?,incongruent_modulation
+P,B,2024-07-15 23:14:36.779590, Sports is my passion.,incongruent_modulation
+P,A,2024-07-15 23:15:36.779590, My favorite food is quesadillas.,incongruent_modulation
+P,B,2024-07-15 23:16:36.779590, I think running is my favorite exercise.,incongruent_modulation
+P,A,2024-07-15 23:19:36.779590, I want to go on a run.,incongruent_modulation
+P,B,2024-07-15 23:20:36.779590, I want to play some sports.,incongruent_modulation
+P,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,incongruent_modulation
+P,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,incongruent_modulation
+Q,A,2024-07-15 23:09:36.779590, I love sports.,incongruent_modulation
+Q,B,2024-07-15 23:10:36.779590, I love sports.,incongruent_modulation
+Q,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,incongruent_modulation
+Q,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,incongruent_modulation
+Q,A,2024-07-15 23:13:36.779590, Sports is my passion.,incongruent_modulation
+Q,B,2024-07-15 23:14:36.779590, Do you enjoy Mexican food?,incongruent_modulation
+Q,A,2024-07-15 23:15:36.779590, .I think running is my favorite exercise.,incongruent_modulation
+Q,B,2024-07-15 23:16:36.779590, My favorite food is quesadillas,incongruent_modulation
+Q,A,2024-07-15 23:19:36.779590, I want to go on a run.,incongruent_modulation
+Q,B,2024-07-15 23:20:36.779590, I want to play some sports.,incongruent_modulation
+Q,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,incongruent_modulation
+Q,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,incongruent_modulation
+R,A,2024-07-15 23:09:36.779590, I love sports.,incongruent_modulation
+R,B,2024-07-15 23:10:36.779590, I love sports.,incongruent_modulation
+R,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,incongruent_modulation
+R,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,incongruent_modulation
+R,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,incongruent_modulation
+R,B,2024-07-15 23:14:36.779590, Do you exercise a lot!,incongruent_modulation
+R,A,2024-07-15 23:15:36.779590, Sports and running are great options.,incongruent_modulation
+R,B,2024-07-15 23:16:36.779590, Sports and running are great options.,incongruent_modulation
+R,A,2024-07-15 23:19:36.779590, I want to go on a run.,incongruent_modulation
+R,B,2024-07-15 23:20:36.779590, I want to play some sports.,incongruent_modulation
+R,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,incongruent_modulation
+R,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,incongruent_modulation
+S,A,2024-07-15 23:09:36.779590, I love sports.,incongruent_modulation
+S,B,2024-07-15 23:10:36.779590, I love sports.,incongruent_modulation
+S,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,incongruent_modulation
+S,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,incongruent_modulation
+S,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,incongruent_modulation
+S,B,2024-07-15 23:14:36.779590, Do you exercise a lot!,incongruent_modulation
+S,A,2024-07-15 23:15:36.779590, Sports and running are great options.,incongruent_modulation
+S,B,2024-07-15 23:16:36.779590, Sports and running are great options.,incongruent_modulation
+S,A,2024-07-15 23:19:36.779590, I want to go on a run.,incongruent_modulation
+S,B,2024-07-15 23:20:36.779590, I want to play some sports.,incongruent_modulation
+S,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,incongruent_modulation
+S,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,incongruent_modulation
+T,A,2024-07-15 23:09:36.779590, I love eating.,incongruent_modulation
+T,B,2024-07-15 23:10:36.779590, I love eating.,incongruent_modulation
+T,A,2024-07-15 23:11:36.779590, I love anything that's serving Italian food.,incongruent_modulation
+T,B,2024-07-15 23:12:36.779590, I love anything that's serving Italian food.,incongruent_modulation
+T,A,2024-07-15 23:13:36.779590, Do you exercise a lot!,incongruent_modulation
+T,B,2024-07-15 23:14:36.779590, Do you exercise a lot!,incongruent_modulation
+T,A,2024-07-15 23:15:36.779590, Sports and running are great options.,incongruent_modulation
+T,B,2024-07-15 23:16:36.779590, Sports and running are great options.,incongruent_modulation
+T,A,2024-07-15 23:19:36.779590, I want to eat something.,incongruent_modulation
+T,B,2024-07-15 23:20:36.779590, I want to eat something.,incongruent_modulation
+T,A,2024-07-15 23:21:36.779590, Let's go get food.,incongruent_modulation
+T,B,2024-07-15 23:22:36.779590, Let's go get food.,incongruent_modulation
+U,A,2024-07-15 23:09:36.779590, I love sports.,incongruent_modulation
+U,B,2024-07-15 23:10:36.779590, I love sports.,incongruent_modulation
+U,A,2024-07-15 23:11:36.779590, I love anything that has to do with basketball.,incongruent_modulation
+U,B,2024-07-15 23:12:36.779590, I love anything that has to do with baseball.,incongruent_modulation
+U,A,2024-07-15 23:13:36.779590, Do you enjoy Mexican food?,incongruent_modulation
+U,B,2024-07-15 23:14:36.779590, Sports is my passion.,incongruent_modulation
+U,A,2024-07-15 23:15:36.779590, My favorite food is quesadillas.,incongruent_modulation
+U,B,2024-07-15 23:16:36.779590, I think running is my favorite exercise.,incongruent_modulation
+U,A,2024-07-15 23:19:36.779590, I want to go on a run.,incongruent_modulation
+U,B,2024-07-15 23:20:36.779590, I want to play some sports.,incongruent_modulation
+U,A,2024-07-15 23:21:36.779590, Let's go to the basketball courts.,incongruent_modulation
+U,B,2024-07-15 23:22:36.779590, Let's go to the soccer fields.,incongruent_modulation
