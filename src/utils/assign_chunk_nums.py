@@ -155,7 +155,7 @@ def create_chunks(df, num_chunks, conversation_id_col, timestamp_col):
     return final_df
 
 
-def assign_chunk_nums(chat_data, num_chunks, conversation_id_col, timestamp_col, use_time_if_possible = True):
+def assign_chunk_nums(chat_data, num_chunks, conversation_id_col, timestamp_col, use_time_if_possible = False):
     """
     Assign chunks to the chat data, splitting it into "equal" pieces.
 
