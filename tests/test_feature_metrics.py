@@ -9,6 +9,7 @@ test_chat_df =  pd.read_csv("./output/chat/test_chat_level_chat.csv")
 test_conv_df =  pd.read_csv("./output/conv/test_conv_level_conv.csv")
 test_chat_complex_df =  pd.read_csv("./output/chat/test_chat_level_chat_complex.csv")
 test_conv_complex_df =  pd.read_csv("./output/conv/test_conv_level_conv_complex.csv")
+test_forward_flow_df = pd.read_csv("./output/chat/test_forward_flow_chat.csv")
 
 # Import the Feature Dictionary
 import sys
@@ -24,8 +25,8 @@ conversation_features = [feature_dict[feature]["columns"] for feature in feature
 num_features_chat = len(list(itertools.chain(*chat_features)))
 num_features_conv = len(list(itertools.chain(*conversation_features)))
 
-num_tested_chat = test_chat_df['expected_column'].nunique() + test_chat_complex_df['feature'].nunique()
-num_tested_conv = test_conv_df['expected_column'].nunique() + test_conv_complex_df['feature'].nunique()
+num_tested_chat = test_chat_df['expected_column'].nunique() + test_chat_complex_df['feature'].nunique() + test_forward_flow_df['feature'].nunique()
+num_tested_conv = test_conv_df['expected_column'].nunique() + test_conv_complex_df['feature'].nunique() 
 
 tested_features = {}
 
@@ -154,8 +155,19 @@ def get_batches(dataframe, batch_size=3):
         batches.append(rows[i:i + batch_size])
     return batches
 
+def get_conversation_batches(dataframe, batch_size=3):
+    # group by conversation_num and get the last row from the group
+    last_rows = dataframe.groupby('conversation_num').tail(1)
+
+    # get 3 row batches of these last rows
+    batches = []
+    rows = list(last_rows.iterrows())
+    for i in range(0, len(rows), batch_size):
+        batches.append(rows[i:i + batch_size])
+    return batches
+
 # Assuming test_chat_complex_df is your DataFrame
-batches = get_batches(test_chat_complex_df, batch_size=3)
+batches = get_batches(test_chat_complex_df, batch_size=3) 
 
 @pytest.mark.parametrize("batch", batches)
 def test_chat_complex(batch):
@@ -196,7 +208,7 @@ def test_chat_complex(batch):
 
         raise  # Re-raise the AssertionError to mark the test as failed
 
-batches = get_batches(test_conv_complex_df, batch_size=3)
+batches = get_batches(test_conv_complex_df, batch_size=3) + get_conversation_batches(test_forward_flow_df, batch_size=3)
 
 @pytest.mark.parametrize("batch", batches)
 def test_conv_complex(batch):
@@ -213,8 +225,8 @@ def test_conv_complex(batch):
 
     # calculate ratio between inv and dir
     ratio = 0
-    if (inv_distance == 0):
-        ratio = dir_distance
+    if (inv_distance == 0) and dir_distance > 0:
+        ratio = 2
     else:
         ratio = dir_distance / inv_distance
     
@@ -240,6 +252,42 @@ def test_conv_complex(batch):
             file.write(f"Ratio (DIR / INV): {ratio}\n")
 
         # raise  # Re-raise the AssertionError to mark the test as failed
+
+batches = get_conversation_batches(test_forward_flow_df, batch_size=3)
+
+@pytest.mark.parametrize("batch", batches)
+def test_forward_flow_unit(batch):
+    if (batch[0][1]['test_type'] != 'unit_eq'):
+        return
+    feature = batch[0][1]['feature']
+    
+    if feature not in tested_features:
+        tested_features[feature] = {'passed': 0, 'failed': 0}
+
+    og_result = batch[0][1][feature]
+    inv_result = batch[1][1][feature]
+    dir_result = batch[2][1][feature]
+
+    inv_distance = abs(og_result - inv_result)
+    dir_distance = abs(og_result - dir_result)
+
+    # calculate ratio between inv and dir
+    if (inv_distance == 0) and (dir_distance > 0):
+        tested_features[feature]['passed'] += 1
+        with open('test.log', 'a') as file:
+            file.write("\n")
+            file.write("------TEST PASSED------\n")
+            file.write(f"Testing {feature} for unit equality and perturbation across conversations: {batch[0][1]['conversation_num']}, {batch[1][1]['conversation_num']}, {batch[2][1]['conversation_num']}\n")
+    else:
+        tested_features[feature]['failed'] += 1
+        with open('test.log', 'a') as file:
+            file.write("\n")
+            file.write("------TEST FAILED------\n")
+            file.write(f"Testing {feature} for conversation: {batch[0][1]['conversation_num']}\n")
+            file.write(f"OG Result: {batch[0][1][feature]}\n")
+            file.write(f"UNIT TEST Result: {batch[1][1][feature]}\n")
+            file.write(f"DIR Result: {batch[2][1][feature]}\n")
+
 
 def test_final_results():
     # print out the results

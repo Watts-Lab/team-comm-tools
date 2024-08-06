@@ -1,0 +1,85 @@
+conversation_num,speaker_nickname,message,feature,test_type
+A,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+A,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+A,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+A,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+A,B,Quesadillas are my favorite food in the whole world.,forward_flow,unit_eq
+B, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, D,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, D,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, D,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+B, D,Quesadillas are my favorite food in the whole world.,forward_flow,unit_eq
+C, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, D,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, C,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+C, A,Quesadillas are my favorite food in the whole world.,forward_flow,unit_eq
+C, A,Quesadillas are my favorite food in the whole world.,forward_flow,unit_eq
+C, C,Quesadillas are my favorite food in the whole world.,forward_flow,unit_eq
+D,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+D,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+D,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+D,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+E,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,A,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,B,Sports are a great way to stay active and healthy.,forward_flow,unit_eq
+F,A,Quesadillas are my favorite food ever I think.,forward_flow,unit_eq
+V,A,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+V,B,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+V,B,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+V,A,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+V,B,Quesadillas are my favorite food in the whole world.,forward_flow,inv/dir
+W, C,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+W, D,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+W, A,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+W, B,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+W, C,Quesadillas are my favorite food in the whole world.,forward_flow,inv/dir
+W, D,Let's go shopping this weekend.,forward_flow,inv/dir
+X, C,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+X, D,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+X, A,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+X, B,Sports are a great way to stay active and healthy.,forward_flow,inv/dir
+X, C,Quesadillas are my favorite food in the whole world.,forward_flow,inv/dir
+X, D,Let's go shopping this weekend.,forward_flow,inv/dir
+X, D,Parties are so overrated.,forward_flow,inv/dir
+X, D,Did you watch the latest political debate?,forward_flow,inv/dir
