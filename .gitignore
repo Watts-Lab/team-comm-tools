@@ -1,26 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IntelliJ
+.idea/
+
+# macOS specific files
 .DS_Store
-src/data/.DS_Store
-src/.DS_Store
-src/features/lexicons/liwc_lexicons/
-src/features/lexicons/liwc_lexicons_small_test/
-src/features/lexicons/certainty.txt
-src/modules/
-src/output/*
-src/__pycache__/
-src/features/__pycache__/
-src/ipython_notebooks/.ipynb_checkpoints/
+
+# unwanted files
+src/team_comm_tools/features/lexicons/liwc_lexicons/
+src/team_comm_tools/features/lexicons/liwc_lexicons_small_test/
+src/team_comm_tools/features/lexicons/certainty.txt
+src/team_comm_tools/modules/
+src/team_comm_tools/output/*
+src/team_comm_tools/ipython_notebooks/.ipynb_checkpoints/
 tests/ipython_notebooks/.ipynb_checkpoints/
 tests/data/vector_data/
 tests/test.log
 tests/output/*
 tests/vector_data/*
-src/utils/__pycache__/
-.idea/
-*.py[cod]
-node_modules
-src/data/vectors/sentence
-src/data/vectors/sentiment
-src/features/lexicons/certainty.txt
+src/team_comm_tools/features/lexicons/certainty.txt
 examples/vector_data/*
 examples/output/*
 node_modules/
+

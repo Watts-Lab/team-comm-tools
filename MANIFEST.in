@@ -1,0 +1,5 @@
+recursive-include src/team_comm_tools/features/lexicons *
+include src/mypackage/features/assets/*
+include README.md
+include LICENSE
+include requirements.txt
