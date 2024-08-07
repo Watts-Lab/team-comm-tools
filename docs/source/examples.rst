@@ -1,9 +1,9 @@
 .. _examples:
 
-Examples
-=============
+Getting Started Guide
+======================
 
-**Note:** Our "Examples" page is constantly being improved. This page is a work in progress!
+**Note:** This page is constantly being improved. This page is a work in progress!
 
 Getting Started
 ****************
@@ -156,11 +156,19 @@ Advanced Configuration Columns
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 More advanced users of the FeatureBuilder should consider the following optional parameters, depending on their needs.
 
+Customizing Sentence Vectors
+""""""""""""""""""""""""""""""
+
 * The **regenerate_vectors** parameter controls whether you'd like the FeatureBuilder to re-generate the content in the **vector_directory**, even if we have already cached the output of a previous run. It is useful if the underlying data has changed, but you want to give the output file the same name as a previous run of the FeatureBuilder.
 
 	* By default, **we assume that, if your output file is named the same, that the underlying vectors are the same**. If this isn't true, you should set **regenerate_vectors = True** in order to clear out the cache and re-generate the RoBERTa and SBERT outputs.
 
-* The **custom_features** parameter allows you to specify features that do not exist within our default set. **We default to NOT generating four features that depend on SBERT vectors, as the process for generating the vectors tends to be slow.** However, these features can provide interesting insights into the extent to which individuals in a conversation speak "similarly" or not, based on a vector similarity metric. To access these features, simply use the **custom_features** parameter:
+* We currently support only the automatically-generated SBERT vectors as inputs to our vector-dependent features. A future update will add support for additional vector types.
+
+Customizing the Generated Features
+"""""""""""""""""""""""""""""""""""
+
+* The **custom_features** parameter allows you to specify features that do not exist within our default set. **We currently default to NOT generating four features that depend on SBERT vectors, as the process for generating the vectors tends to be slow.** However, these features can provide interesting insights into the extent to which individuals in a conversation speak "similarly" or not, based on a vector similarity metric. To access these features, simply use the **custom_features** parameter:
 
 	.. code-block:: python
 
@@ -173,6 +181,11 @@ More advanced users of the FeatureBuilder should consider the following optional
 
     * You can chose to add any of these features depending on your preference.
 
+* The parameters **ner_training_df** and **ner_cutoff** are required if you would like the FeatureBuilder to identify named entities in your conversations. For example, the sentence, "John, did you talk to Michael this morning?" has two named entities: "John" and "Michael." The FeatureBuilder includes a tool that automatically detects these named entities, but it requires the user (you!) to specify some training data with examples of the types of named entities you'd like to recognize. This is because proper nouns can take many forms, from standard Western-style names (e.g., "John") to pseudonymous online nicknames (like "littleHorse"). More information about these parameters can be found in :ref:`named_entity_recognition`.
+
+Customizing What Counts as a "Conversation"
+""""""""""""""""""""""""""""""""""""""""""""
+
 * The **analyze_first_pct** parameter allows you to "cut off" and separately analyze the first X% of a conversation, in case you wish to separately study different sections of a conversation as it progresses. For example, you may be interested in knowing how the attributes of the first 50% of a conversation differ from the attributes of the entire conversation. Then you can sepcify the following:
 
 	.. code-block:: python
@@ -182,8 +195,6 @@ More advanced users of the FeatureBuilder should consider the following optional
 	* This will first analyze the first 50% of each conversation, and then analyze the full conversation.
 
 	* By default, we will simply analyze 100% of each conversation.
-
-* The parameters **ner_training_df** and **ner_cutoff** are required if you would like the FeatureBuilder to identify named entities in your conversations. For example, the sentence, "John, did you talk to Michael this morning?" has two named entities: "John" and "Michael." The FeatureBuilder includes a tool that automatically detects these named entities, but it requires the user (you!) to specify some training data with examples of the types of named entities you'd like to recognize. This is because proper nouns can take many forms, from standard Western-style names (e.g., "John") to pseudonymous online nicknames (like "littleHorse"). More information about these parameters can be found in :ref:`named_entity_recognition`.
 
 * The parameters **cumulative_grouping** and **within_task** address a special case of having multiple conversational identifiers; **they assume that the same team has multiple sequential conversations, and that, in each conversation, they perform one or more separate activities**. This was originally created as a companion to a multi-stage Empirica game (see: `<https://github.com/Watts-Lab/multi-task-empirica>`_). For example, imagine that a team must complete 3 different tasks, each with 3 different subparts. Then we can model this event in terms of 1 team (High level), 3 tasks (Mid level), and 3 subparts per task (Low level).
 
@@ -244,6 +255,38 @@ More advanced users of the FeatureBuilder should consider the following optional
 			#. Abortion, Democrat, Abortion, Republican
 
 	* Finally, it is important to remember that, since cumulative groupings mean that we progressively consider more and more of the same conversation, **your conversation dataframe will substantially increase in size**, and this may affect the runtime of your FeatureBuilder.
+
+
+Customizing Feature Aggregations.
+"""""""""""""""""""""""""""""""""""
+
+* As we write in :ref:`_features_technical`, we compute aggregations of utterance-level features at chat- and speaker-level. That is, for every utterance-level feature (e.g., "number of words"), we compute metrics for that feature at the level of a conversation (e.g., "total number of words in this conversation") and at the level of an individual speaker in the conversation (e.g., "total number of words spoken by Bob").
+
+* By default, **we aggregate all numeric columns, and we use the following four aggregation functions: Mean, Max, Min, Standard Deviation.** 
+
+* However, it is possible to change the default by using the following six optional parameters:
+
+	#. **convo_aggregation:** If this parameter is True, we will aggregate features at the conversational level; flip this parameter to False if you would NOT like to generate any aggregated :ref:`_conv_level_features`. Note that non-aggregated features (for example, Gini Coefficient, Information Diversity, Turn-Taking Index, and Burstiness) will still appear at the conversation level.
+
+   #. **convo_methods:** Specifies which functions you want to aggregate at the conversation level (e.g., mean, std...).
+
+   #. **convo_columns:** Specifies which features (at the utterance/chat level) users want aggregated for the conversational level. Defauts to all all numeric columns.
+
+   #. **param user_aggregation:** If this parameter is True, we will aggregate features at the speaker/user level; flip this parameter to False if you would NOT like to generate any :ref:`_user_level_features`.
+
+   #. **param user_methods:** Specifies which functions you want to aggregate at the speaker/user level (e.g., mean, std...).
+
+   #. **param user_columns:** Specifies which features (at the utterance/chat level) you want to aggregate at the speaker/user level (e.g., mean, std...).
+
+
+* Here is an example of how to user the parameters to turn off aggregation entirely:
+
+	.. code-block:: python
+
+
+
+
+
 
 Additional FeatureBuilder Considerations
 ++++++++++++++++++++++++++++++++++++++++

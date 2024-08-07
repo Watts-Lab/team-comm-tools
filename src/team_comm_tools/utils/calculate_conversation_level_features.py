@@ -81,7 +81,14 @@ class ConversationLevelFeaturesCalculator:
                 )
                 self.convo_aggregation = False
             else:
-                self.columns_to_summarize = convo_columns
+                convo_columns_in_data = list(set(convo_columns).intersection(set(self.chat_data.columns)))
+
+                if(len(convo_columns_in_data) != len(convo_columns)):
+                    warnings.warn(
+                        "Warning: One or more requested user columns are not present in the data. Ignoring them."
+                    )
+                    
+                self.columns_to_summarize = convo_columns_in_data
 
         self.summable_columns = ["num_words", "num_chars", "num_messages"]
         
@@ -197,16 +204,16 @@ class ConversationLevelFeaturesCalculator:
                         how="inner"
                     )
 
-            # Do this only for the columns that make sense (e.g., countable things)
-            for column in self.summable_columns:
-                # Sum for the feature across the Conversation
-                self.conv_data = pd.merge(
-                    left=self.conv_data,
-                    right=get_sum(self.chat_data.copy(), column, 'sum_'+column, self.conversation_id_col),
-                    on=[self.conversation_id_col],
-                    how="inner"
-                )
-    
+        # Do this only for the columns that make sense (e.g., countable things); we do this regardless of aggregation, as it's necessary for gini.
+        for column in self.summable_columns:
+            # Sum for the feature across the Conversation
+            self.conv_data = pd.merge(
+                left=self.conv_data,
+                right=get_sum(self.chat_data.copy(), column, 'sum_'+column, self.conversation_id_col),
+                on=[self.conversation_id_col],
+                how="inner"
+            )
+
     def get_user_level_aggregates(self) -> None:
         """
         Aggregate summary statistics from user-level features to conversation-level features.

@@ -62,7 +62,14 @@ class UserLevelFeaturesCalculator:
                 )
                 self.user_aggregation = False
             else:
-                self.columns_to_summarize = user_columns
+                user_columns_in_data = list(set(user_columns).intersection(set(self.chat_data.columns)))
+
+                if(len(user_columns_in_data) != len(user_columns)):
+                    warnings.warn(
+                        "Warning: One or more requested user columns are not present in the data. Ignoring them."
+                    )
+
+                self.columns_to_summarize = user_columns_in_data
 
     def calculate_user_level_features(self) -> pd.DataFrame:
         """
@@ -121,7 +128,8 @@ class UserLevelFeaturesCalculator:
         """
 
         # For each summarizable feature
-        for column in self.columns_to_summarize:
+        for column in self.columns_to_summarize: # TODO --- this needs to be self-summable columns
+            
             # Sum of feature across the Conversation
             self.user_data = pd.merge(
                 left=self.user_data,

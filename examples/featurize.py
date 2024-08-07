@@ -37,8 +37,9 @@ if __name__ == "__main__":
 
 	"""
 
-	# Tiny Juries
-	tiny_juries_feature_builder = FeatureBuilder(
+	# Tiny Juries with base features
+	print("Basic Tiny Juries...")
+	tiny_juries_feature_builder_basic = FeatureBuilder(
 		input_df = tiny_juries_df,
 		grouping_keys = ["batch_num", "round_num"],
 		vector_directory = "./vector_data/",
@@ -47,9 +48,61 @@ if __name__ == "__main__":
 		output_file_path_conv_level = "./jury_TINY_output_conversation_level.csv",
 		turns = False,
 	)
-	tiny_juries_feature_builder.featurize(col="message")
+	tiny_juries_feature_builder_basic.featurize(col="message")
+
+	# Tiny Juries with custom features
+	print("Tiny Juries with all Custom SBERT-Dependent Features...")
+	tiny_juries_feature_builder_custom = FeatureBuilder(
+		input_df = tiny_juries_df,
+		grouping_keys = ["batch_num", "round_num"],
+		vector_directory = "./vector_data/",
+		output_file_path_chat_level = "./jury_TINY_output_chat_level_custom.csv",
+		output_file_path_user_level = "./jury_TINY_output_user_level_custom.csv",
+		output_file_path_conv_level = "./jury_TINY_output_conversation_level_custom.csv",
+		custom_features = [ # This will generate SBERT vectors and compute the following features, which depend on the SBERT vectors.
+            "(BERT) Mimicry",
+            "Moving Mimicry",
+            "Forward Flow",
+            "Discursive Diversity"],
+		turns = False,
+	)
+	tiny_juries_feature_builder_custom.featurize(col="message")
+
+	# Tiny Juries with NO aggregations
+	print("Tiny Juries with No Aggregation...")
+	tiny_juries_feature_builder_no_aggregation = FeatureBuilder(
+		input_df = tiny_juries_df,
+		grouping_keys = ["batch_num", "round_num"],
+		vector_directory = "./vector_data/",
+		output_file_path_chat_level = "./jury_TINY_output_chat_level_no_agg.csv",
+		output_file_path_user_level = "./jury_TINY_output_user_level_no_agg.csv",
+		output_file_path_conv_level = "./jury_TINY_output_conversation_level_no_agg.csv",
+		convo_aggregation = False, # This will turn all aggregations OFF.
+		user_aggregation = False,
+		turns = False,
+	)
+	tiny_juries_feature_builder_no_aggregation.featurize(col="message")
+
+	# Tiny Juries with custom Aggregations
+	print("Tiny Juries with Custom Aggregation...")
+	tiny_juries_feature_builder_custom_aggregation = FeatureBuilder(
+		input_df = tiny_juries_df,
+		grouping_keys = ["batch_num", "round_num"],
+		vector_directory = "./vector_data/",
+		output_file_path_chat_level = "./jury_TINY_output_chat_level_custom_agg.csv",
+		output_file_path_user_level = "./jury_TINY_output_user_level_custom_agg.csv",
+		output_file_path_conv_level = "./jury_TINY_output_conversation_level_custom_agg.csv",
+		convo_methods = ['mean'], # This will aggregate ONLY the "positive_bert" at the conversation level, using mean; it will aggregate ONLY "negative_bert" at the speaker/user level, using max.
+		convo_columns = ['positive_bert'],
+		user_methods = ['max'],
+		user_columns = ['negative_bert'],
+		turns = False,
+	)
+	tiny_juries_feature_builder_custom_aggregation.featurize(col="message")	
+
 
 	# Tiny multi-task
+	print("Tiny Multi-Task...")
 	tiny_multi_task_feature_builder = FeatureBuilder(
 		input_df = tiny_multi_task_df,
 		conversation_id_col = "stageId",

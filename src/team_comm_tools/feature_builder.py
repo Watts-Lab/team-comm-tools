@@ -75,31 +75,31 @@ class FeatureBuilder:
     :param within_task: If true, groups cumulatively in such a way that we only look at prior chats that are of the same "task" (Mid-level identifier). Defaults to False.
     :type within_task: bool, optional
     
-    :param ner_training_df: This is a pandas dataframe of training data for named entity recognition feature
+    :param ner_training_df: This is a pandas dataframe of training data for named entity recognition feature. Defaults to None, and will not generate named entity featuers if it does not exist.
     :type ner_training_df: pd.DataFrame
     
-    :param ner_cutoff: This is the cutoff value for the confidence of prediction for each named entity
+    :param ner_cutoff: This is the cutoff value for the confidence of prediction for each named entity. Defaults to 0.9.
     :type ner_cutoff: int
 
-    :param regenerate_vectors: If true, will regenerate vector data even if it already exists
+    :param regenerate_vectors: If true, will regenerate vector data even if it already exists.  Defaults to False.
     :type regenerate_vectors: bool, optional
 
-    :param convo_aggregation: If true, will aggregate features at the conversational level
+    :param convo_aggregation: If true, will aggregate features at the conversational level. Defaults to True.
     :type convo_aggregation: bool, optional
 
-    :param convo_methods: Specifies which functions users want to aggregate with (e.g., mean, std...) at the conversational level
+    :param convo_methods: Specifies which functions that you want to aggregate with (e.g., mean, std...) at the conversational level. Defaults to ['mean', 'max', 'min', 'std'].
     :type convo_methods: list, optional
 
-    :param convo_columns: Specifies which columns (at the chat level) users want aggregated for the conversational level
+    :param convo_columns: Specifies which columns (at the utterance/chat level) that you want aggregated for the conversational level. Defauts to all all numeric columns.
     :type convo_columns: list, optional
 
-    :param user_aggregation: If true, will aggregate features at the user level
+    :param user_aggregation: If true, will aggregate features at the speaker/user level. Defaults to True.
     :type convo_aggregation: bool, optional
 
-    :param user_methods: Specifies which functions users want to aggregate with (e.g., mean, std...) at the user level
+    :param user_methods: Specifies which functions that you want to aggregate with (e.g., mean, std...) at the speaker/user level. Defaults to ['mean', 'max', 'min', 'std'].
     :type convo_methods: list, optional
 
-    :param user_columns: Specifies which columns (at the chat level) users want aggregated for the user level
+    :param user_columns: Specifies which columns (at the utterance/chat level) that you want aggregated for the speaker/user level. Defauts to all all numeric columns.
     :type convo_columns: list, optional
 
     :return: The FeatureBuilder doesn't return anything; instead, it writes the generated features to files in the specified paths. It will also print out its progress, so you should see "All Done!" in the terminal, which will indicate that the features have been generated.
@@ -127,10 +127,10 @@ class FeatureBuilder:
             ner_cutoff: int = 0.9,
             regenerate_vectors: bool = False,
             convo_aggregation = True,
-            convo_methods: list = ['mean', 'median', 'max', 'min', 'std'],
+            convo_methods: list = ['mean', 'max', 'min', 'std'],
             convo_columns: list = None,
             user_aggregation = True,
-            user_methods: list = ['mean', 'median', 'max', 'min', 'std'],
+            user_methods: list = ['mean', 'max', 'min', 'std'],
             user_columns: list = None
         ) -> None:
 
