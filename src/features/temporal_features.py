@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from datetime import timedelta
 
 def coerce_to_date_or_number(value):
     """
@@ -21,10 +20,7 @@ def coerce_to_date_or_number(value):
             pd.to_numeric(value)
             return value
         except (ValueError, TypeError):
-            try:
-                return value.total_seconds()
-            except (ValueError, TypeError):
-                return None
+            return None
 
 def get_time_diff(df, on_column, conversation_id_col):
     """
