@@ -20,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Features: Conceptual Documentation" href="../features_conceptual/index.html" />
+    <link rel="prev" title="get_all_DD_features module" href="get_all_DD_features.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,10 +45,28 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../feature_builder.html">feature_builder module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Features: Technical Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Technical Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="burstiness.html">burstiness module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="information_diversity.html">information_diversity module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../utils/gini_coefficient.html">gini_coefficient module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discursive_diversity.html">discursive_diversity module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_all_DD_features.html">get_all_DD_features module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">turn_taking_features module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.turn_taking_features.count_turn_taking_index"><code class="docutils literal notranslate"><span class="pre">count_turn_taking_index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.turn_taking_features.count_turns"><code class="docutils literal notranslate"><span class="pre">count_turns()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.turn_taking_features.get_turn"><code class="docutils literal notranslate"><span class="pre">get_turn()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#speaker-user-level-features">Speaker- (User) Level Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../features_conceptual/index.html">Features: Conceptual Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utils/index.html">Utilities</a></li>
@@ -66,6 +86,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Features: Technical Documentation</a></li>
       <li class="breadcrumb-item active">turn_taking_features module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/features/turn_taking_features.rst.txt" rel="nofollow"> View page source</a>
@@ -81,24 +102,73 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="features.turn_taking_features.count_turn_taking_index">
 <span class="sig-prename descclassname"><span class="pre">features.turn_taking_features.</span></span><span class="sig-name descname"><span class="pre">count_turn_taking_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.turn_taking_features.count_turn_taking_index" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Returns the turn-taking index for each speaker.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_data</strong> (<em>pd.DataFrame</em>) – A dataframe of conversations, in which each row is one chat.</p></li>
+<li><p><strong>speaker_id_col</strong> (<em>str</em>) – The name of the column containing the speaker’s unique identifier.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The turn-taking index for the speaker.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.turn_taking_features.count_turns">
 <span class="sig-prename descclassname"><span class="pre">features.turn_taking_features.</span></span><span class="sig-name descname"><span class="pre">count_turns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.turn_taking_features.count_turns" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Returns the total number of turns for each speaker.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_data</strong> (<em>pd.DataFrame</em>) – A dataframe of conversations, in which each row is one chat.</p></li>
+<li><p><strong>speaker_id_col</strong> (<em>str</em>) – The name of the column containing the speaker’s unique identifier.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dataframe with columns for the speaker’s unique identifier and their turn count.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.turn_taking_features.get_turn">
 <span class="sig-prename descclassname"><span class="pre">features.turn_taking_features.</span></span><span class="sig-name descname"><span class="pre">get_turn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.turn_taking_features.get_turn" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Returns the turn-taking index for each conversation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_data</strong> (<em>pd.DataFrame</em>) – A dataframe of conversations, in which each row is one chat.</p></li>
+<li><p><strong>conversation_id_col</strong> (<em>str</em>) – The name of the column containing the conversation’s unique identifier.</p></li>
+<li><p><strong>speaker_id_col</strong> (<em>str</em>) – The name of the column containing the speaker’s unique identifier.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dataframe with columns for the conversation’s unique identifier and the turn-taking index.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="get_all_DD_features.html" class="btn btn-neutral float-left" title="get_all_DD_features module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../features_conceptual/index.html" class="btn btn-neutral float-right" title="Features: Conceptual Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

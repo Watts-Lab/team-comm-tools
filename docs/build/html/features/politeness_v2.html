@@ -20,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="politeness_v2_helper module" href="politeness_v2_helper.html" />
+    <link rel="prev" title="named_entity_recognition_features module" href="named_entity_recognition_features.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,10 +45,37 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../feature_builder.html">feature_builder module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Features: Technical Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Technical Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_features.html">basic_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="certainty.html">certainty module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lexical_features_v2.html">lexical_features_v2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="other_lexical_features.html">other_lexical_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="info_exchange_zscore.html">info_exchange_zscore module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="question_num.html">question_num module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_features.html">politeness_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hedge.html">hedge module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_features.html">temporal_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readability.html">readability module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="textblob_sentiment_analysis.html">textblob_sentiment_analysis module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="named_entity_recognition_features.html">named_entity_recognition_features module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">politeness_v2 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2.get_politeness_v2"><code class="docutils literal notranslate"><span class="pre">get_politeness_v2()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_v2_helper.html">politeness_v2_helper module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reddit_tags.html">reddit_tags module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="word_mimicry.html">word_mimicry module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fflow.html">fflow module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#speaker-user-level-features">Speaker- (User) Level Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../features_conceptual/index.html">Features: Conceptual Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utils/index.html">Utilities</a></li>
@@ -66,6 +95,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Features: Technical Documentation</a></li>
       <li class="breadcrumb-item active">politeness_v2 module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/features/politeness_v2.rst.txt" rel="nofollow"> View page source</a>
@@ -81,10 +111,20 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2.get_politeness_v2">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2.</span></span><span class="sig-name descname"><span class="pre">get_politeness_v2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2.get_politeness_v2" title="Link to this definition"></a></dt>
-<dd><dl class="simple">
-<dt>&#64;Args:</dt><dd><p>The text dataframe</p>
+<dd><p>Calculates politness based on Yeomans et. al, 2020: <a class="reference external" href="https://www.mikeyeomans.info/papers/receptiveness.pdf">https://www.mikeyeomans.info/papers/receptiveness.pdf</a>,
+coded into this package: <a class="reference external" href="https://github.com/bbevis/SECR">https://github.com/bbevis/SECR</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – The dataframe containing the text on which we wish to apply the feature</p></li>
+<li><p><strong>on_column</strong> (<em>str</em>) – The header of the column containing the text on which this feature will be applied</p></li>
+</ul>
 </dd>
-<dt>&#64;Returns:</dt><dd><p>The dataframe after adding the politness v2 features</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dataframe containing the values of linguistic markers that determine politeness</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
 </dd>
 </dl>
 </dd></dl>
@@ -94,7 +134,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="named_entity_recognition_features.html" class="btn btn-neutral float-left" title="named_entity_recognition_features module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="politeness_v2_helper.html" class="btn btn-neutral float-right" title="politeness_v2_helper module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

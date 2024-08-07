@@ -20,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="reddit_tags module" href="reddit_tags.html" />
+    <link rel="prev" title="politeness_v2 module" href="politeness_v2.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,10 +45,59 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../feature_builder.html">feature_builder module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Features: Technical Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Technical Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_features.html">basic_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="certainty.html">certainty module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lexical_features_v2.html">lexical_features_v2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="other_lexical_features.html">other_lexical_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="info_exchange_zscore.html">info_exchange_zscore module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="question_num.html">question_num module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_features.html">politeness_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hedge.html">hedge module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_features.html">temporal_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readability.html">readability module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="textblob_sentiment_analysis.html">textblob_sentiment_analysis module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="named_entity_recognition_features.html">named_entity_recognition_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_v2.html">politeness_v2 module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">politeness_v2_helper module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.Question"><code class="docutils literal notranslate"><span class="pre">Question()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.adverb_limiter"><code class="docutils literal notranslate"><span class="pre">adverb_limiter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.bare_command"><code class="docutils literal notranslate"><span class="pre">bare_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.clean_text"><code class="docutils literal notranslate"><span class="pre">clean_text()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.commit_data"><code class="docutils literal notranslate"><span class="pre">commit_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.conjection_seperator"><code class="docutils literal notranslate"><span class="pre">conjection_seperator()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.count_matches"><code class="docutils literal notranslate"><span class="pre">count_matches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.count_spacy_matches"><code class="docutils literal notranslate"><span class="pre">count_spacy_matches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.feat_counts"><code class="docutils literal notranslate"><span class="pre">feat_counts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.get_dep_pairs"><code class="docutils literal notranslate"><span class="pre">get_dep_pairs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.get_dep_pairs_noneg"><code class="docutils literal notranslate"><span class="pre">get_dep_pairs_noneg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.load_saved_data"><code class="docutils literal notranslate"><span class="pre">load_saved_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.load_to_dict"><code class="docutils literal notranslate"><span class="pre">load_to_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.load_to_lists"><code class="docutils literal notranslate"><span class="pre">load_to_lists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.phrase_split"><code class="docutils literal notranslate"><span class="pre">phrase_split()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.prep_simple"><code class="docutils literal notranslate"><span class="pre">prep_simple()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.prep_whole"><code class="docutils literal notranslate"><span class="pre">prep_whole()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.punctuation_seperator"><code class="docutils literal notranslate"><span class="pre">punctuation_seperator()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.sentence_pad"><code class="docutils literal notranslate"><span class="pre">sentence_pad()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.sentence_split"><code class="docutils literal notranslate"><span class="pre">sentence_split()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.sentenciser"><code class="docutils literal notranslate"><span class="pre">sentenciser()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.token_count"><code class="docutils literal notranslate"><span class="pre">token_count()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#features.politeness_v2_helper.word_start"><code class="docutils literal notranslate"><span class="pre">word_start()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="reddit_tags.html">reddit_tags module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="word_mimicry.html">word_mimicry module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fflow.html">fflow module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#speaker-user-level-features">Speaker- (User) Level Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../features_conceptual/index.html">Features: Conceptual Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utils/index.html">Utilities</a></li>
@@ -66,6 +117,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Features: Technical Documentation</a></li>
       <li class="breadcrumb-item active">politeness_v2_helper module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/features/politeness_v2_helper.rst.txt" rel="nofollow"> View page source</a>
@@ -81,48 +133,127 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.Question">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">Question</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.Question" title="Link to this definition"></a></dt>
-<dd><p>Counts number of prespecified question words</p>
+<dd><p>Counts the number of sentences containing question words and question marks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the counts of Yes/No questions and WH-questions.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.adverb_limiter">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">adverb_limiter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keywords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.adverb_limiter" title="Link to this definition"></a></dt>
-<dd><p>Search for tokens that are advmod and in the prespecifid list of words</p>
+<dd><p>Searches for adverb modifiers in the text that match a list of keywords.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keywords</strong> (<em>dict</em>) – A dictionary where the key ‘Adverb_Limiter’ contains a list of adverb modifiers to search for.</p></li>
+<li><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The count of adverb modifier matches in the text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.bare_command">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">bare_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.bare_command" title="Link to this definition"></a></dt>
-<dd><p>Check the first word of each sentence is a verb AND is contained in list of key words</p>
-<p>Output: Count of matches</p>
+<dd><p>Checks if the first word of each sentence is a verb and not in a list of keywords.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The count of sentences that start with a verb not in the keyword list.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.clean_text">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">clean_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.clean_text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Cleans and normalizes text by replacing certain patterns and characters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be cleaned.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The cleaned and normalized text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.commit_data">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">commit_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folders</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words_in_line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.commit_data" title="Link to this definition"></a></dt>
 <dd><p>Loads data from .txt files, creates one dictionary per folder
 and outputs each folder as a dictionary in a pickle file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – The base directory path containing the folders with text files.</p></li>
+<li><p><strong>path_in</strong> (<em>str</em>) – The directory path to save the pickle files.</p></li>
+<li><p><strong>folders</strong> (<em>list</em>) – A list of folder names containing the text files.</p></li>
+<li><p><strong>words_in_line</strong> (<em>list</em>) – A list specifying whether each folder contains ‘single’ or ‘multiple’ words per line.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.conjection_seperator">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">conjection_seperator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.conjection_seperator" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Separates text into segments based on conjunctions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be separated by conjunctions.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of text segments separated by conjunctions.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.count_matches">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">count_matches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keywords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.count_matches" title="Link to this definition"></a></dt>
-<dd><p>For a given piece of text, search for the number if keywords from a prespecified list</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>Prespecified list (keywords)
-text</p>
+<dd><p>Counts the occurrences of prespecified keywords in a text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keywords</strong> (<em>dict</em>) – A dictionary where keys are feature names and values are lists of phrases to search for.</p></li>
+<li><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p></li>
+</ul>
 </dd>
-<dt>Outputs:</dt><dd><p>Counts of keyword matches</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A DataFrame with the counts of keyword matches for each feature.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
 </dd>
 </dl>
 </dd></dl>
@@ -130,13 +261,19 @@ text</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.count_spacy_matches">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">count_spacy_matches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keywords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dep_pairs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.count_spacy_matches" title="Link to this definition"></a></dt>
-<dd><p>When searching for key words are not sufficient, we may search for dependency pairs.
-Finds any-prespecified dependency pairs from text string and outputs the counts</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>Dependency pairs from text
-Predefined tokens for search in dependency heads</p>
+<dd><p>Counts occurrences of prespecified dependency pairs in a list of dependency pairs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keywords</strong> (<em>dict</em>) – A dictionary where keys are feature names and values are lists of dependency pairs to search for.</p></li>
+<li><p><strong>dep_pairs</strong> (<em>list</em>) – A list of dependency pairs extracted from the text.</p></li>
+</ul>
 </dd>
-<dt>Output:</dt><dd><p>Count of dependency pair matches</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A DataFrame with the counts of dependency pair matches for each feature.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
 </dd>
 </dl>
 </dd></dl>
@@ -144,14 +281,19 @@ Predefined tokens for search in dependency heads</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.feat_counts">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">feat_counts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.feat_counts" title="Link to this definition"></a></dt>
-<dd><p>Main function for getting the features from text input.
-Calls other functions to load dataset, clean text, counts features,
-removes negation phrases.</p>
-<dl class="simple">
-<dt>Input:</dt><dd><p>Text string
-Saved data of keywords and dependency pairs from pickle files</p>
+<dd><p>Extracts various linguistic features from a text using predefined keywords and dependency pairs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The text to be analyzed.</p></li>
+<li><p><strong>kw</strong> (<em>dict</em>) – A dictionary containing predefined keywords and dependency pairs.</p></li>
+</ul>
 </dd>
-<dt>Output:</dt><dd><p>Feature counts</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A DataFrame with counts of various linguistic features.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
 </dd>
 </dl>
 </dd></dl>
@@ -159,12 +301,16 @@ Saved data of keywords and dependency pairs from pickle files</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.get_dep_pairs">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">get_dep_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.get_dep_pairs" title="Link to this definition"></a></dt>
-<dd><p>Uses spaCy to find list of dependency pairs from text.
-Performs negation handling where by any dependency pairs related to a negated term is removed</p>
-<dl class="simple">
-<dt>Input:</dt><dd><p>Text</p>
+<dd><p>Extracts dependency pairs from a spaCy Doc object and handles negations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p>
 </dd>
-<dt>Outputs:</dt><dd><p>Dependency pairs from text that do not have ROOT as the head token or is a negated term</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing a list of dependency pairs and a list of negations.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
 </dd>
 </dl>
 </dd></dl>
@@ -172,17 +318,36 @@ Performs negation handling where by any dependency pairs related to a negated te
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.get_dep_pairs_noneg">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">get_dep_pairs_noneg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.get_dep_pairs_noneg" title="Link to this definition"></a></dt>
-<dd><p>No negation is done as we are only searching ‘hits’</p>
+<dd><p>Extracts dependency pairs from a spaCy Doc object without handling negations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of dependency pairs from the input text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.load_saved_data">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">load_saved_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folders</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.load_saved_data" title="Link to this definition"></a></dt>
 <dd><p>Loads predefined keywords and dependency pairs</p>
-<dl class="simple">
-<dt>Input:</dt><dd><p>Pickle files of dictionaries saved in directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_in</strong> (<em>str</em>) – The directory path containing the pickle files.</p></li>
+<li><p><strong>folders</strong> (<em>list</em>) – A list of folder names to load the pickle files from.</p></li>
+</ul>
 </dd>
-<dt>Output:</dt><dd><p>Python dictionaries</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where keys are folder names and values are dictionaries of keywords and dependency pairs.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -190,59 +355,197 @@ Performs negation handling where by any dependency pairs related to a negated te
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.load_to_dict">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">load_to_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.load_to_dict" title="Link to this definition"></a></dt>
-<dd><p>Main function for taking raw .txt files and generates a python dictionary
-Used in conjunction with committ_data function</p>
+<dd><p>Loads keywords from text files in a specified directory into a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – The directory path containing the text files.</p></li>
+<li><p><strong>words</strong> (<em>str</em>) – Specifies whether to load ‘single’ or ‘multiple’ words per line.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where keys are filenames and values are lists of keywords.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.load_to_lists">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">load_to_lists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.load_to_lists" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Loads keywords from text files in a specified directory into lists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – The directory path containing the text files.</p></li>
+<li><p><strong>words</strong> (<em>str</em>) – Specifies whether to load ‘single’ or ‘multiple’ words per line.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing a list of feature names and a list of keywords.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.phrase_split">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">phrase_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.phrase_split" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Splits text into phrases based on punctuation and conjunctions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be split into phrases.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of phrases from the input text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.prep_simple">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">prep_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.prep_simple" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Preprocesses text by cleaning and removing certain characters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be preprocessed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The preprocessed text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.prep_whole">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">prep_whole</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.prep_whole" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Preprocesses text by cleaning, removing certain characters, and filtering out stopwords.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be preprocessed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The preprocessed text with stopwords removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.punctuation_seperator">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">punctuation_seperator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.punctuation_seperator" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Separates text into segments based on punctuation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be separated by punctuation.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of text segments with punctuation removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.sentence_pad">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">sentence_pad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.sentence_pad" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Pads the sentences of a spaCy Doc object by concatenating them with simple preprocessing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be padded.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A single string with all sentences concatenated and preprocessed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.sentence_split">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">sentence_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.sentence_split" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Splits a spaCy Doc object into a list of sentences, each with simple preprocessing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be split into sentences.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of preprocessed sentences from the input Doc object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.sentenciser">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">sentenciser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.sentenciser" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Splits text into sentences using spaCy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The input text to be split into sentences.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of sentences from the input text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.token_count">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">token_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.token_count" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Counts the number of tokens (words) in a spaCy Doc object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of tokens in the input text.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="features.politeness_v2_helper.word_start">
 <span class="sig-prename descclassname"><span class="pre">features.politeness_v2_helper.</span></span><span class="sig-name descname"><span class="pre">word_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keywords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.politeness_v2_helper.word_start" title="Link to this definition"></a></dt>
-<dd><p>Find first words in text such as conjunctions and affirmations</p>
+<dd><p>Finds the first words in text that match a list of keywords.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keywords</strong> (<em>dict</em>) – A dictionary where keys are feature names and values are lists of first words to search for.</p></li>
+<li><p><strong>doc</strong> (<em>spacy.tokens.Doc</em>) – The spaCy Doc object containing the text to be analyzed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A DataFrame with the counts of first word matches for each feature.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -250,7 +553,10 @@ Used in conjunction with committ_data function</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="politeness_v2.html" class="btn btn-neutral float-left" title="politeness_v2 module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reddit_tags.html" class="btn btn-neutral float-right" title="reddit_tags module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

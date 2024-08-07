@@ -13,12 +13,7 @@ test_conv_complex_df_ts =  pd.read_csv("./output/conv/test_conv_level_conv_compl
 test_forward_flow_df = pd.read_csv("./output/chat/test_forward_flow_chat.csv")
 
 # Import the Feature Dictionary
-import sys
-import os
-
-# Add the parent directory to the sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/')))
-from feature_dict import feature_dict
+from team_comm_tools.feature_dict import feature_dict
 
 chat_features = [feature_dict[feature]["columns"] for feature in feature_dict.keys() if feature_dict[feature]["level"] == "Chat"]
 conversation_features = [feature_dict[feature]["columns"] for feature in feature_dict.keys() if feature_dict[feature]["level"] == "Conversation"]
