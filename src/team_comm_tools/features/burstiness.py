@@ -25,13 +25,15 @@ def burstiness(df, timediff):
         return None 
     
     # Check for any NA values and drop them accordingly
-    df[timediff] = df[timediff].apply(coerce_to_date_or_number)
-
-    wait_times = (df[timediff].dropna()).astype(float).values
-
-    if len(wait_times) <= 1:
+    # If there are no time differences, return 0
+    if len(df[timediff].dropna()) <= 1:
         return 0
-    
+
+    try:
+        wait_times = (df[timediff][1:]).apply(lambda x: x.total_seconds()) # df[time_diff] is a timedelta object
+    except AttributeError:
+        wait_times = (df[timediff][1:]).astype(float).values # df[time_diff] is a float object
+
     # Compute coefficient of variation measure B (Goh & Barabasi 2008)
     standard_deviation = np.std(wait_times)
     mean = np.mean(wait_times)

@@ -1,39 +1,54 @@
-id,conversation_num,speaker_nickname,message,expected_column,feature_level,expected_value
-1,1,A,hi,turn_taking_index,conv,0.75
-2,1,A,test,turn_taking_index,conv,0.75
-3,1,B,hello,turn_taking_index,conv,0.75
-4,1,A,test test,turn_taking_index,conv,0.75
-5,1,B,testing,turn_taking_index,conv,0.75
-6,2,C,I am speaking,turn_taking_index,conv,0
-7,2,C,all alone,turn_taking_index,conv,0
-8,3,D,we,turn_taking_index,conv,1
-9,3,E,take,turn_taking_index,conv,1
-10,3,D,absolutely,turn_taking_index,conv,1
-11,3,E,perfect,turn_taking_index,conv,1
-12,3,D,turns,turn_taking_index,conv,1
-13,4,H,hi,turn_taking_index,conv,0.4
-14,4,H,i like texting,turn_taking_index,conv,0.4
-15,4,H,in multiple messages,turn_taking_index,conv,0.4
-16,4,H,like right now,turn_taking_index,conv,0.4
-17,4,I,i like texting in one long message. here is a funny joke you might enjoy: what kind of tea is hard to swallow? reality. haha i am so funny,turn_taking_index,conv,0.4
-18,4,H,you're right,turn_taking_index,conv,0.4
-19,4,H,i did enjoy that,turn_taking_index,conv,0.4
-20,4,H,although it was a little sad,turn_taking_index,conv,0.4
-21,4,H,do you have any more,turn_taking_index,conv,0.4
-22,4,I,Here is a list of my favorite jokes: what do you call a fish with no eyes? a fsh. hahaha. what happens to an illegally parked frog. it got toaded away. why was the easter bunny so upset. he had a bad hare day.,turn_taking_index,conv,0.4
-23,4,H,hahaha,turn_taking_index,conv,0.4
-24,5,F,hi,turn_taking_index,conv,0.8
-25,5,G,omg,turn_taking_index,conv,0.8
-26,5,F,hello!,turn_taking_index,conv,0.8
-27,5,G,we are speaking,turn_taking_index,conv,0.8
-28,5,F,in perfect turns,turn_taking_index,conv,0.8
-29,5,F,oops not anymore,turn_taking_index,conv,0.8
-30,6,J,hi,turn_taking_index,conv,0.125
-31,6,J,are you here,turn_taking_index,conv,0.125
-32,6,J,this is important,turn_taking_index,conv,0.125
-33,6,J,i am speaking into a void,turn_taking_index,conv,0.125
-34,6,J,hello,turn_taking_index,conv,0.125
-35,6,J,pls respond,turn_taking_index,conv,0.125
-36,6,J,URGENT,turn_taking_index,conv,0.125
-37,6,J,hello???,turn_taking_index,conv,0.125
-38,6,K,bye,turn_taking_index,conv,0.125
+conversation_num,speaker_nickname,timestamp,message,expected_column,expected_value
+1,A,2024-07-07T15:25:42.324Z,hi,turn_taking_index,0.75
+1,A,2024-07-07T15:25:42.324Z,test,turn_taking_index,0.75
+1,B,2024-07-07T15:25:42.324Z,hello,turn_taking_index,0.75
+1,A,2024-07-07T15:25:42.324Z,test test,turn_taking_index,0.75
+1,B,2024-07-07T15:25:42.324Z,testing,turn_taking_index,0.75
+2,C,2024-07-07T15:25:42.324Z,I am speaking,turn_taking_index,0.0
+2,C,2024-07-08T15:25:42.324Z,all alone,turn_taking_index,0.0
+3,D,2024-07-01T15:25:42.324Z,we,turn_taking_index,1.0
+3,E,2024-07-02T15:25:42.324Z,take,turn_taking_index,1.0
+3,D,2024-07-03T15:25:42.324Z,absolutely,turn_taking_index,1.0
+3,E,2024-07-04T15:25:42.324Z,perfect,turn_taking_index,1.0
+3,D,2024-07-05T15:25:42.324Z,turns,turn_taking_index,1.0
+4,H,2024-07-01T15:25:42.324Z,hi,turn_taking_index,0.4
+4,H,2024-07-02T15:25:42.324Z,i like texting,turn_taking_index,0.4
+4,H,2024-07-03T15:25:42.324Z,in multiple messages,turn_taking_index,0.4
+4,H,2024-07-04T15:25:42.324Z,like right now,turn_taking_index,0.4
+4,I,2024-07-05T15:25:42.324Z,i like texting in one long message. here is a funny joke you might enjoy: what kind of tea is hard to swallow? reality. haha i am so funny,turn_taking_index,0.4
+4,H,2024-07-06T15:25:42.324Z,you're right,turn_taking_index,0.4
+4,H,2024-07-07T15:25:42.324Z,i did enjoy that,turn_taking_index,0.4
+4,H,2024-07-08T15:25:42.324Z,although it was a little sad,turn_taking_index,0.4
+4,H,2024-07-09T15:25:42.324Z,do you have any more,turn_taking_index,0.4
+4,I,2024-07-10T15:25:42.324Z,Here is a list of my favorite jokes: what do you call a fish with no eyes? a fsh. hahaha. what happens to an illegally parked frog. it got toaded away. why was the easter bunny so upset. he had a bad hare day.,turn_taking_index,0.4
+4,H,2024-07-11T15:25:42.324Z,hahaha,turn_taking_index,0.4
+5,F,2024-07-01T15:25:42.324Z,hi,turn_taking_index,0.8
+5,G,2024-07-02T15:25:42.324Z,omg,turn_taking_index,0.8
+5,F,2024-07-03T15:25:42.324Z,hello!,turn_taking_index,0.8
+5,G,2024-07-04T15:25:42.324Z,we are speaking,turn_taking_index,0.8
+5,F,2024-07-05T15:25:42.324Z,in perfect turns,turn_taking_index,0.8
+5,F,2024-07-06T15:25:42.324Z,oops not anymore,turn_taking_index,0.8
+6,J,2024-07-01T15:25:42.324Z,hi,turn_taking_index,0.125
+6,J,2024-07-02T15:25:42.324Z,are you here,turn_taking_index,0.125
+6,J,2024-07-03T15:25:42.324Z,this is important,turn_taking_index,0.125
+6,J,2024-07-04T15:25:42.324Z,i am speaking into a void,turn_taking_index,0.125
+6,J,2024-07-05T15:25:42.324Z,hello,turn_taking_index,0.125
+6,J,2024-07-06T15:25:42.324Z,pls respond,turn_taking_index,0.125
+6,J,2024-07-07T15:25:42.324Z,URGENT,turn_taking_index,0.125
+6,J,2024-07-08T15:25:42.324Z,hello???,turn_taking_index,0.125
+6,K,2024-07-09T15:25:42.324Z,bye,turn_taking_index,0.125
+A, John,2020-04-20T18:27:20.125Z, I'm curious how do you all feel about using flashcards?,team_burstiness,-1.0
+A, Mary,2020-04-20T18:27:40.125Z, I think flashcards are a great way to memorize information.,team_burstiness,-1.0
+A, John,2020-04-20T18:28:00.125Z, I agree I've found them to be really helpful.,team_burstiness,-1.0
+A, Jessica,2020-04-20T18:28:20.125Z, I'm not a big fan of flashcards I find them to be boring and ineffective.,team_burstiness,-1.0
+A, Mary,2020-04-20T18:28:40.125Z, I think it really depends on the individual and how they learn best.,team_burstiness,-1.0
+A, John,2020-04-20T18:29:00.125Z, That's true I know some people who prefer to use other methods like spaced repetition.,team_burstiness,-1.0
+A, Jessica,2020-04-20T18:29:20.125Z, I've heard of spaced repetition but I've never tried it.,team_burstiness,-1.0
+A, John,2020-04-20T18:29:40.125Z, It's a great way to improve your long-term memory.,team_burstiness,-1.0
+A, Mary,2020-04-20T18:30:00.125Z, I'll have to give it a try.,team_burstiness,-1.0
+A, Jessica,2020-04-20T18:30:20.125Z, Do you have any tips for studying effectively?,team_burstiness,-1.0
+A, John,2020-04-20T18:30:40.125Z, I find that studying in short bursts is more effective than trying to cram everything in at once.,team_burstiness,-1.0
+A, Mary,2020-04-20T18:31:00.125Z, I agree it's also important to take breaks and get enough sleep.,team_burstiness,-1.0
+A, Jessica,2020-04-20T18:31:20.125Z, I'm always struggling to stay motivated any tips?,team_burstiness,-1.0
+A, John,2020-04-20T18:31:40.125Z, I find it helpful to set realistic goals and break down large tasks into smaller ones.,team_burstiness,-1.0
+A, Mary,2020-04-20T18:32:00.125Z, It's also important to find a study buddy or group to help you stay accountable.,team_burstiness,-1.0

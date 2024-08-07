@@ -1,0 +1,272 @@
+conversation_num,speaker_nickname,timestamp,message,feature
+A, John, 2020-04-20T18:27:20.125Z, I'm curious how do you all feel about using flashcards?,team_burstiness
+A, Mary, 2020-04-20T18:27:40.125Z, I think flashcards are a great way to memorize information.,team_burstiness
+A, John, 2020-04-20T18:28:00.125Z, I agree I've found them to be really helpful.,team_burstiness
+A, Jessica, 2020-04-20T18:28:20.125Z, I'm not a big fan of flashcards I find them to be boring and ineffective.,team_burstiness
+A, Mary, 2020-04-20T18:28:40.125Z, I think it really depends on the individual and how they learn best.,team_burstiness
+A, John, 2020-04-20T18:29:00.125Z, That's true I know some people who prefer to use other methods like spaced repetition.,team_burstiness
+A, Jessica, 2020-04-20T18:29:20.125Z, I've heard of spaced repetition but I've never tried it.,team_burstiness
+A, John, 2020-04-20T18:29:40.125Z, It's a great way to improve your long-term memory.,team_burstiness
+A, Mary, 2020-04-20T18:30:00.125Z, I'll have to give it a try.,team_burstiness
+A, Jessica, 2020-04-20T18:30:20.125Z, Do you have any tips for studying effectively?,team_burstiness
+A, John, 2020-04-20T18:30:40.125Z, I find that studying in short bursts is more effective than trying to cram everything in at once.,team_burstiness
+A, Mary, 2020-04-20T18:31:00.125Z, I agree it's also important to take breaks and get enough sleep.,team_burstiness
+A, Jessica, 2020-04-20T18:31:20.125Z, I'm always struggling to stay motivated any tips?,team_burstiness
+A, John, 2020-04-20T18:31:40.125Z, I find it helpful to set realistic goals and break down large tasks into smaller ones.,team_burstiness
+A, Mary, 2020-04-20T18:32:00.125Z, It's also important to find a study buddy or group to help you stay accountable.,team_burstiness
+A, Jessica, 2020-04-20T18:32:20.125Z, Thanks for the advice I'll definitely try it out.,team_burstiness
+B, A, 2020-04-20T18:27:20.125Z, Hi everyone what are your favorite study habits?,team_burstiness
+B, B, 2020-04-20T18:27:40.956Z, I like to study in a quiet place where I can focus.,team_burstiness
+B, C, 2020-04-20T18:28:01.789Z, I prefer to study with a group of friends so we can help each other.,team_burstiness
+B, D, 2020-04-20T18:28:23.621Z, I like to study by myself so I can go at my own pace.,team_burstiness
+B, A, 2020-04-20T18:28:45.452Z, I think it's important to find a study method that works for you.,team_burstiness
+B, B, 2020-04-20T18:29:07.284Z, I agree.,team_burstiness
+B, C, 2020-04-20T18:29:29.116Z, I also think it's important to take breaks while you're studying.,team_burstiness
+B, D, 2020-04-20T18:29:50.947Z, Yes it's important to give your brain a chance to rest.,team_burstiness
+B, A, 2020-04-20T18:30:12.778Z, I find that it's helpful to set a timer and study for 25 minutes then take a 5 minute break.,team_burstiness
+B, B, 2020-04-20T18:30:34.610Z, That's a good idea I'll try that.,team_burstiness
+B, C, 2020-04-20T18:30:56.441Z, I like to listen to music while I study it helps me to concentrate.,team_burstiness
+B, D, 2020-04-20T18:31:18.273Z, I prefer to study in silence so I can focus on the material.,team_burstiness
+B, A, 2020-04-20T18:31:40.105Z, I find that it's helpful to create a study schedule and stick to it.,team_burstiness
+B, B, 2020-04-20T18:32:01.936Z, I agree it's important to be consistent with your studying.,team_burstiness
+B, C, 2020-04-20T18:32:23.768Z, I also think it's important to reward yourself for your hard work.,team_burstiness
+B, D, 2020-04-20T18:32:45.599Z, Yes it's important to stay motivated while you're studying.,team_burstiness
+C, A, 2020-04-20T18:27:20.125Z, I'm really struggling to stay focused when I study,team_burstiness
+C, B, 2020-04-20T18:27:32.456Z, I know what you mean. I have the same problem.,team_burstiness
+C, C, 2020-04-20T18:27:44.567Z, I've been trying to find a study method that works for me but I haven't had much luck. Do you have any tips?,team_burstiness
+C, B, 2020-04-20T18:29:22.456Z, I've found that it helps to break down my study material into smaller chunks.,team_burstiness
+C, C, 2020-04-20T18:29:44.567Z, That's a good idea. I'll try that.,team_burstiness
+C, A, 2020-04-20T18:29:52.456Z, I've also found that it helps to study in a quiet place where I can focus.,team_burstiness
+C, D, 2020-04-20T18:31:24.567Z, I agree. It's hard to concentrate when there's a lot of noise around.,team_burstiness
+C, A, 2020-04-20T19:31:32.456Z, Another thing that I've found helpful is to set a timer for myself when I study.,team_burstiness
+C, B, 2020-04-20T19:31:34.567Z, That's a good idea. It helps me to stay on task.,team_burstiness
+C, C, 2020-04-20T19:33:22.456Z, I'm going to try that too.,team_burstiness
+C, D, 2020-04-20T19:33:24.567Z, I've also found that it helps to reward myself when I finish a study session.,team_burstiness
+C, A, 2020-04-20T19:33:32.456Z, That's a good idea. It gives me something to look forward to.,team_burstiness
+C, B, 2020-04-20T19:33:44.567Z, I agree. It helps me to stay motivated.,team_burstiness
+C, C, 2020-04-20T20:35:32.456Z, I've found that it's also important to take breaks when you're studying.,team_burstiness
+C, D, 2020-04-20T20:35:44.567Z, I agree. It helps me to stay focused and avoid burnout.,team_burstiness
+C, A, 2020-04-20T20:35:52.456Z, I've also found that it helps to study with a friend or classmate.,team_burstiness
+C, B, 2020-04-20T20:35:56.567Z, That's a good idea. It can help you to stay motivated and on track.,team_burstiness
+D,Adam,, I just saw the craziest thing on the way to work,discursive_diversity
+D,Brad,, Did you hear about the new restaurant opening up downtown? I've heard nothing but good things,discursive_diversity
+D,Chris,, Hey team we need to finalize the plans for the client presentation by tomorrow,discursive_diversity
+D,Brad,, I'm so excited to try the new sushi place,discursive_diversity
+D,Chris,, Please let me know if you have any questions,discursive_diversity
+D,Adam,, It was like something out of a movie,discursive_diversity
+D,Chris,, We should aim to have a draft ready for review by the end of the day,discursive_diversity
+D,Adam,, I couldn't believe my eyes,discursive_diversity
+D,Brad,, The reviews say the ambiance is amazing too,discursive_diversity
+D,Adam,, I had to stop and take a picture,discursive_diversity
+E,person a,,I love my new job.,discursive_diversity
+E,person a,,I think this is the most money I've ever made.,discursive_diversity
+E,person a,,Working with like-minded people is great.,discursive_diversity
+E,person a,,I'm so happy I found this job.,discursive_diversity
+E,person b,,Painting is my passion.,discursive_diversity
+E,person b,,I love painting landscapes.,discursive_diversity
+E,person b,,I'm going to buy new brushes soon.,discursive_diversity
+E,person b,,I'm going to start getting into art more often.,discursive_diversity
+E,person c,,What should I cook for dinner?,discursive_diversity
+E,person c,,I'm thinking of making spaghetti.,discursive_diversity
+E,person c,,I'm going to make a salad too.,discursive_diversity
+E,person c,,I'm going to make a cake for dessert.,discursive_diversity
+E,person d,,I'm going to the gym today.,discursive_diversity
+E,person d,,I'm going to work on my legs.,discursive_diversity
+E,person d,,I'm going to do some cardio.,discursive_diversity
+E,person d,,I'll finish off with some weight lifting.,discursive_diversity
+F, Amy,, I'm really excited for the party tomorrow night.,discursive_diversity
+F, Bob,, Me too! I can't wait to see everyone and dance the night away.,discursive_diversity
+F, Carol,, I'm bringing a new dish to the party. It's a secret family recipe.,discursive_diversity
+F, Dave,, That sounds delicious Carol. I can't wait to try it.,discursive_diversity
+F, Amy,, I'm sure it will be a hit. You're such a good cook.,discursive_diversity
+F, Bob,, I agree. Carol's cooking is always amazing.,discursive_diversity
+F, Carol,, Thanks guys. I'm glad you're all excited.,discursive_diversity
+F, Dave,, So what time should we meet at the party?,discursive_diversity
+F, Amy,, Let's say 8 pm. That way we can all have some time to mingle before the music starts.,discursive_diversity
+F, Bob,, Sounds good to me. I'll see you guys there.,discursive_diversity
+F, Carol,, Me too. Can't wait!,discursive_diversity
+F, Dave,, I just realized I don't have anything to wear.,discursive_diversity
+F, Amy,, Don't worry I have a spare dress you can borrow.,discursive_diversity
+F, Bob,, That's so nice of you Amy.,discursive_diversity
+F, Carol,, I'm sure it will look great on you Dave.,discursive_diversity
+F, Dave,, Thanks everyone. I really appreciate it.,discursive_diversity
+G,A, 2024-07-15T23:09:36.125Z, I love eating.,variance_in_DD
+G,B, 2024-07-15T23:10:36.125Z, What's your favorite place to eat?,variance_in_DD
+G,A, 2024-07-15T23:11:36.125Z, I love anything that's serving Italian food.,variance_in_DD
+G,B, 2024-07-15T23:12:36.125Z, I could go for some pasta and pizza right now.,variance_in_DD
+G,B, 2024-07-15T23:14:36.125Z, Anyways what are your vacation plans?,variance_in_DD
+G,A, 2024-07-15T23:15:36.125Z, I'm going to start cooking more.,variance_in_DD
+G,B, 2024-07-15T23:16:36.125Z, Greg and I are flying to Panama tomorrow.,variance_in_DD
+G,A, 2024-07-15T23:17:36.125Z, I'm thinking of publishing my own recipe book.,variance_in_DD
+G,B, 2024-07-15T23:18:36.125Z, We're excited to go on a vacation together.,variance_in_DD
+G,A, 2024-07-15T23:19:36.125Z, Is this your first trip abroad?,variance_in_DD
+G,B, 2024-07-15T23:20:36.125Z, Yes we've never travelled outside the country before.,variance_in_DD
+G,A, 2024-07-15T23:21:36.125Z, Travelling abroad is a different type of fun.,variance_in_DD
+H,A, 2024-07-15T23:09:36.125Z, I love eating.,variance_in_DD
+H,B, 2024-07-15T23:10:36.125Z, I'm going for a run.,variance_in_DD
+H,A, 2024-07-15T23:11:36.125Z, I love anything that's serving Italian food.,variance_in_DD
+H,B, 2024-07-15T23:12:36.125Z, I'm running my first race in a few days.,variance_in_DD
+H,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,variance_in_DD
+H,B, 2024-07-15T23:14:36.125Z, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+H,A, 2024-07-15T23:15:36.125Z, How else do you stay fit?,variance_in_DD
+H,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,variance_in_DD
+H,A, 2024-07-15T23:19:36.125Z, I want to eat something.,variance_in_DD
+H,B, 2024-07-15T23:20:36.125Z, Exercising is my passion.,variance_in_DD
+H,A, 2024-07-15T23:21:36.125Z, Let's go get food.,variance_in_DD
+H,B, 2024-07-15T23:22:36.125Z, I think I'm going to just run.,variance_in_DD
+I,A, 2024-07-15T23:09:36.125Z, I love exercising.,variance_in_DD
+I,B, 2024-07-15T23:10:36.125Z, I'm going for a run.,variance_in_DD
+I,A, 2024-07-15T23:11:36.125Z, I play sports like tennis and baseball too.,variance_in_DD
+I,B, 2024-07-15T23:12:36.125Z, I'm running my first race in a few days.,variance_in_DD
+I,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,variance_in_DD
+I,B, 2024-07-15T23:14:36.125Z, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+I,A, 2024-07-15T23:15:36.125Z, How else do you stay fit?,variance_in_DD
+I,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,variance_in_DD
+I,A, 2024-07-15T23:17:36.125Z, I want to exercise more frequently.,variance_in_DD
+I,B, 2024-07-15T23:18:36.125Z, You can join me during my runs.,variance_in_DD
+I,A, 2024-07-15T23:19:36.125Z, How athletic are you?,variance_in_DD
+I,B, 2024-07-15T23:20:36.125Z, Exercising is my passion.,variance_in_DD
+J,A, 2024-07-15T23:09:36.125Z, I love exercising.,variance_in_DD
+J,B, 2024-07-15T23:10:36.125Z, I'm going for a run.,variance_in_DD
+J,A, 2024-07-15T23:11:36.125Z, I play sports like tennis and baseball too.,variance_in_DD
+J,B, 2024-07-15T23:12:36.125Z, I'm running my first race in a few days.,variance_in_DD
+J,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,variance_in_DD
+J,B, 2024-07-15T23:14:36.125Z, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+J,A, 2024-07-15T23:15:36.125Z, How else do you stay fit?,variance_in_DD
+J,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,variance_in_DD
+J,A, 2024-07-15T23:17:36.125Z, I want to exercise more frequently.,variance_in_DD
+J,B, 2024-07-15T23:18:36.125Z, You can join me during my runs.,variance_in_DD
+J,A, 2024-07-15T23:19:36.125Z, How athletic are you?,variance_in_DD
+J,B, 2024-07-15T23:20:36.125Z, Exercising is my passion.,variance_in_DD
+K,A, 2024-07-15T23:09:36.125Z, I love exercising.,variance_in_DD
+K,B, 2024-07-15T23:10:36.125Z, I don't see the point in partying.,variance_in_DD
+K,A, 2024-07-15T23:11:36.125Z, I play sports like tennis and baseball too.,variance_in_DD
+K,B, 2024-07-15T23:12:36.125Z, Partying isn't productive at all.,variance_in_DD
+K,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,variance_in_DD
+K,B, 2024-07-15T23:14:36.125Z, Dirty basements and uncomfortable music ugh.,variance_in_DD
+K,A, 2024-07-15T23:15:36.125Z, How else do you stay fit?,variance_in_DD
+K,B, 2024-07-15T23:16:36.125Z, I don't enjoy alcohol either,variance_in_DD
+K,A, 2024-07-15T23:17:36.125Z, I want to exercise more frequently.,variance_in_DD
+K,B, 2024-07-15T23:18:36.125Z, Thank god my friends hate partying too.,variance_in_DD
+K,A, 2024-07-15T23:19:36.125Z, How athletic are you?,variance_in_DD
+K,B, 2024-07-15T23:20:36.125Z, I barely even party on my birthday!,variance_in_DD
+L,A, 2024-07-15T23:09:36.125Z, I love eating.,variance_in_DD
+L,B, 2024-07-15T23:10:36.125Z, I'm going for a run.,variance_in_DD
+L,A, 2024-07-15T23:11:36.125Z, I love anything that's serving Italian food.,variance_in_DD
+L,B, 2024-07-15T23:12:36.125Z, I'm running my first race in a few days.,variance_in_DD
+L,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,variance_in_DD
+L,B, 2024-07-15T23:14:36.125Z, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+L,A, 2024-07-15T23:15:36.125Z, How else do you stay fit?,variance_in_DD
+L,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,variance_in_DD
+L,A, 2024-07-15T23:19:36.125Z, I want to eat something.,variance_in_DD
+L,B, 2024-07-15T23:20:36.125Z, Exercising is my passion.,variance_in_DD
+L,A, 2024-07-15T23:21:36.125Z, Let's go get food.,variance_in_DD
+L,B, 2024-07-15T23:22:36.125Z, I think I'm going to just run.,variance_in_DD
+M,A, 2024-07-15T23:09:36.125Z, I love eating.,within_person_disc_range
+M,B, 2024-07-15T23:10:36.125Z, I love eating.,within_person_disc_range
+M,A, 2024-07-15T23:11:36.125Z, I love anything that's serving Italian food.,within_person_disc_range
+M,B, 2024-07-15T23:12:36.125Z, I love anything that's serving Italian food.,within_person_disc_range
+M,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,within_person_disc_range
+M,B, 2024-07-15T23:14:36.125Z, Do you exercise a lot!,within_person_disc_range
+M,A, 2024-07-15T23:15:36.125Z, Sports and running are great options.,within_person_disc_range
+M,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,within_person_disc_range
+M,A, 2024-07-15T23:19:36.125Z, I want to eat something.,within_person_disc_range
+M,B, 2024-07-15T23:20:36.125Z, I want to eat something.,within_person_disc_range
+M,A, 2024-07-15T23:21:36.125Z, Let's go get food.,within_person_disc_range
+M,B, 2024-07-15T23:22:36.125Z, Let's go get food.,within_person_disc_range
+N,A, 2024-07-15T23:09:36.125Z, I love sports.,within_person_disc_range
+N,B, 2024-07-15T23:10:36.125Z, I love sports.,within_person_disc_range
+N,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,within_person_disc_range
+N,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,within_person_disc_range
+N,A, 2024-07-15T23:13:36.125Z, Do you enjoy Mexican food?,within_person_disc_range
+N,B, 2024-07-15T23:14:36.125Z, Do you enjoy Mexican food?,within_person_disc_range
+N,A, 2024-07-15T23:15:36.125Z, My favorite food is quesadillas.,within_person_disc_range
+N,B, 2024-07-15T23:16:36.125Z, My favorite food is quesadillas.,within_person_disc_range
+N,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,within_person_disc_range
+N,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,within_person_disc_range
+N,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,within_person_disc_range
+N,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,within_person_disc_range
+O,A, 2024-07-15T23:09:36.125Z, I love sports.,within_person_disc_range
+O,B, 2024-07-15T23:10:36.125Z, I love sports.,within_person_disc_range
+O,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,within_person_disc_range
+O,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,within_person_disc_range
+O,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,within_person_disc_range
+O,B, 2024-07-15T23:14:36.125Z, Do you exercise a lot!,within_person_disc_range
+O,A, 2024-07-15T23:15:36.125Z, Sports and running are great options.,within_person_disc_range
+O,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,within_person_disc_range
+O,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,within_person_disc_range
+O,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,within_person_disc_range
+O,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,within_person_disc_range
+O,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,within_person_disc_range
+P,A, 2024-07-15T23:09:36.125Z, I love sports.,incongruent_modulation
+P,B, 2024-07-15T23:10:36.125Z, I love sports.,incongruent_modulation
+P,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,incongruent_modulation
+P,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,incongruent_modulation
+P,A, 2024-07-15T23:13:36.125Z, Do you enjoy Mexican food?,incongruent_modulation
+P,B, 2024-07-15T23:14:36.125Z, Sports is my passion.,incongruent_modulation
+P,A, 2024-07-15T23:15:36.125Z, My favorite food is quesadillas.,incongruent_modulation
+P,B, 2024-07-15T23:16:36.125Z, I think running is my favorite exercise.,incongruent_modulation
+P,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,incongruent_modulation
+P,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,incongruent_modulation
+P,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,incongruent_modulation
+P,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,incongruent_modulation
+Q,A, 2024-07-15T23:09:36.125Z, I love sports.,incongruent_modulation
+Q,B, 2024-07-15T23:10:36.125Z, I love sports.,incongruent_modulation
+Q,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,incongruent_modulation
+Q,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,incongruent_modulation
+Q,A, 2024-07-15T23:13:36.125Z, Sports is my passion.,incongruent_modulation
+Q,B, 2024-07-15T23:14:36.125Z, Do you enjoy Mexican food?,incongruent_modulation
+Q,A, 2024-07-15T23:15:36.125Z, .I think running is my favorite exercise.,incongruent_modulation
+Q,B, 2024-07-15T23:16:36.125Z, My favorite food is quesadillas,incongruent_modulation
+Q,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,incongruent_modulation
+Q,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,incongruent_modulation
+Q,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,incongruent_modulation
+Q,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,incongruent_modulation
+R,A, 2024-07-15T23:09:36.125Z, I love sports.,incongruent_modulation
+R,B, 2024-07-15T23:10:36.125Z, I love sports.,incongruent_modulation
+R,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,incongruent_modulation
+R,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,incongruent_modulation
+R,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,incongruent_modulation
+R,B, 2024-07-15T23:14:36.125Z, Do you exercise a lot!,incongruent_modulation
+R,A, 2024-07-15T23:15:36.125Z, Sports and running are great options.,incongruent_modulation
+R,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,incongruent_modulation
+R,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,incongruent_modulation
+R,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,incongruent_modulation
+R,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,incongruent_modulation
+R,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,incongruent_modulation
+S,A, 2024-07-15T23:09:36.125Z, I love sports.,incongruent_modulation
+S,B, 2024-07-15T23:10:36.125Z, I love sports.,incongruent_modulation
+S,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,incongruent_modulation
+S,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,incongruent_modulation
+S,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,incongruent_modulation
+S,B, 2024-07-15T23:14:36.125Z, Do you exercise a lot!,incongruent_modulation
+S,A, 2024-07-15T23:15:36.125Z, Sports and running are great options.,incongruent_modulation
+S,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,incongruent_modulation
+S,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,incongruent_modulation
+S,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,incongruent_modulation
+S,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,incongruent_modulation
+S,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,incongruent_modulation
+T,A, 2024-07-15T23:09:36.125Z, I love eating.,incongruent_modulation
+T,B, 2024-07-15T23:10:36.125Z, I love eating.,incongruent_modulation
+T,A, 2024-07-15T23:11:36.125Z, I love anything that's serving Italian food.,incongruent_modulation
+T,B, 2024-07-15T23:12:36.125Z, I love anything that's serving Italian food.,incongruent_modulation
+T,A, 2024-07-15T23:13:36.125Z, Do you exercise a lot!,incongruent_modulation
+T,B, 2024-07-15T23:14:36.125Z, Do you exercise a lot!,incongruent_modulation
+T,A, 2024-07-15T23:15:36.125Z, Sports and running are great options.,incongruent_modulation
+T,B, 2024-07-15T23:16:36.125Z, Sports and running are great options.,incongruent_modulation
+T,A, 2024-07-15T23:19:36.125Z, I want to eat something.,incongruent_modulation
+T,B, 2024-07-15T23:20:36.125Z, I want to eat something.,incongruent_modulation
+T,A, 2024-07-15T23:21:36.125Z, Let's go get food.,incongruent_modulation
+T,B, 2024-07-15T23:22:36.125Z, Let's go get food.,incongruent_modulation
+U,A, 2024-07-15T23:09:36.125Z, I love sports.,incongruent_modulation
+U,B, 2024-07-15T23:10:36.125Z, I love sports.,incongruent_modulation
+U,A, 2024-07-15T23:11:36.125Z, I love anything that has to do with basketball.,incongruent_modulation
+U,B, 2024-07-15T23:12:36.125Z, I love anything that has to do with baseball.,incongruent_modulation
+U,A, 2024-07-15T23:13:36.125Z, Do you enjoy Mexican food?,incongruent_modulation
+U,B, 2024-07-15T23:14:36.125Z, Sports is my passion.,incongruent_modulation
+U,A, 2024-07-15T23:15:36.125Z, My favorite food is quesadillas.,incongruent_modulation
+U,B, 2024-07-15T23:16:36.125Z, I think running is my favorite exercise.,incongruent_modulation
+U,A, 2024-07-15T23:19:36.125Z, I want to go on a run.,incongruent_modulation
+U,B, 2024-07-15T23:20:36.125Z, I want to play some sports.,incongruent_modulation
+U,A, 2024-07-15T23:21:36.125Z, Let's go to the basketball courts.,incongruent_modulation
+U,B, 2024-07-15T23:22:36.125Z, Let's go to the soccer fields.,incongruent_modulation
