@@ -18,6 +18,15 @@ from nltk.corpus import stopwords
 from nltk import tokenize
 
 def sentence_split(doc):
+    """
+    Splits a spaCy Doc object into a list of sentences, each with simple preprocessing.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be split into sentences.
+
+    Returns:
+        list: A list of preprocessed sentences from the input Doc object.
+    """
 
     sentences = [str(sent) for sent in doc.sents]
     sentences = [' ' + prep_simple(str(s)) + ' ' for s in sentences]
@@ -26,6 +35,15 @@ def sentence_split(doc):
 
 
 def sentence_pad(doc):
+    """
+    Pads the sentences of a spaCy Doc object by concatenating them with simple preprocessing.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be padded.
+
+    Returns:
+        str: A single string with all sentences concatenated and preprocessed.
+    """
 
     sentences = sentence_split(doc)
 
@@ -34,14 +52,14 @@ def sentence_pad(doc):
 
 def count_matches(keywords, doc):
     """
-    For a given piece of text, search for the number if keywords from a prespecified list
+    Counts the occurrences of prespecified keywords in a text.
 
-    Inputs:
-            Prespecified list (keywords)
-            text
+    Args:
+        keywords (dict): A dictionary where keys are feature names and values are lists of phrases to search for.
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
 
-    Outputs:
-            Counts of keyword matches
+    Returns:
+        pd.DataFrame: A DataFrame with the counts of keyword matches for each feature.
     """
 
     text = sentence_pad(doc)
@@ -75,14 +93,13 @@ def count_matches(keywords, doc):
 
 def get_dep_pairs(doc):
     """
-    Uses spaCy to find list of dependency pairs from text.
-    Performs negation handling where by any dependency pairs related to a negated term is removed
+    Extracts dependency pairs from a spaCy Doc object and handles negations.
 
-    Input:
-            Text
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
 
-    Outputs:
-            Dependency pairs from text that do not have ROOT as the head token or is a negated term
+    Returns:
+        tuple: A tuple containing a list of dependency pairs and a list of negations.
     """
 
     dep_pairs = [[token.dep_, token.head.text, token.head.i, token.text, token.i] for token in doc]
@@ -108,22 +125,27 @@ def get_dep_pairs(doc):
 
 def get_dep_pairs_noneg(doc):
     """
-    No negation is done as we are only searching 'hits'
+    Extracts dependency pairs from a spaCy Doc object without handling negations.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
+
+    Returns:
+        list: A list of dependency pairs from the input text.
     """
     return [[token.dep_, token.head.text, token.text] for token in doc]
 
 
 def count_spacy_matches(keywords, dep_pairs):
     """
-    When searching for key words are not sufficient, we may search for dependency pairs.
-    Finds any-prespecified dependency pairs from text string and outputs the counts
+    Counts occurrences of prespecified dependency pairs in a list of dependency pairs.
 
-    Inputs:
-            Dependency pairs from text
-            Predefined tokens for search in dependency heads
+    Args:
+        keywords (dict): A dictionary where keys are feature names and values are lists of dependency pairs to search for.
+        dep_pairs (list): A list of dependency pairs extracted from the text.
 
-    Output:
-            Count of dependency pair matches
+    Returns:
+        pd.DataFrame: A DataFrame with the counts of dependency pair matches for each feature.
     """
 
     key_res = []
@@ -155,6 +177,15 @@ def count_spacy_matches(keywords, dep_pairs):
 
 
 def token_count(doc):
+    """
+    Counts the number of tokens (words) in a spaCy Doc object.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
+
+    Returns:
+        int: The number of tokens in the input text.
+    """
 
     # Counts number of words in a text string
     return len([token for token in doc])
@@ -162,9 +193,13 @@ def token_count(doc):
 
 def bare_command(doc):
     """
-    Check the first word of each sentence is a verb AND is contained in list of key words
+    Checks if the first word of each sentence is a verb and not in a list of keywords.
 
-    Output: Count of matches
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
+
+    Returns:
+        int: The count of sentences that start with a verb not in the keyword list.
     """
 
     keywords = set([' be ', ' do ', ' please ', ' have ', ' thank ', ' hang ', ' let '])
@@ -181,7 +216,13 @@ def bare_command(doc):
 
 def Question(doc):
     """
-    Counts number of prespecified question words
+    Counts the number of sentences containing question words and question marks.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
+
+    Returns:
+        tuple: A tuple containing the counts of Yes/No questions and WH-questions.
     """
 
     keywords = set([' who ', ' what ', ' where ', ' when ', ' why ', ' how ', ' which '])
@@ -203,7 +244,14 @@ def Question(doc):
 
 def word_start(keywords, doc):
     """
-    Find first words in text such as conjunctions and affirmations
+    Finds the first words in text that match a list of keywords.
+
+    Args:
+        keywords (dict): A dictionary where keys are feature names and values are lists of first words to search for.
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
+
+    Returns:
+        pd.DataFrame: A DataFrame with the counts of first word matches for each feature.
     """
 
     key_res = []
@@ -225,7 +273,14 @@ def word_start(keywords, doc):
 
 def adverb_limiter(keywords, doc):
     """
-    Search for tokens that are advmod and in the prespecifid list of words
+    Searches for adverb modifiers in the text that match a list of keywords.
+
+    Args:
+        keywords (dict): A dictionary where the key 'Adverb_Limiter' contains a list of adverb modifiers to search for.
+        doc (spacy.tokens.Doc): The spaCy Doc object containing the text to be analyzed.
+
+    Returns:
+        int: The count of adverb modifier matches in the text.
     """
 
     tags = [token.dep_ for token in doc if token.dep_ == 'advmod' and
@@ -236,16 +291,14 @@ def adverb_limiter(keywords, doc):
 
 def feat_counts(text, kw):
     """
-    Main function for getting the features from text input.
-    Calls other functions to load dataset, clean text, counts features,
-    removes negation phrases.
+    Extracts various linguistic features from a text using predefined keywords and dependency pairs.
 
-    Input:
-            Text string
-            Saved data of keywords and dependency pairs from pickle files
+    Args:
+        text (str): The text to be analyzed.
+        kw (dict): A dictionary containing predefined keywords and dependency pairs.
 
-    Output:
-            Feature counts
+    Returns:
+        pd.DataFrame: A DataFrame with counts of various linguistic features.
     """
 
     # remove extraneous backslashes
@@ -293,6 +346,16 @@ def feat_counts(text, kw):
     return scores
 
 def load_to_lists(path, words):
+    """
+    Loads keywords from text files in a specified directory into lists.
+
+    Args:
+        path (str): The directory path containing the text files.
+        words (str): Specifies whether to load 'single' or 'multiple' words per line.
+
+    Returns:
+        tuple: A tuple containing a list of feature names and a list of keywords.
+    """
 
     keywords = []
 
@@ -329,8 +392,14 @@ def load_to_lists(path, words):
 
 def load_to_dict(path, words):
     """
-    Main function for taking raw .txt files and generates a python dictionary
-    Used in conjunction with committ_data function
+    Loads keywords from text files in a specified directory into a dictionary.
+
+    Args:
+        path (str): The directory path containing the text files.
+        words (str): Specifies whether to load 'single' or 'multiple' words per line.
+
+    Returns:
+        dict: A dictionary where keys are filenames and values are lists of keywords.
     """
 
     keywords = {}
@@ -371,6 +440,15 @@ def commit_data(path, path_in, folders, words_in_line):
     """
     Loads data from .txt files, creates one dictionary per folder
     and outputs each folder as a dictionary in a pickle file
+
+    Args:
+        path (str): The base directory path containing the folders with text files.
+        path_in (str): The directory path to save the pickle files.
+        folders (list): A list of folder names containing the text files.
+        words_in_line (list): A list specifying whether each folder contains 'single' or 'multiple' words per line.
+
+    Returns:
+        None
     """
 
     for i in range(len(folders)):
@@ -385,11 +463,12 @@ def load_saved_data(path_in, folders):
     """
     Loads predefined keywords and dependency pairs
 
-    Input:
-            Pickle files of dictionaries saved in directory
+    Args:
+        path_in (str): The directory path containing the pickle files.
+        folders (list): A list of folder names to load the pickle files from.
 
-    Output:
-            Python dictionaries
+    Returns:
+        dict: A dictionary where keys are folder names and values are dictionaries of keywords and dependency pairs.
     """
 
     dicts = {}
@@ -405,6 +484,15 @@ def load_saved_data(path_in, folders):
 
 
 def clean_text(text):
+    """
+    Cleans and normalizes text by replacing certain patterns and characters.
+
+    Args:
+        text (str): The input text to be cleaned.
+
+    Returns:
+        str: The cleaned and normalized text.
+    """
 
     orig = ["let's", "i'm", "won't", "can't", "shan't", "'d",
             "'ve", "'s", "'ll", "'re", "n't", "u.s.a.", "u.s.", "e.g.", "i.e.",
@@ -421,6 +509,15 @@ def clean_text(text):
 
 
 def prep_simple(text):
+    """
+    Preprocesses text by cleaning and removing certain characters.
+
+    Args:
+        text (str): The input text to be preprocessed.
+
+    Returns:
+        str: The preprocessed text.
+    """
 
     # text cleaning
 
@@ -432,6 +529,15 @@ def prep_simple(text):
     return t
 
 def prep_whole(text):
+    """
+    Preprocesses text by cleaning, removing certain characters, and filtering out stopwords.
+
+    Args:
+        text (str): The input text to be preprocessed.
+
+    Returns:
+        str: The preprocessed text with stopwords removed.
+    """
 
     t = text.lower()
     t = clean_text(t)
@@ -447,6 +553,15 @@ def prep_whole(text):
 
 
 def sentenciser(text):
+    """
+    Splits text into sentences using spaCy.
+
+    Args:
+        text (str): The input text to be split into sentences.
+
+    Returns:
+        list: A list of sentences from the input text.
+    """
 
     nlp.enable_pipe("senter")
 
@@ -458,6 +573,15 @@ def sentenciser(text):
 
 
 def punctuation_seperator(text):
+    """
+    Separates text into segments based on punctuation.
+
+    Args:
+        text (str): The input text to be separated by punctuation.
+
+    Returns:
+        list: A list of text segments with punctuation removed.
+    """
 
     PUNCT_RE = regex.compile(r'(\p{Punctuation})')
     split_punct = PUNCT_RE.split(text)
@@ -473,6 +597,15 @@ def punctuation_seperator(text):
 
 
 def conjection_seperator(text):
+    """
+    Separates text into segments based on conjunctions.
+
+    Args:
+        text (str): The input text to be separated by conjunctions.
+
+    Returns:
+        list: A list of text segments separated by conjunctions.
+    """
 
     tags = nltk.pos_tag(nltk.word_tokenize(text))
     first_elements = [e[0] for e in tags]
@@ -489,6 +622,15 @@ def conjection_seperator(text):
 
 
 def phrase_split(text):
+    """
+    Splits text into phrases based on punctuation and conjunctions.
+
+    Args:
+        text (str): The input text to be split into phrases.
+
+    Returns:
+        list: A list of phrases from the input text.
+    """
 
     text = punctuation_seperator(text)
     phrases = []

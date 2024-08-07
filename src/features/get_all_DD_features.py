@@ -7,12 +7,17 @@ from .variance_in_DD import *
 from .within_person_discursive_range import *
 from utils.assign_chunk_nums import *
 
-'''
-This is an "umbrella" feature called at the conversation level which returns four discursive metrics: discursive diversity, variance in discursive diversity, incongruent modulation, and within person discursive range. 
-
-'''
-
 def conv_to_float_arr(df):
+    """
+    Converts message embeddings in pd.DataFrame from string format to float arrays.
+
+    Args:
+        df (pd.DataFrame): pd.DataFrame containing 'message_embedding' column with string-encoded embeddings.
+
+    Returns:
+        pd.DataFrame: pd.DataFrame with 'message_embedding' column containing float arrays.
+    """
+
     if isinstance(df['message_embedding'][0], str):
             df['message_embedding'] = [val[1:-1] for val in df['message_embedding']]
             df['message_embedding'] = [[float(e) for e in embedding.split(',')] for embedding in df['message_embedding']]
@@ -20,6 +25,20 @@ def conv_to_float_arr(df):
     return df
 
 def get_DD_features(chat_data, vect_data, conversation_id_col, speaker_id_col, timestamp_col):
+    """
+    This is an "umbrella" feature called at the conversation level.
+    Returns four discusive metrics: discursive diversity, variance in discursive diversity, incongruent modulation, and within person discursive range. 
+
+    Args:
+        chat_data (pd.DataFrame): pd.DataFrame containing conversation-level chat data.
+        vect_data (pd.DataFrame): pd.DataFrame containing vectorized data.
+        conversation_id_col (str): Column name for conversation identifiers.
+        speaker_id_col (str): Column name for speaker identifiers.
+        timestamp_col (str): Column name for message timestamps.
+
+    Returns:
+        pd.DataFrame:pd.DataFrame containing merged discursive metrics for each conversation.
+    """
     
     chats = chat_data.copy()
 

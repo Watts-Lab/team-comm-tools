@@ -20,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="burstiness module" href="burstiness.html" />
+    <link rel="prev" title="word_mimicry module" href="word_mimicry.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,10 +45,37 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../feature_builder.html">feature_builder module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Features: Technical Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Features: Technical Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#utterance-chat-level-features">Utterance- (Chat) Level Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_features.html">basic_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="certainty.html">certainty module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lexical_features_v2.html">lexical_features_v2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="other_lexical_features.html">other_lexical_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="info_exchange_zscore.html">info_exchange_zscore module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="question_num.html">question_num module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_features.html">politeness_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hedge.html">hedge module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_features.html">temporal_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readability.html">readability module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="textblob_sentiment_analysis.html">textblob_sentiment_analysis module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="named_entity_recognition_features.html">named_entity_recognition_features module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_v2.html">politeness_v2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="politeness_v2_helper.html">politeness_v2_helper module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reddit_tags.html">reddit_tags module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="word_mimicry.html">word_mimicry module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">fflow module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#features.fflow.get_forward_flow"><code class="docutils literal notranslate"><span class="pre">get_forward_flow()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#conversation-level-features">Conversation-Level Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#speaker-user-level-features">Speaker- (User) Level Features</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../features_conceptual/index.html">Features: Conceptual Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utils/index.html">Utilities</a></li>
@@ -66,6 +95,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Features: Technical Documentation</a></li>
       <li class="breadcrumb-item active">fflow module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/features/fflow.rst.txt" rel="nofollow"> View page source</a>
@@ -81,14 +111,34 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="features.fflow.get_forward_flow">
 <span class="sig-prename descclassname"><span class="pre">features.fflow.</span></span><span class="sig-name descname"><span class="pre">get_forward_flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vect_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conversation_id_col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#features.fflow.get_forward_flow" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Measures the extent to which each chat in the conversation ‘builds on’ the previous chats in the conversation.
+This is a chat level feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_data</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing chat data with ‘conversation_num’ and ‘message_embedding’ columns.</p></li>
+<li><p><strong>vect_data</strong> (<em>pd.DataFrame</em>) – pd.DataFrame containing vectorized data.</p></li>
+<li><p><strong>conversation_id_col</strong> (<em>str</em>) – The name of the column representing conversation IDs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of cosine similarities representing forward flow for each chat in the conversation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List</p>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="word_mimicry.html" class="btn btn-neutral float-left" title="word_mimicry module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="burstiness.html" class="btn btn-neutral float-right" title="burstiness module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

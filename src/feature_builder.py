@@ -60,8 +60,7 @@ class FeatureBuilder:
     :param timestamp_col: A string representing the column name that should be selected as the message. Defaults to "timestamp".
     :type timestamp_col: str, optional
 
-    :param grouping_keys: A list of multiple identifiers that collectively identify a conversation. If non-empty, we will group by all of the keys in the list and use the
-    grouped key as the unique "conversational identifier."
+    :param grouping_keys: A list of multiple identifiers that collectively identify a conversation. If non-empty, we will group by all of the keys in the list and use the grouped key as the unique "conversational identifier."
         Defaults to an empty list.
     :type grouping_keys: list, optional
     
@@ -75,11 +74,14 @@ class FeatureBuilder:
     :param within_task: If true, groups cumulatively in such a way that we only look at prior chats that are of the same "task" (Mid-level identifier). Defaults to False.
     :type within_task: bool, optional
     
-    :param ner_training_df: This is a pandas dataframe of training data for named entity recognition feature
+    :param ner_training_df: This is a pandas dataframe of training data for named entity recognition feature. Defaults to None, and will not generate named entity featuers if it does not exist.
     :type ner_training_df: pd.DataFrame
     
-    :param ner_cutoff: This is the cutoff value for the confidence of prediction for each named entity
+    :param ner_cutoff: This is the cutoff value for the confidence of prediction for each named entity. Defaults to 0.9.
     :type ner_cutoff: int
+
+    :param regenerate_vectors: If true, will regenerate vector data even if it already exists. Defaults to False.
+    :type regenerate_vectors: bool, optional
 
     :return: The FeatureBuilder doesn't return anything; instead, it writes the generated features to files in the specified paths. It will also print out its progress, so you should see "All Done!" in the terminal, which will indicate that the features have been generated.
     :rtype: None
@@ -103,7 +105,8 @@ class FeatureBuilder:
             cumulative_grouping = False, 
             within_task = False,
             ner_training_df: pd.DataFrame = None,
-            ner_cutoff: int = 0.9
+            ner_cutoff: int = 0.9,
+            regenerate_vectors: bool = False
         ) -> None:
 
         #  Defining input and output paths.
@@ -211,6 +214,7 @@ class FeatureBuilder:
         self.cumulative_grouping = cumulative_grouping # for grouping the chat data
         self.within_task = within_task
         self.ner_cutoff = ner_cutoff
+        self.regenerate_vectors = regenerate_vectors
 
         # check grouping rules
         if self.conversation_id_col not in self.chat_data.columns and len(self.grouping_keys)==0:
@@ -329,7 +333,7 @@ class FeatureBuilder:
             if(not need_sentiment and feature_dict[feature]["bert_sentiment_data"]):
                 need_sentiment = True
 
-        check_embeddings(self.chat_data, self.vect_path, self.bert_path, need_sentence, need_sentiment, self.message_col)
+        check_embeddings(self.chat_data, self.vect_path, self.bert_path, need_sentence, need_sentiment, self.regenerate_vectors, self.message_col)
 
         if(need_sentence):
             self.vect_data = pd.read_csv(self.vect_path, encoding='mac_roman')

@@ -3,24 +3,33 @@ import numpy as np
 import itertools
 from sklearn.metrics.pairwise import cosine_similarity
 
-'''
-This is a conversation level feature, which computes degree of divergence amongst the meanings conveyed by speakers in a given conversation. 
-
-'''
-
-# From given code: https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2021.4274
 def get_unique_pairwise_combos(lst):
-    '''Computes all unique pairwise combinations of the elements in a list.
-    input: array or list
-    output: list of unique pairwise combinations of elements of the input list'''
+    """
+    Computes all unique pairwise combinations of the elements in a list.
+
+    Code sourced from: https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2021.4274
+
+    Args:
+        lst (list): Array or list of elements.
+
+    Returns:
+        list: List of unique pairwise combinations of elements of the input list.
+    """
+
     return list(itertools.combinations(lst, 2))
 
 
 def get_cosine_similarity(vecs):
-    '''computes cosine similarity between a list of vectors
-    input: list of vectors (vecs) (this has to be a pair!)
-    output: cosine similarity
-    '''
+    """
+    Computes cosine similarity between a list of vectors.
+
+    Args:
+        vecs (list): List of vectors (this must be a pair).
+
+    Returns:
+        float: Cosine similarity value.
+    """
+
     if len(vecs) > 1:
         cos_sim_matrix = cosine_similarity(vecs)
         return cos_sim_matrix[np.triu_indices(len(cos_sim_matrix), k = 1)]
@@ -29,7 +38,17 @@ def get_cosine_similarity(vecs):
 
 
 def get_DD(chat_data, conversation_id_col, speaker_id_col):
-    
+    """
+    Computes degree of divergence amongst the meanings conveyed by speakers in a given conversation. 
+    This is a conversation level feature.
+
+    Args:
+        chat_data (pd.DataFrame): DataFrame containing chat data with 'conversation_num', 'speaker_nickname', and 'message_embedding' columns.
+
+    Returns:
+        pd.DataFrame: pd.DataFrame with 'conversation_num' and 'discursive_diversity' columns representing discursive diversity per conversation.
+    """
+
     # Get mean embedding per speaker per conversation
     user_centroid_per_conv = pd.DataFrame(chat_data.groupby([conversation_id_col,speaker_id_col])['message_embedding'].apply(np.mean)).reset_index().rename(columns={'message_embedding':'mean_embedding'})
 
