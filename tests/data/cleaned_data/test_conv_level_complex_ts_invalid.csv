@@ -1,0 +1,272 @@
+conversation_num,speaker_nickname,timestamp,message,feature
+A, John,foobar, I'm curious how do you all feel about using flashcards?,team_burstiness
+A, Mary,test, I think flashcards are a great way to memorize information.,team_burstiness
+A, John,foobar, I agree I've found them to be really helpful.,team_burstiness
+A, Jessica,test, I'm not a big fan of flashcards I find them to be boring and ineffective.,team_burstiness
+A, Mary,foobar, I think it really depends on the individual and how they learn best.,team_burstiness
+A, John,test, That's true I know some people who prefer to use other methods like spaced repetition.,team_burstiness
+A, Jessica,foobar, I've heard of spaced repetition but I've never tried it.,team_burstiness
+A, John,test, It's a great way to improve your long-term memory.,team_burstiness
+A, Mary,foobar, I'll have to give it a try.,team_burstiness
+A, Jessica,test, Do you have any tips for studying effectively?,team_burstiness
+A, John,foobar, I find that studying in short bursts is more effective than trying to cram everything in at once.,team_burstiness
+A, Mary,test, I agree it's also important to take breaks and get enough sleep.,team_burstiness
+A, Jessica,foobar, I'm always struggling to stay motivated any tips?,team_burstiness
+A, John,test, I find it helpful to set realistic goals and break down large tasks into smaller ones.,team_burstiness
+A, Mary,foobar, It's also important to find a study buddy or group to help you stay accountable.,team_burstiness
+A, Jessica,test, Thanks for the advice I'll definitely try it out.,team_burstiness
+B, A,foobar, Hi everyone what are your favorite study habits?,team_burstiness
+B, B,test, I like to study in a quiet place where I can focus.,team_burstiness
+B, C,foobar, I prefer to study with a group of friends so we can help each other.,team_burstiness
+B, D,test, I like to study by myself so I can go at my own pace.,team_burstiness
+B, A,foobar, I think it's important to find a study method that works for you.,team_burstiness
+B, B,test, I agree.,team_burstiness
+B, C,foobar, I also think it's important to take breaks while you're studying.,team_burstiness
+B, D,test, Yes it's important to give your brain a chance to rest.,team_burstiness
+B, A,foobar, I find that it's helpful to set a timer and study for 25 minutes then take a 5 minute break.,team_burstiness
+B, B,test, That's a good idea I'll try that.,team_burstiness
+B, C,foobar, I like to listen to music while I study it helps me to concentrate.,team_burstiness
+B, D,test, I prefer to study in silence so I can focus on the material.,team_burstiness
+B, A,foobar, I find that it's helpful to create a study schedule and stick to it.,team_burstiness
+B, B,test, I agree it's important to be consistent with your studying.,team_burstiness
+B, C,foobar, I also think it's important to reward yourself for your hard work.,team_burstiness
+B, D,test, Yes it's important to stay motivated while you're studying.,team_burstiness
+C, A,foobar, I'm really struggling to stay focused when I study,team_burstiness
+C, B,test, I know what you mean. I have the same problem.,team_burstiness
+C, C,foobar, I've been trying to find a study method that works for me but I haven't had much luck. Do you have any tips?,team_burstiness
+C, B,test, I've found that it helps to break down my study material into smaller chunks.,team_burstiness
+C, C,foobar, That's a good idea. I'll try that.,team_burstiness
+C, A,test, I've also found that it helps to study in a quiet place where I can focus.,team_burstiness
+C, D,foobar, I agree. It's hard to concentrate when there's a lot of noise around.,team_burstiness
+C, A,test, Another thing that I've found helpful is to set a timer for myself when I study.,team_burstiness
+C, B,foobar, That's a good idea. It helps me to stay on task.,team_burstiness
+C, C,test, I'm going to try that too.,team_burstiness
+C, D,foobar, I've also found that it helps to reward myself when I finish a study session.,team_burstiness
+C, A,test, That's a good idea. It gives me something to look forward to.,team_burstiness
+C, B,foobar, I agree. It helps me to stay motivated.,team_burstiness
+C, C,test, I've found that it's also important to take breaks when you're studying.,team_burstiness
+C, D,foobar, I agree. It helps me to stay focused and avoid burnout.,team_burstiness
+C, A,test, I've also found that it helps to study with a friend or classmate.,team_burstiness
+C, B,foobar, That's a good idea. It can help you to stay motivated and on track.,team_burstiness
+D,Adam,test, I just saw the craziest thing on the way to work,discursive_diversity
+D,Brad,foobar, Did you hear about the new restaurant opening up downtown? I've heard nothing but good things,discursive_diversity
+D,Chris,test, Hey team we need to finalize the plans for the client presentation by tomorrow,discursive_diversity
+D,Brad,foobar, I'm so excited to try the new sushi place,discursive_diversity
+D,Chris,test, Please let me know if you have any questions,discursive_diversity
+D,Adam,foobar, It was like something out of a movie,discursive_diversity
+D,Chris,test, We should aim to have a draft ready for review by the end of the day,discursive_diversity
+D,Adam,foobar, I couldn't believe my eyes,discursive_diversity
+D,Brad,test, The reviews say the ambiance is amazing too,discursive_diversity
+D,Adam,foobar, I had to stop and take a picture,discursive_diversity
+E,person a,test,I love my new job.,discursive_diversity
+E,person a,foobar,I think this is the most money I've ever made.,discursive_diversity
+E,person a,test,Working with like-minded people is great.,discursive_diversity
+E,person a,foobar,I'm so happy I found this job.,discursive_diversity
+E,person b,test,Painting is my passion.,discursive_diversity
+E,person b,foobar,I love painting landscapes.,discursive_diversity
+E,person b,test,I'm going to buy new brushes soon.,discursive_diversity
+E,person b,foobar,I'm going to start getting into art more often.,discursive_diversity
+E,person c,test,What should I cook for dinner?,discursive_diversity
+E,person c,foobar,I'm thinking of making spaghetti.,discursive_diversity
+E,person c,test,I'm going to make a salad too.,discursive_diversity
+E,person c,foobar,I'm going to make a cake for dessert.,discursive_diversity
+E,person d,test,I'm going to the gym today.,discursive_diversity
+E,person d,foobar,I'm going to work on my legs.,discursive_diversity
+E,person d,test,I'm going to do some cardio.,discursive_diversity
+E,person d,foobar,I'll finish off with some weight lifting.,discursive_diversity
+F, Amy,test, I'm really excited for the party tomorrow night.,discursive_diversity
+F, Bob,foobar, Me too! I can't wait to see everyone and dance the night away.,discursive_diversity
+F, Carol,test, I'm bringing a new dish to the party. It's a secret family recipe.,discursive_diversity
+F, Dave,foobar, That sounds delicious Carol. I can't wait to try it.,discursive_diversity
+F, Amy,test, I'm sure it will be a hit. You're such a good cook.,discursive_diversity
+F, Bob,foobar, I agree. Carol's cooking is always amazing.,discursive_diversity
+F, Carol,test, Thanks guys. I'm glad you're all excited.,discursive_diversity
+F, Dave,foobar, So what time should we meet at the party?,discursive_diversity
+F, Amy,test, Let's say 8 pm. That way we can all have some time to mingle before the music starts.,discursive_diversity
+F, Bob,foobar, Sounds good to me. I'll see you guys there.,discursive_diversity
+F, Carol,test, Me too. Can't wait!,discursive_diversity
+F, Dave,foobar, I just realized I don't have anything to wear.,discursive_diversity
+F, Amy,test, Don't worry I have a spare dress you can borrow.,discursive_diversity
+F, Bob,foobar, That's so nice of you Amy.,discursive_diversity
+F, Carol,test, I'm sure it will look great on you Dave.,discursive_diversity
+F, Dave,foobar, Thanks everyone. I really appreciate it.,discursive_diversity
+G,A,test, I love eating.,variance_in_DD
+G,B,foobar, What's your favorite place to eat?,variance_in_DD
+G,A,test, I love anything that's serving Italian food.,variance_in_DD
+G,B,foobar, I could go for some pasta and pizza right now.,variance_in_DD
+G,B,test, Anyways what are your vacation plans?,variance_in_DD
+G,A,foobar, I'm going to start cooking more.,variance_in_DD
+G,B,test, Greg and I are flying to Panama tomorrow.,variance_in_DD
+G,A,foobar, I'm thinking of publishing my own recipe book.,variance_in_DD
+G,B,test, We're excited to go on a vacation together.,variance_in_DD
+G,A,foobar, Is this your first trip abroad?,variance_in_DD
+G,B,test, Yes we've never travelled outside the country before.,variance_in_DD
+G,A,foobar, Travelling abroad is a different type of fun.,variance_in_DD
+H,A,test, I love eating.,variance_in_DD
+H,B,foobar, I'm going for a run.,variance_in_DD
+H,A,test, I love anything that's serving Italian food.,variance_in_DD
+H,B,foobar, I'm running my first race in a few days.,variance_in_DD
+H,A,test, Do you exercise a lot!,variance_in_DD
+H,B,foobar, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+H,A,test, How else do you stay fit?,variance_in_DD
+H,B,foobar, Sports and running are great options.,variance_in_DD
+H,A,test, I want to eat something.,variance_in_DD
+H,B,foobar, Exercising is my passion.,variance_in_DD
+H,A,test, Let's go get food.,variance_in_DD
+H,B,foobar, I think I'm going to just run.,variance_in_DD
+I,A,test, I love exercising.,variance_in_DD
+I,B,foobar, I'm going for a run.,variance_in_DD
+I,A,test, I play sports like tennis and baseball too.,variance_in_DD
+I,B,foobar, I'm running my first race in a few days.,variance_in_DD
+I,A,test, Do you exercise a lot!,variance_in_DD
+I,B,foobar, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+I,A,test, How else do you stay fit?,variance_in_DD
+I,B,foobar, Sports and running are great options.,variance_in_DD
+I,A,test, I want to exercise more frequently.,variance_in_DD
+I,B,foobar, You can join me during my runs.,variance_in_DD
+I,A,test, How athletic are you?,variance_in_DD
+I,B,foobar, Exercising is my passion.,variance_in_DD
+J,A,test, I love exercising.,variance_in_DD
+J,B,foobar, I'm going for a run.,variance_in_DD
+J,A,test, I play sports like tennis and baseball too.,variance_in_DD
+J,B,foobar, I'm running my first race in a few days.,variance_in_DD
+J,A,test, Do you exercise a lot!,variance_in_DD
+J,B,foobar, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+J,A,test, How else do you stay fit?,variance_in_DD
+J,B,foobar, Sports and running are great options.,variance_in_DD
+J,A,test, I want to exercise more frequently.,variance_in_DD
+J,B,foobar, You can join me during my runs.,variance_in_DD
+J,A,test, How athletic are you?,variance_in_DD
+J,B,foobar, Exercising is my passion.,variance_in_DD
+K,A,test, I love exercising.,variance_in_DD
+K,B,foobar, I don't see the point in partying.,variance_in_DD
+K,A,test, I play sports like tennis and baseball too.,variance_in_DD
+K,B,foobar, Partying isn't productive at all.,variance_in_DD
+K,A,test, Do you exercise a lot!,variance_in_DD
+K,B,foobar, Dirty basements and uncomfortable music ugh.,variance_in_DD
+K,A,test, How else do you stay fit?,variance_in_DD
+K,B,foobar, I don't enjoy alcohol either,variance_in_DD
+K,A,test, I want to exercise more frequently.,variance_in_DD
+K,B,foobar, Thank god my friends hate partying too.,variance_in_DD
+K,A,test, How athletic are you?,variance_in_DD
+K,B,foobar, I barely even party on my birthday!,variance_in_DD
+L,A,test, I love eating.,variance_in_DD
+L,B,foobar, I'm going for a run.,variance_in_DD
+L,A,test, I love anything that's serving Italian food.,variance_in_DD
+L,B,foobar, I'm running my first race in a few days.,variance_in_DD
+L,A,test, Do you exercise a lot!,variance_in_DD
+L,B,foobar, Yes I've been going to the gym everday for 6 months now.,variance_in_DD
+L,A,test, How else do you stay fit?,variance_in_DD
+L,B,foobar, Sports and running are great options.,variance_in_DD
+L,A,test, I want to eat something.,variance_in_DD
+L,B,foobar, Exercising is my passion.,variance_in_DD
+L,A,test, Let's go get food.,variance_in_DD
+L,B,foobar, I think I'm going to just run.,variance_in_DD
+M,A,test, I love eating.,within_person_disc_range
+M,B,foobar, I love eating.,within_person_disc_range
+M,A,test, I love anything that's serving Italian food.,within_person_disc_range
+M,B,foobar, I love anything that's serving Italian food.,within_person_disc_range
+M,A,test, Do you exercise a lot!,within_person_disc_range
+M,B,foobar, Do you exercise a lot!,within_person_disc_range
+M,A,test, Sports and running are great options.,within_person_disc_range
+M,B,foobar, Sports and running are great options.,within_person_disc_range
+M,A,test, I want to eat something.,within_person_disc_range
+M,B,foobar, I want to eat something.,within_person_disc_range
+M,A,test, Let's go get food.,within_person_disc_range
+M,B,foobar, Let's go get food.,within_person_disc_range
+N,A,test, I love sports.,within_person_disc_range
+N,B,foobar, I love sports.,within_person_disc_range
+N,A,test, I love anything that has to do with basketball.,within_person_disc_range
+N,B,foobar, I love anything that has to do with baseball.,within_person_disc_range
+N,A,test, Do you enjoy Mexican food?,within_person_disc_range
+N,B,foobar, Do you enjoy Mexican food?,within_person_disc_range
+N,A,test, My favorite food is quesadillas.,within_person_disc_range
+N,B,foobar, My favorite food is quesadillas.,within_person_disc_range
+N,A,test, I want to go on a run.,within_person_disc_range
+N,B,foobar, I want to play some sports.,within_person_disc_range
+N,A,test, Let's go to the basketball courts.,within_person_disc_range
+N,B,foobar, Let's go to the soccer fields.,within_person_disc_range
+O,A,test, I love sports.,within_person_disc_range
+O,B,foobar, I love sports.,within_person_disc_range
+O,A,test, I love anything that has to do with basketball.,within_person_disc_range
+O,B,foobar, I love anything that has to do with baseball.,within_person_disc_range
+O,A,test, Do you exercise a lot!,within_person_disc_range
+O,B,foobar, Do you exercise a lot!,within_person_disc_range
+O,A,test, Sports and running are great options.,within_person_disc_range
+O,B,foobar, Sports and running are great options.,within_person_disc_range
+O,A,test, I want to go on a run.,within_person_disc_range
+O,B,foobar, I want to play some sports.,within_person_disc_range
+O,A,test, Let's go to the basketball courts.,within_person_disc_range
+O,B,foobar, Let's go to the soccer fields.,within_person_disc_range
+P,A,test, I love sports.,incongruent_modulation
+P,B,foobar, I love sports.,incongruent_modulation
+P,A,test, I love anything that has to do with basketball.,incongruent_modulation
+P,B,foobar, I love anything that has to do with baseball.,incongruent_modulation
+P,A,test, Do you enjoy Mexican food?,incongruent_modulation
+P,B,foobar, Sports is my passion.,incongruent_modulation
+P,A,test, My favorite food is quesadillas.,incongruent_modulation
+P,B,foobar, I think running is my favorite exercise.,incongruent_modulation
+P,A,test, I want to go on a run.,incongruent_modulation
+P,B,foobar, I want to play some sports.,incongruent_modulation
+P,A,test, Let's go to the basketball courts.,incongruent_modulation
+P,B,foobar, Let's go to the soccer fields.,incongruent_modulation
+Q,A,test, I love sports.,incongruent_modulation
+Q,B,foobar, I love sports.,incongruent_modulation
+Q,A,test, I love anything that has to do with basketball.,incongruent_modulation
+Q,B,foobar, I love anything that has to do with baseball.,incongruent_modulation
+Q,A,test, Sports is my passion.,incongruent_modulation
+Q,B,foobar, Do you enjoy Mexican food?,incongruent_modulation
+Q,A,test, .I think running is my favorite exercise.,incongruent_modulation
+Q,B,foobar, My favorite food is quesadillas,incongruent_modulation
+Q,A,test, I want to go on a run.,incongruent_modulation
+Q,B,foobar, I want to play some sports.,incongruent_modulation
+Q,A,test, Let's go to the basketball courts.,incongruent_modulation
+Q,B,foobar, Let's go to the soccer fields.,incongruent_modulation
+R,A,test, I love sports.,incongruent_modulation
+R,B,foobar, I love sports.,incongruent_modulation
+R,A,test, I love anything that has to do with basketball.,incongruent_modulation
+R,B,foobar, I love anything that has to do with baseball.,incongruent_modulation
+R,A,test, Do you exercise a lot!,incongruent_modulation
+R,B,foobar, Do you exercise a lot!,incongruent_modulation
+R,A,test, Sports and running are great options.,incongruent_modulation
+R,B,foobar, Sports and running are great options.,incongruent_modulation
+R,A,test, I want to go on a run.,incongruent_modulation
+R,B,foobar, I want to play some sports.,incongruent_modulation
+R,A,test, Let's go to the basketball courts.,incongruent_modulation
+R,B,foobar, Let's go to the soccer fields.,incongruent_modulation
+S,A,test, I love sports.,incongruent_modulation
+S,B,foobar, I love sports.,incongruent_modulation
+S,A,test, I love anything that has to do with basketball.,incongruent_modulation
+S,B,foobar, I love anything that has to do with baseball.,incongruent_modulation
+S,A,test, Do you exercise a lot!,incongruent_modulation
+S,B,foobar, Do you exercise a lot!,incongruent_modulation
+S,A,test, Sports and running are great options.,incongruent_modulation
+S,B,foobar, Sports and running are great options.,incongruent_modulation
+S,A,test, I want to go on a run.,incongruent_modulation
+S,B,foobar, I want to play some sports.,incongruent_modulation
+S,A,test, Let's go to the basketball courts.,incongruent_modulation
+S,B,foobar, Let's go to the soccer fields.,incongruent_modulation
+T,A,test, I love eating.,incongruent_modulation
+T,B,foobar, I love eating.,incongruent_modulation
+T,A,test, I love anything that's serving Italian food.,incongruent_modulation
+T,B,foobar, I love anything that's serving Italian food.,incongruent_modulation
+T,A,test, Do you exercise a lot!,incongruent_modulation
+T,B,foobar, Do you exercise a lot!,incongruent_modulation
+T,A,test, Sports and running are great options.,incongruent_modulation
+T,B,foobar, Sports and running are great options.,incongruent_modulation
+T,A,test, I want to eat something.,incongruent_modulation
+T,B,foobar, I want to eat something.,incongruent_modulation
+T,A,test, Let's go get food.,incongruent_modulation
+T,B,foobar, Let's go get food.,incongruent_modulation
+U,A,, I love sports.,incongruent_modulation
+U,B,, I love sports.,incongruent_modulation
+U,A,, I love anything that has to do with basketball.,incongruent_modulation
+U,B,, I love anything that has to do with baseball.,incongruent_modulation
+U,A,, Do you enjoy Mexican food?,incongruent_modulation
+U,B,, Sports is my passion.,incongruent_modulation
+U,A,, My favorite food is quesadillas.,incongruent_modulation
+U,B,, I think running is my favorite exercise.,incongruent_modulation
+U,A,, I want to go on a run.,incongruent_modulation
+U,B,, I want to play some sports.,incongruent_modulation
+U,A,, Let's go to the basketball courts.,incongruent_modulation
+U,B,, Let's go to the soccer fields.,incongruent_modulation
