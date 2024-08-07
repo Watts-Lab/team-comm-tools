@@ -42,7 +42,12 @@ tests/data/vector_data/
 tests/test.log
 tests/output/*
 tests/vector_data/*
-src/team_comm_tools/features/lexicons/certainty.txt
+src/utils/__pycache__/
+.idea/
+*.py[cod]
+src/data/vectors/sentence
+src/data/vectors/sentiment
+src/features/lexicons/certainty.txt
 examples/vector_data/*
 examples/output/*
 node_modules/
