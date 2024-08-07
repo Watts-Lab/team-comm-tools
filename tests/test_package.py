@@ -15,12 +15,7 @@ case3c_chatdf = pd.read_csv("./output/chat/tiny_multi_task_case3c_level_chat.csv
 impropercase_chatdf = pd.read_csv("./output/chat/tiny_multi_task_improper_level_chat.csv")
 
 # Import the Feature Dictionary
-import sys
-import os
-
-# Add the parent directory to the sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/')))
-from feature_dict import feature_dict
+from team_comm_tools.feature_dict import feature_dict
 
 def test_path_robustness():
     # case 1 was specified without the necessary 'output/', 'chat/', and '.csv' in its path. Ensure it works!
