@@ -52,7 +52,7 @@ def get_DD_features(chat_data, vect_data, conversation_id_col, speaker_id_col, t
     num_chunks = 3 # TODO - this is where we will more intelligently assign chunks; currently chose 3 based on EDA
 
     # Split into chunks 
-    chats_chunked = assign_chunk_nums(chats, num_chunks, conversation_id_col, timestamp_col)
+    chats_chunked = assign_chunk_nums(chats, num_chunks, conversation_id_col)
 
     # Get variance in discursive diversity 
     var_disc_div = get_variance_in_DD(chats_chunked, conversation_id_col, speaker_id_col)

@@ -37,7 +37,7 @@ def get_forward_flow(chat_data, vect_data, conversation_id_col):
             cos_sim_matrix = cosine_similarity([row['message_embedding'], avg_embedding])
             cosine_sim = cos_sim_matrix[0, 1]
 
-            forward_flow.append(cosine_sim)
+            forward_flow.append(1 - cosine_sim)
 
             # add to cache, increment count
             embedding_running_sum += row["message_embedding"]
