@@ -1,0 +1,50 @@
+conversation_num,speaker_nickname,timestamp,message,feature
+V, John,20, I'm curious how do you all feel about using flashcards?,team_burstiness
+V, Mary,40, I think flashcards are a great way to memorize information.,team_burstiness
+V, John,60, I agree I've found them to be really helpful.,team_burstiness
+V, Jessica,80, I'm not a big fan of flashcards I find them to be boring and ineffective.,team_burstiness
+V, Mary,100, I think it really depends on the individual and how they learn best.,team_burstiness
+V, John,120, That's true I know some people who prefer to use other methods like spaced repetition.,team_burstiness
+V, Jessica,140, I've heard of spaced repetition but I've never tried it.,team_burstiness
+V, John,160, It's a great way to improve your long-term memory.,team_burstiness
+V, Mary,180, I'll have to give it a try.,team_burstiness
+V, Jessica,200, Do you have any tips for studying effectively?,team_burstiness
+V, John,220, I find that studying in short bursts is more effective than trying to cram everything in at once.,team_burstiness
+V, Mary,240, I agree it's also important to take breaks and get enough sleep.,team_burstiness
+V, Jessica,260, I'm always struggling to stay motivated any tips?,team_burstiness
+V, John,280, I find it helpful to set realistic goals and break down large tasks into smaller ones.,team_burstiness
+V, Mary,300, It's also important to find a study buddy or group to help you stay accountable.,team_burstiness
+V, Jessica,320, Thanks for the advice I'll definitely try it out.,team_burstiness
+W, A,10, Hi everyone what are your favorite study habits?,team_burstiness
+W, B,20, I like to study in a quiet place where I can focus.,team_burstiness
+W, C,30, I prefer to study with a group of friends so we can help each other.,team_burstiness
+W, D,40, I like to study by myself so I can go at my own pace.,team_burstiness
+W, A,50, I think it's important to find a study method that works for you.,team_burstiness
+W, B,60, I agree.,team_burstiness
+W, C,70, I also think it's important to take breaks while you're studying.,team_burstiness
+W, D,80, Yes it's important to give your brain a chance to rest.,team_burstiness
+W, A,90, I find that it's helpful to set a timer and study for 25 minutes then take a 5 minute break.,team_burstiness
+W, B,100, That's a good idea I'll try that.,team_burstiness
+W, C,110, I like to listen to music while I study it helps me to concentrate.,team_burstiness
+W, D,120, I prefer to study in silence so I can focus on the material.,team_burstiness
+W, A,130, I find that it's helpful to create a study schedule and stick to it.,team_burstiness
+W, B,140, I agree it's important to be consistent with your studying.,team_burstiness
+W, C,150, I also think it's important to reward yourself for your hard work.,team_burstiness
+W, D,160, Yes it's important to stay motivated while you're studying.,team_burstiness
+X, A,10, I'm really struggling to stay focused when I study,team_burstiness
+X, B,20, I know what you mean. I have the same problem.,team_burstiness
+X, C,30, I've been trying to find a study method that works for me but I haven't had much luck. Do you have any tips?,team_burstiness
+X, B,100, I've found that it helps to break down my study material into smaller chunks.,team_burstiness
+X, C,110, That's a good idea. I'll try that.,team_burstiness
+X, A,120, I've also found that it helps to study in a quiet place where I can focus.,team_burstiness
+X, D,130, I agree. It's hard to concentrate when there's a lot of noise around.,team_burstiness
+X, A,200, Another thing that I've found helpful is to set a timer for myself when I study.,team_burstiness
+X, B,210, That's a good idea. It helps me to stay on task.,team_burstiness
+X, C,220, I'm going to try that too.,team_burstiness
+X, D,300, I've also found that it helps to reward myself when I finish a study session.,team_burstiness
+X, A,310, That's a good idea. It gives me something to look forward to.,team_burstiness
+X, B,320, I agree. It helps me to stay motivated.,team_burstiness
+X, C,400, I've found that it's also important to take breaks when you're studying.,team_burstiness
+X, D,410, I agree. It helps me to stay focused and avoid burnout.,team_burstiness
+X, A,420, I've also found that it helps to study with a friend or classmate.,team_burstiness
+X, B,430, That's a good idea. It can help you to stay motivated and on track.,team_burstiness

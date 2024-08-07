@@ -9,6 +9,7 @@ test_chat_df =  pd.read_csv("./output/chat/test_chat_level_chat.csv")
 test_conv_df =  pd.read_csv("./output/conv/test_conv_level_conv.csv")
 test_chat_complex_df =  pd.read_csv("./output/chat/test_chat_level_chat_complex.csv")
 test_conv_complex_df =  pd.read_csv("./output/conv/test_conv_level_conv_complex.csv")
+test_conv_complex_df_ts =  pd.read_csv("./output/conv/test_conv_level_conv_complex_ts.csv")
 test_forward_flow_df = pd.read_csv("./output/chat/test_forward_flow_chat.csv")
 
 # Import the Feature Dictionary
@@ -208,7 +209,7 @@ def test_chat_complex(batch):
 
         raise  # Re-raise the AssertionError to mark the test as failed
 
-batches = get_batches(test_conv_complex_df, batch_size=3) + get_conversation_batches(test_forward_flow_df, batch_size=3)
+batches = get_batches(test_conv_complex_df, batch_size=3) + get_conversation_batches(test_forward_flow_df, batch_size=3) + get_batches(test_conv_complex_df_ts, batch_size=3)
 
 @pytest.mark.parametrize("batch", batches)
 def test_conv_complex(batch):
