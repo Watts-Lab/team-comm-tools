@@ -2,6 +2,7 @@
 from utils.summarize_features import get_user_sum_dataframe, get_user_average_dataframe
 from features.get_user_network import *
 from features.user_centroids import *
+import warnings
 
 
 class UserLevelFeaturesCalculator:
@@ -23,8 +24,22 @@ class UserLevelFeaturesCalculator:
     :type speaker_id_col: str
     :param input_columns: List of columns in the chat-level features dataframe that should not be summarized
     :type input_columns: list
+    :param user_aggregation: If true, will aggregate features at the user level
+    :type convo_aggregation: bool
+    :param user_methods: Specifies which functions users want to aggregate with (e.g., mean, std...) at the user level
+    :type convo_methods: list
+    :param user_columns: Specifies which columns (at the chat level) users want aggregated for the user level
+    :type convo_columns: list
     """
-    def __init__(self, chat_data: pd.DataFrame, user_data: pd.DataFrame, vect_data: pd.DataFrame, conversation_id_col: str, speaker_id_col: str, input_columns:list) -> None:
+    def __init__(self, chat_data: pd.DataFrame, 
+                        user_data: pd.DataFrame, 
+                        vect_data: pd.DataFrame, 
+                        conversation_id_col: str, 
+                        speaker_id_col: str, 
+                        input_columns:list,
+                        user_aggregation: bool,
+                        user_methods: list,
+                        user_columns: list) -> None:
 
         # Initializing variables
         self.chat_data = chat_data
@@ -35,8 +50,20 @@ class UserLevelFeaturesCalculator:
         # Denotes the columns that can be summarized from the chat level, onto the conversation level.
         self.input_columns = list(input_columns)
         self.input_columns.append('conversation_num')
-        self.columns_to_summarize = [column for column in self.chat_data.columns \
-                                     if (column not in self.input_columns) and pd.api.types.is_numeric_dtype(self.chat_data[column])]
+        self.user_aggregation = user_aggregation
+        self.user_methods = user_methods
+        
+        if user_columns is None:
+            self.columns_to_summarize = [column for column in self.chat_data.columns \
+                                        if (column not in self.input_columns) and pd.api.types.is_numeric_dtype(self.chat_data[column])]
+        else:
+            if user_aggregation == True and len(user_columns) == 0:
+                warnings.warn(
+                    "Warning: user_aggregation is True but no user_columns specified. Defaulting user_aggregation to False."
+                )
+                self.user_aggregation = False
+            else:
+                self.columns_to_summarize = user_columns
 
     def calculate_user_level_features(self) -> pd.DataFrame:
         """
@@ -93,6 +120,7 @@ class UserLevelFeaturesCalculator:
         :return: None
         :rtype: None
         """
+
         # For each summarizable feature
         for column in self.columns_to_summarize:
             # Sum of feature across the Conversation
@@ -112,15 +140,19 @@ class UserLevelFeaturesCalculator:
         :return: None
         :rtype: None
         """
-        # For each summarizable feature
-        for column in self.columns_to_summarize:
-            # Average/Mean of feature across the Conversation
-            self.user_data = pd.merge(
-                left=self.user_data,
-                right=get_user_average_dataframe(self.chat_data, column, self.conversation_id_col, self.speaker_id_col),
-                on=[self.conversation_id_col, self.speaker_id_col],
-                how="inner"
-            )
+        
+        if self.user_aggregation == True:
+            # For each summarizable feature
+            for column in self.columns_to_summarize:
+
+                if 'mean' in self.user_methods:
+                    # Average/Mean of feature across the Conversation
+                    self.user_data = pd.merge(
+                        left=self.user_data,
+                        right=get_user_average_dataframe(self.chat_data, column, self.conversation_id_col, self.speaker_id_col),
+                        on=[self.conversation_id_col, self.speaker_id_col],
+                        how="inner"
+                    )
 
     def get_centroids(self) -> None:
         """
