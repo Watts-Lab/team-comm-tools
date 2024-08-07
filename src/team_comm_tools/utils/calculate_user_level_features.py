@@ -71,6 +71,8 @@ class UserLevelFeaturesCalculator:
 
                 self.columns_to_summarize = user_columns_in_data
 
+        self.summable_columns = ["num_words", "num_chars", "num_messages"]
+
     def calculate_user_level_features(self) -> pd.DataFrame:
         """
         Main driver function for creating user-level features.
@@ -128,7 +130,7 @@ class UserLevelFeaturesCalculator:
         """
 
         # For each summarizable feature
-        for column in self.columns_to_summarize: # TODO --- this needs to be self-summable columns
+        for column in self.summable_columns: # TODO --- Gini depends on the summation happening; something is happening here where it's causing Gini to break.
             
             # Sum of feature across the Conversation
             self.user_data = pd.merge(
