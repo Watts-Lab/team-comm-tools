@@ -44,18 +44,18 @@ if __name__ == "__main__":
 	"""
 
 	# Tiny Juries
-	tiny_juries_feature_builder = FeatureBuilder(
-		input_df = tiny_juries_df,
-		grouping_keys = ["batch_num", "round_num"],
-		vector_directory = "./vector_data/",
-		output_file_path_chat_level = "./jury_TINY_output_chat_level.csv",
-		output_file_path_user_level = "./jury_TINY_output_user_level.csv",
-		output_file_path_conv_level = "./jury_TINY_output_conversation_level.csv",
-		turns = False,
-	)
-	tiny_juries_feature_builder.featurize(col="message")
+	# tiny_juries_feature_builder = FeatureBuilder(
+	# 	input_df = tiny_juries_df,
+	# 	grouping_keys = ["batch_num", "round_num"],
+	# 	vector_directory = "./vector_data/",
+	# 	output_file_path_chat_level = "./jury_TINY_output_chat_level.csv",
+	# 	output_file_path_user_level = "./jury_TINY_output_user_level.csv",
+	# 	output_file_path_conv_level = "./jury_TINY_output_conversation_level.csv",
+	# 	turns = False,
+	# )
+	# tiny_juries_feature_builder.featurize(col="message")
 
-	# Tiny multi-task
+	# # Tiny multi-task
 	tiny_multi_task_feature_builder = FeatureBuilder(
 		input_df = tiny_multi_task_df,
 		conversation_id_col = "stageId",
@@ -63,7 +63,11 @@ if __name__ == "__main__":
 		output_file_path_chat_level = "./multi_task_TINY_output_chat_level_stageId_cumulative.csv",
 		output_file_path_user_level = "./multi_task_TINY_output_user_level_stageId_cumulative.csv",
 		output_file_path_conv_level = "./multi_task_TINY_output_conversation_level_stageId_cumulative.csv",
-		turns = False
+		turns = False,
+		convo_aggregation = True,
+		convo_methods = ['mean'],
+		convo_columns = ['positive_bert'],
+		user_aggregation = True
 	)
 	tiny_multi_task_feature_builder.featurize(col="message")
 

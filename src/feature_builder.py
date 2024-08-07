@@ -60,7 +60,8 @@ class FeatureBuilder:
     :param timestamp_col: A string representing the column name that should be selected as the message. Defaults to "timestamp".
     :type timestamp_col: str, optional
 
-    :param grouping_keys: A list of multiple identifiers that collectively identify a conversation. If non-empty, we will group by all of the keys in the list and use the grouped key as the unique "conversational identifier."
+    :param grouping_keys: A list of multiple identifiers that collectively identify a conversation. If non-empty, we will group by all of the keys in the list and use the
+    grouped key as the unique "conversational identifier."
         Defaults to an empty list.
     :type grouping_keys: list, optional
     
@@ -74,14 +75,32 @@ class FeatureBuilder:
     :param within_task: If true, groups cumulatively in such a way that we only look at prior chats that are of the same "task" (Mid-level identifier). Defaults to False.
     :type within_task: bool, optional
     
-    :param ner_training_df: This is a pandas dataframe of training data for named entity recognition feature. Defaults to None, and will not generate named entity featuers if it does not exist.
+    :param ner_training_df: This is a pandas dataframe of training data for named entity recognition feature
     :type ner_training_df: pd.DataFrame
     
-    :param ner_cutoff: This is the cutoff value for the confidence of prediction for each named entity. Defaults to 0.9.
+    :param ner_cutoff: This is the cutoff value for the confidence of prediction for each named entity
     :type ner_cutoff: int
 
-    :param regenerate_vectors: If true, will regenerate vector data even if it already exists. Defaults to False.
+    :param regenerate_vectors: If true, will regenerate vector data even if it already exists
     :type regenerate_vectors: bool, optional
+
+    :param convo_aggregation: If true, will aggregate features at the conversational level
+    :type convo_aggregation: bool, optional
+
+    :param convo_methods: Specifies which functions users want to aggregate with (e.g., mean, std...) at the conversational level
+    :type convo_methods: list, optional
+
+    :param convo_columns: Specifies which columns (at the chat level) users want aggregated for the conversational level
+    :type convo_columns: list, optional
+
+    :param user_aggregation: If true, will aggregate features at the user level
+    :type convo_aggregation: bool, optional
+
+    :param user_methods: Specifies which functions users want to aggregate with (e.g., mean, std...) at the user level
+    :type convo_methods: list, optional
+
+    :param user_columns: Specifies which columns (at the chat level) users want aggregated for the user level
+    :type convo_columns: list, optional
 
     :return: The FeatureBuilder doesn't return anything; instead, it writes the generated features to files in the specified paths. It will also print out its progress, so you should see "All Done!" in the terminal, which will indicate that the features have been generated.
     :rtype: None
@@ -106,7 +125,13 @@ class FeatureBuilder:
             within_task = False,
             ner_training_df: pd.DataFrame = None,
             ner_cutoff: int = 0.9,
-            regenerate_vectors: bool = False
+            regenerate_vectors: bool = False,
+            convo_aggregation = True,
+            convo_methods: list = ['mean', 'median', 'max', 'min', 'std'],
+            convo_columns: list = None,
+            user_aggregation = True,
+            user_methods: list = ['mean', 'median', 'max', 'min', 'std'],
+            user_columns: list = None
         ) -> None:
 
         #  Defining input and output paths.
@@ -215,6 +240,12 @@ class FeatureBuilder:
         self.within_task = within_task
         self.ner_cutoff = ner_cutoff
         self.regenerate_vectors = regenerate_vectors
+        self.convo_aggregation = convo_aggregation
+        self.convo_methods = convo_methods
+        self.convo_columns = convo_columns
+        self.user_aggregation = user_aggregation
+        self.user_methods = user_methods
+        self.user_columns = user_columns
 
         # check grouping rules
         if self.conversation_id_col not in self.chat_data.columns and len(self.grouping_keys)==0:
@@ -562,7 +593,10 @@ class FeatureBuilder:
             vect_data= self.vect_data,
             conversation_id_col = self.conversation_id_col,
             speaker_id_col = self.speaker_id_col,
-            input_columns = self.input_columns
+            input_columns = self.input_columns,
+            user_aggregation = self.user_aggregation,
+            user_methods = self.user_methods,
+            user_columns = self.user_columns
         )
         self.user_data = user_feature_builder.calculate_user_level_features()
         # Remove special characters in column names
@@ -588,7 +622,11 @@ class FeatureBuilder:
             speaker_id_col = self.speaker_id_col,
             message_col = self.message_col,
             timestamp_col = self.timestamp_col,
-            input_columns = self.input_columns
+            input_columns = self.input_columns,
+            convo_aggregation = self.convo_aggregation,
+            convo_methods = self.convo_methods,
+            convo_columns = self.convo_columns,
+            user_aggregation = self.user_aggregation
         )
         # Calling the driver inside this class to create the features.
         self.conv_data = conv_feature_builder.calculate_conversation_level_features(self.feature_methods_conv)
