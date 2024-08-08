@@ -53,8 +53,12 @@ function HowItWorks() {
       </p>
       <br />
       <div className="code">
-        ./setup.sh
+        <a href="https://github.com/Watts-Lab/team_comm_tools/blob/main/setup.sh">./setup.sh</a>
       </div>
+      <p>
+        (This links to a file on our GitHub page; in a future version, we will update the package to automatically install these dependencies.)
+      </p>
+      <br />
       <p>
         Once complete, you should see, “Installation and requirements check completed successfully.” This means you are ready to go!
       </p>
