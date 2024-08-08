@@ -35,9 +35,28 @@ function HowItWorks() {
         in understanding and quantifying conversations.
       </p>
       <br />
-      <p>More information coming soon:</p>
-      <p>Our toolkit is currently pre-launch. Details on how to download our package
-        will be released after our package officially launches later this summer (August 2024).
+      <p>
+        Our tool is publicly available on <a href="https://pypi.org/project/team-comm-tools/">PyPI</a>, with a getting started guide available in
+        our <a href="https://conversational-featurizer.readthedocs.io/en/latest/examples.html">documentation</a>.
+      </p>
+      <br />
+      <p>
+        To use our tool, please ensure that you have Python {'>'}= 3.10 installed and a working version of <a href="https://pypi.org/project/pip/">pip</a>,
+        which is Python’s package installer. Then, in your local environment, run the following:
+      </p>
+      <br />
+      <div className="code">
+        pip install team_comm_tools
+      </div>
+      <p>
+        You will also need to manually install some additional required dependencies to set up the package. In your terminal, run the following:
+      </p>
+      <br />
+      <div className="code">
+        ./setup.sh
+      </div>
+      <p>
+        Once complete, you should see, “Installation and requirements check completed successfully.” This means you are ready to go!
       </p>
 
       <h1 className='how-it-works-headers'>Technical Documentation: ReadTheDocs</h1>
@@ -69,34 +88,34 @@ function HowItWorks() {
 
       <h1 className='how-it-works-headers'>Features</h1>
       <div className='features'>
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Description</th>
-            <th>Columns</th>
-            <th>File</th>
-            <th>Level</th>
-            <th>Semantic Grouping</th>
-            <th>References</th>
-            <th>Wiki Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.entries(data).map(([key, value]) => (
-            <tr key={key}>
-              <td className='feature-name'>{key}</td>
-              <td className='desc'>{value.description}</td>
-              <td className='norm' style={{width: "200px"}}>{value.columns ? value.columns.join(', ') : 'N/A'}</td>
-              <td className='norm' style={{width: "200px"}}>{value.file}</td>
-              <td className='norm'>{value.level}</td>
-              <td className='norm'>{value.semantic_grouping}</td>
-              <td className='desc'>{value.references}</td>
-              <td className='norm'><a href={value.wiki_link} target="_blank" rel="noopener noreferrer">{value.wiki_link}</a></td>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+              <th>Columns</th>
+              <th>File</th>
+              <th>Level</th>
+              <th>Semantic Grouping</th>
+              <th>References</th>
+              <th>Wiki Link</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {Object.entries(data).map(([key, value]) => (
+              <tr key={key}>
+                <td className='feature-name'>{key}</td>
+                <td className='desc'>{value.description}</td>
+                <td className='norm' style={{ width: "200px" }}>{value.columns ? value.columns.join(', ') : 'N/A'}</td>
+                <td className='norm' style={{ width: "200px" }}>{value.file}</td>
+                <td className='norm'>{value.level}</td>
+                <td className='norm'>{value.semantic_grouping}</td>
+                <td className='desc'>{value.references}</td>
+                <td className='norm'><a href={value.wiki_link} target="_blank" rel="noopener noreferrer">{value.wiki_link}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

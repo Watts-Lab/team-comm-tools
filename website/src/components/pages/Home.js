@@ -74,10 +74,10 @@ function Home() {
                 <p> Thinking about conversations along these dimensions can help researchers think about the different attributes that they can consider. </p>
 
                 <h1 className='home-subheaders'>
-                    Download our Python Package (Coming Soon in August 2024!)
+                    Download our Python Package
                 </h1>
                 <p>
-                    To make exploration of conversations more accessible, our framework is accompanied by a Python package, to be released soon.
+                    To make exploration of conversations more accessible, our framework is accompanied by a Python package.
                     We think of this toolkit as a living representation of our framework; it seeks not only to discuss dimensions of conversations in the abstract,
                     but also to measure and quantify them in real data.
                     This allows researchers to explore how different dimensions that have been proposed by previous research may apply to their own datasets.
